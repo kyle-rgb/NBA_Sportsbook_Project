@@ -1,0 +1,21 @@
+Basketball court dimensions = 94 feet long x 50 feet wide = 4,700 square feet
+
+Long 2's better than low block area, aka Area 31, for 31% fg convert rate. (Double-check)
+
+League Average of converted 3 Point Attempts = 36%
+
+Corner 3 is 22 feet from basket, at other points along 3 point line its 23.75 feet.
+
+2013-2018 FG Point Yield (FG_PY) = 1.02
+2013-2018 Area 31 Point Yield (A31_PY) = 0.62
+2017-2018 3 Point Yield = 1.09
+2013-2016 3 Point Yield = 1.07
+2013-2016 5 feet away from basket point yield = 0.94
+2013-2016 6 feet away from basket point yield = 0.87
+2013-2016 7 feet away from basket point yield = 0.82
+
+Ideas on measuring Defense and potential formulas
+- Perimeter Defenders (PD) vs. Interior Defenders (ID)
+- Effect of contact allowances?
+- Metrics: Wingspan, height, weight, lateral speed, communication (on-ball vs. off-ball)
+-
