@@ -1,0 +1,130 @@
+Sports_Bettingt_playlist based on Darryl's curated playlist
+
+Video #1: Creating your own lines for NFL football #sportsbetting
+by MGCovers
+
+	- Main Goal is to find value!
+	- Compare our line to Vegas lines and compare the 2 in order to determine: 
+		1.	when to place a bet  
+		2.	success/failure of our line 
+ 
+	- Turnover adjustment only made if Underdog has advantage in Turnover Battle
+		- Adjustment calculation for New Underdog Power Ranking = (Net Turnover * 2) + Original Underdog Power Ranking 
+	
+
+Video #2: How to create your own stat model for sports betting
+by MGCovers
+
+- Past success not indicative of future success
+- NBA Defensive stats correlate to winning
+- Identify stats that are inversely related to winning
+- What games to use stats for in models? 
+	- Use the most recent
+		- NFL last 5 games stats
+		- NHL last 10 games stats
+		- MLB last 10 games stats
+		- NCAAB last 5 games stats
+		- Soccer last 5 games stats
+- Models must be 
+	- Statistically driven
+	- Simple
+	- Driven by recent data
+
+Video #3: How to Bet on Sports - A Complete Beginners Guide to Straight Betsand Parlays with NFL Week 2 Picks
+by Zach Rosas
+
+- Determine your bankroll (how much you're willing to lose)
+- 1 unit = 1% of your bankroll
+- Max you should ever wager on a bet is = 5% of bankroll
+
+Different types of Bets:
+	- Against the Spread (ATS) 
+		- NFL Example: Patriots (+3.5) vs Seahawks (-3.5), 
+		- Seahawks are the Favorite, indicated by the "-" 
+		- If betting on the Seahawks, then the Seahawks MUST win by 4 or more points for you to win the bet.
+		- Patriots are the Underdog, indicated by the "+" 
+		- If betting on the Patriots, then the Patriots MUST fulfill at least one of the two following conditions:
+			- 1. Patriots win the game. 
+			- 2.The final score is Seattle Seahawks 20, NE Patriots 17 + 3.5 = 21.5. 
+					In this example, the Patriots still lose the game straight up, but they win against the spread.
+
+	- Moneyline 
+		- NFL Example: Patriots (+170) vs Seahawks (-190)
+		- Opposite of the Spread: "+" indicates the Underdog, while "-" indicates the Favorite
+		- Using a $100 bet betting on Patriots (+170)
+			- If Patriots win 
+				- The principle or amount you bet = $100 in this scenario
+				- Additionally you win $170 per $100 bet, $170 in this scenario
+				- Total winnings = $270 
+		- Using a $100 bet betting on Seahawks (-190)
+			- If Seahawks win 
+				- The principle or amount you bet = $100 in this scenario
+				- Additionally you win $100 per $190 bet, so 100/190 = ~ $52.63 in this scenario
+				- Total winnings = $152.63
+				
+	- Over/Under
+		- Total Points scored 
+	
+	- Parlays
+		- MUST satisfy multiple conditions to win bet, if one condition is missed than you lose the bet.
+		- Riskier but higher payout
+		
+Video #4: Recency Bias in sports betting - what is it and how to profit from it #sportsbetting
+by MGCovers
+
+- Beware recency bias!!!
+	- It will not take into effect future injuries
+
+Video #5: Huge NBA Sports Betting Profit - Build a Model in 45 Minutes or Less!
+by Action Backers
+
+- Learn to create dropdown boxes within Excel fields.
+	- Problem with this model is data needs to be updated. 
+		- Expected points will change so 45 minutes to build but more time will be spent updating information
+
+Video #6: How to Handicap the NFL part 1 #sportsbetting
+by MGCovers
+
+- 
+
+Video #7: How to Handicap the NFL part 2 #sportsbetting
+by MGCovers
+
+-
+
+Video #8: How to Handicap the NFL part 3 #sportsbetting
+by MGCovers
+
+-
+
+Video #9: Understanding basic NFL line movement
+by MGCovers
+
+-
+
+Video #10: Profitable sports betting strategy for NFL live betting Part 1
+by MGCovers
+
+-
+
+Video #11: Why the General public played the Saints tonight and why they lost
+by MGCovers
+
+- Beware personal bias
+
+Video #12: Uncovering one of the biggest mistakes you can make when handicapping the NFL
+by MGCovers
+
+- NFL team that won and covered = 75% of the time 
+
+
+
+
+
+
+
+
+
+
+
+
