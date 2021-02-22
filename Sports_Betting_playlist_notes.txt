@@ -30,7 +30,7 @@ by MGCovers
 	- Simple
 	- Driven by recent data
 
-Video #3: How to Bet on Sports - A Complete Beginners Guide to Straight Betsand Parlays with NFL Week 2 Picks
+Video #3: How to Bet on Sports - A Complete Beginners Guide to Straight Bets and Parlays with NFL Week 2 Picks
 by Zach Rosas
 
 - Determine your bankroll (how much you're willing to lose)
@@ -45,9 +45,9 @@ Different types of Bets:
 		- Patriots are the Underdog, indicated by the "+" 
 		- If betting on the Patriots, then the Patriots MUST fulfill at least one of the two following conditions:
 			- 1. Patriots win the game. 
-			- 2.The final score is Seattle Seahawks 20, NE Patriots 17 + 3.5 = 21.5. 
+			- 2.The final score is Seattle Seahawks 20, NE Patriots 17 + 3.5 = 20.5. 
 					In this example, the Patriots still lose the game straight up, but they win against the spread.
-
+		
 	- Moneyline 
 		- NFL Example: Patriots (+170) vs Seahawks (-190)
 		- Opposite of the Spread: "+" indicates the Underdog, while "-" indicates the Favorite
@@ -85,27 +85,47 @@ by Action Backers
 Video #6: How to Handicap the NFL part 1 #sportsbetting
 by MGCovers
 
-- 
+- 1 unit = 1% of your personal betting pool
+- 3:10 to understand spread vs moneyline
+
+When betting Underdog
+- Never buy points
+- +2.5 to +3 bet moneyline
+- +3.5 bet spread
+
+When betting Favorite
+- Never bet when line is -3 or -3.5
+- Bet favorite when line is -1, -1.5,-2,-2.5
+- Never bet moneyline when betting on the favorite
 
 Video #7: How to Handicap the NFL part 2 #sportsbetting
 by MGCovers
 
--
+- 6.5 spread does not favor Underdog or favorite
+
+When betting Favorite
+- Don't bet on the favorite when there's a -7 line
+- Bet on the favorite if there's a -7.5 line
+- lowest wager when possible, so choosing -105 @ -1 over -115 @ -1 
 
 Video #8: How to Handicap the NFL part 3 #sportsbetting
 by MGCovers
 
--
+Fading the Public
+
+- Don't play favorites -14 and up
+- Go against how majority of public bets. 
+	Example: If team A has 60 % of bets placed on it, and Team B has 40% bet on Team B
 
 Video #9: Understanding basic NFL line movement
 by MGCovers
 
--
+- How "sharps" affect line movement
 
 Video #10: Profitable sports betting strategy for NFL live betting Part 1
 by MGCovers
 
--
+- Added complexity to model. 
 
 Video #11: Why the General public played the Saints tonight and why they lost
 by MGCovers
@@ -117,14 +137,25 @@ by MGCovers
 
 - NFL team that won and covered = 75% of the time 
 
+Video #13: What Is A Moneyline Bet? | NFL Betting Explained
+by Big Ry and the Fat Guy
 
+- Goes over basics of Moneyline 
 
+Video #14: Explaining Moneyline, Spread, and Total Bets
+by Betting Buck
 
+- Goes over 3 types of bets
 
+Video #15: Sports Betting 101: What Is a Point Spread?
+by Crossing Broad Sports Betting
 
+- Goes over Spread bets
 
+Video #16: How to Easily Import Data into Excel for Mac or Google Sheets
+by Action Backers
 
-
-
-
-
+- Up to 3:10
+- When saving will need to change file type to .iqy
+- Issue with this method is you are unable to filter or sort the data
+- Some data is unable to be brought over. 
