@@ -1,0 +1,27 @@
+NBA_Handicapping_notes based on Darryl's curated playlist
+
+Video #1: How to Profit from our NBA power rankings #sportsbetting #nba
+by MGCovers
+
+- Use stats from last five. 
+	- So we'll need a dynamic web scrapper for last five games to be used daily during NBA season.
+	- Ignore betting on first 5 games of season as we are collecting data at that point.
+
+- When to bet compared to other models (bookeeper lines)?
+
+Video #2: NBA sports betting free play 11/27 #sportsbetting #nba
+by MGCovers
+
+- Bet when there is a point differential of 5 point differential.
+
+Video #6: Why I didn't play Boston or Denver tonight even though my lines had them favored #sportsbetting
+by MGCovers
+
+- Stats (Objective side) vs Situations (Subjective side)
+
+- Consider rest days and losses vs top teams.
+
+Video #8: What is the most important stat to focus on when handicapping NBA? #sportsbetting #nba
+by MGCovers
+
+- 
