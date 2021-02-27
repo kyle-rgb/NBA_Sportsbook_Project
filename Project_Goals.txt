@@ -1,7 +1,42 @@
 Goals for Collaborative Project
 
+Main goal: Determining the spread line that's more accurate than multiple setters of lines, i.e. Vegas, Fan Duels, etc.
+
+Put into Excel
+Read into Python
+Web Scrape data from Basketball Reference data
+
+Determining what statistics will we use, 
+
+power ranking teams - Whats req'd to determine teams power ranking
+
+What determine's a line in NBA basketball?
+
+Injuries effects
+% of accuracy of spread line model
+
+How to quickly scrape 10 most recent games in NBA stats?
+- Extract season data 
+- Create program that scrapes last 5/10 home / away games for team
+- 
+
+How will this be hosted
+- webpage days games, vs .io gh pages, vs data
+- look up GH pages, maybe use heroku setup server side use a SQL database and URL that shows dashboard,
+	integrate python into server, 
 
 
+debrief: ML learning model, compare against multiple markets (bookie lines), 
+
+Hosting: 
+
+Having SQL , functional webpage designed off SQL queries, pros: store more data
+
+vs. 
+ 
+Reading off excel file and python commands
 
 
-
+1. Web scrape data into SQL file, ml test of variables, utilize flask function
+2. 
+3.
