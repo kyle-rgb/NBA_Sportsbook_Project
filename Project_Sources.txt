@@ -1,0 +1,8 @@
+Sources:
+
+Data Set: https://www.basketball-reference.com/
+
+Tutorial: https://towardsdatascience.com/web-scraping-nba-stats-4b4f8c525994
+
+Assistance in Web Scraping: https://towardsdatascience.com/web-scraping-basics-82f8b5acd45c
+
