@@ -32,8 +32,8 @@ with open("results_Season.txt", "r") as season_file:
     full_text = season_file.readlines()
     for elements in full_text:
         elems = elements.split(",")
-        if game_regex.search(elems[-1]) != None:
-            game_naught = game_regex.search(elems[-1])
+        if game_regex.search(elems[-2]) != None:
+            game_naught = game_regex.search(elems[-2])
             game_naught = game_naught.group(0)
             games.append(game_naught)
             opponent = opponent_regex.search(elems[4])

@@ -25,7 +25,7 @@ regex = re.compile("(W|L)(\s\d\d|\s\d)")
 special_site_regex = re.compile("at (London, England|Mexico City, Mexico|Paris, France)")
 # Location indicator variable :: switch on presence of '@', designating an away game
 away = "HOME"
-# Overtime base variable :: switch on when '{\d}?OT' occurs in row
+# Overtime base variable :: switch on when 'OT' occurs in row
 overtime = "null"
 # Neutral Site Location Variable
 location = "null" 
@@ -60,7 +60,7 @@ for team in teams:
         elif "OT" in y.strip():
             overtime = y.strip()
         elif special_site_regex.search(y) != None:
-            location = y        
+            location = y.replace(",", "")        
         # Winning/Losing Streak Cell Found, indicating end of line
         elif regex.search(y) != None:
             # Only create the url Code for Home teams b/c home teams define the game codes
@@ -68,17 +68,17 @@ for team in teams:
                 three_month_number_code = three_month_number_code + team 
             else:
                 three_month_number_code = "null"
-            # Add Dates and changing variables as well as line terminators to finish game entry
-            rez.append(y + f",{away},{overtime},{team},{three_month_number_code}\n")
+            # Add Appropiate Changing variables to finish game entry
+            rez.append(y + f",{away},{overtime},{team},{three_month_number_code},")
             # Reset mutable variables
             away = "HOME"
             overtime = "null"
-            location = "null"
             three_month_number_code=""
             day_code=""
             year_code=""
         elif "," in y and (len(y) == 17 or len(y) == 18 or len(y) == 16): # Date Handler
-            rez.append(y + ",")
+            rez.append(location + "\n" + y + ",")
+            location = "null" 
             y = y.split(",")
             date = y[1]
             date = date.strip()
