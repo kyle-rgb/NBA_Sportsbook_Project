@@ -420,7 +420,7 @@ Tue, Jan 8, 2019,10:30p,Golden State Warriors,L,95,122,10,31,L 2,AWAY,null,NYK,n
 Fri, Jan 11, 2019,7:30p,Indiana Pacers,L,106,121,10,32,L 3,HOME,null,NYK,201901110NYK
 Sun, Jan 13, 2019,1:00p,Philadelphia 76ers,L,105,108,10,33,L 4,HOME,null,NYK,201901130NYK
 Thu, Jan 17, 2019,3:00p,Washington Wizards,L,100,101,10,34,L 5,AWAY,null,NYK,null
-Mon, Jan 21, 2019,12:30p,Oklahoma City Thunder,L,109,127,10,35,L 6,HOME,null,NYK,201901210NYK
+at London, England,Mon, Jan 21, 2019,12:30p,Oklahoma City Thunder,L,109,127,10,35,L 6,HOME,null,NYK,201901210NYK
 Wed, Jan 23, 2019,7:30p,Houston Rockets,L,110,114,10,36,L 7,HOME,null,NYK,201901230NYK
 Fri, Jan 25, 2019,7:30p,Brooklyn Nets,L,99,109,10,37,L 8,AWAY,null,NYK,null
 Sun, Jan 27, 2019,7:30p,Miami Heat,L,97,106,10,38,L 9,HOME,null,NYK,201901270NYK
@@ -584,7 +584,7 @@ Sun, Dec 9, 2018,7:00p,San Antonio Spurs,L,97,110,13,14,L 1,AWAY,null,UTA,null
 Mon, Dec 10, 2018,8:00p,Oklahoma City Thunder,L,113,122,13,15,L 2,AWAY,null,UTA,null
 Wed, Dec 12, 2018,9:00p,Miami Heat,W,111,84,14,15,W 1,HOME,null,UTA,201812120UTA
 Sat, Dec 15, 2018,5:00p,Orlando Magic,L,89,96,14,16,L 1,AWAY,null,UTA,null
-Mon, Dec 17, 2018,8:00p,Houston Rockets,L,97,102,14,17,L 2,AWAY,null,UTA,null
+at Mexico City, Mexico,Mon, Dec 17, 2018,8:00p,Houston Rockets,L,97,102,14,17,L 2,AWAY,null,UTA,null
 Wed, Dec 19, 2018,9:00p,Golden State Warriors,W,108,103,15,17,W 1,HOME,null,UTA,201812190UTA
 Fri, Dec 21, 2018,10:00p,Portland Trail Blazers,W,120,90,16,17,W 2,AWAY,null,UTA,null
 Sat, Dec 22, 2018,9:00p,Oklahoma City Thunder,L,106,107,16,18,L 1,HOME,null,UTA,201812220UTA
@@ -1120,7 +1120,7 @@ Fri, Dec 7, 2018,8:00p,Oklahoma City Thunder,W,114,112,6,20,W 1,HOME,null,CHI,20
 Sat, Dec 8, 2018,8:00p,Boston Celtics,L,77,133,6,21,L 1,HOME,null,CHI,201812080CHI
 Mon, Dec 10, 2018,8:00p,Sacramento Kings,L,89,108,6,22,L 2,HOME,null,CHI,201812100CHI
 Thu, Dec 13, 2018,9:30p,Orlando Magic,L,91,97,6,23,L 3,AWAY,null,CHI,null
-Sat, Dec 15, 2018,8:30p,San Antonio Spurs,W,98,93,7,23,W 1,AWAY,null,CHI,null
+at Mexico City, Mexico,Sat, Dec 15, 2018,8:30p,San Antonio Spurs,W,98,93,7,23,W 1,AWAY,null,CHI,null
 Mon, Dec 17, 2018,8:00p,Oklahoma City Thunder,L,96,121,7,24,L 1,AWAY,null,CHI,null
 Wed, Dec 19, 2018,8:00p,Brooklyn Nets,L,93,96,7,25,L 2,HOME,null,CHI,201812190CHI
 Fri, Dec 21, 2018,8:00p,Orlando Magic,W,90,80,8,25,W 1,HOME,null,CHI,201812210CHI
@@ -1451,8 +1451,8 @@ Wed, Dec 5, 2018,7:00p,Denver Nuggets,L,118,124,12,13,L 1,HOME,OT,ORL,201812050O
 Fri, Dec 7, 2018,7:00p,Indiana Pacers,L,90,112,12,14,L 2,HOME,null,ORL,201812070ORL
 Mon, Dec 10, 2018,8:30p,Dallas Mavericks,L,76,101,12,15,L 3,AWAY,null,ORL,null
 Thu, Dec 13, 2018,9:30p,Chicago Bulls,W,97,91,13,15,W 1,HOME,null,ORL,201812130ORL
-Sat, Dec 15, 2018,5:00p,Utah Jazz,W,96,89,14,15,W 2,HOME,null,ORL,201812150ORL
-Wed, Dec 19, 2018,7:00p,San Antonio Spurs,L,90,129,14,16,L 1,HOME,null,ORL,201812190ORL
+at Mexico City, Mexico,Sat, Dec 15, 2018,5:00p,Utah Jazz,W,96,89,14,15,W 2,HOME,null,ORL,201812150ORL
+at Mexico City, Mexico,Wed, Dec 19, 2018,7:00p,San Antonio Spurs,L,90,129,14,16,L 1,HOME,null,ORL,201812190ORL
 Fri, Dec 21, 2018,8:00p,Chicago Bulls,L,80,90,14,17,L 2,AWAY,null,ORL,null
 Sun, Dec 23, 2018,6:00p,Miami Heat,L,91,115,14,18,L 3,HOME,null,ORL,201812230ORL
 Wed, Dec 26, 2018,7:00p,Phoenix Suns,L,120,122,14,19,L 4,HOME,OT,ORL,201812260ORL
@@ -1555,7 +1555,7 @@ Wed, Jan 9, 2019,7:00p,Philadelphia 76ers,W,123,106,17,25,W 1,HOME,null,WAS,2019
 Fri, Jan 11, 2019,7:00p,Milwaukee Bucks,W,113,106,18,25,W 2,HOME,null,WAS,201901110WAS
 Sun, Jan 13, 2019,1:00p,Toronto Raptors,L,138,140,18,26,L 1,HOME,2OT,WAS,201901130WAS
 Thu, Jan 17, 2019,3:00p,New York Knicks,W,101,100,19,26,W 1,HOME,null,WAS,201901170WAS
-Mon, Jan 21, 2019,2:00p,Detroit Pistons,W,101,87,20,26,W 2,HOME,null,WAS,201901210WAS
+at London, England,Mon, Jan 21, 2019,2:00p,Detroit Pistons,W,101,87,20,26,W 2,HOME,null,WAS,201901210WAS
 Thu, Jan 24, 2019,8:00p,Golden State Warriors,L,118,126,20,27,L 1,HOME,null,WAS,201901240WAS
 Fri, Jan 25, 2019,7:00p,Orlando Magic,W,95,91,21,27,W 1,AWAY,null,WAS,null
 Sun, Jan 27, 2019,7:00p,San Antonio Spurs,L,119,132,21,28,L 1,AWAY,null,WAS,null

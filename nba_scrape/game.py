@@ -11,7 +11,7 @@ start_time = time.perf_counter()
 def mk_float(s):
     return float(s) if s else 0
 
-os.chdir(r"C:\Users\Kyle\Desktop\nba project")
+os.chdir(r"C:\Users\Kyle\Desktop\Python\Nba_Revised\Setting_Lines_and_Making_Dimes\nba_scrape")
 
 teams = ["TOR", "BOS", "PHI", "BRK", "NYK",
          "DEN", "UTA", "OKC", "POR", "MIN",
