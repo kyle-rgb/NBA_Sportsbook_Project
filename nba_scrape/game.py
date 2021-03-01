@@ -1,6 +1,6 @@
 import os, requests, bs4, pprint, csv
 import time, re, numpy, unicodedata, concurrent.futures
-from key import sql_admin, user, db
+
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import Session
 from sqlalchemy import Column, Integer, Float, String, Boolean
@@ -8,37 +8,43 @@ import sqlalchemy as sql
 
 start_time = time.perf_counter()
 
+# helper
 def mk_float(s):
     return float(s) if s else 0
 
 os.chdir(r"C:\Users\Kyle\Desktop\Python\Nba_Revised\Setting_Lines_and_Making_Dimes\nba_scrape")
-
+# Basketball Reference's Team Codes
 teams = ["TOR", "BOS", "PHI", "BRK", "NYK",
          "DEN", "UTA", "OKC", "POR", "MIN",
          "MIL", "IND", "CHI", "DET", "CLE",
          "MIA", "ORL", "WAS", "CHO", "ATL",
          "LAL", "LAC", "SAC", "PHO", "GSW",
          "DAL", "HOU", "MEM", "NOP", "SAS"]
-
+# Filler to match uncommon or repeated team abbreviations to their proper code
 key_matcher = {"Brooklyn Nets": "BRK", "New York K": "NYK", "Oklahoma City T": "OKC", "Charlotte Hornets": "CHO",
                "Los Angeles L": "LAL", "Los Angeles C": "LAC", "Golden State W": "GSW", "New Orleans P": "NOP", "San Antonio S":"SAS"}
-
+# Regular Expression for Game Codes in the .txt files 
 game_regex = re.compile(r"^\d{8}0.{3}")
+# Regex for Team Full Opponent Names in .txt files
 opponent_regex = re.compile(r"^[A-Z]+[a-z]+\s[A-Z0-9]+[a-z0-9]+\s?[A-Z]?")
+# Empty List for iterations
 games=[]
 opponents_codes = []
 
-with open("results_Season.txt", "r") as season_file:
+with open("results_Season_2020.txt", "r") as season_file:
     full_text = season_file.readlines()
     for elements in full_text:
         elems = elements.split(",")
         if game_regex.search(elems[-2]) != None:
+            # Game Found
             game_naught = game_regex.search(elems[-2])
             game_naught = game_naught.group(0)
+            # Append Game Code to List
             games.append(game_naught)
             opponent = opponent_regex.search(elems[4])
             opponent = opponent.group(0)
             if opponent.upper()[:3] not in teams:
+                # Append Corresponding non-obvious opponent code to List matching the appropiate game code
                 opponent = key_matcher[opponent]
                 opponents_codes.append(opponent)
             else:
@@ -48,8 +54,9 @@ with open("results_Season.txt", "r") as season_file:
             next
     season_file.close()
 
+# Create the Appropiate Classes For Our 2 Seperate Statistical Tables
 Base = declarative_base()
-engine = sql.create_engine(f"postgresql://{user}:{sql_admin}@localhost/{db}")
+engine = sql.create_engine(f"sqlite:///NBA.db")
 conn = engine.connect()
 
 class Basic_Stats(Base):
@@ -57,7 +64,6 @@ class Basic_Stats(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     minutes_played = Column(Float)
-    #minutes_played = Column(Interval(day_precision=True))
     fg = Column(Integer)
     fga = Column(Integer)
     fg_pct = Column(Float)
@@ -87,7 +93,6 @@ class Advanced_Stats(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
     minutes_played = Column(Float)
-    #minutes_played = Column(Interval(day_precision=True))
     ts_pct = Column(Float)
     efg_pct = Column(Float)
     fg3a_per_fga_pct = Column(Float)
@@ -108,6 +113,7 @@ class Advanced_Stats(Base):
     team = Column(String)
     game_code = Column(String)
 
+# Create tables based on Defined Classses
 Base.metadata.create_all(engine)
 
 rez = []
@@ -116,15 +122,13 @@ away = "HOME"
 
 content =[]
 
-
-opponents_codex = opponents_codes[:30]
-test_data = games[:30]
-
+# Sample of first 30
+opponents_codex = opponents_codes[:5]
+test_data = games[:5]
 test_data2 = zip(opponents_codex, test_data)
 
-
+# Scrape Function
 def sql_game_writer(a_tuple):
-#for oppo, game in test_data2:
     oppo = a_tuple[0]
     game = a_tuple[1]
     url = f"https://www.basketball-reference.com/boxscores/{game}.html"
@@ -133,8 +137,10 @@ def sql_game_writer(a_tuple):
     home_team_name = game[-3:]
     if home_team_name not in teams:
         home_team_name = key_matcher[home_team_name]
+    # Select Stats Tables 
     tables = soup.select("table")
     num_tables = len(tables)
+    # k = Tables per Team 
     k = num_tables / 2
     content =[]   
     for x in numpy.arange(0, num_tables):
@@ -151,106 +157,108 @@ def sql_game_writer(a_tuple):
                         for elem in off:
                             if elem == '':
                                 elem = mk_float(elem)
-                    indica = x % k
-                    if  indica == 0:
+                    # Indicator shows how many different time periods we have in this game. Waterfall Approach helps with games that had overtime(s).
+                    # Each If stmt. appends the 'global' variables of the game: team (oppo or home_team_name), type of statistics (TotalBasic, 1Q, 2Q, 1H, etc.) and Game ID.
+                    indicator = x % k
+                    if  indicator == 0:
                         off.append("TotalBasics")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif  indica == 1:
+                    elif  indicator == 1:
                         off.append("1Q")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 2:
+                    elif indicator == 2:
                         off.append("2Q")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 3:
+                    elif indicator == 3:
                         off.append("1H")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 4:
+                    elif indicator == 4:
                         off.append("3Q")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 5:
+                    elif indicator == 5:
                         off.append("4Q")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 6:
+                    elif indicator == 6:
                         off.append("2H")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica + 1 == k:
+                    elif indicator + 1 == k:
                         off.append("Advanced")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 7:
+                    elif indicator == 7:
                         off.append("OT")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 8:
+                    elif indicator == 8:
                         off.append("2OT")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 9:
+                    elif indicator == 9:
                         off.append("3OT")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 10:
+                    elif indicator == 10:
                         off.append("4OT")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 11:
+                    elif indicator == 11:
                         off.append("5OT")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 12:
+                    elif indicator == 12:
                         off.append("6OT")
                         if x < k:
                             off.append(oppo)
                         else:
                             off.append(home_team_name)
                         off.append(game)
-                    elif indica == 13:
+                    elif indicator == 13:
                         off.append("7OT")
                         if x < k:
                             off.append(oppo)
@@ -259,22 +267,23 @@ def sql_game_writer(a_tuple):
                         off.append(game)
                     content.append(off)
                 except AttributeError:
-                    continue
-
+                    continue 
+    # Insert data into table
     session = Session(bind=engine)
     for player in content:
-        if len(player) < 10:
-            if "Advanced" in player:
+        if len(player) < 10: # length of Advanced Stat's Table
+            if "Advanced" in player: # Will occur for players who Did Not Play
                 db_entry = Advanced_Stats(name=player[0], dnp=True, timetype=player[2], team=player[3], game_code=player[4])
             else:
                 db_entry = Basic_Stats(name=player[0], dnp=True, timetype=player[2], team=player[3], game_code=player[4])
         else:
+            # Handle Time 
             if ":" in str(player[1]):
                 time_naught = str(player[1]).split(":")
                 minutes = int(time_naught[0])
                 seconds = (int(time_naught[1])/60)
                 player[1]= round((minutes + seconds), 4) 
-
+            # Handle and Insert Float Heavy Advanced Stats
             if "Advanced" in player:
                 db_entry = Advanced_Stats(name=player[0], minutes_played=player[1], ts_pct=mk_float(player[2]), efg_pct=mk_float(player[3]), fg3a_per_fga_pct=mk_float(player[4]),
                                           fta_per_fga_pct=mk_float(player[5]), orb_pct=mk_float(player[6]), drb_pct=mk_float(player[7]), trb_pct=mk_float(player[8]), ast_pct=mk_float(player[9]), stl_pct=player[10],
@@ -283,6 +292,7 @@ def sql_game_writer(a_tuple):
                 
             else:                                    
                 try:
+                    # Insert Basic Stats
                     db_entry = Basic_Stats(name=player[0], minutes_played=player[1], fg=player[2], fga=player[3],
                     fg_pct=mk_float(player[4]), fg3=player[5], fg3a=player[6], fg3_pct=mk_float(player[7]),
                     ft=player[8], fta=player[9], ft_pct=mk_float(player[10]), orb=player[11],
@@ -290,6 +300,7 @@ def sql_game_writer(a_tuple):
                     tov=player[17], pf=player[18], pts=player[19], bpm=mk_float(player[20]), dnp=False, timetype=player[21],
                     team=player[22], game_code=player[23])
                 except:
+                    # Handle Empty Floats
                     fg_pct = 0
                     fg3_pct = 0
                     ft_pct = 0
@@ -300,6 +311,7 @@ def sql_game_writer(a_tuple):
                     tov=player[17], pf=player[18], pts=player[19], bpm=mk_float(player[20]), dnp=False, timetype=player[21],
                     team=player[22], game_code=player[23])
         session.add(db_entry)
+    # Being function-defined and performing heavy write operations, these consecutive inserts must be done in a transaction to prevent incomplete inserts.  
     session.commit()
     session.close()
     pprint.pprint("processed game...")
@@ -324,6 +336,8 @@ def sql_game_writer(a_tuple):
 with concurrent.futures.ThreadPoolExecutor() as executor:
     executor.map(sql_game_writer, test_data2)
 
+# Test For One Game
+#sql_game_writer((opponents_codex[0], test_data[0]))
 
 print((time.perf_counter())-start_time)
 
