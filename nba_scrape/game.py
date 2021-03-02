@@ -31,7 +31,7 @@ opponent_regex = re.compile(r"^[A-Z]+[a-z]+\s[A-Z0-9]+[a-z0-9]+\s?[A-Z]?")
 games=[]
 opponents_codes = []
 
-with open("results_Season_2020.txt", "r") as season_file:
+with open("results_Season_2019.txt", "r") as season_file:
     full_text = season_file.readlines()
     for elements in full_text:
         elems = elements.split(",")
@@ -123,10 +123,10 @@ away = "HOME"
 content =[]
 
 # Sample of first 30
-opponents_codex = opponents_codes[:5]
-test_data = games[:5]
+opponents_codex = opponents_codes[190:210]
+test_data = games[190:210]
 test_data2 = zip(opponents_codex, test_data)
-
+#print(test_data)
 # Scrape Function
 def sql_game_writer(a_tuple):
     oppo = a_tuple[0]
