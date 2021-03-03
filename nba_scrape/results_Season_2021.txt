@@ -1,0 +1,2158 @@
+Wed, Dec 23, 2020,7:30p,New Orleans Pelicans,L,99,113,0,1,L 1,HOME,null,TOR,202012230TOR,null
+Sat, Dec 26, 2020,8:30p,San Antonio Spurs,L,114,119,0,2,L 2,AWAY,null,TOR,null,null
+Tue, Dec 29, 2020,7:00p,Philadelphia 76ers,L,93,100,0,3,L 3,AWAY,null,TOR,null,null
+Thu, Dec 31, 2020,7:30p,New York Knicks,W,100,83,1,3,W 1,HOME,null,TOR,202012310TOR,null
+Sat, Jan 2, 2021,7:30p,New Orleans Pelicans,L,116,120,1,4,L 1,AWAY,null,TOR,null,null
+Mon, Jan 4, 2021,7:30p,Boston Celtics,L,114,126,1,5,L 2,HOME,null,TOR,202101040TOR,null
+Wed, Jan 6, 2021,9:00p,Phoenix Suns,L,115,123,1,6,L 3,AWAY,null,TOR,null,null
+Fri, Jan 8, 2021,10:00p,Sacramento Kings,W,144,123,2,6,W 1,AWAY,null,TOR,null,null
+Sun, Jan 10, 2021,8:30p,Golden State Warriors,L,105,106,2,7,L 1,AWAY,null,TOR,null,null
+Mon, Jan 11, 2021,10:00p,Portland Trail Blazers,L,111,112,2,8,L 2,AWAY,null,TOR,null,null
+Thu, Jan 14, 2021,7:30p,Charlotte Hornets,W,111,108,3,8,W 1,HOME,null,TOR,202101140TOR,null
+Sat, Jan 16, 2021,7:30p,Charlotte Hornets,W,116,113,4,8,W 2,HOME,null,TOR,202101160TOR,null
+Mon, Jan 18, 2021,7:30p,Dallas Mavericks,W,116,93,5,8,W 3,HOME,null,TOR,202101180TOR,null
+Wed, Jan 20, 2021,7:30p,Miami Heat,L,102,111,5,9,L 1,HOME,null,TOR,202101200TOR,null
+Fri, Jan 22, 2021,7:30p,Miami Heat,W,101,81,6,9,W 1,HOME,null,TOR,202101220TOR,null
+Sun, Jan 24, 2021,1:00p,Indiana Pacers,W,107,102,7,9,W 2,AWAY,null,TOR,null,null
+Mon, Jan 25, 2021,7:00p,Indiana Pacers,L,114,129,7,10,L 1,AWAY,null,TOR,null,null
+Wed, Jan 27, 2021,7:30p,Milwaukee Bucks,L,108,115,7,11,L 2,HOME,null,TOR,202101270TOR,null
+Fri, Jan 29, 2021,7:30p,Sacramento Kings,L,124,126,7,12,L 3,HOME,null,TOR,202101290TOR,null
+Sun, Jan 31, 2021,7:00p,Orlando Magic,W,115,102,8,12,W 1,HOME,null,TOR,202101310TOR,null
+Tue, Feb 2, 2021,7:00p,Orlando Magic,W,123,108,9,12,W 2,AWAY,null,TOR,null,null
+Fri, Feb 5, 2021,7:30p,Brooklyn Nets,W,123,117,10,12,W 3,AWAY,null,TOR,null,null
+Sat, Feb 6, 2021,8:00p,Atlanta Hawks,L,121,132,10,13,L 1,AWAY,null,TOR,null,null
+Mon, Feb 8, 2021,8:00p,Memphis Grizzlies,W,128,113,11,13,W 1,AWAY,null,TOR,null,null
+Wed, Feb 10, 2021,7:00p,Washington Wizards,W,137,115,12,13,W 2,AWAY,null,TOR,null,null
+Thu, Feb 11, 2021,7:30p,Boston Celtics,L,106,120,12,14,L 1,AWAY,null,TOR,null,null
+Sun, Feb 14, 2021,7:00p,Minnesota Timberwolves,L,112,116,12,15,L 2,HOME,null,TOR,202102140TOR,null
+Tue, Feb 16, 2021,8:00p,Milwaukee Bucks,W,124,113,13,15,W 1,AWAY,null,TOR,null,null
+Thu, Feb 18, 2021,7:30p,Milwaukee Bucks,W,110,96,14,15,W 2,AWAY,null,TOR,null,null
+Fri, Feb 19, 2021,9:00p,Minnesota Timberwolves,W,86,81,15,15,W 3,AWAY,null,TOR,null,null
+Sun, Feb 21, 2021,7:00p,Philadelphia 76ers,W,110,103,16,15,W 4,HOME,null,TOR,202102210TOR,null
+Tue, Feb 23, 2021,7:30p,Philadelphia 76ers,L,102,109,16,16,L 1,HOME,null,TOR,202102230TOR,null
+Wed, Feb 24, 2021,8:00p,Miami Heat,L,108,116,16,17,L 2,AWAY,null,TOR,null,null
+Fri, Feb 26, 2021,7:30p,Houston Rockets,W,122,111,17,17,W 1,HOME,null,TOR,202102260TOR,null
+Wed, Mar 3, 2021,7:00p,Detroit Pistons,null
+Thu, Mar 4, 2021,7:00p,Boston Celtics,null
+Thu, Mar 11, 2021,7:30p,Atlanta Hawks,null
+Sat, Mar 13, 2021,7:00p,Charlotte Hornets,null
+Sun, Mar 14, 2021,9:00p,Chicago Bulls,null
+Wed, Mar 17, 2021,7:00p,Detroit Pistons,null
+Fri, Mar 19, 2021,8:00p,Utah Jazz,null
+Sun, Mar 21, 2021,7:00p,Cleveland Cavaliers,null
+Mon, Mar 22, 2021,9:00p,Houston Rockets,null
+Wed, Mar 24, 2021,7:30p,Denver Nuggets,null
+Fri, Mar 26, 2021,7:30p,Phoenix Suns,null
+Sun, Mar 28, 2021,7:00p,Portland Trail Blazers,null
+Mon, Mar 29, 2021,8:00p,Detroit Pistons,null
+Wed, Mar 31, 2021,8:00p,Oklahoma City Thunder,null
+Fri, Apr 2, 2021,7:00p,Golden State Warriors,null
+Mon, Apr 5, 2021,7:00p,Washington Wizards,null
+Tue, Apr 6, 2021,7:30p,Los Angeles Lakers,null
+Fri, Apr 9, 2021,8:00p,Cleveland Cavaliers,null
+Sun, Apr 11, 2021,7:30p,New York Knicks,null
+Tue, Apr 13, 2021,7:30p,Atlanta Hawks,null
+Wed, Apr 14, 2021,7:30p,San Antonio Spurs,null
+Fri, Apr 16, 2021,7:30p,Orlando Magic,null
+Sun, Apr 18, 2021,7:00p,Oklahoma City Thunder,null
+Wed, Apr 21, 2021,7:00p,Brooklyn Nets,null
+Sat, Apr 24, 2021,1:00p,New York Knicks,null
+Mon, Apr 26, 2021,7:30p,Cleveland Cavaliers,null
+Tue, Apr 27, 2021,7:30p,Brooklyn Nets,null
+Thu, Apr 29, 2021,9:00p,Denver Nuggets,null
+Sat, May 1, 2021,10:00p,Utah Jazz,null
+Sun, May 2, 2021,10:00p,Los Angeles Lakers,null
+Tue, May 4, 2021,10:00p,Los Angeles Clippers,null
+Thu, May 6, 2021,7:30p,Washington Wizards,null
+Sat, May 8, 2021,7:30p,Memphis Grizzlies,null
+Tue, May 11, 2021,7:30p,Los Angeles Clippers,null
+Thu, May 13, 2021,8:00p,Chicago Bulls,null
+Fri, May 14, 2021,9:00p,Dallas Mavericks,null
+Sun, May 16, 2021,Indiana Pacers,null
+Wed, Dec 23, 2020,7:30p,Milwaukee Bucks,W,122,121,1,0,W 1,AWAY,null,BOS,null,null
+Fri, Dec 25, 2020,5:00p,Brooklyn Nets,L,95,123,1,1,L 1,HOME,null,BOS,202012250BOS,null
+Sun, Dec 27, 2020,8:00p,Indiana Pacers,L,107,108,1,2,L 2,AWAY,null,BOS,null,null
+Tue, Dec 29, 2020,7:00p,Indiana Pacers,W,116,111,2,2,W 1,AWAY,null,BOS,null,null
+Wed, Dec 30, 2020,7:30p,Memphis Grizzlies,W,126,107,3,2,W 2,HOME,null,BOS,202012300BOS,null
+Fri, Jan 1, 2021,7:00p,Detroit Pistons,L,93,96,3,3,L 1,AWAY,null,BOS,null,null
+Sun, Jan 3, 2021,3:00p,Detroit Pistons,W,122,120,4,3,W 1,AWAY,null,BOS,null,null
+Mon, Jan 4, 2021,7:30p,Toronto Raptors,W,126,114,5,3,W 2,AWAY,null,BOS,null,null
+Wed, Jan 6, 2021,7:30p,Miami Heat,W,107,105,6,3,W 3,AWAY,null,BOS,null,null
+Fri, Jan 8, 2021,7:30p,Washington Wizards,W,116,107,7,3,W 4,HOME,null,BOS,202101080BOS,null
+Fri, Jan 15, 2021,7:30p,Orlando Magic,W,124,97,8,3,W 5,HOME,null,BOS,202101150BOS,null
+Sun, Jan 17, 2021,1:00p,New York Knicks,L,75,105,8,4,L 1,HOME,null,BOS,202101170BOS,null
+Wed, Jan 20, 2021,7:00p,Philadelphia 76ers,L,109,117,8,5,L 2,AWAY,null,BOS,null,null
+Fri, Jan 22, 2021,7:30p,Philadelphia 76ers,L,110,122,8,6,L 3,AWAY,null,BOS,null,null
+Sun, Jan 24, 2021,7:00p,Cleveland Cavaliers,W,141,103,9,6,W 1,HOME,null,BOS,202101240BOS,null
+Mon, Jan 25, 2021,9:00p,Chicago Bulls,W,119,103,10,6,W 2,AWAY,null,BOS,null,null
+Wed, Jan 27, 2021,8:30p,San Antonio Spurs,L,106,110,10,7,L 1,AWAY,null,BOS,null,null
+Sat, Jan 30, 2021,8:30p,Los Angeles Lakers,L,95,96,10,8,L 2,HOME,null,BOS,202101300BOS,null
+Tue, Feb 2, 2021,10:00p,Golden State Warriors,W,111,107,11,8,W 1,AWAY,null,BOS,null,null
+Wed, Feb 3, 2021,10:00p,Sacramento Kings,L,111,116,11,9,L 1,AWAY,null,BOS,null,null
+Fri, Feb 5, 2021,10:00p,Los Angeles Clippers,W,119,115,12,9,W 1,AWAY,null,BOS,null,null
+Sun, Feb 7, 2021,2:00p,Phoenix Suns,L,91,100,12,10,L 1,AWAY,null,BOS,null,null
+Tue, Feb 9, 2021,10:00p,Utah Jazz,L,108,122,12,11,L 2,AWAY,null,BOS,null,null
+Thu, Feb 11, 2021,7:30p,Toronto Raptors,W,120,106,13,11,W 1,HOME,null,BOS,202102110BOS,null
+Fri, Feb 12, 2021,8:00p,Detroit Pistons,L,102,108,13,12,L 1,HOME,null,BOS,202102120BOS,null
+Sun, Feb 14, 2021,1:00p,Washington Wizards,L,91,104,13,13,L 2,AWAY,null,BOS,null,null
+Tue, Feb 16, 2021,7:00p,Denver Nuggets,W,112,99,14,13,W 1,HOME,null,BOS,202102160BOS,null
+Wed, Feb 17, 2021,7:30p,Atlanta Hawks,L,114,122,14,14,L 1,HOME,null,BOS,202102170BOS,null
+Fri, Feb 19, 2021,7:30p,Atlanta Hawks,W,121,109,15,14,W 1,HOME,null,BOS,202102190BOS,null
+Sun, Feb 21, 2021,3:30p,New Orleans Pelicans,L,115,120,15,15,L 1,AWAY,OT,BOS,null,null
+Tue, Feb 23, 2021,7:30p,Dallas Mavericks,L,107,110,15,16,L 2,AWAY,null,BOS,null,null
+Wed, Feb 24, 2021,7:30p,Atlanta Hawks,L,112,127,15,17,L 3,AWAY,null,BOS,null,null
+Fri, Feb 26, 2021,7:30p,Indiana Pacers,W,118,112,16,17,W 1,HOME,null,BOS,202102260BOS,null
+Sun, Feb 28, 2021,7:00p,Washington Wizards,W,111,110,17,17,W 2,HOME,null,BOS,202102280BOS,null
+Tue, Mar 2, 2021,7:30p,Los Angeles Clippers,W,117,112,18,17,W 3,HOME,null,BOS,202103020BOS,null
+Thu, Mar 4, 2021,7:00p,Toronto Raptors,null
+Thu, Mar 11, 2021,7:30p,Brooklyn Nets,null
+Sun, Mar 14, 2021,8:00p,Houston Rockets,null
+Tue, Mar 16, 2021,7:30p,Utah Jazz,null
+Wed, Mar 17, 2021,8:00p,Cleveland Cavaliers,null
+Fri, Mar 19, 2021,7:30p,Sacramento Kings,null
+Sun, Mar 21, 2021,3:30p,Orlando Magic,null
+Mon, Mar 22, 2021,9:00p,Memphis Grizzlies,null
+Wed, Mar 24, 2021,7:30p,Milwaukee Bucks,null
+Fri, Mar 26, 2021,7:30p,Milwaukee Bucks,null
+Sat, Mar 27, 2021,9:00p,Oklahoma City Thunder,null
+Mon, Mar 29, 2021,7:30p,New Orleans Pelicans,null
+Wed, Mar 31, 2021,7:30p,Dallas Mavericks,null
+Fri, Apr 2, 2021,7:30p,Houston Rockets,null
+Sun, Apr 4, 2021,6:00p,Charlotte Hornets,null
+Tue, Apr 6, 2021,7:30p,Philadelphia 76ers,null
+Wed, Apr 7, 2021,7:30p,New York Knicks,null
+Fri, Apr 9, 2021,7:30p,Minnesota Timberwolves,null
+Sun, Apr 11, 2021,3:00p,Denver Nuggets,null
+Tue, Apr 13, 2021,10:00p,Portland Trail Blazers,null
+Thu, Apr 15, 2021,10:00p,Los Angeles Lakers,null
+Sat, Apr 17, 2021,8:30p,Golden State Warriors,null
+Mon, Apr 19, 2021,7:30p,Chicago Bulls,null
+Thu, Apr 22, 2021,7:00p,Phoenix Suns,null
+Fri, Apr 23, 2021,7:30p,Brooklyn Nets,null
+Sun, Apr 25, 2021,1:00p,Charlotte Hornets,null
+Tue, Apr 27, 2021,7:00p,Oklahoma City Thunder,null
+Wed, Apr 28, 2021,7:30p,Charlotte Hornets,null
+Fri, Apr 30, 2021,7:30p,San Antonio Spurs,null
+Sun, May 2, 2021,7:30p,Portland Trail Blazers,null
+Wed, May 5, 2021,7:00p,Orlando Magic,null
+Fri, May 7, 2021,7:30p,Chicago Bulls,null
+Sun, May 9, 2021,1:00p,Miami Heat,null
+Tue, May 11, 2021,7:00p,Miami Heat,null
+Wed, May 12, 2021,8:00p,Cleveland Cavaliers,null
+Sat, May 15, 2021,Minnesota Timberwolves,null
+Sun, May 16, 2021,New York Knicks,null
+Wed, Dec 23, 2020,7:00p,Washington Wizards,W,113,107,1,0,W 1,AWAY,null,PHI,null,null
+Sat, Dec 26, 2020,7:30p,New York Knicks,W,109,89,2,0,W 2,AWAY,null,PHI,null,null
+Sun, Dec 27, 2020,7:30p,Cleveland Cavaliers,L,94,118,2,1,L 1,AWAY,null,PHI,null,null
+Tue, Dec 29, 2020,7:00p,Toronto Raptors,W,100,93,3,1,W 1,HOME,null,PHI,202012290PHI,null
+Thu, Dec 31, 2020,6:30p,Orlando Magic,W,116,92,4,1,W 2,AWAY,null,PHI,null,null
+Sat, Jan 2, 2021,7:00p,Charlotte Hornets,W,127,112,5,1,W 3,HOME,null,PHI,202101020PHI,null
+Mon, Jan 4, 2021,7:00p,Charlotte Hornets,W,118,101,6,1,W 4,HOME,null,PHI,202101040PHI,null
+Wed, Jan 6, 2021,7:00p,Washington Wizards,W,141,136,7,1,W 5,HOME,null,PHI,202101060PHI,null
+Thu, Jan 7, 2021,7:30p,Brooklyn Nets,L,109,122,7,2,L 1,AWAY,null,PHI,null,null
+Sat, Jan 9, 2021,3:00p,Denver Nuggets,L,103,115,7,3,L 2,HOME,null,PHI,202101090PHI,null
+Mon, Jan 11, 2021,7:30p,Atlanta Hawks,L,94,112,7,4,L 3,AWAY,null,PHI,null,null
+Tue, Jan 12, 2021,7:00p,Miami Heat,W,137,134,8,4,W 1,HOME,OT,PHI,202101120PHI,null
+Thu, Jan 14, 2021,7:00p,Miami Heat,W,125,108,9,4,W 2,HOME,null,PHI,202101140PHI,null
+Sat, Jan 16, 2021,8:00p,Memphis Grizzlies,L,104,106,9,5,L 1,AWAY,null,PHI,null,null
+Wed, Jan 20, 2021,7:00p,Boston Celtics,W,117,109,10,5,W 1,HOME,null,PHI,202101200PHI,null
+Fri, Jan 22, 2021,7:30p,Boston Celtics,W,122,110,11,5,W 2,HOME,null,PHI,202101220PHI,null
+Sat, Jan 23, 2021,8:00p,Detroit Pistons,W,114,110,12,5,W 3,AWAY,null,PHI,null,null
+Mon, Jan 25, 2021,7:00p,Detroit Pistons,L,104,119,12,6,L 1,AWAY,null,PHI,null,null
+Wed, Jan 27, 2021,7:30p,Los Angeles Lakers,W,107,106,13,6,W 1,HOME,null,PHI,202101270PHI,null
+Fri, Jan 29, 2021,8:00p,Minnesota Timberwolves,W,118,94,14,6,W 2,AWAY,null,PHI,null,null
+Sun, Jan 31, 2021,7:00p,Indiana Pacers,W,119,110,15,6,W 3,AWAY,null,PHI,null,null
+Wed, Feb 3, 2021,7:00p,Charlotte Hornets,W,118,111,16,6,W 4,AWAY,null,PHI,null,null
+Thu, Feb 4, 2021,8:00p,Portland Trail Blazers,L,105,121,16,7,L 1,HOME,null,PHI,202102040PHI,null
+Sat, Feb 6, 2021,8:00p,Brooklyn Nets,W,124,108,17,7,W 1,HOME,null,PHI,202102060PHI,null
+Tue, Feb 9, 2021,10:00p,Sacramento Kings,W,119,111,18,7,W 2,AWAY,null,PHI,null,null
+Thu, Feb 11, 2021,10:00p,Portland Trail Blazers,L,114,118,18,8,L 1,AWAY,null,PHI,null,null
+Sat, Feb 13, 2021,3:00p,Phoenix Suns,L,111,120,18,9,L 2,AWAY,null,PHI,null,null
+Mon, Feb 15, 2021,9:00p,Utah Jazz,L,123,134,18,10,L 3,AWAY,null,PHI,null,null
+Wed, Feb 17, 2021,7:30p,Houston Rockets,W,118,113,19,10,W 1,HOME,null,PHI,202102170PHI,null
+Fri, Feb 19, 2021,7:30p,Chicago Bulls,W,112,105,20,10,W 2,HOME,null,PHI,202102190PHI,null
+Sun, Feb 21, 2021,7:00p,Toronto Raptors,L,103,110,20,11,L 1,AWAY,null,PHI,null,null
+Tue, Feb 23, 2021,7:30p,Toronto Raptors,W,109,102,21,11,W 1,AWAY,null,PHI,null,null
+Thu, Feb 25, 2021,7:00p,Dallas Mavericks,W,111,97,22,11,W 2,HOME,null,PHI,202102250PHI,null
+Sat, Feb 27, 2021,7:00p,Cleveland Cavaliers,L,109,112,22,12,L 1,HOME,OT,PHI,202102270PHI,null
+Mon, Mar 1, 2021,7:00p,Indiana Pacers,W,130,114,23,12,W 1,HOME,null,PHI,202103010PHI,null
+Wed, Mar 3, 2021,7:00p,Utah Jazz,null
+Thu, Mar 11, 2021,8:00p,Chicago Bulls,null
+Fri, Mar 12, 2021,8:00p,Washington Wizards,null
+Sun, Mar 14, 2021,6:30p,San Antonio Spurs,null
+Tue, Mar 16, 2021,8:00p,New York Knicks,null
+Wed, Mar 17, 2021,7:00p,Milwaukee Bucks,null
+Sat, Mar 20, 2021,8:00p,Sacramento Kings,null
+Sun, Mar 21, 2021,8:00p,New York Knicks,null
+Tue, Mar 23, 2021,10:00p,Golden State Warriors,null
+Thu, Mar 25, 2021,10:00p,Los Angeles Lakers,null
+Sat, Mar 27, 2021,10:00p,Los Angeles Clippers,null
+Tue, Mar 30, 2021,9:00p,Denver Nuggets,null
+Thu, Apr 1, 2021,7:00p,Cleveland Cavaliers,null
+Sat, Apr 3, 2021,8:00p,Minnesota Timberwolves,null
+Sun, Apr 4, 2021,7:00p,Memphis Grizzlies,null
+Tue, Apr 6, 2021,7:30p,Boston Celtics,null
+Fri, Apr 9, 2021,8:00p,New Orleans Pelicans,null
+Sat, Apr 10, 2021,9:00p,Oklahoma City Thunder,null
+Mon, Apr 12, 2021,8:30p,Dallas Mavericks,null
+Wed, Apr 14, 2021,7:00p,Brooklyn Nets,null
+Fri, Apr 16, 2021,7:00p,Los Angeles Clippers,null
+Mon, Apr 19, 2021,7:30p,Golden State Warriors,null
+Wed, Apr 21, 2021,7:00p,Phoenix Suns,null
+Thu, Apr 22, 2021,7:00p,Milwaukee Bucks,null
+Sat, Apr 24, 2021,3:30p,Milwaukee Bucks,null
+Mon, Apr 26, 2021,7:00p,Oklahoma City Thunder,null
+Wed, Apr 28, 2021,7:00p,Atlanta Hawks,null
+Fri, Apr 30, 2021,7:00p,Atlanta Hawks,null
+Sun, May 2, 2021,8:00p,San Antonio Spurs,null
+Mon, May 3, 2021,9:00p,Chicago Bulls,null
+Wed, May 5, 2021,8:00p,Houston Rockets,null
+Fri, May 7, 2021,7:00p,New Orleans Pelicans,null
+Sat, May 8, 2021,7:00p,Detroit Pistons,null
+Tue, May 11, 2021,8:00p,Indiana Pacers,null
+Thu, May 13, 2021,7:30p,Miami Heat,null
+Fri, May 14, 2021,8:00p,Orlando Magic,null
+Sun, May 16, 2021,Orlando Magic,null
+Tue, Dec 22, 2020,7:00p,Golden State Warriors,W,125,99,1,0,W 1,AWAY,null,BRK,null,null
+Fri, Dec 25, 2020,5:00p,Boston Celtics,W,123,95,2,0,W 2,AWAY,null,BRK,null,null
+Sun, Dec 27, 2020,7:00p,Charlotte Hornets,L,104,106,2,1,L 1,AWAY,null,BRK,null,null
+Mon, Dec 28, 2020,7:30p,Memphis Grizzlies,L,111,116,2,2,L 2,HOME,OT,BRK,202012280BRK,null
+Wed, Dec 30, 2020,7:30p,Atlanta Hawks,W,145,141,3,2,W 1,HOME,null,BRK,202012300BRK,null
+Fri, Jan 1, 2021,7:30p,Atlanta Hawks,L,96,114,3,3,L 1,HOME,null,BRK,202101010BRK,null
+Sun, Jan 3, 2021,6:00p,Washington Wizards,L,122,123,3,4,L 2,HOME,null,BRK,202101030BRK,null
+Tue, Jan 5, 2021,7:30p,Utah Jazz,W,130,96,4,4,W 1,HOME,null,BRK,202101050BRK,null
+Thu, Jan 7, 2021,7:30p,Philadelphia 76ers,W,122,109,5,4,W 2,HOME,null,BRK,202101070BRK,null
+Fri, Jan 8, 2021,8:00p,Memphis Grizzlies,L,110,115,5,5,L 1,AWAY,null,BRK,null,null
+Sun, Jan 10, 2021,6:00p,Oklahoma City Thunder,L,116,129,5,6,L 2,HOME,null,BRK,202101100BRK,null
+Tue, Jan 12, 2021,7:30p,Denver Nuggets,W,122,116,6,6,W 1,HOME,null,BRK,202101120BRK,null
+Wed, Jan 13, 2021,7:30p,New York Knicks,W,116,109,7,6,W 2,AWAY,null,BRK,null,null
+Sat, Jan 16, 2021,6:00p,Orlando Magic,W,122,115,8,6,W 3,HOME,null,BRK,202101160BRK,null
+Mon, Jan 18, 2021,7:30p,Milwaukee Bucks,W,125,123,9,6,W 4,HOME,null,BRK,202101180BRK,null
+Wed, Jan 20, 2021,7:00p,Cleveland Cavaliers,L,135,147,9,7,L 1,AWAY,2OT,BRK,null,null
+Fri, Jan 22, 2021,7:30p,Cleveland Cavaliers,L,113,125,9,8,L 2,AWAY,null,BRK,null,null
+Sat, Jan 23, 2021,8:00p,Miami Heat,W,128,124,10,8,W 1,HOME,null,BRK,202101230BRK,null
+Mon, Jan 25, 2021,7:30p,Miami Heat,W,98,85,11,8,W 2,HOME,null,BRK,202101250BRK,null
+Wed, Jan 27, 2021,7:30p,Atlanta Hawks,W,132,128,12,8,W 3,AWAY,OT,BRK,null,null
+Fri, Jan 29, 2021,8:00p,Oklahoma City Thunder,W,147,125,13,8,W 4,AWAY,null,BRK,null,null
+Sun, Jan 31, 2021,7:00p,Washington Wizards,L,146,149,13,9,L 1,AWAY,null,BRK,null,null
+Tue, Feb 2, 2021,7:30p,Los Angeles Clippers,W,124,120,14,9,W 1,HOME,null,BRK,202102020BRK,null
+Fri, Feb 5, 2021,7:30p,Toronto Raptors,L,117,123,14,10,L 1,HOME,null,BRK,202102050BRK,null
+Sat, Feb 6, 2021,8:00p,Philadelphia 76ers,L,108,124,14,11,L 2,AWAY,null,BRK,null,null
+Tue, Feb 9, 2021,7:00p,Detroit Pistons,L,111,122,14,12,L 3,AWAY,null,BRK,null,null
+Wed, Feb 10, 2021,8:00p,Indiana Pacers,W,104,94,15,12,W 1,HOME,null,BRK,202102100BRK,null
+Sat, Feb 13, 2021,8:30p,Golden State Warriors,W,134,117,16,12,W 2,AWAY,null,BRK,null,null
+Mon, Feb 15, 2021,10:00p,Sacramento Kings,W,136,125,17,12,W 3,AWAY,null,BRK,null,null
+Tue, Feb 16, 2021,10:30p,Phoenix Suns,W,128,124,18,12,W 4,AWAY,null,BRK,null,null
+Thu, Feb 18, 2021,10:00p,Los Angeles Lakers,W,109,98,19,12,W 5,AWAY,null,BRK,null,null
+Sun, Feb 21, 2021,8:00p,Los Angeles Clippers,W,112,108,20,12,W 6,AWAY,null,BRK,null,null
+Tue, Feb 23, 2021,7:30p,Sacramento Kings,W,127,118,21,12,W 7,HOME,null,BRK,202102230BRK,null
+Thu, Feb 25, 2021,7:30p,Orlando Magic,W,129,92,22,12,W 8,HOME,null,BRK,202102250BRK,null
+Sat, Feb 27, 2021,8:30p,Dallas Mavericks,L,98,115,22,13,L 1,HOME,null,BRK,202102270BRK,null
+Mon, Mar 1, 2021,8:30p,San Antonio Spurs,W,124,113,23,13,W 1,AWAY,OT,BRK,null,null
+Wed, Mar 3, 2021,7:30p,Houston Rockets,null
+Thu, Mar 11, 2021,7:30p,Boston Celtics,null
+Sat, Mar 13, 2021,7:00p,Detroit Pistons,null
+Mon, Mar 15, 2021,8:00p,New York Knicks,null
+Wed, Mar 17, 2021,7:00p,Indiana Pacers,null
+Fri, Mar 19, 2021,8:00p,Orlando Magic,null
+Sun, Mar 21, 2021,7:00p,Washington Wizards,null
+Tue, Mar 23, 2021,10:00p,Portland Trail Blazers,null
+Wed, Mar 24, 2021,10:00p,Utah Jazz,null
+Fri, Mar 26, 2021,7:00p,Detroit Pistons,null
+Mon, Mar 29, 2021,7:30p,Minnesota Timberwolves,null
+Wed, Mar 31, 2021,7:30p,Houston Rockets,null
+Thu, Apr 1, 2021,7:30p,Charlotte Hornets,null
+Sun, Apr 4, 2021,2:00p,Chicago Bulls,null
+Mon, Apr 5, 2021,7:00p,New York Knicks,null
+Wed, Apr 7, 2021,7:30p,New Orleans Pelicans,null
+Sat, Apr 10, 2021,8:30p,Los Angeles Lakers,null
+Mon, Apr 12, 2021,8:00p,Minnesota Timberwolves,null
+Wed, Apr 14, 2021,7:00p,Philadelphia 76ers,null
+Fri, Apr 16, 2021,7:30p,Charlotte Hornets,null
+Sun, Apr 18, 2021,3:30p,Miami Heat,null
+Tue, Apr 20, 2021,7:30p,New Orleans Pelicans,null
+Wed, Apr 21, 2021,7:00p,Toronto Raptors,null
+Fri, Apr 23, 2021,7:30p,Boston Celtics,null
+Sun, Apr 25, 2021,3:30p,Phoenix Suns,null
+Tue, Apr 27, 2021,7:30p,Toronto Raptors,null
+Thu, Apr 29, 2021,7:00p,Indiana Pacers,null
+Fri, Apr 30, 2021,8:00p,Portland Trail Blazers,null
+Sun, May 2, 2021,3:30p,Milwaukee Bucks,null
+Tue, May 4, 2021,7:30p,Milwaukee Bucks,null
+Thu, May 6, 2021,7:30p,Dallas Mavericks,null
+Sat, May 8, 2021,10:00p,Denver Nuggets,null
+Tue, May 11, 2021,8:00p,Chicago Bulls,null
+Wed, May 12, 2021,8:00p,San Antonio Spurs,null
+Sat, May 15, 2021,Chicago Bulls,null
+Sun, May 16, 2021,Cleveland Cavaliers,null
+Wed, Dec 23, 2020,7:00p,Indiana Pacers,L,107,121,0,1,L 1,AWAY,null,NYK,null,null
+Sat, Dec 26, 2020,7:30p,Philadelphia 76ers,L,89,109,0,2,L 2,HOME,null,NYK,202012260NYK,null
+Sun, Dec 27, 2020,7:30p,Milwaukee Bucks,W,130,110,1,2,W 1,HOME,null,NYK,202012270NYK,null
+Tue, Dec 29, 2020,7:00p,Cleveland Cavaliers,W,95,86,2,2,W 2,AWAY,null,NYK,null,null
+Thu, Dec 31, 2020,7:30p,Toronto Raptors,L,83,100,2,3,L 1,AWAY,null,NYK,null,null
+Sat, Jan 2, 2021,7:00p,Indiana Pacers,W,106,102,3,3,W 1,AWAY,null,NYK,null,null
+Mon, Jan 4, 2021,7:30p,Atlanta Hawks,W,113,108,4,3,W 2,AWAY,null,NYK,null,null
+Wed, Jan 6, 2021,7:30p,Utah Jazz,W,112,100,5,3,W 3,HOME,null,NYK,202101060NYK,null
+Fri, Jan 8, 2021,7:30p,Oklahoma City Thunder,L,89,101,5,4,L 1,HOME,null,NYK,202101080NYK,null
+Sun, Jan 10, 2021,6:00p,Denver Nuggets,L,89,114,5,5,L 2,HOME,null,NYK,202101100NYK,null
+Mon, Jan 11, 2021,7:00p,Charlotte Hornets,L,88,109,5,6,L 3,AWAY,null,NYK,null,null
+Wed, Jan 13, 2021,7:30p,Brooklyn Nets,L,109,116,5,7,L 4,HOME,null,NYK,202101130NYK,null
+Fri, Jan 15, 2021,7:30p,Cleveland Cavaliers,L,103,106,5,8,L 5,AWAY,null,NYK,null,null
+Sun, Jan 17, 2021,1:00p,Boston Celtics,W,105,75,6,8,W 1,AWAY,null,NYK,null,null
+Mon, Jan 18, 2021,12:00p,Orlando Magic,W,91,84,7,8,W 2,HOME,null,NYK,202101180NYK,null
+Thu, Jan 21, 2021,10:00p,Golden State Warriors,W,119,104,8,8,W 3,AWAY,null,NYK,null,null
+Fri, Jan 22, 2021,10:00p,Sacramento Kings,L,94,103,8,9,L 1,AWAY,null,NYK,null,null
+Sun, Jan 24, 2021,10:00p,Portland Trail Blazers,L,113,116,8,10,L 2,AWAY,null,NYK,null,null
+Tue, Jan 26, 2021,9:00p,Utah Jazz,L,94,108,8,11,L 3,AWAY,null,NYK,null,null
+Fri, Jan 29, 2021,7:30p,Cleveland Cavaliers,W,102,81,9,11,W 1,HOME,null,NYK,202101290NYK,null
+Sun, Jan 31, 2021,1:00p,Los Angeles Clippers,L,115,129,9,12,L 1,HOME,null,NYK,202101310NYK,null
+Mon, Feb 1, 2021,8:00p,Chicago Bulls,L,102,110,9,13,L 2,AWAY,null,NYK,null,null
+Wed, Feb 3, 2021,8:00p,Chicago Bulls,W,107,103,10,13,W 1,AWAY,null,NYK,null,null
+Sat, Feb 6, 2021,1:00p,Portland Trail Blazers,W,110,99,11,13,W 2,HOME,null,NYK,202102060NYK,null
+Sun, Feb 7, 2021,1:00p,Miami Heat,L,103,109,11,14,L 1,HOME,null,NYK,202102070NYK,null
+Tue, Feb 9, 2021,7:30p,Miami Heat,L,96,98,11,15,L 2,AWAY,null,NYK,null,null
+Fri, Feb 12, 2021,7:00p,Washington Wizards,W,109,91,12,15,W 1,AWAY,null,NYK,null,null
+Sat, Feb 13, 2021,8:00p,Houston Rockets,W,121,99,13,15,W 2,HOME,null,NYK,202102130NYK,null
+Mon, Feb 15, 2021,7:30p,Atlanta Hawks,W,123,112,14,15,W 3,HOME,null,NYK,202102150NYK,null
+Wed, Feb 17, 2021,7:00p,Orlando Magic,L,89,107,14,16,L 1,AWAY,null,NYK,null,null
+Sun, Feb 21, 2021,7:00p,Minnesota Timberwolves,W,103,99,15,16,W 1,HOME,null,NYK,202102210NYK,null
+Tue, Feb 23, 2021,7:30p,Golden State Warriors,L,106,114,15,17,L 1,HOME,null,NYK,202102230NYK,null
+Thu, Feb 25, 2021,7:30p,Sacramento Kings,W,140,121,16,17,W 1,HOME,null,NYK,202102250NYK,null
+Sat, Feb 27, 2021,8:00p,Indiana Pacers,W,110,107,17,17,W 2,HOME,null,NYK,202102270NYK,null
+Sun, Feb 28, 2021,8:00p,Detroit Pistons,W,109,90,18,17,W 3,AWAY,null,NYK,null,null
+Tue, Mar 2, 2021,8:30p,San Antonio Spurs,L,93,119,18,18,L 1,AWAY,null,NYK,null,null
+Thu, Mar 4, 2021,7:30p,Detroit Pistons,null
+Thu, Mar 11, 2021,8:00p,Milwaukee Bucks,null
+Sat, Mar 13, 2021,2:00p,Oklahoma City Thunder,null
+Mon, Mar 15, 2021,8:00p,Brooklyn Nets,null
+Tue, Mar 16, 2021,8:00p,Philadelphia 76ers,null
+Thu, Mar 18, 2021,7:30p,Orlando Magic,null
+Sun, Mar 21, 2021,8:00p,Philadelphia 76ers,null
+Tue, Mar 23, 2021,7:30p,Washington Wizards,null
+Thu, Mar 25, 2021,7:30p,Washington Wizards,null
+Sat, Mar 27, 2021,8:00p,Milwaukee Bucks,null
+Mon, Mar 29, 2021,7:30p,Miami Heat,null
+Wed, Mar 31, 2021,8:00p,Minnesota Timberwolves,null
+Fri, Apr 2, 2021,7:30p,Dallas Mavericks,null
+Sat, Apr 3, 2021,8:00p,Detroit Pistons,null
+Mon, Apr 5, 2021,7:00p,Brooklyn Nets,null
+Wed, Apr 7, 2021,7:30p,Boston Celtics,null
+Fri, Apr 9, 2021,7:30p,Memphis Grizzlies,null
+Sun, Apr 11, 2021,7:30p,Toronto Raptors,null
+Mon, Apr 12, 2021,7:30p,Los Angeles Lakers,null
+Wed, Apr 14, 2021,8:00p,New Orleans Pelicans,null
+Fri, Apr 16, 2021,9:30p,Dallas Mavericks,null
+Sun, Apr 18, 2021,1:00p,New Orleans Pelicans,null
+Tue, Apr 20, 2021,7:30p,Charlotte Hornets,null
+Wed, Apr 21, 2021,8:00p,Atlanta Hawks,null
+Sat, Apr 24, 2021,1:00p,Toronto Raptors,null
+Mon, Apr 26, 2021,7:30p,Phoenix Suns,null
+Wed, Apr 28, 2021,7:30p,Chicago Bulls,null
+Sun, May 2, 2021,8:00p,Houston Rockets,null
+Mon, May 3, 2021,9:00p,Memphis Grizzlies,null
+Wed, May 5, 2021,9:00p,Denver Nuggets,null
+Fri, May 7, 2021,10:00p,Phoenix Suns,null
+Sun, May 9, 2021,3:30p,Los Angeles Clippers,null
+Tue, May 11, 2021,10:30p,Los Angeles Lakers,null
+Thu, May 13, 2021,7:30p,San Antonio Spurs,null
+Sat, May 15, 2021,Charlotte Hornets,null
+Sun, May 16, 2021,Boston Celtics,null
+Wed, Dec 23, 2020,9:00p,Sacramento Kings,L,122,124,0,1,L 1,AWAY,OT,DEN,null,null
+Fri, Dec 25, 2020,10:30p,Los Angeles Clippers,L,108,121,0,2,L 2,HOME,null,DEN,202012250DEN,null
+Mon, Dec 28, 2020,9:00p,Houston Rockets,W,124,111,1,2,W 1,HOME,null,DEN,202012280DEN,null
+Tue, Dec 29, 2020,10:00p,Sacramento Kings,L,115,125,1,3,L 1,AWAY,null,DEN,null,null
+Fri, Jan 1, 2021,9:00p,Phoenix Suns,L,103,106,1,4,L 2,HOME,null,DEN,202101010DEN,null
+Sun, Jan 3, 2021,7:00p,Minnesota Timberwolves,W,124,109,2,4,W 1,AWAY,null,DEN,null,null
+Tue, Jan 5, 2021,9:00p,Minnesota Timberwolves,W,123,116,3,4,W 2,HOME,null,DEN,202101050DEN,null
+Thu, Jan 7, 2021,10:00p,Dallas Mavericks,L,117,124,3,5,L 1,HOME,OT,DEN,202101070DEN,null
+Sat, Jan 9, 2021,3:00p,Philadelphia 76ers,W,115,103,4,5,W 1,AWAY,null,DEN,null,null
+Sun, Jan 10, 2021,6:00p,New York Knicks,W,114,89,5,5,W 2,AWAY,null,DEN,null,null
+Tue, Jan 12, 2021,7:30p,Brooklyn Nets,L,116,122,5,6,L 1,AWAY,null,DEN,null,null
+Thu, Jan 14, 2021,10:00p,Golden State Warriors,W,114,104,6,6,W 1,HOME,null,DEN,202101140DEN,null
+Sun, Jan 17, 2021,8:00p,Utah Jazz,L,105,109,6,7,L 1,HOME,null,DEN,202101170DEN,null
+Tue, Jan 19, 2021,9:00p,Oklahoma City Thunder,W,119,101,7,7,W 1,HOME,null,DEN,202101190DEN,null
+Fri, Jan 22, 2021,10:00p,Phoenix Suns,W,130,126,8,7,W 2,AWAY,OT,DEN,null,null
+Sat, Jan 23, 2021,9:00p,Phoenix Suns,W,120,112,9,7,W 3,AWAY,2OT,DEN,null,null
+Mon, Jan 25, 2021,8:30p,Dallas Mavericks,W,117,113,10,7,W 4,AWAY,null,DEN,null,null
+Wed, Jan 27, 2021,7:30p,Miami Heat,W,109,82,11,7,W 5,AWAY,null,DEN,null,null
+Fri, Jan 29, 2021,8:30p,San Antonio Spurs,L,109,119,11,8,L 1,AWAY,null,DEN,null,null
+Sun, Jan 31, 2021,3:30p,Utah Jazz,W,128,117,12,8,W 1,HOME,null,DEN,202101310DEN,null
+Thu, Feb 4, 2021,10:00p,Los Angeles Lakers,L,93,114,12,9,L 1,AWAY,null,DEN,null,null
+Sat, Feb 6, 2021,5:00p,Sacramento Kings,L,114,119,12,10,L 2,AWAY,null,DEN,null,null
+Mon, Feb 8, 2021,9:30p,Milwaukee Bucks,L,112,125,12,11,L 3,HOME,null,DEN,202102080DEN,null
+Wed, Feb 10, 2021,9:00p,Cleveland Cavaliers,W,133,95,13,11,W 1,HOME,null,DEN,202102100DEN,null
+Fri, Feb 12, 2021,9:00p,Oklahoma City Thunder,W,97,95,14,11,W 2,HOME,null,DEN,202102120DEN,null
+Sun, Feb 14, 2021,10:00p,Los Angeles Lakers,W,122,105,15,11,W 3,HOME,null,DEN,202102140DEN,null
+Tue, Feb 16, 2021,7:00p,Boston Celtics,L,99,112,15,12,L 1,AWAY,null,DEN,null,null
+Wed, Feb 17, 2021,8:00p,Washington Wizards,L,128,130,15,13,L 2,AWAY,null,DEN,null,null
+Fri, Feb 19, 2021,7:00p,Cleveland Cavaliers,W,120,103,16,13,W 1,AWAY,null,DEN,null,null
+Sun, Feb 21, 2021,7:30p,Atlanta Hawks,L,115,123,16,14,L 1,AWAY,null,DEN,null,null
+Tue, Feb 23, 2021,10:00p,Portland Trail Blazers,W,111,106,17,14,W 1,HOME,null,DEN,202102230DEN,null
+Thu, Feb 25, 2021,9:00p,Washington Wizards,L,110,112,17,15,L 1,HOME,null,DEN,202102250DEN,null
+Sat, Feb 27, 2021,8:00p,Oklahoma City Thunder,W,126,96,18,15,W 1,AWAY,null,DEN,null,null
+Mon, Mar 1, 2021,8:00p,Chicago Bulls,W,118,112,19,15,W 2,AWAY,null,DEN,null,null
+Tue, Mar 2, 2021,9:00p,Milwaukee Bucks,W,128,97,20,15,W 3,AWAY,null,DEN,null,null
+Thu, Mar 4, 2021,8:00p,Indiana Pacers,null
+Fri, Mar 12, 2021,8:00p,Memphis Grizzlies,null
+Sat, Mar 13, 2021,10:00p,Dallas Mavericks,null
+Mon, Mar 15, 2021,9:00p,Indiana Pacers,null
+Wed, Mar 17, 2021,9:00p,Charlotte Hornets,null
+Fri, Mar 19, 2021,9:00p,Chicago Bulls,null
+Sun, Mar 21, 2021,3:00p,New Orleans Pelicans,null
+Tue, Mar 23, 2021,7:00p,Orlando Magic,null
+Wed, Mar 24, 2021,7:30p,Toronto Raptors,null
+Fri, Mar 26, 2021,8:00p,New Orleans Pelicans,null
+Sun, Mar 28, 2021,9:00p,Atlanta Hawks,null
+Tue, Mar 30, 2021,9:00p,Philadelphia 76ers,null
+Thu, Apr 1, 2021,10:00p,Los Angeles Clippers,null
+Sun, Apr 4, 2021,10:00p,Orlando Magic,null
+Tue, Apr 6, 2021,9:00p,Detroit Pistons,null
+Wed, Apr 7, 2021,9:00p,San Antonio Spurs,null
+Fri, Apr 9, 2021,9:00p,San Antonio Spurs,null
+Sun, Apr 11, 2021,3:00p,Boston Celtics,null
+Mon, Apr 12, 2021,10:00p,Golden State Warriors,null
+Wed, Apr 14, 2021,10:00p,Miami Heat,null
+Fri, Apr 16, 2021,8:00p,Houston Rockets,null
+Mon, Apr 19, 2021,9:00p,Memphis Grizzlies,null
+Wed, Apr 21, 2021,10:00p,Portland Trail Blazers,null
+Fri, Apr 23, 2021,10:00p,Golden State Warriors,null
+Sat, Apr 24, 2021,10:00p,Houston Rockets,null
+Mon, Apr 26, 2021,9:00p,Memphis Grizzlies,null
+Wed, Apr 28, 2021,9:00p,New Orleans Pelicans,null
+Thu, Apr 29, 2021,9:00p,Toronto Raptors,null
+Sat, May 1, 2021,10:00p,Los Angeles Clippers,null
+Mon, May 3, 2021,10:00p,Los Angeles Lakers,null
+Wed, May 5, 2021,9:00p,New York Knicks,null
+Fri, May 7, 2021,10:00p,Utah Jazz,null
+Sat, May 8, 2021,10:00p,Brooklyn Nets,null
+Tue, May 11, 2021,7:00p,Charlotte Hornets,null
+Thu, May 13, 2021,8:00p,Minnesota Timberwolves,null
+Fri, May 14, 2021,8:00p,Detroit Pistons,null
+Sun, May 16, 2021,Portland Trail Blazers,null
+Wed, Dec 23, 2020,10:00p,Portland Trail Blazers,W,120,100,1,0,W 1,AWAY,null,UTA,null,null
+Sat, Dec 26, 2020,9:00p,Minnesota Timberwolves,L,111,116,1,1,L 1,HOME,null,UTA,202012260UTA,null
+Mon, Dec 28, 2020,8:00p,Oklahoma City Thunder,W,110,109,2,1,W 1,AWAY,null,UTA,null,null
+Thu, Dec 31, 2020,9:00p,Phoenix Suns,L,95,106,2,2,L 1,HOME,null,UTA,202012310UTA,null
+Fri, Jan 1, 2021,9:00p,Los Angeles Clippers,W,106,100,3,2,W 1,HOME,null,UTA,202101010UTA,null
+Sun, Jan 3, 2021,7:00p,San Antonio Spurs,W,130,109,4,2,W 2,AWAY,null,UTA,null,null
+Tue, Jan 5, 2021,7:30p,Brooklyn Nets,L,96,130,4,3,L 1,AWAY,null,UTA,null,null
+Wed, Jan 6, 2021,7:30p,New York Knicks,L,100,112,4,4,L 2,AWAY,null,UTA,null,null
+Fri, Jan 8, 2021,8:00p,Milwaukee Bucks,W,131,118,5,4,W 1,AWAY,null,UTA,null,null
+Sun, Jan 10, 2021,3:00p,Detroit Pistons,W,96,86,6,4,W 2,AWAY,null,UTA,null,null
+Tue, Jan 12, 2021,7:30p,Cleveland Cavaliers,W,117,87,7,4,W 3,AWAY,null,UTA,null,null
+Fri, Jan 15, 2021,9:00p,Atlanta Hawks,W,116,92,8,4,W 4,HOME,null,UTA,202101150UTA,null
+Sun, Jan 17, 2021,8:00p,Denver Nuggets,W,109,105,9,4,W 5,AWAY,null,UTA,null,null
+Tue, Jan 19, 2021,9:00p,New Orleans Pelicans,W,118,102,10,4,W 6,HOME,null,UTA,202101190UTA,null
+Thu, Jan 21, 2021,10:00p,New Orleans Pelicans,W,129,118,11,4,W 7,HOME,null,UTA,202101210UTA,null
+Sat, Jan 23, 2021,9:00p,Golden State Warriors,W,127,108,12,4,W 8,HOME,null,UTA,202101230UTA,null
+Tue, Jan 26, 2021,9:00p,New York Knicks,W,108,94,13,4,W 9,HOME,null,UTA,202101260UTA,null
+Wed, Jan 27, 2021,9:00p,Dallas Mavericks,W,116,104,14,4,W 10,HOME,null,UTA,202101270UTA,null
+Fri, Jan 29, 2021,10:00p,Dallas Mavericks,W,120,101,15,4,W 11,HOME,null,UTA,202101290UTA,null
+Sun, Jan 31, 2021,3:30p,Denver Nuggets,L,117,128,15,5,L 1,AWAY,null,UTA,null,null
+Tue, Feb 2, 2021,10:00p,Detroit Pistons,W,117,105,16,5,W 1,HOME,null,UTA,202102020UTA,null
+Thu, Feb 4, 2021,7:30p,Atlanta Hawks,W,112,91,17,5,W 2,AWAY,null,UTA,null,null
+Fri, Feb 5, 2021,8:00p,Charlotte Hornets,W,138,121,18,5,W 3,AWAY,null,UTA,null,null
+Sun, Feb 7, 2021,1:00p,Indiana Pacers,W,103,95,19,5,W 4,AWAY,null,UTA,null,null
+Tue, Feb 9, 2021,10:00p,Boston Celtics,W,122,108,20,5,W 5,HOME,null,UTA,202102090UTA,null
+Fri, Feb 12, 2021,9:00p,Milwaukee Bucks,W,129,115,21,5,W 6,HOME,null,UTA,202102120UTA,null
+Sat, Feb 13, 2021,9:00p,Miami Heat,W,112,94,22,5,W 7,HOME,null,UTA,202102130UTA,null
+Mon, Feb 15, 2021,9:00p,Philadelphia 76ers,W,134,123,23,5,W 8,HOME,null,UTA,202102150UTA,null
+Wed, Feb 17, 2021,10:00p,Los Angeles Clippers,W,114,96,24,5,W 9,AWAY,null,UTA,null,null
+Fri, Feb 19, 2021,10:00p,Los Angeles Clippers,L,112,116,24,6,L 1,AWAY,null,UTA,null,null
+Mon, Feb 22, 2021,9:00p,Charlotte Hornets,W,132,110,25,6,W 1,HOME,null,UTA,202102220UTA,null
+Wed, Feb 24, 2021,10:00p,Los Angeles Lakers,W,114,89,26,6,W 2,HOME,null,UTA,202102240UTA,null
+Fri, Feb 26, 2021,8:00p,Miami Heat,L,116,124,26,7,L 1,AWAY,null,UTA,null,null
+Sat, Feb 27, 2021,8:00p,Orlando Magic,W,124,109,27,7,W 1,AWAY,null,UTA,null,null
+Mon, Mar 1, 2021,8:00p,New Orleans Pelicans,L,124,129,27,8,L 1,AWAY,null,UTA,null,null
+Wed, Mar 3, 2021,7:00p,Philadelphia 76ers,null
+Fri, Mar 12, 2021,10:00p,Houston Rockets,null
+Sun, Mar 14, 2021,4:00p,Golden State Warriors,null
+Tue, Mar 16, 2021,7:30p,Boston Celtics,null
+Thu, Mar 18, 2021,7:00p,Washington Wizards,null
+Fri, Mar 19, 2021,8:00p,Toronto Raptors,null
+Mon, Mar 22, 2021,9:00p,Chicago Bulls,null
+Wed, Mar 24, 2021,10:00p,Brooklyn Nets,null
+Fri, Mar 26, 2021,9:00p,Memphis Grizzlies,null
+Sat, Mar 27, 2021,9:00p,Memphis Grizzlies,null
+Mon, Mar 29, 2021,9:00p,Cleveland Cavaliers,null
+Wed, Mar 31, 2021,8:00p,Memphis Grizzlies,null
+Fri, Apr 2, 2021,9:00p,Chicago Bulls,null
+Sat, Apr 3, 2021,9:00p,Orlando Magic,null
+Mon, Apr 5, 2021,7:00p,Dallas Mavericks,null
+Wed, Apr 7, 2021,10:00p,Phoenix Suns,null
+Thu, Apr 8, 2021,10:00p,Portland Trail Blazers,null
+Sat, Apr 10, 2021,9:00p,Sacramento Kings,null
+Mon, Apr 12, 2021,9:00p,Washington Wizards,null
+Tue, Apr 13, 2021,9:00p,Oklahoma City Thunder,null
+Fri, Apr 16, 2021,3:00p,Indiana Pacers,null
+Sat, Apr 17, 2021,4:30p,Los Angeles Lakers,null
+Mon, Apr 19, 2021,10:00p,Los Angeles Lakers,null
+Wed, Apr 21, 2021,8:00p,Houston Rockets,null
+Sat, Apr 24, 2021,9:00p,Minnesota Timberwolves,null
+Mon, Apr 26, 2021,8:00p,Minnesota Timberwolves,null
+Wed, Apr 28, 2021,10:00p,Sacramento Kings,null
+Fri, Apr 30, 2021,10:00p,Phoenix Suns,null
+Sat, May 1, 2021,10:00p,Toronto Raptors,null
+Mon, May 3, 2021,10:00p,San Antonio Spurs,null
+Wed, May 5, 2021,9:00p,San Antonio Spurs,null
+Fri, May 7, 2021,10:00p,Denver Nuggets,null
+Sat, May 8, 2021,10:00p,Houston Rockets,null
+Mon, May 10, 2021,10:00p,Golden State Warriors,null
+Wed, May 12, 2021,9:00p,Portland Trail Blazers,null
+Fri, May 14, 2021,8:00p,Oklahoma City Thunder,null
+Sun, May 16, 2021,Sacramento Kings,null
+Sat, Dec 26, 2020,7:00p,Charlotte Hornets,W,109,107,1,0,W 1,AWAY,null,OKC,null,null
+Mon, Dec 28, 2020,8:00p,Utah Jazz,L,109,110,1,1,L 1,HOME,null,OKC,202012280OKC,null
+Tue, Dec 29, 2020,8:00p,Orlando Magic,L,107,118,1,2,L 2,HOME,null,OKC,202012290OKC,null
+Thu, Dec 31, 2020,8:00p,New Orleans Pelicans,L,80,113,1,3,L 3,HOME,null,OKC,202012310OKC,null
+Sat, Jan 2, 2021,7:00p,Orlando Magic,W,108,99,2,3,W 1,AWAY,null,OKC,null,null
+Mon, Jan 4, 2021,7:30p,Miami Heat,L,90,118,2,4,L 1,AWAY,null,OKC,null,null
+Wed, Jan 6, 2021,8:00p,New Orleans Pelicans,W,111,110,3,4,W 1,AWAY,null,OKC,null,null
+Fri, Jan 8, 2021,7:30p,New York Knicks,W,101,89,4,4,W 2,AWAY,null,OKC,null,null
+Sun, Jan 10, 2021,6:00p,Brooklyn Nets,W,129,116,5,4,W 3,AWAY,null,OKC,null,null
+Tue, Jan 12, 2021,8:00p,San Antonio Spurs,L,102,112,5,5,L 1,HOME,null,OKC,202101120OKC,null
+Wed, Jan 13, 2021,8:00p,Los Angeles Lakers,L,99,128,5,6,L 2,HOME,null,OKC,202101130OKC,null
+Fri, Jan 15, 2021,8:00p,Chicago Bulls,W,127,125,6,6,W 1,HOME,OT,OKC,202101150OKC,null
+Tue, Jan 19, 2021,9:00p,Denver Nuggets,L,101,119,6,7,L 1,AWAY,null,OKC,null,null
+Fri, Jan 22, 2021,10:00p,Los Angeles Clippers,L,106,120,6,8,L 2,AWAY,null,OKC,null,null
+Sun, Jan 24, 2021,4:00p,Los Angeles Clippers,L,100,108,6,9,L 3,AWAY,null,OKC,null,null
+Mon, Jan 25, 2021,10:00p,Portland Trail Blazers,W,125,122,7,9,W 1,AWAY,null,OKC,null,null
+Wed, Jan 27, 2021,9:00p,Phoenix Suns,W,102,97,8,9,W 2,AWAY,null,OKC,null,null
+Fri, Jan 29, 2021,8:00p,Brooklyn Nets,L,125,147,8,10,L 1,HOME,null,OKC,202101290OKC,null
+Mon, Feb 1, 2021,8:00p,Houston Rockets,L,106,136,8,11,L 2,HOME,null,OKC,202102010OKC,null
+Wed, Feb 3, 2021,8:00p,Houston Rockets,W,104,87,9,11,W 1,HOME,null,OKC,202102030OKC,null
+Fri, Feb 5, 2021,8:00p,Minnesota Timberwolves,L,103,106,9,12,L 1,HOME,null,OKC,202102050OKC,null
+Sat, Feb 6, 2021,8:00p,Minnesota Timberwolves,W,120,118,10,12,W 1,HOME,null,OKC,202102060OKC,null
+Mon, Feb 8, 2021,10:00p,Los Angeles Lakers,L,112,119,10,13,L 1,AWAY,OT,OKC,null,null
+Wed, Feb 10, 2021,10:00p,Los Angeles Lakers,L,113,114,10,14,L 2,AWAY,OT,OKC,null,null
+Fri, Feb 12, 2021,9:00p,Denver Nuggets,L,95,97,10,15,L 3,AWAY,null,OKC,null,null
+Sun, Feb 14, 2021,8:00p,Milwaukee Bucks,W,114,109,11,15,W 1,HOME,null,OKC,202102140OKC,null
+Tue, Feb 16, 2021,8:00p,Portland Trail Blazers,L,104,115,11,16,L 1,HOME,null,OKC,202102160OKC,null
+Wed, Feb 17, 2021,9:00p,Memphis Grizzlies,L,113,122,11,17,L 2,AWAY,null,OKC,null,null
+Fri, Feb 19, 2021,8:00p,Milwaukee Bucks,L,85,98,11,18,L 3,AWAY,null,OKC,null,null
+Sun, Feb 21, 2021,7:00p,Cleveland Cavaliers,W,117,101,12,18,W 1,AWAY,null,OKC,null,null
+Mon, Feb 22, 2021,9:00p,Miami Heat,L,94,108,12,19,L 1,HOME,null,OKC,202102220OKC,null
+Wed, Feb 24, 2021,8:00p,San Antonio Spurs,W,102,99,13,19,W 1,HOME,null,OKC,202102240OKC,null
+Fri, Feb 26, 2021,8:00p,Atlanta Hawks,W,118,109,14,19,W 2,HOME,null,OKC,202102260OKC,null
+Sat, Feb 27, 2021,8:00p,Denver Nuggets,L,96,126,14,20,L 1,HOME,null,OKC,202102270OKC,null
+Wed, Mar 3, 2021,8:30p,Dallas Mavericks,null
+Thu, Mar 4, 2021,9:00p,San Antonio Spurs,null
+Thu, Mar 11, 2021,9:00p,Dallas Mavericks,null
+Sat, Mar 13, 2021,2:00p,New York Knicks,null
+Sun, Mar 14, 2021,2:00p,Memphis Grizzlies,null
+Tue, Mar 16, 2021,8:00p,Chicago Bulls,null
+Thu, Mar 18, 2021,7:30p,Atlanta Hawks,null
+Sun, Mar 21, 2021,2:00p,Houston Rockets,null
+Mon, Mar 22, 2021,8:00p,Minnesota Timberwolves,null
+Wed, Mar 24, 2021,8:00p,Memphis Grizzlies,null
+Sat, Mar 27, 2021,9:00p,Boston Celtics,null
+Mon, Mar 29, 2021,8:00p,Dallas Mavericks,null
+Wed, Mar 31, 2021,8:00p,Toronto Raptors,null
+Fri, Apr 2, 2021,10:00p,Phoenix Suns,null
+Sat, Apr 3, 2021,10:00p,Portland Trail Blazers,null
+Mon, Apr 5, 2021,7:00p,Detroit Pistons,null
+Wed, Apr 7, 2021,8:00p,Charlotte Hornets,null
+Thu, Apr 8, 2021,8:00p,Cleveland Cavaliers,null
+Sat, Apr 10, 2021,9:00p,Philadelphia 76ers,null
+Tue, Apr 13, 2021,9:00p,Utah Jazz,null
+Wed, Apr 14, 2021,9:00p,Golden State Warriors,null
+Fri, Apr 16, 2021,7:00p,Detroit Pistons,null
+Sun, Apr 18, 2021,7:00p,Toronto Raptors,null
+Mon, Apr 19, 2021,8:00p,Washington Wizards,null
+Wed, Apr 21, 2021,7:00p,Indiana Pacers,null
+Fri, Apr 23, 2021,8:00p,Washington Wizards,null
+Mon, Apr 26, 2021,7:00p,Philadelphia 76ers,null
+Tue, Apr 27, 2021,7:00p,Boston Celtics,null
+Thu, Apr 29, 2021,9:00p,New Orleans Pelicans,null
+Sat, May 1, 2021,8:00p,Indiana Pacers,null
+Sun, May 2, 2021,8:00p,Phoenix Suns,null
+Tue, May 4, 2021,8:00p,Sacramento Kings,null
+Thu, May 6, 2021,10:00p,Golden State Warriors,null
+Sat, May 8, 2021,10:00p,Golden State Warriors,null
+Sun, May 9, 2021,10:00p,Sacramento Kings,null
+Tue, May 11, 2021,10:00p,Sacramento Kings,null
+Fri, May 14, 2021,8:00p,Utah Jazz,null
+Sun, May 16, 2021,Los Angeles Clippers,null
+Wed, Dec 23, 2020,10:00p,Utah Jazz,L,100,120,0,1,L 1,AWAY,null,POR,null,null
+Sat, Dec 26, 2020,10:00p,Houston Rockets,W,128,126,1,1,W 1,HOME,OT,POR,202012260POR,null
+Mon, Dec 28, 2020,10:00p,Los Angeles Lakers,W,115,107,2,1,W 2,AWAY,null,POR,null,null
+Wed, Dec 30, 2020,10:00p,Los Angeles Clippers,L,105,128,2,2,L 1,AWAY,null,POR,null,null
+Fri, Jan 1, 2021,10:30p,Golden State Warriors,W,123,98,3,2,W 1,AWAY,null,POR,null,null
+Sun, Jan 3, 2021,8:30p,Golden State Warriors,L,122,137,3,3,L 1,AWAY,null,POR,null,null
+Tue, Jan 5, 2021,10:30p,Chicago Bulls,L,108,111,3,4,L 2,HOME,null,POR,202101050POR,null
+Thu, Jan 7, 2021,10:00p,Minnesota Timberwolves,W,135,117,4,4,W 1,HOME,null,POR,202101070POR,null
+Sat, Jan 9, 2021,10:00p,Sacramento Kings,W,125,99,5,4,W 2,AWAY,null,POR,null,null
+Mon, Jan 11, 2021,10:00p,Toronto Raptors,W,112,111,6,4,W 3,HOME,null,POR,202101110POR,null
+Wed, Jan 13, 2021,10:00p,Sacramento Kings,W,132,126,7,4,W 4,AWAY,null,POR,null,null
+Thu, Jan 14, 2021,10:00p,Indiana Pacers,L,87,111,7,5,L 1,HOME,null,POR,202101140POR,null
+Sat, Jan 16, 2021,10:00p,Atlanta Hawks,W,112,106,8,5,W 1,HOME,null,POR,202101160POR,null
+Mon, Jan 18, 2021,3:00p,San Antonio Spurs,L,104,125,8,6,L 1,HOME,null,POR,202101180POR,null
+Sun, Jan 24, 2021,10:00p,New York Knicks,W,116,113,9,6,W 1,HOME,null,POR,202101240POR,null
+Mon, Jan 25, 2021,10:00p,Oklahoma City Thunder,L,122,125,9,7,L 1,HOME,null,POR,202101250POR,null
+Thu, Jan 28, 2021,7:30p,Houston Rockets,L,101,104,9,8,L 2,AWAY,null,POR,null,null
+Sat, Jan 30, 2021,8:00p,Chicago Bulls,W,123,122,10,8,W 1,AWAY,null,POR,null,null
+Mon, Feb 1, 2021,8:00p,Milwaukee Bucks,L,106,134,10,9,L 1,AWAY,null,POR,null,null
+Tue, Feb 2, 2021,8:00p,Washington Wizards,W,132,121,11,9,W 1,AWAY,null,POR,null,null
+Thu, Feb 4, 2021,8:00p,Philadelphia 76ers,W,121,105,12,9,W 2,AWAY,null,POR,null,null
+Sat, Feb 6, 2021,1:00p,New York Knicks,L,99,110,12,10,L 1,AWAY,null,POR,null,null
+Tue, Feb 9, 2021,10:00p,Orlando Magic,W,106,97,13,10,W 1,HOME,null,POR,202102090POR,null
+Thu, Feb 11, 2021,10:00p,Philadelphia 76ers,W,118,114,14,10,W 2,HOME,null,POR,202102110POR,null
+Fri, Feb 12, 2021,10:00p,Cleveland Cavaliers,W,129,110,15,10,W 3,HOME,null,POR,202102120POR,null
+Sun, Feb 14, 2021,7:30p,Dallas Mavericks,W,121,118,16,10,W 4,AWAY,null,POR,null,null
+Tue, Feb 16, 2021,8:00p,Oklahoma City Thunder,W,115,104,17,10,W 5,AWAY,null,POR,null,null
+Wed, Feb 17, 2021,9:00p,New Orleans Pelicans,W,126,124,18,10,W 6,AWAY,null,POR,null,null
+Sat, Feb 20, 2021,10:00p,Washington Wizards,L,111,118,18,11,L 1,HOME,null,POR,202102200POR,null
+Mon, Feb 22, 2021,9:00p,Phoenix Suns,L,100,132,18,12,L 2,AWAY,null,POR,null,null
+Tue, Feb 23, 2021,10:00p,Denver Nuggets,L,106,111,18,13,L 3,AWAY,null,POR,null,null
+Fri, Feb 26, 2021,10:00p,Los Angeles Lakers,L,93,102,18,14,L 4,AWAY,null,POR,null,null
+Mon, Mar 1, 2021,10:30p,Charlotte Hornets,W,123,111,19,14,W 1,HOME,null,POR,202103010POR,null
+Wed, Mar 3, 2021,10:00p,Golden State Warriors,null
+Thu, Mar 4, 2021,10:00p,Sacramento Kings,null
+Thu, Mar 11, 2021,10:00p,Phoenix Suns,null
+Sat, Mar 13, 2021,8:00p,Minnesota Timberwolves,null
+Sun, Mar 14, 2021,8:00p,Minnesota Timberwolves,null
+Tue, Mar 16, 2021,10:00p,New Orleans Pelicans,null
+Thu, Mar 18, 2021,10:00p,New Orleans Pelicans,null
+Fri, Mar 19, 2021,10:00p,Dallas Mavericks,null
+Sun, Mar 21, 2021,10:00p,Dallas Mavericks,null
+Tue, Mar 23, 2021,10:00p,Brooklyn Nets,null
+Thu, Mar 25, 2021,7:30p,Miami Heat,null
+Fri, Mar 26, 2021,8:00p,Orlando Magic,null
+Sun, Mar 28, 2021,7:00p,Toronto Raptors,null
+Wed, Mar 31, 2021,7:00p,Detroit Pistons,null
+Fri, Apr 2, 2021,10:00p,Milwaukee Bucks,null
+Sat, Apr 3, 2021,10:00p,Oklahoma City Thunder,null
+Tue, Apr 6, 2021,10:00p,Los Angeles Clippers,null
+Thu, Apr 8, 2021,10:00p,Utah Jazz,null
+Sat, Apr 10, 2021,10:00p,Detroit Pistons,null
+Sun, Apr 11, 2021,10:00p,Miami Heat,null
+Tue, Apr 13, 2021,10:00p,Boston Celtics,null
+Fri, Apr 16, 2021,8:30p,San Antonio Spurs,null
+Sun, Apr 18, 2021,7:00p,Charlotte Hornets,null
+Tue, Apr 20, 2021,10:00p,Los Angeles Clippers,null
+Wed, Apr 21, 2021,10:00p,Denver Nuggets,null
+Fri, Apr 23, 2021,10:00p,Memphis Grizzlies,null
+Sun, Apr 25, 2021,4:00p,Memphis Grizzlies,null
+Tue, Apr 27, 2021,7:00p,Indiana Pacers,null
+Wed, Apr 28, 2021,9:00p,Memphis Grizzlies,null
+Fri, Apr 30, 2021,8:00p,Brooklyn Nets,null
+Sun, May 2, 2021,7:30p,Boston Celtics,null
+Mon, May 3, 2021,8:00p,Atlanta Hawks,null
+Wed, May 5, 2021,7:30p,Cleveland Cavaliers,null
+Fri, May 7, 2021,10:00p,Los Angeles Lakers,null
+Sat, May 8, 2021,10:00p,San Antonio Spurs,null
+Mon, May 10, 2021,10:00p,Houston Rockets,null
+Wed, May 12, 2021,9:00p,Utah Jazz,null
+Thu, May 13, 2021,10:00p,Phoenix Suns,null
+Sun, May 16, 2021,Denver Nuggets,null
+Wed, Dec 23, 2020,8:00p,Detroit Pistons,W,111,101,1,0,W 1,AWAY,null,MIN,null,null
+Sat, Dec 26, 2020,9:00p,Utah Jazz,W,116,111,2,0,W 2,AWAY,null,MIN,null,null
+Sun, Dec 27, 2020,10:00p,Los Angeles Lakers,L,91,127,2,1,L 1,AWAY,null,MIN,null,null
+Tue, Dec 29, 2020,10:00p,Los Angeles Clippers,L,101,124,2,2,L 2,AWAY,null,MIN,null,null
+Fri, Jan 1, 2021,8:00p,Washington Wizards,L,109,130,2,3,L 3,HOME,null,MIN,202101010MIN,null
+Sun, Jan 3, 2021,7:00p,Denver Nuggets,L,109,124,2,4,L 4,HOME,null,MIN,202101030MIN,null
+Tue, Jan 5, 2021,9:00p,Denver Nuggets,L,116,123,2,5,L 5,AWAY,null,MIN,null,null
+Thu, Jan 7, 2021,10:00p,Portland Trail Blazers,L,117,135,2,6,L 6,AWAY,null,MIN,null,null
+Sat, Jan 9, 2021,8:00p,San Antonio Spurs,L,122,125,2,7,L 7,HOME,OT,MIN,202101090MIN,null
+Sun, Jan 10, 2021,8:00p,San Antonio Spurs,W,96,88,3,7,W 1,HOME,null,MIN,202101100MIN,null
+Wed, Jan 13, 2021,8:00p,Memphis Grizzlies,L,107,118,3,8,L 1,HOME,null,MIN,202101130MIN,null
+Mon, Jan 18, 2021,2:30p,Atlanta Hawks,L,97,108,3,9,L 2,AWAY,null,MIN,null,null
+Wed, Jan 20, 2021,8:00p,Orlando Magic,L,96,97,3,10,L 3,HOME,null,MIN,202101200MIN,null
+Fri, Jan 22, 2021,8:00p,Atlanta Hawks,L,98,116,3,11,L 4,HOME,null,MIN,202101220MIN,null
+Sat, Jan 23, 2021,8:00p,New Orleans Pelicans,W,120,110,4,11,W 1,HOME,null,MIN,202101230MIN,null
+Mon, Jan 25, 2021,10:00p,Golden State Warriors,L,108,130,4,12,L 1,AWAY,null,MIN,null,null
+Wed, Jan 27, 2021,10:00p,Golden State Warriors,L,111,123,4,13,L 2,AWAY,null,MIN,null,null
+Fri, Jan 29, 2021,8:00p,Philadelphia 76ers,L,94,118,4,14,L 3,HOME,null,MIN,202101290MIN,null
+Sun, Jan 31, 2021,8:00p,Cleveland Cavaliers,W,109,104,5,14,W 1,HOME,null,MIN,202101310MIN,null
+Mon, Feb 1, 2021,8:00p,Cleveland Cavaliers,L,98,100,5,15,L 1,AWAY,null,MIN,null,null
+Wed, Feb 3, 2021,8:30p,San Antonio Spurs,L,108,111,5,16,L 2,AWAY,null,MIN,null,null
+Fri, Feb 5, 2021,8:00p,Oklahoma City Thunder,W,106,103,6,16,W 1,AWAY,null,MIN,null,null
+Sat, Feb 6, 2021,8:00p,Oklahoma City Thunder,L,118,120,6,17,L 1,AWAY,null,MIN,null,null
+Mon, Feb 8, 2021,8:30p,Dallas Mavericks,L,122,127,6,18,L 2,AWAY,null,MIN,null,null
+Wed, Feb 10, 2021,8:00p,Los Angeles Clippers,L,112,119,6,19,L 3,HOME,null,MIN,202102100MIN,null
+Fri, Feb 12, 2021,7:00p,Charlotte Hornets,L,114,120,6,20,L 4,AWAY,null,MIN,null,null
+Sun, Feb 14, 2021,7:00p,Toronto Raptors,W,116,112,7,20,W 1,AWAY,null,MIN,null,null
+Tue, Feb 16, 2021,8:00p,Los Angeles Lakers,L,104,112,7,21,L 1,HOME,null,MIN,202102160MIN,null
+Wed, Feb 17, 2021,8:00p,Indiana Pacers,L,128,134,7,22,L 2,HOME,OT,MIN,202102170MIN,null
+Fri, Feb 19, 2021,9:00p,Toronto Raptors,L,81,86,7,23,L 3,HOME,null,MIN,202102190MIN,null
+Sun, Feb 21, 2021,7:00p,New York Knicks,L,99,103,7,24,L 4,AWAY,null,MIN,null,null
+Tue, Feb 23, 2021,8:00p,Milwaukee Bucks,L,112,139,7,25,L 5,AWAY,null,MIN,null,null
+Wed, Feb 24, 2021,8:00p,Chicago Bulls,L,126,133,7,26,L 6,AWAY,OT,MIN,null,null
+Sat, Feb 27, 2021,7:00p,Washington Wizards,L,112,128,7,27,L 7,AWAY,null,MIN,null,null
+Sun, Feb 28, 2021,9:00p,Phoenix Suns,L,99,118,7,28,L 8,HOME,null,MIN,202102280MIN,null
+Wed, Mar 3, 2021,8:00p,Charlotte Hornets,null
+Thu, Mar 11, 2021,8:00p,New Orleans Pelicans,null
+Sat, Mar 13, 2021,8:00p,Portland Trail Blazers,null
+Sun, Mar 14, 2021,8:00p,Portland Trail Blazers,null
+Tue, Mar 16, 2021,10:30p,Los Angeles Lakers,null
+Thu, Mar 18, 2021,10:00p,Phoenix Suns,null
+Fri, Mar 19, 2021,10:00p,Phoenix Suns,null
+Mon, Mar 22, 2021,8:00p,Oklahoma City Thunder,null
+Wed, Mar 24, 2021,8:00p,Dallas Mavericks,null
+Fri, Mar 26, 2021,8:00p,Houston Rockets,null
+Sat, Mar 27, 2021,8:00p,Houston Rockets,null
+Mon, Mar 29, 2021,7:30p,Brooklyn Nets,null
+Wed, Mar 31, 2021,8:00p,New York Knicks,null
+Fri, Apr 2, 2021,8:00p,Memphis Grizzlies,null
+Sat, Apr 3, 2021,8:00p,Philadelphia 76ers,null
+Mon, Apr 5, 2021,7:00p,Sacramento Kings,null
+Wed, Apr 7, 2021,7:00p,Indiana Pacers,null
+Fri, Apr 9, 2021,7:30p,Boston Celtics,null
+Sun, Apr 11, 2021,8:00p,Chicago Bulls,null
+Mon, Apr 12, 2021,8:00p,Brooklyn Nets,null
+Wed, Apr 14, 2021,8:00p,Milwaukee Bucks,null
+Fri, Apr 16, 2021,8:00p,Miami Heat,null
+Sun, Apr 18, 2021,10:00p,Los Angeles Clippers,null
+Tue, Apr 20, 2021,10:00p,Sacramento Kings,null
+Wed, Apr 21, 2021,10:00p,Sacramento Kings,null
+Sat, Apr 24, 2021,9:00p,Utah Jazz,null
+Mon, Apr 26, 2021,8:00p,Utah Jazz,null
+Tue, Apr 27, 2021,8:00p,Houston Rockets,null
+Thu, Apr 29, 2021,8:00p,Golden State Warriors,null
+Sat, May 1, 2021,8:00p,New Orleans Pelicans,null
+Wed, May 5, 2021,8:00p,Memphis Grizzlies,null
+Fri, May 7, 2021,8:00p,Miami Heat,null
+Sun, May 9, 2021,7:00p,Orlando Magic,null
+Tue, May 11, 2021,7:00p,Detroit Pistons,null
+Thu, May 13, 2021,8:00p,Denver Nuggets,null
+Sat, May 15, 2021,Boston Celtics,null
+Sun, May 16, 2021,Dallas Mavericks,null
+Wed, Dec 23, 2020,7:30p,Boston Celtics,L,121,122,0,1,L 1,AWAY,null,MIL,null,null
+Fri, Dec 25, 2020,2:30p,Golden State Warriors,W,138,99,1,1,W 1,HOME,null,MIL,202012250MIL,null
+Sun, Dec 27, 2020,7:30p,New York Knicks,L,110,130,1,2,L 1,AWAY,null,MIL,null,null
+Tue, Dec 29, 2020,7:30p,Miami Heat,W,144,97,2,2,W 1,AWAY,null,MIL,null,null
+Wed, Dec 30, 2020,7:30p,Miami Heat,L,108,119,2,3,L 1,AWAY,null,MIL,null,null
+Fri, Jan 1, 2021,8:00p,Chicago Bulls,W,126,96,3,3,W 1,HOME,null,MIL,202101010MIL,null
+Mon, Jan 4, 2021,8:00p,Detroit Pistons,W,125,115,4,3,W 2,HOME,null,MIL,202101040MIL,null
+Wed, Jan 6, 2021,8:00p,Detroit Pistons,W,130,115,5,3,W 3,HOME,null,MIL,202101060MIL,null
+Fri, Jan 8, 2021,8:00p,Utah Jazz,L,118,131,5,4,L 1,HOME,null,MIL,202101080MIL,null
+Sat, Jan 9, 2021,8:00p,Cleveland Cavaliers,W,100,90,6,4,W 1,HOME,null,MIL,202101090MIL,null
+Mon, Jan 11, 2021,7:00p,Orlando Magic,W,121,99,7,4,W 2,AWAY,null,MIL,null,null
+Wed, Jan 13, 2021,7:00p,Detroit Pistons,W,110,101,8,4,W 3,AWAY,null,MIL,null,null
+Fri, Jan 15, 2021,7:30p,Dallas Mavericks,W,112,109,9,4,W 4,HOME,null,MIL,202101150MIL,null
+Mon, Jan 18, 2021,7:30p,Brooklyn Nets,L,123,125,9,5,L 1,AWAY,null,MIL,null,null
+Thu, Jan 21, 2021,7:30p,Los Angeles Lakers,L,106,113,9,6,L 2,HOME,null,MIL,202101210MIL,null
+Sun, Jan 24, 2021,8:00p,Atlanta Hawks,W,129,115,10,6,W 1,HOME,null,MIL,202101240MIL,null
+Wed, Jan 27, 2021,7:30p,Toronto Raptors,W,115,108,11,6,W 2,AWAY,null,MIL,null,null
+Fri, Jan 29, 2021,7:30p,New Orleans Pelicans,L,126,131,11,7,L 1,AWAY,null,MIL,null,null
+Sat, Jan 30, 2021,8:00p,Charlotte Hornets,L,114,126,11,8,L 2,AWAY,null,MIL,null,null
+Mon, Feb 1, 2021,8:00p,Portland Trail Blazers,W,134,106,12,8,W 1,HOME,null,MIL,202102010MIL,null
+Wed, Feb 3, 2021,7:00p,Indiana Pacers,W,130,110,13,8,W 2,HOME,null,MIL,202102030MIL,null
+Fri, Feb 5, 2021,7:30p,Cleveland Cavaliers,W,123,105,14,8,W 3,AWAY,null,MIL,null,null
+Sat, Feb 6, 2021,8:00p,Cleveland Cavaliers,W,124,99,15,8,W 4,AWAY,null,MIL,null,null
+Mon, Feb 8, 2021,9:30p,Denver Nuggets,W,125,112,16,8,W 5,AWAY,null,MIL,null,null
+Wed, Feb 10, 2021,10:00p,Phoenix Suns,L,124,125,16,9,L 1,AWAY,null,MIL,null,null
+Fri, Feb 12, 2021,9:00p,Utah Jazz,L,115,129,16,10,L 2,AWAY,null,MIL,null,null
+Sun, Feb 14, 2021,8:00p,Oklahoma City Thunder,L,109,114,16,11,L 3,AWAY,null,MIL,null,null
+Tue, Feb 16, 2021,8:00p,Toronto Raptors,L,113,124,16,12,L 4,HOME,null,MIL,202102160MIL,null
+Thu, Feb 18, 2021,7:30p,Toronto Raptors,L,96,110,16,13,L 5,HOME,null,MIL,202102180MIL,null
+Fri, Feb 19, 2021,8:00p,Oklahoma City Thunder,W,98,85,17,13,W 1,HOME,null,MIL,202102190MIL,null
+Sun, Feb 21, 2021,9:00p,Sacramento Kings,W,128,115,18,13,W 2,HOME,null,MIL,202102210MIL,null
+Tue, Feb 23, 2021,8:00p,Minnesota Timberwolves,W,139,112,19,13,W 3,HOME,null,MIL,202102230MIL,null
+Thu, Feb 25, 2021,9:30p,New Orleans Pelicans,W,129,125,20,13,W 4,HOME,null,MIL,202102250MIL,null
+Sun, Feb 28, 2021,3:30p,Los Angeles Clippers,W,105,100,21,13,W 5,HOME,null,MIL,202102280MIL,null
+Tue, Mar 2, 2021,9:00p,Denver Nuggets,L,97,128,21,14,L 1,HOME,null,MIL,202103020MIL,null
+Thu, Mar 4, 2021,8:00p,Memphis Grizzlies,null
+Thu, Mar 11, 2021,8:00p,New York Knicks,null
+Sat, Mar 13, 2021,7:00p,Washington Wizards,null
+Mon, Mar 15, 2021,7:00p,Washington Wizards,null
+Wed, Mar 17, 2021,7:00p,Philadelphia 76ers,null
+Sat, Mar 20, 2021,9:00p,San Antonio Spurs,null
+Mon, Mar 22, 2021,9:00p,Indiana Pacers,null
+Wed, Mar 24, 2021,7:30p,Boston Celtics,null
+Fri, Mar 26, 2021,7:30p,Boston Celtics,null
+Sat, Mar 27, 2021,8:00p,New York Knicks,null
+Mon, Mar 29, 2021,10:00p,Los Angeles Clippers,null
+Wed, Mar 31, 2021,10:00p,Los Angeles Lakers,null
+Fri, Apr 2, 2021,10:00p,Portland Trail Blazers,null
+Sat, Apr 3, 2021,10:00p,Sacramento Kings,null
+Tue, Apr 6, 2021,10:00p,Golden State Warriors,null
+Thu, Apr 8, 2021,9:00p,Dallas Mavericks,null
+Fri, Apr 9, 2021,9:00p,Charlotte Hornets,null
+Sun, Apr 11, 2021,7:00p,Orlando Magic,null
+Wed, Apr 14, 2021,8:00p,Minnesota Timberwolves,null
+Thu, Apr 15, 2021,7:30p,Atlanta Hawks,null
+Sat, Apr 17, 2021,9:00p,Memphis Grizzlies,null
+Mon, Apr 19, 2021,8:00p,Phoenix Suns,null
+Thu, Apr 22, 2021,7:00p,Philadelphia 76ers,null
+Sat, Apr 24, 2021,3:30p,Philadelphia 76ers,null
+Sun, Apr 25, 2021,7:30p,Atlanta Hawks,null
+Tue, Apr 27, 2021,7:00p,Charlotte Hornets,null
+Thu, Apr 29, 2021,8:00p,Houston Rockets,null
+Fri, Apr 30, 2021,9:00p,Chicago Bulls,null
+Sun, May 2, 2021,3:30p,Brooklyn Nets,null
+Tue, May 4, 2021,7:30p,Brooklyn Nets,null
+Wed, May 5, 2021,8:00p,Washington Wizards,null
+Fri, May 7, 2021,8:00p,Houston Rockets,null
+Mon, May 10, 2021,8:30p,San Antonio Spurs,null
+Tue, May 11, 2021,9:00p,Orlando Magic,null
+Thu, May 13, 2021,7:00p,Indiana Pacers,null
+Sat, May 15, 2021,Miami Heat,null
+Sun, May 16, 2021,Chicago Bulls,null
+Wed, Dec 23, 2020,7:00p,New York Knicks,W,121,107,1,0,W 1,AWAY,null,IND,null,null
+Sat, Dec 26, 2020,8:00p,Chicago Bulls,W,125,106,2,0,W 2,AWAY,null,IND,null,null
+Sun, Dec 27, 2020,8:00p,Boston Celtics,W,108,107,3,0,W 3,HOME,null,IND,202012270IND,null
+Tue, Dec 29, 2020,7:00p,Boston Celtics,L,111,116,3,1,L 1,HOME,null,IND,202012290IND,null
+Thu, Dec 31, 2020,3:00p,Cleveland Cavaliers,W,119,99,4,1,W 1,HOME,null,IND,202012310IND,null
+Sat, Jan 2, 2021,7:00p,New York Knicks,L,102,106,4,2,L 1,HOME,null,IND,202101020IND,null
+Mon, Jan 4, 2021,8:00p,New Orleans Pelicans,W,118,116,5,2,W 1,AWAY,OT,IND,null,null
+Wed, Jan 6, 2021,7:00p,Houston Rockets,W,114,107,6,2,W 2,HOME,null,IND,202101060IND,null
+Sat, Jan 9, 2021,7:00p,Phoenix Suns,L,117,125,6,3,L 1,HOME,null,IND,202101090IND,null
+Mon, Jan 11, 2021,10:00p,Sacramento Kings,L,122,127,6,4,L 2,AWAY,null,IND,null,null
+Tue, Jan 12, 2021,10:30p,Golden State Warriors,W,104,95,7,4,W 1,AWAY,null,IND,null,null
+Thu, Jan 14, 2021,10:00p,Portland Trail Blazers,W,111,87,8,4,W 2,AWAY,null,IND,null,null
+Sun, Jan 17, 2021,10:00p,Los Angeles Clippers,L,96,129,8,5,L 1,AWAY,null,IND,null,null
+Wed, Jan 20, 2021,7:00p,Dallas Mavericks,L,112,124,8,6,L 2,HOME,null,IND,202101200IND,null
+Fri, Jan 22, 2021,7:00p,Orlando Magic,W,120,118,9,6,W 1,HOME,OT,IND,202101220IND,null
+Sun, Jan 24, 2021,1:00p,Toronto Raptors,L,102,107,9,7,L 1,HOME,null,IND,202101240IND,null
+Mon, Jan 25, 2021,7:00p,Toronto Raptors,W,129,114,10,7,W 1,HOME,null,IND,202101250IND,null
+Wed, Jan 27, 2021,7:00p,Charlotte Hornets,W,116,106,11,7,W 2,AWAY,null,IND,null,null
+Fri, Jan 29, 2021,7:00p,Charlotte Hornets,L,105,108,11,8,L 1,AWAY,null,IND,null,null
+Sun, Jan 31, 2021,7:00p,Philadelphia 76ers,L,110,119,11,9,L 2,HOME,null,IND,202101310IND,null
+Tue, Feb 2, 2021,8:00p,Memphis Grizzlies,W,134,116,12,9,W 1,HOME,null,IND,202102020IND,null
+Wed, Feb 3, 2021,7:00p,Milwaukee Bucks,L,110,130,12,10,L 1,AWAY,null,IND,null,null
+Fri, Feb 5, 2021,7:00p,New Orleans Pelicans,L,113,114,12,11,L 2,HOME,null,IND,202102050IND,null
+Sun, Feb 7, 2021,1:00p,Utah Jazz,L,95,103,12,12,L 3,HOME,null,IND,202102070IND,null
+Wed, Feb 10, 2021,8:00p,Brooklyn Nets,L,94,104,12,13,L 4,AWAY,null,IND,null,null
+Thu, Feb 11, 2021,8:00p,Detroit Pistons,W,111,95,13,13,W 1,AWAY,null,IND,null,null
+Sat, Feb 13, 2021,7:30p,Atlanta Hawks,W,125,113,14,13,W 2,AWAY,null,IND,null,null
+Mon, Feb 15, 2021,7:00p,Chicago Bulls,L,112,120,14,14,L 1,HOME,OT,IND,202102150IND,null
+Wed, Feb 17, 2021,8:00p,Minnesota Timberwolves,W,134,128,15,14,W 1,AWAY,OT,IND,null,null
+Wed, Feb 24, 2021,7:30p,Golden State Warriors,L,107,111,15,15,L 1,HOME,null,IND,202102240IND,null
+Fri, Feb 26, 2021,7:30p,Boston Celtics,L,112,118,15,16,L 2,AWAY,null,IND,null,null
+Sat, Feb 27, 2021,8:00p,New York Knicks,L,107,110,15,17,L 3,AWAY,null,IND,null,null
+Mon, Mar 1, 2021,7:00p,Philadelphia 76ers,L,114,130,15,18,L 4,AWAY,null,IND,null,null
+Wed, Mar 3, 2021,7:00p,Cleveland Cavaliers,null
+Thu, Mar 4, 2021,8:00p,Denver Nuggets,null
+Fri, Mar 12, 2021,10:30p,Los Angeles Lakers,null
+Sat, Mar 13, 2021,10:00p,Phoenix Suns,null
+Mon, Mar 15, 2021,9:00p,Denver Nuggets,null
+Wed, Mar 17, 2021,7:00p,Brooklyn Nets,null
+Fri, Mar 19, 2021,8:00p,Miami Heat,null
+Sun, Mar 21, 2021,1:00p,Miami Heat,null
+Mon, Mar 22, 2021,9:00p,Milwaukee Bucks,null
+Wed, Mar 24, 2021,7:00p,Detroit Pistons,null
+Fri, Mar 26, 2021,8:30p,Dallas Mavericks,null
+Mon, Mar 29, 2021,7:00p,Washington Wizards,null
+Wed, Mar 31, 2021,7:00p,Miami Heat,null
+Fri, Apr 2, 2021,8:00p,Charlotte Hornets,null
+Sat, Apr 3, 2021,9:00p,San Antonio Spurs,null
+Tue, Apr 6, 2021,7:00p,Chicago Bulls,null
+Wed, Apr 7, 2021,7:00p,Minnesota Timberwolves,null
+Fri, Apr 9, 2021,7:00p,Orlando Magic,null
+Sun, Apr 11, 2021,8:00p,Memphis Grizzlies,null
+Tue, Apr 13, 2021,7:30p,Los Angeles Clippers,null
+Wed, Apr 14, 2021,9:00p,Houston Rockets,null
+Fri, Apr 16, 2021,3:00p,Utah Jazz,null
+Sun, Apr 18, 2021,1:00p,Atlanta Hawks,null
+Mon, Apr 19, 2021,8:00p,San Antonio Spurs,null
+Wed, Apr 21, 2021,7:00p,Oklahoma City Thunder,null
+Sat, Apr 24, 2021,7:00p,Detroit Pistons,null
+Sun, Apr 25, 2021,8:00p,Orlando Magic,null
+Tue, Apr 27, 2021,7:00p,Portland Trail Blazers,null
+Thu, Apr 29, 2021,7:00p,Brooklyn Nets,null
+Sat, May 1, 2021,8:00p,Oklahoma City Thunder,null
+Mon, May 3, 2021,7:00p,Washington Wizards,null
+Wed, May 5, 2021,8:00p,Sacramento Kings,null
+Thu, May 6, 2021,8:00p,Atlanta Hawks,null
+Sat, May 8, 2021,7:00p,Washington Wizards,null
+Mon, May 10, 2021,7:30p,Cleveland Cavaliers,null
+Tue, May 11, 2021,8:00p,Philadelphia 76ers,null
+Thu, May 13, 2021,7:00p,Milwaukee Bucks,null
+Sat, May 15, 2021,Los Angeles Lakers,null
+Sun, May 16, 2021,Toronto Raptors,null
+Wed, Dec 23, 2020,8:00p,Atlanta Hawks,L,104,124,0,1,L 1,AWAY,null,CHI,null,null
+Sat, Dec 26, 2020,8:00p,Indiana Pacers,L,106,125,0,2,L 2,HOME,null,CHI,202012260CHI,null
+Sun, Dec 27, 2020,8:00p,Golden State Warriors,L,128,129,0,3,L 3,HOME,null,CHI,202012270CHI,null
+Tue, Dec 29, 2020,7:00p,Washington Wizards,W,115,107,1,3,W 1,AWAY,null,CHI,null,null
+Thu, Dec 31, 2020,5:00p,Washington Wizards,W,133,130,2,3,W 2,AWAY,null,CHI,null,null
+Fri, Jan 1, 2021,8:00p,Milwaukee Bucks,L,96,126,2,4,L 1,AWAY,null,CHI,null,null
+Sun, Jan 3, 2021,8:00p,Dallas Mavericks,W,118,108,3,4,W 1,HOME,null,CHI,202101030CHI,null
+Tue, Jan 5, 2021,10:30p,Portland Trail Blazers,W,111,108,4,4,W 2,AWAY,null,CHI,null,null
+Wed, Jan 6, 2021,10:00p,Sacramento Kings,L,124,128,4,5,L 1,AWAY,null,CHI,null,null
+Fri, Jan 8, 2021,10:00p,Los Angeles Lakers,L,115,117,4,6,L 2,AWAY,null,CHI,null,null
+Sun, Jan 10, 2021,4:00p,Los Angeles Clippers,L,127,130,4,7,L 3,AWAY,null,CHI,null,null
+Fri, Jan 15, 2021,8:00p,Oklahoma City Thunder,L,125,127,4,8,L 4,AWAY,OT,CHI,null,null
+Sun, Jan 17, 2021,3:00p,Dallas Mavericks,W,117,101,5,8,W 1,AWAY,null,CHI,null,null
+Mon, Jan 18, 2021,8:00p,Houston Rockets,W,125,120,6,8,W 2,HOME,null,CHI,202101180CHI,null
+Fri, Jan 22, 2021,7:00p,Charlotte Hornets,W,123,110,7,8,W 3,AWAY,null,CHI,null,null
+Sat, Jan 23, 2021,9:00p,Los Angeles Lakers,L,90,101,7,9,L 1,HOME,null,CHI,202101230CHI,null
+Mon, Jan 25, 2021,9:00p,Boston Celtics,L,103,119,7,10,L 2,HOME,null,CHI,202101250CHI,null
+Sat, Jan 30, 2021,8:00p,Portland Trail Blazers,L,122,123,7,11,L 3,HOME,null,CHI,202101300CHI,null
+Mon, Feb 1, 2021,8:00p,New York Knicks,W,110,102,8,11,W 1,HOME,null,CHI,202102010CHI,null
+Wed, Feb 3, 2021,8:00p,New York Knicks,L,103,107,8,12,L 1,HOME,null,CHI,202102030CHI,null
+Fri, Feb 5, 2021,7:00p,Orlando Magic,L,119,123,8,13,L 2,AWAY,null,CHI,null,null
+Sat, Feb 6, 2021,7:00p,Orlando Magic,W,118,92,9,13,W 1,AWAY,null,CHI,null,null
+Mon, Feb 8, 2021,8:00p,Washington Wizards,L,101,105,9,14,L 1,HOME,null,CHI,202102080CHI,null
+Wed, Feb 10, 2021,9:00p,New Orleans Pelicans,W,129,116,10,14,W 1,HOME,null,CHI,202102100CHI,null
+Fri, Feb 12, 2021,8:00p,Los Angeles Clippers,L,106,125,10,15,L 1,HOME,null,CHI,202102120CHI,null
+Mon, Feb 15, 2021,7:00p,Indiana Pacers,W,120,112,11,15,W 1,AWAY,OT,CHI,null,null
+Wed, Feb 17, 2021,8:00p,Detroit Pistons,W,105,102,12,15,W 2,HOME,null,CHI,202102170CHI,null
+Fri, Feb 19, 2021,7:30p,Philadelphia 76ers,L,105,112,12,16,L 1,AWAY,null,CHI,null,null
+Sat, Feb 20, 2021,9:00p,Sacramento Kings,W,122,114,13,16,W 1,HOME,null,CHI,202102200CHI,null
+Mon, Feb 22, 2021,8:00p,Houston Rockets,W,120,100,14,16,W 2,AWAY,null,CHI,null,null
+Wed, Feb 24, 2021,8:00p,Minnesota Timberwolves,W,133,126,15,16,W 3,HOME,OT,CHI,202102240CHI,null
+Fri, Feb 26, 2021,8:00p,Phoenix Suns,L,97,106,15,17,L 1,HOME,null,CHI,202102260CHI,null
+Mon, Mar 1, 2021,8:00p,Denver Nuggets,L,112,118,15,18,L 2,HOME,null,CHI,202103010CHI,null
+Wed, Mar 3, 2021,8:00p,New Orleans Pelicans,null
+Thu, Mar 11, 2021,8:00p,Philadelphia 76ers,null
+Fri, Mar 12, 2021,9:00p,Miami Heat,null
+Sun, Mar 14, 2021,9:00p,Toronto Raptors,null
+Tue, Mar 16, 2021,8:00p,Oklahoma City Thunder,null
+Wed, Mar 17, 2021,8:00p,San Antonio Spurs,null
+Fri, Mar 19, 2021,9:00p,Denver Nuggets,null
+Sun, Mar 21, 2021,7:00p,Detroit Pistons,null
+Mon, Mar 22, 2021,9:00p,Utah Jazz,null
+Wed, Mar 24, 2021,8:00p,Cleveland Cavaliers,null
+Sat, Mar 27, 2021,8:30p,San Antonio Spurs,null
+Mon, Mar 29, 2021,10:00p,Golden State Warriors,null
+Wed, Mar 31, 2021,10:00p,Phoenix Suns,null
+Fri, Apr 2, 2021,9:00p,Utah Jazz,null
+Sun, Apr 4, 2021,2:00p,Brooklyn Nets,null
+Tue, Apr 6, 2021,7:00p,Indiana Pacers,null
+Fri, Apr 9, 2021,7:30p,Atlanta Hawks,null
+Sun, Apr 11, 2021,8:00p,Minnesota Timberwolves,null
+Mon, Apr 12, 2021,9:00p,Memphis Grizzlies,null
+Wed, Apr 14, 2021,8:00p,Orlando Magic,null
+Fri, Apr 16, 2021,8:00p,Memphis Grizzlies,null
+Sat, Apr 17, 2021,8:00p,Cleveland Cavaliers,null
+Mon, Apr 19, 2021,7:30p,Boston Celtics,null
+Wed, Apr 21, 2021,7:00p,Cleveland Cavaliers,null
+Thu, Apr 22, 2021,9:00p,Charlotte Hornets,null
+Sat, Apr 24, 2021,8:00p,Miami Heat,null
+Mon, Apr 26, 2021,8:00p,Miami Heat,null
+Wed, Apr 28, 2021,7:30p,New York Knicks,null
+Fri, Apr 30, 2021,9:00p,Milwaukee Bucks,null
+Sat, May 1, 2021,8:00p,Atlanta Hawks,null
+Mon, May 3, 2021,9:00p,Philadelphia 76ers,null
+Thu, May 6, 2021,7:00p,Charlotte Hornets,null
+Fri, May 7, 2021,7:30p,Boston Celtics,null
+Sun, May 9, 2021,8:00p,Detroit Pistons,null
+Tue, May 11, 2021,8:00p,Brooklyn Nets,null
+Thu, May 13, 2021,8:00p,Toronto Raptors,null
+Sat, May 15, 2021,Brooklyn Nets,null
+Sun, May 16, 2021,Milwaukee Bucks,null
+Wed, Dec 23, 2020,8:00p,Minnesota Timberwolves,L,101,111,0,1,L 1,AWAY,null,DET,null,null
+Sat, Dec 26, 2020,7:00p,Cleveland Cavaliers,L,119,128,0,2,L 2,HOME,2OT,DET,202012260DET,null
+Mon, Dec 28, 2020,7:30p,Atlanta Hawks,L,120,128,0,3,L 3,AWAY,null,DET,null,null
+Tue, Dec 29, 2020,7:00p,Golden State Warriors,L,106,116,0,4,L 4,HOME,null,DET,202012290DET,null
+Fri, Jan 1, 2021,7:00p,Boston Celtics,W,96,93,1,4,W 1,HOME,null,DET,202101010DET,null
+Sun, Jan 3, 2021,3:00p,Boston Celtics,L,120,122,1,5,L 1,HOME,null,DET,202101030DET,null
+Mon, Jan 4, 2021,8:00p,Milwaukee Bucks,L,115,125,1,6,L 2,AWAY,null,DET,null,null
+Wed, Jan 6, 2021,8:00p,Milwaukee Bucks,L,115,130,1,7,L 3,AWAY,null,DET,null,null
+Fri, Jan 8, 2021,7:00p,Phoenix Suns,W,110,105,2,7,W 1,HOME,OT,DET,202101080DET,null
+Sun, Jan 10, 2021,3:00p,Utah Jazz,L,86,96,2,8,L 1,HOME,null,DET,202101100DET,null
+Wed, Jan 13, 2021,7:00p,Milwaukee Bucks,L,101,110,2,9,L 2,HOME,null,DET,202101130DET,null
+Sat, Jan 16, 2021,8:00p,Miami Heat,W,120,100,3,9,W 1,AWAY,null,DET,null,null
+Mon, Jan 18, 2021,8:00p,Miami Heat,L,107,113,3,10,L 1,AWAY,null,DET,null,null
+Wed, Jan 20, 2021,7:30p,Atlanta Hawks,L,115,123,3,11,L 2,AWAY,OT,DET,null,null
+Fri, Jan 22, 2021,7:00p,Houston Rockets,L,102,103,3,12,L 3,HOME,null,DET,202101220DET,null
+Sat, Jan 23, 2021,8:00p,Philadelphia 76ers,L,110,114,3,13,L 4,HOME,null,DET,202101230DET,null
+Mon, Jan 25, 2021,7:00p,Philadelphia 76ers,W,119,104,4,13,W 1,HOME,null,DET,202101250DET,null
+Wed, Jan 27, 2021,7:00p,Cleveland Cavaliers,L,107,122,4,14,L 1,AWAY,null,DET,null,null
+Thu, Jan 28, 2021,8:00p,Los Angeles Lakers,W,107,92,5,14,W 1,HOME,null,DET,202101280DET,null
+Sat, Jan 30, 2021,10:00p,Golden State Warriors,L,91,118,5,15,L 1,AWAY,null,DET,null,null
+Tue, Feb 2, 2021,10:00p,Utah Jazz,L,105,117,5,16,L 2,AWAY,null,DET,null,null
+Fri, Feb 5, 2021,9:00p,Phoenix Suns,L,92,109,5,17,L 3,AWAY,null,DET,null,null
+Sat, Feb 6, 2021,10:00p,Los Angeles Lakers,L,129,135,5,18,L 4,AWAY,2OT,DET,null,null
+Tue, Feb 9, 2021,7:00p,Brooklyn Nets,W,122,111,6,18,W 1,HOME,null,DET,202102090DET,null
+Thu, Feb 11, 2021,8:00p,Indiana Pacers,L,95,111,6,19,L 1,HOME,null,DET,202102110DET,null
+Fri, Feb 12, 2021,8:00p,Boston Celtics,W,108,102,7,19,W 1,AWAY,null,DET,null,null
+Sun, Feb 14, 2021,7:00p,New Orleans Pelicans,W,123,112,8,19,W 2,HOME,null,DET,202102140DET,null
+Wed, Feb 17, 2021,8:00p,Chicago Bulls,L,102,105,8,20,L 1,AWAY,null,DET,null,null
+Fri, Feb 19, 2021,8:00p,Memphis Grizzlies,L,95,109,8,21,L 2,AWAY,null,DET,null,null
+Sun, Feb 21, 2021,7:00p,Orlando Magic,L,96,105,8,22,L 3,AWAY,null,DET,null,null
+Tue, Feb 23, 2021,7:00p,Orlando Magic,W,105,93,9,22,W 1,AWAY,null,DET,null,null
+Wed, Feb 24, 2021,8:00p,New Orleans Pelicans,L,118,128,9,23,L 1,AWAY,null,DET,null,null
+Fri, Feb 26, 2021,8:00p,Sacramento Kings,L,107,110,9,24,L 2,HOME,null,DET,202102260DET,null
+Sun, Feb 28, 2021,8:00p,New York Knicks,L,90,109,9,25,L 3,HOME,null,DET,202102280DET,null
+Wed, Mar 3, 2021,7:00p,Toronto Raptors,null
+Thu, Mar 4, 2021,7:30p,New York Knicks,null
+Thu, Mar 11, 2021,7:00p,Charlotte Hornets,null
+Sat, Mar 13, 2021,7:00p,Brooklyn Nets,null
+Mon, Mar 15, 2021,8:00p,San Antonio Spurs,null
+Wed, Mar 17, 2021,7:00p,Toronto Raptors,null
+Fri, Mar 19, 2021,8:00p,Houston Rockets,null
+Sun, Mar 21, 2021,7:00p,Chicago Bulls,null
+Wed, Mar 24, 2021,7:00p,Indiana Pacers,null
+Fri, Mar 26, 2021,7:00p,Brooklyn Nets,null
+Sat, Mar 27, 2021,8:00p,Washington Wizards,null
+Mon, Mar 29, 2021,8:00p,Toronto Raptors,null
+Wed, Mar 31, 2021,7:00p,Portland Trail Blazers,null
+Thu, Apr 1, 2021,7:00p,Washington Wizards,null
+Sat, Apr 3, 2021,8:00p,New York Knicks,null
+Mon, Apr 5, 2021,7:00p,Oklahoma City Thunder,null
+Tue, Apr 6, 2021,9:00p,Denver Nuggets,null
+Thu, Apr 8, 2021,10:00p,Sacramento Kings,null
+Sat, Apr 10, 2021,10:00p,Portland Trail Blazers,null
+Sun, Apr 11, 2021,10:00p,Los Angeles Clippers,null
+Wed, Apr 14, 2021,8:00p,Los Angeles Clippers,null
+Fri, Apr 16, 2021,7:00p,Oklahoma City Thunder,null
+Sat, Apr 17, 2021,8:00p,Washington Wizards,null
+Mon, Apr 19, 2021,7:00p,Cleveland Cavaliers,null
+Wed, Apr 21, 2021,8:30p,Dallas Mavericks,null
+Thu, Apr 22, 2021,8:30p,San Antonio Spurs,null
+Sat, Apr 24, 2021,7:00p,Indiana Pacers,null
+Mon, Apr 26, 2021,7:00p,Atlanta Hawks,null
+Thu, Apr 29, 2021,7:00p,Dallas Mavericks,null
+Sat, May 1, 2021,7:00p,Charlotte Hornets,null
+Mon, May 3, 2021,7:00p,Orlando Magic,null
+Tue, May 4, 2021,7:00p,Charlotte Hornets,null
+Thu, May 6, 2021,8:00p,Memphis Grizzlies,null
+Sat, May 8, 2021,7:00p,Philadelphia 76ers,null
+Sun, May 9, 2021,8:00p,Chicago Bulls,null
+Tue, May 11, 2021,7:00p,Minnesota Timberwolves,null
+Fri, May 14, 2021,8:00p,Denver Nuggets,null
+Sun, May 16, 2021,Miami Heat,null
+Wed, Dec 23, 2020,7:00p,Charlotte Hornets,W,121,114,1,0,W 1,AWAY,null,CLE,null,null
+Sat, Dec 26, 2020,7:00p,Detroit Pistons,W,128,119,2,0,W 2,AWAY,2OT,CLE,null,null
+Sun, Dec 27, 2020,7:30p,Philadelphia 76ers,W,118,94,3,0,W 3,HOME,null,CLE,202012270CLE,null
+Tue, Dec 29, 2020,7:00p,New York Knicks,L,86,95,3,1,L 1,HOME,null,CLE,202012290CLE,null
+Thu, Dec 31, 2020,3:00p,Indiana Pacers,L,99,119,3,2,L 2,AWAY,null,CLE,null,null
+Sat, Jan 2, 2021,7:30p,Atlanta Hawks,W,96,91,4,2,W 1,AWAY,null,CLE,null,null
+Mon, Jan 4, 2021,7:00p,Orlando Magic,L,83,103,4,3,L 1,AWAY,null,CLE,null,null
+Wed, Jan 6, 2021,7:00p,Orlando Magic,L,94,105,4,4,L 2,AWAY,null,CLE,null,null
+Thu, Jan 7, 2021,8:00p,Memphis Grizzlies,W,94,90,5,4,W 1,AWAY,null,CLE,null,null
+Sat, Jan 9, 2021,8:00p,Milwaukee Bucks,L,90,100,5,5,L 1,AWAY,null,CLE,null,null
+Mon, Jan 11, 2021,7:00p,Memphis Grizzlies,L,91,101,5,6,L 2,HOME,null,CLE,202101110CLE,null
+Tue, Jan 12, 2021,7:30p,Utah Jazz,L,87,117,5,7,L 3,HOME,null,CLE,202101120CLE,null
+Fri, Jan 15, 2021,7:30p,New York Knicks,W,106,103,6,7,W 1,HOME,null,CLE,202101150CLE,null
+Wed, Jan 20, 2021,7:00p,Brooklyn Nets,W,147,135,7,7,W 2,HOME,2OT,CLE,202101200CLE,null
+Fri, Jan 22, 2021,7:30p,Brooklyn Nets,W,125,113,8,7,W 3,HOME,null,CLE,202101220CLE,null
+Sun, Jan 24, 2021,7:00p,Boston Celtics,L,103,141,8,8,L 1,AWAY,null,CLE,null,null
+Mon, Jan 25, 2021,8:00p,Los Angeles Lakers,L,108,115,8,9,L 2,HOME,null,CLE,202101250CLE,null
+Wed, Jan 27, 2021,7:00p,Detroit Pistons,W,122,107,9,9,W 1,HOME,null,CLE,202101270CLE,null
+Fri, Jan 29, 2021,7:30p,New York Knicks,L,81,102,9,10,L 1,AWAY,null,CLE,null,null
+Sun, Jan 31, 2021,8:00p,Minnesota Timberwolves,L,104,109,9,11,L 2,AWAY,null,CLE,null,null
+Mon, Feb 1, 2021,8:00p,Minnesota Timberwolves,W,100,98,10,11,W 1,HOME,null,CLE,202102010CLE,null
+Wed, Feb 3, 2021,8:00p,Los Angeles Clippers,L,99,121,10,12,L 1,HOME,null,CLE,202102030CLE,null
+Fri, Feb 5, 2021,7:30p,Milwaukee Bucks,L,105,123,10,13,L 2,HOME,null,CLE,202102050CLE,null
+Sat, Feb 6, 2021,8:00p,Milwaukee Bucks,L,99,124,10,14,L 3,HOME,null,CLE,202102060CLE,null
+Mon, Feb 8, 2021,9:00p,Phoenix Suns,L,113,119,10,15,L 4,AWAY,null,CLE,null,null
+Wed, Feb 10, 2021,9:00p,Denver Nuggets,L,95,133,10,16,L 5,AWAY,null,CLE,null,null
+Fri, Feb 12, 2021,10:00p,Portland Trail Blazers,L,110,129,10,17,L 6,AWAY,null,CLE,null,null
+Sun, Feb 14, 2021,10:00p,Los Angeles Clippers,L,111,128,10,18,L 7,AWAY,null,CLE,null,null
+Mon, Feb 15, 2021,10:00p,Golden State Warriors,L,98,129,10,19,L 8,AWAY,null,CLE,null,null
+Fri, Feb 19, 2021,7:00p,Denver Nuggets,L,103,120,10,20,L 9,HOME,null,CLE,202102190CLE,null
+Sun, Feb 21, 2021,7:00p,Oklahoma City Thunder,L,101,117,10,21,L 10,HOME,null,CLE,202102210CLE,null
+Tue, Feb 23, 2021,7:00p,Atlanta Hawks,W,112,111,11,21,W 1,HOME,null,CLE,202102230CLE,null
+Wed, Feb 24, 2021,7:30p,Houston Rockets,W,112,96,12,21,W 2,HOME,null,CLE,202102240CLE,null
+Sat, Feb 27, 2021,7:00p,Philadelphia 76ers,W,112,109,13,21,W 3,AWAY,OT,CLE,null,null
+Mon, Mar 1, 2021,9:00p,Houston Rockets,W,101,90,14,21,W 4,AWAY,null,CLE,null,null
+Wed, Mar 3, 2021,7:00p,Indiana Pacers,null
+Fri, Mar 12, 2021,8:00p,New Orleans Pelicans,null
+Sun, Mar 14, 2021,7:30p,Atlanta Hawks,null
+Tue, Mar 16, 2021,8:00p,Miami Heat,null
+Wed, Mar 17, 2021,8:00p,Boston Celtics,null
+Fri, Mar 19, 2021,7:30p,San Antonio Spurs,null
+Sun, Mar 21, 2021,7:00p,Toronto Raptors,null
+Mon, Mar 22, 2021,7:30p,Sacramento Kings,null
+Wed, Mar 24, 2021,8:00p,Chicago Bulls,null
+Fri, Mar 26, 2021,10:30p,Los Angeles Lakers,null
+Sat, Mar 27, 2021,10:00p,Sacramento Kings,null
+Mon, Mar 29, 2021,9:00p,Utah Jazz,null
+Thu, Apr 1, 2021,7:00p,Philadelphia 76ers,null
+Sat, Apr 3, 2021,8:00p,Miami Heat,null
+Mon, Apr 5, 2021,7:00p,San Antonio Spurs,null
+Thu, Apr 8, 2021,8:00p,Oklahoma City Thunder,null
+Fri, Apr 9, 2021,8:00p,Toronto Raptors,null
+Sun, Apr 11, 2021,7:00p,New Orleans Pelicans,null
+Wed, Apr 14, 2021,7:00p,Charlotte Hornets,null
+Thu, Apr 15, 2021,8:00p,Golden State Warriors,null
+Sat, Apr 17, 2021,8:00p,Chicago Bulls,null
+Mon, Apr 19, 2021,7:00p,Detroit Pistons,null
+Wed, Apr 21, 2021,7:00p,Chicago Bulls,null
+Fri, Apr 23, 2021,8:00p,Charlotte Hornets,null
+Sun, Apr 25, 2021,7:00p,Washington Wizards,null
+Mon, Apr 26, 2021,7:30p,Toronto Raptors,null
+Wed, Apr 28, 2021,7:00p,Orlando Magic,null
+Fri, Apr 30, 2021,7:30p,Washington Wizards,null
+Sat, May 1, 2021,8:00p,Miami Heat,null
+Tue, May 4, 2021,7:00p,Phoenix Suns,null
+Wed, May 5, 2021,7:30p,Portland Trail Blazers,null
+Fri, May 7, 2021,8:30p,Dallas Mavericks,null
+Sun, May 9, 2021,7:00p,Dallas Mavericks,null
+Mon, May 10, 2021,7:30p,Indiana Pacers,null
+Wed, May 12, 2021,8:00p,Boston Celtics,null
+Fri, May 14, 2021,7:00p,Washington Wizards,null
+Sun, May 16, 2021,Brooklyn Nets,null
+Wed, Dec 23, 2020,7:00p,Orlando Magic,L,107,113,0,1,L 1,AWAY,null,MIA,null,null
+Fri, Dec 25, 2020,12:00p,New Orleans Pelicans,W,111,98,1,1,W 1,HOME,null,MIA,202012250MIA,null
+Tue, Dec 29, 2020,7:30p,Milwaukee Bucks,L,97,144,1,2,L 1,HOME,null,MIA,202012290MIA,null
+Wed, Dec 30, 2020,7:30p,Milwaukee Bucks,W,119,108,2,2,W 1,HOME,null,MIA,202012300MIA,null
+Fri, Jan 1, 2021,7:00p,Dallas Mavericks,L,83,93,2,3,L 1,AWAY,null,MIA,null,null
+Mon, Jan 4, 2021,7:30p,Oklahoma City Thunder,W,118,90,3,3,W 1,HOME,null,MIA,202101040MIA,null
+Wed, Jan 6, 2021,7:30p,Boston Celtics,L,105,107,3,4,L 1,HOME,null,MIA,202101060MIA,null
+Sat, Jan 9, 2021,7:00p,Washington Wizards,W,128,124,4,4,W 1,AWAY,null,MIA,null,null
+Tue, Jan 12, 2021,7:00p,Philadelphia 76ers,L,134,137,4,5,L 1,AWAY,OT,MIA,null,null
+Thu, Jan 14, 2021,7:00p,Philadelphia 76ers,L,108,125,4,6,L 2,AWAY,null,MIA,null,null
+Sat, Jan 16, 2021,8:00p,Detroit Pistons,L,100,120,4,7,L 3,HOME,null,MIA,202101160MIA,null
+Mon, Jan 18, 2021,8:00p,Detroit Pistons,W,113,107,5,7,W 1,HOME,null,MIA,202101180MIA,null
+Wed, Jan 20, 2021,7:30p,Toronto Raptors,W,111,102,6,7,W 2,AWAY,null,MIA,null,null
+Fri, Jan 22, 2021,7:30p,Toronto Raptors,L,81,101,6,8,L 1,AWAY,null,MIA,null,null
+Sat, Jan 23, 2021,8:00p,Brooklyn Nets,L,124,128,6,9,L 2,AWAY,null,MIA,null,null
+Mon, Jan 25, 2021,7:30p,Brooklyn Nets,L,85,98,6,10,L 3,AWAY,null,MIA,null,null
+Wed, Jan 27, 2021,7:30p,Denver Nuggets,L,82,109,6,11,L 4,HOME,null,MIA,202101270MIA,null
+Thu, Jan 28, 2021,8:00p,Los Angeles Clippers,L,105,109,6,12,L 5,HOME,null,MIA,202101280MIA,null
+Sat, Jan 30, 2021,8:00p,Sacramento Kings,W,105,104,7,12,W 1,HOME,null,MIA,202101300MIA,null
+Mon, Feb 1, 2021,7:30p,Charlotte Hornets,L,121,129,7,13,L 1,HOME,OT,MIA,202102010MIA,null
+Wed, Feb 3, 2021,8:00p,Washington Wizards,L,100,103,7,14,L 2,HOME,null,MIA,202102030MIA,null
+Fri, Feb 5, 2021,8:00p,Washington Wizards,W,122,95,8,14,W 1,HOME,null,MIA,202102050MIA,null
+Sun, Feb 7, 2021,1:00p,New York Knicks,W,109,103,9,14,W 2,AWAY,null,MIA,null,null
+Tue, Feb 9, 2021,7:30p,New York Knicks,W,98,96,10,14,W 3,HOME,null,MIA,202102090MIA,null
+Thu, Feb 11, 2021,7:30p,Houston Rockets,W,101,94,11,14,W 4,AWAY,null,MIA,null,null
+Sat, Feb 13, 2021,9:00p,Utah Jazz,L,94,112,11,15,L 1,AWAY,null,MIA,null,null
+Mon, Feb 15, 2021,10:00p,Los Angeles Clippers,L,118,125,11,16,L 2,AWAY,null,MIA,null,null
+Wed, Feb 17, 2021,10:00p,Golden State Warriors,L,112,120,11,17,L 3,AWAY,OT,MIA,null,null
+Thu, Feb 18, 2021,10:00p,Sacramento Kings,W,118,110,12,17,W 1,AWAY,null,MIA,null,null
+Sat, Feb 20, 2021,8:30p,Los Angeles Lakers,W,96,94,13,17,W 2,AWAY,null,MIA,null,null
+Mon, Feb 22, 2021,9:00p,Oklahoma City Thunder,W,108,94,14,17,W 3,AWAY,null,MIA,null,null
+Wed, Feb 24, 2021,8:00p,Toronto Raptors,W,116,108,15,17,W 4,HOME,null,MIA,202102240MIA,null
+Fri, Feb 26, 2021,8:00p,Utah Jazz,W,124,116,16,17,W 5,HOME,null,MIA,202102260MIA,null
+Sun, Feb 28, 2021,8:00p,Atlanta Hawks,W,109,99,17,17,W 6,HOME,null,MIA,202102280MIA,null
+Tue, Mar 2, 2021,7:30p,Atlanta Hawks,L,80,94,17,18,L 1,HOME,null,MIA,202103020MIA,null
+Thu, Mar 4, 2021,8:30p,New Orleans Pelicans,null
+Thu, Mar 11, 2021,8:00p,Orlando Magic,null
+Fri, Mar 12, 2021,9:00p,Chicago Bulls,null
+Sun, Mar 14, 2021,7:00p,Orlando Magic,null
+Tue, Mar 16, 2021,8:00p,Cleveland Cavaliers,null
+Wed, Mar 17, 2021,9:00p,Memphis Grizzlies,null
+Fri, Mar 19, 2021,8:00p,Indiana Pacers,null
+Sun, Mar 21, 2021,1:00p,Indiana Pacers,null
+Tue, Mar 23, 2021,8:00p,Phoenix Suns,null
+Thu, Mar 25, 2021,7:30p,Portland Trail Blazers,null
+Fri, Mar 26, 2021,8:00p,Charlotte Hornets,null
+Mon, Mar 29, 2021,7:30p,New York Knicks,null
+Wed, Mar 31, 2021,7:00p,Indiana Pacers,null
+Thu, Apr 1, 2021,8:00p,Golden State Warriors,null
+Sat, Apr 3, 2021,8:00p,Cleveland Cavaliers,null
+Tue, Apr 6, 2021,8:00p,Memphis Grizzlies,null
+Thu, Apr 8, 2021,7:30p,Los Angeles Lakers,null
+Sun, Apr 11, 2021,10:00p,Portland Trail Blazers,null
+Tue, Apr 13, 2021,10:00p,Phoenix Suns,null
+Wed, Apr 14, 2021,10:00p,Denver Nuggets,null
+Fri, Apr 16, 2021,8:00p,Minnesota Timberwolves,null
+Sun, Apr 18, 2021,3:30p,Brooklyn Nets,null
+Mon, Apr 19, 2021,8:00p,Houston Rockets,null
+Wed, Apr 21, 2021,8:30p,San Antonio Spurs,null
+Fri, Apr 23, 2021,7:30p,Atlanta Hawks,null
+Sat, Apr 24, 2021,8:00p,Chicago Bulls,null
+Mon, Apr 26, 2021,8:00p,Chicago Bulls,null
+Wed, Apr 28, 2021,8:00p,San Antonio Spurs,null
+Sat, May 1, 2021,8:00p,Cleveland Cavaliers,null
+Sun, May 2, 2021,8:00p,Charlotte Hornets,null
+Tue, May 4, 2021,8:00p,Dallas Mavericks,null
+Fri, May 7, 2021,8:00p,Minnesota Timberwolves,null
+Sun, May 9, 2021,1:00p,Boston Celtics,null
+Tue, May 11, 2021,7:00p,Boston Celtics,null
+Thu, May 13, 2021,7:30p,Philadelphia 76ers,null
+Sat, May 15, 2021,Milwaukee Bucks,null
+Sun, May 16, 2021,Detroit Pistons,null
+Wed, Dec 23, 2020,7:00p,Miami Heat,W,113,107,1,0,W 1,AWAY,null,ORL,null,null
+Sat, Dec 26, 2020,7:00p,Washington Wizards,W,130,120,2,0,W 2,AWAY,null,ORL,null,null
+Sun, Dec 27, 2020,7:00p,Washington Wizards,W,120,113,3,0,W 3,AWAY,null,ORL,null,null
+Tue, Dec 29, 2020,8:00p,Oklahoma City Thunder,W,118,107,4,0,W 4,AWAY,null,ORL,null,null
+Thu, Dec 31, 2020,6:30p,Philadelphia 76ers,L,92,116,4,1,L 1,HOME,null,ORL,202012310ORL,null
+Sat, Jan 2, 2021,7:00p,Oklahoma City Thunder,L,99,108,4,2,L 2,HOME,null,ORL,202101020ORL,null
+Mon, Jan 4, 2021,7:00p,Cleveland Cavaliers,W,103,83,5,2,W 1,HOME,null,ORL,202101040ORL,null
+Wed, Jan 6, 2021,7:00p,Cleveland Cavaliers,W,105,94,6,2,W 2,HOME,null,ORL,202101060ORL,null
+Fri, Jan 8, 2021,8:00p,Houston Rockets,L,90,132,6,3,L 1,AWAY,null,ORL,null,null
+Sat, Jan 9, 2021,8:30p,Dallas Mavericks,L,98,112,6,4,L 2,AWAY,null,ORL,null,null
+Mon, Jan 11, 2021,7:00p,Milwaukee Bucks,L,99,121,6,5,L 3,HOME,null,ORL,202101110ORL,null
+Fri, Jan 15, 2021,7:30p,Boston Celtics,L,97,124,6,6,L 4,AWAY,null,ORL,null,null
+Sat, Jan 16, 2021,6:00p,Brooklyn Nets,L,115,122,6,7,L 5,AWAY,null,ORL,null,null
+Mon, Jan 18, 2021,12:00p,New York Knicks,L,84,91,6,8,L 6,AWAY,null,ORL,null,null
+Wed, Jan 20, 2021,8:00p,Minnesota Timberwolves,W,97,96,7,8,W 1,AWAY,null,ORL,null,null
+Fri, Jan 22, 2021,7:00p,Indiana Pacers,L,118,120,7,9,L 1,AWAY,OT,ORL,null,null
+Sun, Jan 24, 2021,7:00p,Charlotte Hornets,L,104,107,7,10,L 2,HOME,null,ORL,202101240ORL,null
+Mon, Jan 25, 2021,7:00p,Charlotte Hornets,W,117,108,8,10,W 1,HOME,null,ORL,202101250ORL,null
+Wed, Jan 27, 2021,7:00p,Sacramento Kings,L,107,121,8,11,L 1,HOME,null,ORL,202101270ORL,null
+Fri, Jan 29, 2021,8:00p,Los Angeles Clippers,L,90,116,8,12,L 2,HOME,null,ORL,202101290ORL,null
+Sun, Jan 31, 2021,7:00p,Toronto Raptors,L,102,115,8,13,L 3,AWAY,null,ORL,null,null
+Tue, Feb 2, 2021,7:00p,Toronto Raptors,L,108,123,8,14,L 4,HOME,null,ORL,202102020ORL,null
+Fri, Feb 5, 2021,7:00p,Chicago Bulls,W,123,119,9,14,W 1,HOME,null,ORL,202102050ORL,null
+Sat, Feb 6, 2021,7:00p,Chicago Bulls,L,92,118,9,15,L 1,HOME,null,ORL,202102060ORL,null
+Tue, Feb 9, 2021,10:00p,Portland Trail Blazers,L,97,106,9,16,L 2,AWAY,null,ORL,null,null
+Thu, Feb 11, 2021,10:00p,Golden State Warriors,L,105,111,9,17,L 3,AWAY,null,ORL,null,null
+Fri, Feb 12, 2021,10:00p,Sacramento Kings,W,123,112,10,17,W 1,AWAY,null,ORL,null,null
+Sun, Feb 14, 2021,9:00p,Phoenix Suns,L,90,109,10,18,L 1,AWAY,null,ORL,null,null
+Wed, Feb 17, 2021,7:00p,New York Knicks,W,107,89,11,18,W 1,HOME,null,ORL,202102170ORL,null
+Fri, Feb 19, 2021,7:00p,Golden State Warriors,W,124,120,12,18,W 2,HOME,null,ORL,202102190ORL,null
+Sun, Feb 21, 2021,7:00p,Detroit Pistons,W,105,96,13,18,W 3,HOME,null,ORL,202102210ORL,null
+Tue, Feb 23, 2021,7:00p,Detroit Pistons,L,93,105,13,19,L 1,HOME,null,ORL,202102230ORL,null
+Thu, Feb 25, 2021,7:30p,Brooklyn Nets,L,92,129,13,20,L 2,AWAY,null,ORL,null,null
+Sat, Feb 27, 2021,8:00p,Utah Jazz,L,109,124,13,21,L 3,HOME,null,ORL,202102270ORL,null
+Mon, Mar 1, 2021,7:00p,Dallas Mavericks,L,124,130,13,22,L 4,HOME,null,ORL,202103010ORL,null
+Wed, Mar 3, 2021,8:00p,Atlanta Hawks,null
+Thu, Mar 11, 2021,8:00p,Miami Heat,null
+Fri, Mar 12, 2021,9:00p,San Antonio Spurs,null
+Sun, Mar 14, 2021,7:00p,Miami Heat,null
+Thu, Mar 18, 2021,7:30p,New York Knicks,null
+Fri, Mar 19, 2021,8:00p,Brooklyn Nets,null
+Sun, Mar 21, 2021,3:30p,Boston Celtics,null
+Tue, Mar 23, 2021,7:00p,Denver Nuggets,null
+Wed, Mar 24, 2021,8:00p,Phoenix Suns,null
+Fri, Mar 26, 2021,8:00p,Portland Trail Blazers,null
+Sun, Mar 28, 2021,10:00p,Los Angeles Lakers,null
+Tue, Mar 30, 2021,10:00p,Los Angeles Clippers,null
+Thu, Apr 1, 2021,8:00p,New Orleans Pelicans,null
+Sat, Apr 3, 2021,9:00p,Utah Jazz,null
+Sun, Apr 4, 2021,10:00p,Denver Nuggets,null
+Wed, Apr 7, 2021,7:00p,Washington Wizards,null
+Fri, Apr 9, 2021,7:00p,Indiana Pacers,null
+Sun, Apr 11, 2021,7:00p,Milwaukee Bucks,null
+Mon, Apr 12, 2021,8:00p,San Antonio Spurs,null
+Wed, Apr 14, 2021,8:00p,Chicago Bulls,null
+Fri, Apr 16, 2021,7:30p,Toronto Raptors,null
+Sun, Apr 18, 2021,7:00p,Houston Rockets,null
+Tue, Apr 20, 2021,7:30p,Atlanta Hawks,null
+Thu, Apr 22, 2021,7:00p,New Orleans Pelicans,null
+Sun, Apr 25, 2021,8:00p,Indiana Pacers,null
+Mon, Apr 26, 2021,7:00p,Los Angeles Lakers,null
+Wed, Apr 28, 2021,7:00p,Cleveland Cavaliers,null
+Fri, Apr 30, 2021,8:00p,Memphis Grizzlies,null
+Sat, May 1, 2021,8:00p,Memphis Grizzlies,null
+Mon, May 3, 2021,7:00p,Detroit Pistons,null
+Wed, May 5, 2021,7:00p,Boston Celtics,null
+Fri, May 7, 2021,8:00p,Charlotte Hornets,null
+Sun, May 9, 2021,7:00p,Minnesota Timberwolves,null
+Tue, May 11, 2021,9:00p,Milwaukee Bucks,null
+Thu, May 13, 2021,7:30p,Atlanta Hawks,null
+Fri, May 14, 2021,8:00p,Philadelphia 76ers,null
+Sun, May 16, 2021,Philadelphia 76ers,null
+Wed, Dec 23, 2020,7:00p,Philadelphia 76ers,L,107,113,0,1,L 1,AWAY,null,WAS,null,null
+Sat, Dec 26, 2020,7:00p,Orlando Magic,L,120,130,0,2,L 2,HOME,null,WAS,202012260WAS,null
+Sun, Dec 27, 2020,7:00p,Orlando Magic,L,113,120,0,3,L 3,HOME,null,WAS,202012270WAS,null
+Tue, Dec 29, 2020,7:00p,Chicago Bulls,L,107,115,0,4,L 4,HOME,null,WAS,202012290WAS,null
+Thu, Dec 31, 2020,5:00p,Chicago Bulls,L,130,133,0,5,L 5,HOME,null,WAS,202012310WAS,null
+Fri, Jan 1, 2021,8:00p,Minnesota Timberwolves,W,130,109,1,5,W 1,AWAY,null,WAS,null,null
+Sun, Jan 3, 2021,6:00p,Brooklyn Nets,W,123,122,2,5,W 2,AWAY,null,WAS,null,null
+Wed, Jan 6, 2021,7:00p,Philadelphia 76ers,L,136,141,2,6,L 1,AWAY,null,WAS,null,null
+Fri, Jan 8, 2021,7:30p,Boston Celtics,L,107,116,2,7,L 2,AWAY,null,WAS,null,null
+Sat, Jan 9, 2021,7:00p,Miami Heat,L,124,128,2,8,L 3,HOME,null,WAS,202101090WAS,null
+Mon, Jan 11, 2021,7:00p,Phoenix Suns,W,128,107,3,8,W 1,HOME,null,WAS,202101110WAS,null
+Sun, Jan 24, 2021,8:00p,San Antonio Spurs,L,101,121,3,9,L 1,AWAY,null,WAS,null,null
+Tue, Jan 26, 2021,8:00p,Houston Rockets,L,88,107,3,10,L 2,AWAY,null,WAS,null,null
+Wed, Jan 27, 2021,9:00p,New Orleans Pelicans,L,106,124,3,11,L 3,AWAY,null,WAS,null,null
+Fri, Jan 29, 2021,7:00p,Atlanta Hawks,L,100,116,3,12,L 4,HOME,null,WAS,202101290WAS,null
+Sun, Jan 31, 2021,7:00p,Brooklyn Nets,W,149,146,4,12,W 1,HOME,null,WAS,202101310WAS,null
+Tue, Feb 2, 2021,8:00p,Portland Trail Blazers,L,121,132,4,13,L 1,HOME,null,WAS,202102020WAS,null
+Wed, Feb 3, 2021,8:00p,Miami Heat,W,103,100,5,13,W 1,AWAY,null,WAS,null,null
+Fri, Feb 5, 2021,8:00p,Miami Heat,L,95,122,5,14,L 1,AWAY,null,WAS,null,null
+Sun, Feb 7, 2021,1:00p,Charlotte Hornets,L,97,119,5,15,L 2,AWAY,null,WAS,null,null
+Mon, Feb 8, 2021,8:00p,Chicago Bulls,W,105,101,6,15,W 1,AWAY,null,WAS,null,null
+Wed, Feb 10, 2021,7:00p,Toronto Raptors,L,115,137,6,16,L 1,HOME,null,WAS,202102100WAS,null
+Fri, Feb 12, 2021,7:00p,New York Knicks,L,91,109,6,17,L 2,HOME,null,WAS,202102120WAS,null
+Sun, Feb 14, 2021,1:00p,Boston Celtics,W,104,91,7,17,W 1,HOME,null,WAS,202102140WAS,null
+Mon, Feb 15, 2021,7:00p,Houston Rockets,W,131,119,8,17,W 2,HOME,null,WAS,202102150WAS,null
+Wed, Feb 17, 2021,8:00p,Denver Nuggets,W,130,128,9,17,W 3,HOME,null,WAS,202102170WAS,null
+Sat, Feb 20, 2021,10:00p,Portland Trail Blazers,W,118,111,10,17,W 4,AWAY,null,WAS,null,null
+Mon, Feb 22, 2021,10:00p,Los Angeles Lakers,W,127,124,11,17,W 5,AWAY,OT,WAS,null,null
+Tue, Feb 23, 2021,10:00p,Los Angeles Clippers,L,116,135,11,18,L 1,AWAY,null,WAS,null,null
+Thu, Feb 25, 2021,9:00p,Denver Nuggets,W,112,110,12,18,W 1,AWAY,null,WAS,null,null
+Sat, Feb 27, 2021,7:00p,Minnesota Timberwolves,W,128,112,13,18,W 2,HOME,null,WAS,202102270WAS,null
+Sun, Feb 28, 2021,7:00p,Boston Celtics,L,110,111,13,19,L 1,AWAY,null,WAS,null,null
+Tue, Mar 2, 2021,7:00p,Memphis Grizzlies,L,111,125,13,20,L 2,HOME,null,WAS,202103020WAS,null
+Thu, Mar 4, 2021,7:00p,Los Angeles Clippers,null
+Wed, Mar 10, 2021,8:00p,Memphis Grizzlies,null
+Fri, Mar 12, 2021,8:00p,Philadelphia 76ers,null
+Sat, Mar 13, 2021,7:00p,Milwaukee Bucks,null
+Mon, Mar 15, 2021,7:00p,Milwaukee Bucks,null
+Wed, Mar 17, 2021,7:00p,Sacramento Kings,null
+Thu, Mar 18, 2021,7:00p,Utah Jazz,null
+Sun, Mar 21, 2021,7:00p,Brooklyn Nets,null
+Tue, Mar 23, 2021,7:30p,New York Knicks,null
+Thu, Mar 25, 2021,7:30p,New York Knicks,null
+Sat, Mar 27, 2021,8:00p,Detroit Pistons,null
+Mon, Mar 29, 2021,7:00p,Indiana Pacers,null
+Tue, Mar 30, 2021,7:00p,Charlotte Hornets,null
+Thu, Apr 1, 2021,7:00p,Detroit Pistons,null
+Sat, Apr 3, 2021,7:00p,Dallas Mavericks,null
+Mon, Apr 5, 2021,7:00p,Toronto Raptors,null
+Wed, Apr 7, 2021,7:00p,Orlando Magic,null
+Fri, Apr 9, 2021,10:00p,Golden State Warriors,null
+Sat, Apr 10, 2021,10:00p,Phoenix Suns,null
+Mon, Apr 12, 2021,9:00p,Utah Jazz,null
+Wed, Apr 14, 2021,10:00p,Sacramento Kings,null
+Fri, Apr 16, 2021,7:00p,New Orleans Pelicans,null
+Sat, Apr 17, 2021,8:00p,Detroit Pistons,null
+Mon, Apr 19, 2021,8:00p,Oklahoma City Thunder,null
+Wed, Apr 21, 2021,7:00p,Golden State Warriors,null
+Fri, Apr 23, 2021,8:00p,Oklahoma City Thunder,null
+Sun, Apr 25, 2021,7:00p,Cleveland Cavaliers,null
+Mon, Apr 26, 2021,7:00p,San Antonio Spurs,null
+Wed, Apr 28, 2021,7:00p,Los Angeles Lakers,null
+Fri, Apr 30, 2021,7:30p,Cleveland Cavaliers,null
+Sat, May 1, 2021,9:00p,Dallas Mavericks,null
+Mon, May 3, 2021,7:00p,Indiana Pacers,null
+Wed, May 5, 2021,8:00p,Milwaukee Bucks,null
+Thu, May 6, 2021,7:30p,Toronto Raptors,null
+Sat, May 8, 2021,7:00p,Indiana Pacers,null
+Mon, May 10, 2021,7:30p,Atlanta Hawks,null
+Wed, May 12, 2021,7:30p,Atlanta Hawks,null
+Fri, May 14, 2021,7:00p,Cleveland Cavaliers,null
+Sun, May 16, 2021,Charlotte Hornets,null
+Wed, Dec 23, 2020,7:00p,Cleveland Cavaliers,L,114,121,0,1,L 1,AWAY,null,CHO,null,null
+Sat, Dec 26, 2020,7:00p,Oklahoma City Thunder,L,107,109,0,2,L 2,HOME,null,CHO,202012260CHO,null
+Sun, Dec 27, 2020,7:00p,Brooklyn Nets,W,106,104,1,2,W 1,HOME,null,CHO,202012270CHO,null
+Wed, Dec 30, 2020,8:30p,Dallas Mavericks,W,118,99,2,2,W 2,AWAY,null,CHO,null,null
+Fri, Jan 1, 2021,7:00p,Memphis Grizzlies,L,93,108,2,3,L 1,HOME,null,CHO,202101010CHO,null
+Sat, Jan 2, 2021,7:00p,Philadelphia 76ers,L,112,127,2,4,L 2,AWAY,null,CHO,null,null
+Mon, Jan 4, 2021,7:00p,Philadelphia 76ers,L,101,118,2,5,L 3,AWAY,null,CHO,null,null
+Wed, Jan 6, 2021,7:30p,Atlanta Hawks,W,102,94,3,5,W 1,AWAY,null,CHO,null,null
+Fri, Jan 8, 2021,7:30p,New Orleans Pelicans,W,118,110,4,5,W 2,AWAY,null,CHO,null,null
+Sat, Jan 9, 2021,7:00p,Atlanta Hawks,W,113,105,5,5,W 3,HOME,null,CHO,202101090CHO,null
+Mon, Jan 11, 2021,7:00p,New York Knicks,W,109,88,6,5,W 4,HOME,null,CHO,202101110CHO,null
+Wed, Jan 13, 2021,7:00p,Dallas Mavericks,L,93,104,6,6,L 1,HOME,null,CHO,202101130CHO,null
+Thu, Jan 14, 2021,7:30p,Toronto Raptors,L,108,111,6,7,L 2,AWAY,null,CHO,null,null
+Sat, Jan 16, 2021,7:30p,Toronto Raptors,L,113,116,6,8,L 3,AWAY,null,CHO,null,null
+Fri, Jan 22, 2021,7:00p,Chicago Bulls,L,110,123,6,9,L 4,HOME,null,CHO,202101220CHO,null
+Sun, Jan 24, 2021,7:00p,Orlando Magic,W,107,104,7,9,W 1,AWAY,null,CHO,null,null
+Mon, Jan 25, 2021,7:00p,Orlando Magic,L,108,117,7,10,L 1,AWAY,null,CHO,null,null
+Wed, Jan 27, 2021,7:00p,Indiana Pacers,L,106,116,7,11,L 2,HOME,null,CHO,202101270CHO,null
+Fri, Jan 29, 2021,7:00p,Indiana Pacers,W,108,105,8,11,W 1,HOME,null,CHO,202101290CHO,null
+Sat, Jan 30, 2021,8:00p,Milwaukee Bucks,W,126,114,9,11,W 2,HOME,null,CHO,202101300CHO,null
+Mon, Feb 1, 2021,7:30p,Miami Heat,W,129,121,10,11,W 3,AWAY,OT,CHO,null,null
+Wed, Feb 3, 2021,7:00p,Philadelphia 76ers,L,111,118,10,12,L 1,HOME,null,CHO,202102030CHO,null
+Fri, Feb 5, 2021,8:00p,Utah Jazz,L,121,138,10,13,L 2,HOME,null,CHO,202102050CHO,null
+Sun, Feb 7, 2021,1:00p,Washington Wizards,W,119,97,11,13,W 1,HOME,null,CHO,202102070CHO,null
+Mon, Feb 8, 2021,7:00p,Houston Rockets,W,119,94,12,13,W 2,HOME,null,CHO,202102080CHO,null
+Wed, Feb 10, 2021,8:00p,Memphis Grizzlies,L,114,130,12,14,L 1,AWAY,null,CHO,null,null
+Fri, Feb 12, 2021,7:00p,Minnesota Timberwolves,W,120,114,13,14,W 1,HOME,null,CHO,202102120CHO,null
+Sun, Feb 14, 2021,7:00p,San Antonio Spurs,L,110,122,13,15,L 1,HOME,null,CHO,202102140CHO,null
+Sat, Feb 20, 2021,8:00p,Golden State Warriors,W,102,100,14,15,W 1,HOME,null,CHO,202102200CHO,null
+Mon, Feb 22, 2021,9:00p,Utah Jazz,L,110,132,14,16,L 1,AWAY,null,CHO,null,null
+Wed, Feb 24, 2021,9:00p,Phoenix Suns,W,124,121,15,16,W 1,AWAY,null,CHO,null,null
+Fri, Feb 26, 2021,10:00p,Golden State Warriors,L,121,130,15,17,L 1,AWAY,null,CHO,null,null
+Sun, Feb 28, 2021,10:00p,Sacramento Kings,W,127,126,16,17,W 1,AWAY,null,CHO,null,null
+Mon, Mar 1, 2021,10:30p,Portland Trail Blazers,L,111,123,16,18,L 1,AWAY,null,CHO,null,null
+Wed, Mar 3, 2021,8:00p,Minnesota Timberwolves,null
+Thu, Mar 11, 2021,7:00p,Detroit Pistons,null
+Sat, Mar 13, 2021,7:00p,Toronto Raptors,null
+Mon, Mar 15, 2021,7:00p,Sacramento Kings,null
+Wed, Mar 17, 2021,9:00p,Denver Nuggets,null
+Thu, Mar 18, 2021,10:30p,Los Angeles Lakers,null
+Sat, Mar 20, 2021,10:00p,Los Angeles Clippers,null
+Mon, Mar 22, 2021,8:30p,San Antonio Spurs,null
+Wed, Mar 24, 2021,8:00p,Houston Rockets,null
+Fri, Mar 26, 2021,8:00p,Miami Heat,null
+Sun, Mar 28, 2021,1:00p,Phoenix Suns,null
+Tue, Mar 30, 2021,7:00p,Washington Wizards,null
+Thu, Apr 1, 2021,7:30p,Brooklyn Nets,null
+Fri, Apr 2, 2021,8:00p,Indiana Pacers,null
+Sun, Apr 4, 2021,6:00p,Boston Celtics,null
+Wed, Apr 7, 2021,8:00p,Oklahoma City Thunder,null
+Fri, Apr 9, 2021,9:00p,Milwaukee Bucks,null
+Sun, Apr 11, 2021,1:00p,Atlanta Hawks,null
+Tue, Apr 13, 2021,8:00p,Los Angeles Lakers,null
+Wed, Apr 14, 2021,7:00p,Cleveland Cavaliers,null
+Fri, Apr 16, 2021,7:30p,Brooklyn Nets,null
+Sun, Apr 18, 2021,7:00p,Portland Trail Blazers,null
+Tue, Apr 20, 2021,7:30p,New York Knicks,null
+Thu, Apr 22, 2021,9:00p,Chicago Bulls,null
+Fri, Apr 23, 2021,8:00p,Cleveland Cavaliers,null
+Sun, Apr 25, 2021,1:00p,Boston Celtics,null
+Tue, Apr 27, 2021,7:00p,Milwaukee Bucks,null
+Wed, Apr 28, 2021,7:30p,Boston Celtics,null
+Sat, May 1, 2021,7:00p,Detroit Pistons,null
+Sun, May 2, 2021,8:00p,Miami Heat,null
+Tue, May 4, 2021,7:00p,Detroit Pistons,null
+Thu, May 6, 2021,7:00p,Chicago Bulls,null
+Fri, May 7, 2021,8:00p,Orlando Magic,null
+Sun, May 9, 2021,7:00p,New Orleans Pelicans,null
+Tue, May 11, 2021,7:00p,Denver Nuggets,null
+Thu, May 13, 2021,7:00p,Los Angeles Clippers,null
+Sat, May 15, 2021,New York Knicks,null
+Sun, May 16, 2021,Washington Wizards,null
+Wed, Dec 23, 2020,8:00p,Chicago Bulls,W,124,104,1,0,W 1,AWAY,null,ATL,null,null
+Sat, Dec 26, 2020,5:00p,Memphis Grizzlies,W,122,112,2,0,W 2,AWAY,null,ATL,null,null
+Mon, Dec 28, 2020,7:30p,Detroit Pistons,W,128,120,3,0,W 3,HOME,null,ATL,202012280ATL,null
+Wed, Dec 30, 2020,7:30p,Brooklyn Nets,L,141,145,3,1,L 1,AWAY,null,ATL,null,null
+Fri, Jan 1, 2021,7:30p,Brooklyn Nets,W,114,96,4,1,W 1,AWAY,null,ATL,null,null
+Sat, Jan 2, 2021,7:30p,Cleveland Cavaliers,L,91,96,4,2,L 1,HOME,null,ATL,202101020ATL,null
+Mon, Jan 4, 2021,7:30p,New York Knicks,L,108,113,4,3,L 2,HOME,null,ATL,202101040ATL,null
+Wed, Jan 6, 2021,7:30p,Charlotte Hornets,L,94,102,4,4,L 3,HOME,null,ATL,202101060ATL,null
+Sat, Jan 9, 2021,7:00p,Charlotte Hornets,L,105,113,4,5,L 4,AWAY,null,ATL,null,null
+Mon, Jan 11, 2021,7:30p,Philadelphia 76ers,W,112,94,5,5,W 1,HOME,null,ATL,202101110ATL,null
+Fri, Jan 15, 2021,9:00p,Utah Jazz,L,92,116,5,6,L 1,AWAY,null,ATL,null,null
+Sat, Jan 16, 2021,10:00p,Portland Trail Blazers,L,106,112,5,7,L 2,AWAY,null,ATL,null,null
+Mon, Jan 18, 2021,2:30p,Minnesota Timberwolves,W,108,97,6,7,W 1,HOME,null,ATL,202101180ATL,null
+Wed, Jan 20, 2021,7:30p,Detroit Pistons,W,123,115,7,7,W 2,HOME,OT,ATL,202101200ATL,null
+Fri, Jan 22, 2021,8:00p,Minnesota Timberwolves,W,116,98,8,7,W 3,AWAY,null,ATL,null,null
+Sun, Jan 24, 2021,8:00p,Milwaukee Bucks,L,115,129,8,8,L 1,AWAY,null,ATL,null,null
+Tue, Jan 26, 2021,7:30p,Los Angeles Clippers,W,108,99,9,8,W 1,HOME,null,ATL,202101260ATL,null
+Wed, Jan 27, 2021,7:30p,Brooklyn Nets,L,128,132,9,9,L 1,HOME,OT,ATL,202101270ATL,null
+Fri, Jan 29, 2021,7:00p,Washington Wizards,W,116,100,10,9,W 1,AWAY,null,ATL,null,null
+Mon, Feb 1, 2021,7:30p,Los Angeles Lakers,L,99,107,10,10,L 1,HOME,null,ATL,202102010ATL,null
+Wed, Feb 3, 2021,7:30p,Dallas Mavericks,L,116,122,10,11,L 2,HOME,null,ATL,202102030ATL,null
+Thu, Feb 4, 2021,7:30p,Utah Jazz,L,91,112,10,12,L 3,HOME,null,ATL,202102040ATL,null
+Sat, Feb 6, 2021,8:00p,Toronto Raptors,W,132,121,11,12,W 1,HOME,null,ATL,202102060ATL,null
+Wed, Feb 10, 2021,7:30p,Dallas Mavericks,L,117,118,11,13,L 1,AWAY,null,ATL,null,null
+Fri, Feb 12, 2021,7:30p,San Antonio Spurs,L,114,125,11,14,L 2,HOME,null,ATL,202102120ATL,null
+Sat, Feb 13, 2021,7:30p,Indiana Pacers,L,113,125,11,15,L 3,HOME,null,ATL,202102130ATL,null
+Mon, Feb 15, 2021,7:30p,New York Knicks,L,112,123,11,16,L 4,AWAY,null,ATL,null,null
+Wed, Feb 17, 2021,7:30p,Boston Celtics,W,122,114,12,16,W 1,AWAY,null,ATL,null,null
+Fri, Feb 19, 2021,7:30p,Boston Celtics,L,109,121,12,17,L 1,AWAY,null,ATL,null,null
+Sun, Feb 21, 2021,7:30p,Denver Nuggets,W,123,115,13,17,W 1,HOME,null,ATL,202102210ATL,null
+Tue, Feb 23, 2021,7:00p,Cleveland Cavaliers,L,111,112,13,18,L 1,AWAY,null,ATL,null,null
+Wed, Feb 24, 2021,7:30p,Boston Celtics,W,127,112,14,18,W 1,HOME,null,ATL,202102240ATL,null
+Fri, Feb 26, 2021,8:00p,Oklahoma City Thunder,L,109,118,14,19,L 1,AWAY,null,ATL,null,null
+Sun, Feb 28, 2021,8:00p,Miami Heat,L,99,109,14,20,L 2,AWAY,null,ATL,null,null
+Tue, Mar 2, 2021,7:30p,Miami Heat,W,94,80,15,20,W 1,AWAY,null,ATL,null,null
+Wed, Mar 3, 2021,8:00p,Orlando Magic,null
+Thu, Mar 11, 2021,7:30p,Toronto Raptors,null
+Sat, Mar 13, 2021,7:30p,Sacramento Kings,null
+Sun, Mar 14, 2021,7:30p,Cleveland Cavaliers,null
+Tue, Mar 16, 2021,8:00p,Houston Rockets,null
+Thu, Mar 18, 2021,7:30p,Oklahoma City Thunder,null
+Sat, Mar 20, 2021,3:30p,Los Angeles Lakers,null
+Mon, Mar 22, 2021,10:00p,Los Angeles Clippers,null
+Wed, Mar 24, 2021,10:00p,Sacramento Kings,null
+Fri, Mar 26, 2021,10:00p,Golden State Warriors,null
+Sun, Mar 28, 2021,9:00p,Denver Nuggets,null
+Tue, Mar 30, 2021,10:00p,Phoenix Suns,null
+Thu, Apr 1, 2021,8:30p,San Antonio Spurs,null
+Fri, Apr 2, 2021,9:00p,New Orleans Pelicans,null
+Sun, Apr 4, 2021,7:30p,Golden State Warriors,null
+Tue, Apr 6, 2021,7:30p,New Orleans Pelicans,null
+Wed, Apr 7, 2021,8:00p,Memphis Grizzlies,null
+Fri, Apr 9, 2021,7:30p,Chicago Bulls,null
+Sun, Apr 11, 2021,1:00p,Charlotte Hornets,null
+Tue, Apr 13, 2021,7:30p,Toronto Raptors,null
+Thu, Apr 15, 2021,7:30p,Milwaukee Bucks,null
+Sun, Apr 18, 2021,1:00p,Indiana Pacers,null
+Tue, Apr 20, 2021,7:30p,Orlando Magic,null
+Wed, Apr 21, 2021,8:00p,New York Knicks,null
+Fri, Apr 23, 2021,7:30p,Miami Heat,null
+Sun, Apr 25, 2021,7:30p,Milwaukee Bucks,null
+Mon, Apr 26, 2021,7:00p,Detroit Pistons,null
+Wed, Apr 28, 2021,7:00p,Philadelphia 76ers,null
+Fri, Apr 30, 2021,7:00p,Philadelphia 76ers,null
+Sat, May 1, 2021,8:00p,Chicago Bulls,null
+Mon, May 3, 2021,8:00p,Portland Trail Blazers,null
+Wed, May 5, 2021,8:00p,Phoenix Suns,null
+Thu, May 6, 2021,8:00p,Indiana Pacers,null
+Mon, May 10, 2021,7:30p,Washington Wizards,null
+Wed, May 12, 2021,7:30p,Washington Wizards,null
+Thu, May 13, 2021,7:30p,Orlando Magic,null
+Sun, May 16, 2021,Houston Rockets,null
+Tue, Dec 22, 2020,10:00p,Los Angeles Clippers,L,109,116,0,1,L 1,AWAY,null,LAL,null,null
+Fri, Dec 25, 2020,8:00p,Dallas Mavericks,W,138,115,1,1,W 1,HOME,null,LAL,202012250LAL,null
+Sun, Dec 27, 2020,10:00p,Minnesota Timberwolves,W,127,91,2,1,W 2,HOME,null,LAL,202012270LAL,null
+Mon, Dec 28, 2020,10:00p,Portland Trail Blazers,L,107,115,2,2,L 1,HOME,null,LAL,202012280LAL,null
+Wed, Dec 30, 2020,8:30p,San Antonio Spurs,W,121,107,3,2,W 1,AWAY,null,LAL,null,null
+Fri, Jan 1, 2021,8:00p,San Antonio Spurs,W,109,103,4,2,W 2,AWAY,null,LAL,null,null
+Sun, Jan 3, 2021,6:00p,Memphis Grizzlies,W,108,94,5,2,W 3,AWAY,null,LAL,null,null
+Tue, Jan 5, 2021,8:00p,Memphis Grizzlies,W,94,92,6,2,W 4,AWAY,null,LAL,null,null
+Thu, Jan 7, 2021,10:00p,San Antonio Spurs,L,109,118,6,3,L 1,HOME,null,LAL,202101070LAL,null
+Fri, Jan 8, 2021,10:00p,Chicago Bulls,W,117,115,7,3,W 1,HOME,null,LAL,202101080LAL,null
+Sun, Jan 10, 2021,7:00p,Houston Rockets,W,120,102,8,3,W 2,AWAY,null,LAL,null,null
+Tue, Jan 12, 2021,8:00p,Houston Rockets,W,117,100,9,3,W 3,AWAY,null,LAL,null,null
+Wed, Jan 13, 2021,8:00p,Oklahoma City Thunder,W,128,99,10,3,W 4,AWAY,null,LAL,null,null
+Fri, Jan 15, 2021,10:00p,New Orleans Pelicans,W,112,95,11,3,W 5,HOME,null,LAL,202101150LAL,null
+Mon, Jan 18, 2021,10:00p,Golden State Warriors,L,113,115,11,4,L 1,HOME,null,LAL,202101180LAL,null
+Thu, Jan 21, 2021,7:30p,Milwaukee Bucks,W,113,106,12,4,W 1,AWAY,null,LAL,null,null
+Sat, Jan 23, 2021,9:00p,Chicago Bulls,W,101,90,13,4,W 2,AWAY,null,LAL,null,null
+Mon, Jan 25, 2021,8:00p,Cleveland Cavaliers,W,115,108,14,4,W 3,AWAY,null,LAL,null,null
+Wed, Jan 27, 2021,7:30p,Philadelphia 76ers,L,106,107,14,5,L 1,AWAY,null,LAL,null,null
+Thu, Jan 28, 2021,8:00p,Detroit Pistons,L,92,107,14,6,L 2,AWAY,null,LAL,null,null
+Sat, Jan 30, 2021,8:30p,Boston Celtics,W,96,95,15,6,W 1,AWAY,null,LAL,null,null
+Mon, Feb 1, 2021,7:30p,Atlanta Hawks,W,107,99,16,6,W 2,AWAY,null,LAL,null,null
+Thu, Feb 4, 2021,10:00p,Denver Nuggets,W,114,93,17,6,W 3,HOME,null,LAL,202102040LAL,null
+Sat, Feb 6, 2021,10:00p,Detroit Pistons,W,135,129,18,6,W 4,HOME,2OT,LAL,202102060LAL,null
+Mon, Feb 8, 2021,10:00p,Oklahoma City Thunder,W,119,112,19,6,W 5,HOME,OT,LAL,202102080LAL,null
+Wed, Feb 10, 2021,10:00p,Oklahoma City Thunder,W,114,113,20,6,W 6,HOME,OT,LAL,202102100LAL,null
+Fri, Feb 12, 2021,10:00p,Memphis Grizzlies,W,115,105,21,6,W 7,HOME,null,LAL,202102120LAL,null
+Sun, Feb 14, 2021,10:00p,Denver Nuggets,L,105,122,21,7,L 1,AWAY,null,LAL,null,null
+Tue, Feb 16, 2021,8:00p,Minnesota Timberwolves,W,112,104,22,7,W 1,AWAY,null,LAL,null,null
+Thu, Feb 18, 2021,10:00p,Brooklyn Nets,L,98,109,22,8,L 1,HOME,null,LAL,202102180LAL,null
+Sat, Feb 20, 2021,8:30p,Miami Heat,L,94,96,22,9,L 2,HOME,null,LAL,202102200LAL,null
+Mon, Feb 22, 2021,10:00p,Washington Wizards,L,124,127,22,10,L 3,HOME,OT,LAL,202102220LAL,null
+Wed, Feb 24, 2021,10:00p,Utah Jazz,L,89,114,22,11,L 4,AWAY,null,LAL,null,null
+Fri, Feb 26, 2021,10:00p,Portland Trail Blazers,W,102,93,23,11,W 1,HOME,null,LAL,202102260LAL,null
+Sun, Feb 28, 2021,8:00p,Golden State Warriors,W,117,91,24,11,W 2,HOME,null,LAL,202102280LAL,null
+Tue, Mar 2, 2021,10:00p,Phoenix Suns,L,104,114,24,12,L 1,HOME,null,LAL,202103020LAL,null
+Wed, Mar 3, 2021,10:00p,Sacramento Kings,null
+Fri, Mar 12, 2021,10:30p,Indiana Pacers,null
+Mon, Mar 15, 2021,10:30p,Golden State Warriors,null
+Tue, Mar 16, 2021,10:30p,Minnesota Timberwolves,null
+Thu, Mar 18, 2021,10:30p,Charlotte Hornets,null
+Sat, Mar 20, 2021,3:30p,Atlanta Hawks,null
+Sun, Mar 21, 2021,10:00p,Phoenix Suns,null
+Tue, Mar 23, 2021,7:30p,New Orleans Pelicans,null
+Thu, Mar 25, 2021,10:00p,Philadelphia 76ers,null
+Fri, Mar 26, 2021,10:30p,Cleveland Cavaliers,null
+Sun, Mar 28, 2021,10:00p,Orlando Magic,null
+Wed, Mar 31, 2021,10:00p,Milwaukee Bucks,null
+Fri, Apr 2, 2021,10:00p,Sacramento Kings,null
+Sun, Apr 4, 2021,3:30p,Los Angeles Clippers,null
+Tue, Apr 6, 2021,7:30p,Toronto Raptors,null
+Thu, Apr 8, 2021,7:30p,Miami Heat,null
+Sat, Apr 10, 2021,8:30p,Brooklyn Nets,null
+Mon, Apr 12, 2021,7:30p,New York Knicks,null
+Tue, Apr 13, 2021,8:00p,Charlotte Hornets,null
+Thu, Apr 15, 2021,10:00p,Boston Celtics,null
+Sat, Apr 17, 2021,4:30p,Utah Jazz,null
+Mon, Apr 19, 2021,10:00p,Utah Jazz,null
+Thu, Apr 22, 2021,9:30p,Dallas Mavericks,null
+Sat, Apr 24, 2021,8:30p,Dallas Mavericks,null
+Mon, Apr 26, 2021,7:00p,Orlando Magic,null
+Wed, Apr 28, 2021,7:00p,Washington Wizards,null
+Fri, Apr 30, 2021,10:30p,Sacramento Kings,null
+Sun, May 2, 2021,10:00p,Toronto Raptors,null
+Mon, May 3, 2021,10:00p,Denver Nuggets,null
+Thu, May 6, 2021,10:00p,Los Angeles Clippers,null
+Fri, May 7, 2021,10:00p,Portland Trail Blazers,null
+Sun, May 9, 2021,10:00p,Phoenix Suns,null
+Tue, May 11, 2021,10:30p,New York Knicks,null
+Wed, May 12, 2021,10:30p,Houston Rockets,null
+Sat, May 15, 2021,Indiana Pacers,null
+Sun, May 16, 2021,New Orleans Pelicans,null
+Tue, Dec 22, 2020,10:00p,Los Angeles Lakers,W,116,109,1,0,W 1,AWAY,null,LAC,null,null
+Fri, Dec 25, 2020,10:30p,Denver Nuggets,W,121,108,2,0,W 2,AWAY,null,LAC,null,null
+Sun, Dec 27, 2020,3:30p,Dallas Mavericks,L,73,124,2,1,L 1,HOME,null,LAC,202012270LAC,null
+Tue, Dec 29, 2020,10:00p,Minnesota Timberwolves,W,124,101,3,1,W 1,HOME,null,LAC,202012290LAC,null
+Wed, Dec 30, 2020,10:00p,Portland Trail Blazers,W,128,105,4,1,W 2,HOME,null,LAC,202012300LAC,null
+Fri, Jan 1, 2021,9:00p,Utah Jazz,L,100,106,4,2,L 1,AWAY,null,LAC,null,null
+Sun, Jan 3, 2021,8:00p,Phoenix Suns,W,112,107,5,2,W 1,AWAY,null,LAC,null,null
+Tue, Jan 5, 2021,10:00p,San Antonio Spurs,L,113,116,5,3,L 1,HOME,null,LAC,202101050LAC,null
+Wed, Jan 6, 2021,10:00p,Golden State Warriors,W,108,101,6,3,W 1,AWAY,null,LAC,null,null
+Fri, Jan 8, 2021,10:00p,Golden State Warriors,L,105,115,6,4,L 1,AWAY,null,LAC,null,null
+Sun, Jan 10, 2021,4:00p,Chicago Bulls,W,130,127,7,4,W 1,HOME,null,LAC,202101100LAC,null
+Wed, Jan 13, 2021,10:00p,New Orleans Pelicans,W,111,106,8,4,W 2,HOME,null,LAC,202101130LAC,null
+Fri, Jan 15, 2021,10:00p,Sacramento Kings,W,138,100,9,4,W 3,AWAY,null,LAC,null,null
+Sun, Jan 17, 2021,10:00p,Indiana Pacers,W,129,96,10,4,W 4,HOME,null,LAC,202101170LAC,null
+Wed, Jan 20, 2021,10:00p,Sacramento Kings,W,115,96,11,4,W 5,HOME,null,LAC,202101200LAC,null
+Fri, Jan 22, 2021,10:00p,Oklahoma City Thunder,W,120,106,12,4,W 6,HOME,null,LAC,202101220LAC,null
+Sun, Jan 24, 2021,4:00p,Oklahoma City Thunder,W,108,100,13,4,W 7,HOME,null,LAC,202101240LAC,null
+Tue, Jan 26, 2021,7:30p,Atlanta Hawks,L,99,108,13,5,L 1,AWAY,null,LAC,null,null
+Thu, Jan 28, 2021,8:00p,Miami Heat,W,109,105,14,5,W 1,AWAY,null,LAC,null,null
+Fri, Jan 29, 2021,8:00p,Orlando Magic,W,116,90,15,5,W 2,AWAY,null,LAC,null,null
+Sun, Jan 31, 2021,1:00p,New York Knicks,W,129,115,16,5,W 3,AWAY,null,LAC,null,null
+Tue, Feb 2, 2021,7:30p,Brooklyn Nets,L,120,124,16,6,L 1,AWAY,null,LAC,null,null
+Wed, Feb 3, 2021,8:00p,Cleveland Cavaliers,W,121,99,17,6,W 1,AWAY,null,LAC,null,null
+Fri, Feb 5, 2021,10:00p,Boston Celtics,L,115,119,17,7,L 1,HOME,null,LAC,202102050LAC,null
+Sun, Feb 7, 2021,3:00p,Sacramento Kings,L,110,113,17,8,L 2,HOME,null,LAC,202102070LAC,null
+Wed, Feb 10, 2021,8:00p,Minnesota Timberwolves,W,119,112,18,8,W 1,AWAY,null,LAC,null,null
+Fri, Feb 12, 2021,8:00p,Chicago Bulls,W,125,106,19,8,W 2,AWAY,null,LAC,null,null
+Sun, Feb 14, 2021,10:00p,Cleveland Cavaliers,W,128,111,20,8,W 3,HOME,null,LAC,202102140LAC,null
+Mon, Feb 15, 2021,10:00p,Miami Heat,W,125,118,21,8,W 4,HOME,null,LAC,202102150LAC,null
+Wed, Feb 17, 2021,10:00p,Utah Jazz,L,96,114,21,9,L 1,HOME,null,LAC,202102170LAC,null
+Fri, Feb 19, 2021,10:00p,Utah Jazz,W,116,112,22,9,W 1,HOME,null,LAC,202102190LAC,null
+Sun, Feb 21, 2021,8:00p,Brooklyn Nets,L,108,112,22,10,L 1,HOME,null,LAC,202102210LAC,null
+Tue, Feb 23, 2021,10:00p,Washington Wizards,W,135,116,23,10,W 1,HOME,null,LAC,202102230LAC,null
+Thu, Feb 25, 2021,8:00p,Memphis Grizzlies,L,94,122,23,11,L 1,AWAY,null,LAC,null,null
+Fri, Feb 26, 2021,8:00p,Memphis Grizzlies,W,119,99,24,11,W 1,AWAY,null,LAC,null,null
+Sun, Feb 28, 2021,3:30p,Milwaukee Bucks,L,100,105,24,12,L 1,AWAY,null,LAC,null,null
+Tue, Mar 2, 2021,7:30p,Boston Celtics,L,112,117,24,13,L 2,AWAY,null,LAC,null,null
+Thu, Mar 4, 2021,7:00p,Washington Wizards,null
+Thu, Mar 11, 2021,10:00p,Golden State Warriors,null
+Sun, Mar 14, 2021,9:00p,New Orleans Pelicans,null
+Mon, Mar 15, 2021,9:00p,Dallas Mavericks,null
+Wed, Mar 17, 2021,9:30p,Dallas Mavericks,null
+Sat, Mar 20, 2021,10:00p,Charlotte Hornets,null
+Mon, Mar 22, 2021,10:00p,Atlanta Hawks,null
+Wed, Mar 24, 2021,8:30p,San Antonio Spurs,null
+Thu, Mar 25, 2021,8:30p,San Antonio Spurs,null
+Sat, Mar 27, 2021,10:00p,Philadelphia 76ers,null
+Mon, Mar 29, 2021,10:00p,Milwaukee Bucks,null
+Tue, Mar 30, 2021,10:00p,Orlando Magic,null
+Thu, Apr 1, 2021,10:00p,Denver Nuggets,null
+Sun, Apr 4, 2021,3:30p,Los Angeles Lakers,null
+Tue, Apr 6, 2021,10:00p,Portland Trail Blazers,null
+Thu, Apr 8, 2021,10:00p,Phoenix Suns,null
+Fri, Apr 9, 2021,10:00p,Houston Rockets,null
+Sun, Apr 11, 2021,10:00p,Detroit Pistons,null
+Tue, Apr 13, 2021,7:30p,Indiana Pacers,null
+Wed, Apr 14, 2021,8:00p,Detroit Pistons,null
+Fri, Apr 16, 2021,7:00p,Philadelphia 76ers,null
+Sun, Apr 18, 2021,10:00p,Minnesota Timberwolves,null
+Tue, Apr 20, 2021,10:00p,Portland Trail Blazers,null
+Wed, Apr 21, 2021,10:00p,Memphis Grizzlies,null
+Fri, Apr 23, 2021,8:00p,Houston Rockets,null
+Mon, Apr 26, 2021,8:00p,New Orleans Pelicans,null
+Wed, Apr 28, 2021,10:00p,Phoenix Suns,null
+Sat, May 1, 2021,10:00p,Denver Nuggets,null
+Tue, May 4, 2021,10:00p,Toronto Raptors,null
+Thu, May 6, 2021,10:00p,Los Angeles Lakers,null
+Sun, May 9, 2021,3:30p,New York Knicks,null
+Tue, May 11, 2021,7:30p,Toronto Raptors,null
+Thu, May 13, 2021,7:00p,Charlotte Hornets,null
+Fri, May 14, 2021,9:00p,Houston Rockets,null
+Sun, May 16, 2021,Oklahoma City Thunder,null
+Wed, Dec 23, 2020,9:00p,Denver Nuggets,W,124,122,1,0,W 1,AWAY,OT,SAC,null,null
+Sat, Dec 26, 2020,10:00p,Phoenix Suns,W,106,103,2,0,W 2,HOME,null,SAC,202012260SAC,null
+Sun, Dec 27, 2020,9:00p,Phoenix Suns,L,100,116,2,1,L 1,HOME,null,SAC,202012270SAC,null
+Tue, Dec 29, 2020,10:00p,Denver Nuggets,W,125,115,3,1,W 1,HOME,null,SAC,202012290SAC,null
+Thu, Dec 31, 2020,7:00p,Houston Rockets,L,119,122,3,2,L 1,AWAY,null,SAC,null,null
+Sat, Jan 2, 2021,5:00p,Houston Rockets,L,94,102,3,3,L 2,AWAY,null,SAC,null,null
+Mon, Jan 4, 2021,10:00p,Golden State Warriors,L,106,137,3,4,L 3,AWAY,null,SAC,null,null
+Wed, Jan 6, 2021,10:00p,Chicago Bulls,W,128,124,4,4,W 1,HOME,null,SAC,202101060SAC,null
+Fri, Jan 8, 2021,10:00p,Toronto Raptors,L,123,144,4,5,L 1,HOME,null,SAC,202101080SAC,null
+Sat, Jan 9, 2021,10:00p,Portland Trail Blazers,L,99,125,4,6,L 2,HOME,null,SAC,202101090SAC,null
+Mon, Jan 11, 2021,10:00p,Indiana Pacers,W,127,122,5,6,W 1,HOME,null,SAC,202101110SAC,null
+Wed, Jan 13, 2021,10:00p,Portland Trail Blazers,L,126,132,5,7,L 1,HOME,null,SAC,202101130SAC,null
+Fri, Jan 15, 2021,10:00p,Los Angeles Clippers,L,100,138,5,8,L 2,HOME,null,SAC,202101150SAC,null
+Sun, Jan 17, 2021,9:00p,New Orleans Pelicans,L,123,128,5,9,L 3,HOME,null,SAC,202101170SAC,null
+Wed, Jan 20, 2021,10:00p,Los Angeles Clippers,L,96,115,5,10,L 4,AWAY,null,SAC,null,null
+Fri, Jan 22, 2021,10:00p,New York Knicks,W,103,94,6,10,W 1,HOME,null,SAC,202101220SAC,null
+Wed, Jan 27, 2021,7:00p,Orlando Magic,W,121,107,7,10,W 2,AWAY,null,SAC,null,null
+Fri, Jan 29, 2021,7:30p,Toronto Raptors,W,126,124,8,10,W 3,AWAY,null,SAC,null,null
+Sat, Jan 30, 2021,8:00p,Miami Heat,L,104,105,8,11,L 1,AWAY,null,SAC,null,null
+Mon, Feb 1, 2021,8:00p,New Orleans Pelicans,W,118,109,9,11,W 1,AWAY,null,SAC,null,null
+Wed, Feb 3, 2021,10:00p,Boston Celtics,W,116,111,10,11,W 2,HOME,null,SAC,202102030SAC,null
+Sat, Feb 6, 2021,5:00p,Denver Nuggets,W,119,114,11,11,W 3,HOME,null,SAC,202102060SAC,null
+Sun, Feb 7, 2021,3:00p,Los Angeles Clippers,W,113,110,12,11,W 4,AWAY,null,SAC,null,null
+Tue, Feb 9, 2021,10:00p,Philadelphia 76ers,L,111,119,12,12,L 1,HOME,null,SAC,202102090SAC,null
+Fri, Feb 12, 2021,10:00p,Orlando Magic,L,112,123,12,13,L 2,HOME,null,SAC,202102120SAC,null
+Sun, Feb 14, 2021,10:00p,Memphis Grizzlies,L,110,124,12,14,L 3,HOME,null,SAC,202102140SAC,null
+Mon, Feb 15, 2021,10:00p,Brooklyn Nets,L,125,136,12,15,L 4,HOME,null,SAC,202102150SAC,null
+Thu, Feb 18, 2021,10:00p,Miami Heat,L,110,118,12,16,L 5,HOME,null,SAC,202102180SAC,null
+Sat, Feb 20, 2021,9:00p,Chicago Bulls,L,114,122,12,17,L 6,AWAY,null,SAC,null,null
+Sun, Feb 21, 2021,9:00p,Milwaukee Bucks,L,115,128,12,18,L 7,AWAY,null,SAC,null,null
+Tue, Feb 23, 2021,7:30p,Brooklyn Nets,L,118,127,12,19,L 8,AWAY,null,SAC,null,null
+Thu, Feb 25, 2021,7:30p,New York Knicks,L,121,140,12,20,L 9,AWAY,null,SAC,null,null
+Fri, Feb 26, 2021,8:00p,Detroit Pistons,W,110,107,13,20,W 1,AWAY,null,SAC,null,null
+Sun, Feb 28, 2021,10:00p,Charlotte Hornets,L,126,127,13,21,L 1,HOME,null,SAC,202102280SAC,null
+Wed, Mar 3, 2021,10:00p,Los Angeles Lakers,null
+Thu, Mar 4, 2021,10:00p,Portland Trail Blazers,null
+Thu, Mar 11, 2021,10:00p,Houston Rockets,null
+Sat, Mar 13, 2021,7:30p,Atlanta Hawks,null
+Mon, Mar 15, 2021,7:00p,Charlotte Hornets,null
+Wed, Mar 17, 2021,7:00p,Washington Wizards,null
+Fri, Mar 19, 2021,7:30p,Boston Celtics,null
+Sat, Mar 20, 2021,8:00p,Philadelphia 76ers,null
+Mon, Mar 22, 2021,7:30p,Cleveland Cavaliers,null
+Wed, Mar 24, 2021,10:00p,Atlanta Hawks,null
+Thu, Mar 25, 2021,10:00p,Golden State Warriors,null
+Sat, Mar 27, 2021,10:00p,Cleveland Cavaliers,null
+Mon, Mar 29, 2021,8:30p,San Antonio Spurs,null
+Wed, Mar 31, 2021,8:30p,San Antonio Spurs,null
+Fri, Apr 2, 2021,10:00p,Los Angeles Lakers,null
+Sat, Apr 3, 2021,10:00p,Milwaukee Bucks,null
+Mon, Apr 5, 2021,7:00p,Minnesota Timberwolves,null
+Thu, Apr 8, 2021,10:00p,Detroit Pistons,null
+Sat, Apr 10, 2021,9:00p,Utah Jazz,null
+Mon, Apr 12, 2021,9:00p,New Orleans Pelicans,null
+Wed, Apr 14, 2021,10:00p,Washington Wizards,null
+Thu, Apr 15, 2021,10:00p,Phoenix Suns,null
+Sun, Apr 18, 2021,7:30p,Dallas Mavericks,null
+Tue, Apr 20, 2021,10:00p,Minnesota Timberwolves,null
+Wed, Apr 21, 2021,10:00p,Minnesota Timberwolves,null
+Sun, Apr 25, 2021,10:00p,Golden State Warriors,null
+Mon, Apr 26, 2021,10:00p,Dallas Mavericks,null
+Wed, Apr 28, 2021,10:00p,Utah Jazz,null
+Fri, Apr 30, 2021,10:30p,Los Angeles Lakers,null
+Sun, May 2, 2021,8:00p,Dallas Mavericks,null
+Tue, May 4, 2021,8:00p,Oklahoma City Thunder,null
+Wed, May 5, 2021,8:00p,Indiana Pacers,null
+Fri, May 7, 2021,10:00p,San Antonio Spurs,null
+Sun, May 9, 2021,10:00p,Oklahoma City Thunder,null
+Tue, May 11, 2021,10:00p,Oklahoma City Thunder,null
+Thu, May 13, 2021,8:00p,Memphis Grizzlies,null
+Fri, May 14, 2021,9:00p,Memphis Grizzlies,null
+Sun, May 16, 2021,Utah Jazz,null
+Wed, Dec 23, 2020,10:30p,Dallas Mavericks,W,106,102,1,0,W 1,AWAY,null,PHO,null,null
+Sat, Dec 26, 2020,10:00p,Sacramento Kings,L,103,106,1,1,L 1,AWAY,null,PHO,null,null
+Sun, Dec 27, 2020,9:00p,Sacramento Kings,W,116,100,2,1,W 1,AWAY,null,PHO,null,null
+Tue, Dec 29, 2020,10:00p,New Orleans Pelicans,W,111,86,3,1,W 2,HOME,null,PHO,202012290PHO,null
+Thu, Dec 31, 2020,9:00p,Utah Jazz,W,106,95,4,1,W 3,AWAY,null,PHO,null,null
+Fri, Jan 1, 2021,9:00p,Denver Nuggets,W,106,103,5,1,W 4,AWAY,null,PHO,null,null
+Sun, Jan 3, 2021,8:00p,Los Angeles Clippers,L,107,112,5,2,L 1,HOME,null,PHO,202101030PHO,null
+Wed, Jan 6, 2021,9:00p,Toronto Raptors,W,123,115,6,2,W 1,HOME,null,PHO,202101060PHO,null
+Fri, Jan 8, 2021,7:00p,Detroit Pistons,L,105,110,6,3,L 1,AWAY,OT,PHO,null,null
+Sat, Jan 9, 2021,7:00p,Indiana Pacers,W,125,117,7,3,W 1,AWAY,null,PHO,null,null
+Mon, Jan 11, 2021,7:00p,Washington Wizards,L,107,128,7,4,L 1,AWAY,null,PHO,null,null
+Mon, Jan 18, 2021,5:00p,Memphis Grizzlies,L,104,108,7,5,L 2,AWAY,null,PHO,null,null
+Wed, Jan 20, 2021,9:30p,Houston Rockets,W,109,103,8,5,W 1,AWAY,null,PHO,null,null
+Fri, Jan 22, 2021,10:00p,Denver Nuggets,L,126,130,8,6,L 1,HOME,OT,PHO,202101220PHO,null
+Sat, Jan 23, 2021,9:00p,Denver Nuggets,L,112,120,8,7,L 2,HOME,2OT,PHO,202101230PHO,null
+Wed, Jan 27, 2021,9:00p,Oklahoma City Thunder,L,97,102,8,8,L 3,HOME,null,PHO,202101270PHO,null
+Thu, Jan 28, 2021,10:00p,Golden State Warriors,W,114,93,9,8,W 1,HOME,null,PHO,202101280PHO,null
+Sat, Jan 30, 2021,9:00p,Dallas Mavericks,W,111,105,10,8,W 2,AWAY,null,PHO,null,null
+Mon, Feb 1, 2021,8:30p,Dallas Mavericks,W,109,108,11,8,W 3,AWAY,null,PHO,null,null
+Wed, Feb 3, 2021,9:30p,New Orleans Pelicans,L,101,123,11,9,L 1,AWAY,null,PHO,null,null
+Fri, Feb 5, 2021,9:00p,Detroit Pistons,W,109,92,12,9,W 1,HOME,null,PHO,202102050PHO,null
+Sun, Feb 7, 2021,2:00p,Boston Celtics,W,100,91,13,9,W 2,HOME,null,PHO,202102070PHO,null
+Mon, Feb 8, 2021,9:00p,Cleveland Cavaliers,W,119,113,14,9,W 3,HOME,null,PHO,202102080PHO,null
+Wed, Feb 10, 2021,10:00p,Milwaukee Bucks,W,125,124,15,9,W 4,HOME,null,PHO,202102100PHO,null
+Sat, Feb 13, 2021,3:00p,Philadelphia 76ers,W,120,111,16,9,W 5,HOME,null,PHO,202102130PHO,null
+Sun, Feb 14, 2021,9:00p,Orlando Magic,W,109,90,17,9,W 6,HOME,null,PHO,202102140PHO,null
+Tue, Feb 16, 2021,10:30p,Brooklyn Nets,L,124,128,17,10,L 1,HOME,null,PHO,202102160PHO,null
+Fri, Feb 19, 2021,8:00p,New Orleans Pelicans,W,132,114,18,10,W 1,AWAY,null,PHO,null,null
+Sat, Feb 20, 2021,9:00p,Memphis Grizzlies,W,128,97,19,10,W 2,AWAY,null,PHO,null,null
+Mon, Feb 22, 2021,9:00p,Portland Trail Blazers,W,132,100,20,10,W 3,HOME,null,PHO,202102220PHO,null
+Wed, Feb 24, 2021,9:00p,Charlotte Hornets,L,121,124,20,11,L 1,HOME,null,PHO,202102240PHO,null
+Fri, Feb 26, 2021,8:00p,Chicago Bulls,W,106,97,21,11,W 1,AWAY,null,PHO,null,null
+Sun, Feb 28, 2021,9:00p,Minnesota Timberwolves,W,118,99,22,11,W 2,AWAY,null,PHO,null,null
+Tue, Mar 2, 2021,10:00p,Los Angeles Lakers,W,114,104,23,11,W 3,AWAY,null,PHO,null,null
+Thu, Mar 4, 2021,10:00p,Golden State Warriors,null
+Thu, Mar 11, 2021,10:00p,Portland Trail Blazers,null
+Sat, Mar 13, 2021,10:00p,Indiana Pacers,null
+Mon, Mar 15, 2021,10:00p,Memphis Grizzlies,null
+Thu, Mar 18, 2021,10:00p,Minnesota Timberwolves,null
+Fri, Mar 19, 2021,10:00p,Minnesota Timberwolves,null
+Sun, Mar 21, 2021,10:00p,Los Angeles Lakers,null
+Tue, Mar 23, 2021,8:00p,Miami Heat,null
+Wed, Mar 24, 2021,8:00p,Orlando Magic,null
+Fri, Mar 26, 2021,7:30p,Toronto Raptors,null
+Sun, Mar 28, 2021,1:00p,Charlotte Hornets,null
+Tue, Mar 30, 2021,10:00p,Atlanta Hawks,null
+Wed, Mar 31, 2021,10:00p,Chicago Bulls,null
+Fri, Apr 2, 2021,10:00p,Oklahoma City Thunder,null
+Mon, Apr 5, 2021,8:00p,Houston Rockets,null
+Wed, Apr 7, 2021,10:00p,Utah Jazz,null
+Thu, Apr 8, 2021,10:00p,Los Angeles Clippers,null
+Sat, Apr 10, 2021,10:00p,Washington Wizards,null
+Mon, Apr 12, 2021,10:00p,Houston Rockets,null
+Tue, Apr 13, 2021,10:00p,Miami Heat,null
+Thu, Apr 15, 2021,10:00p,Sacramento Kings,null
+Sat, Apr 17, 2021,10:00p,San Antonio Spurs,null
+Mon, Apr 19, 2021,8:00p,Milwaukee Bucks,null
+Wed, Apr 21, 2021,7:00p,Philadelphia 76ers,null
+Thu, Apr 22, 2021,7:00p,Boston Celtics,null
+Sun, Apr 25, 2021,3:30p,Brooklyn Nets,null
+Mon, Apr 26, 2021,7:30p,New York Knicks,null
+Wed, Apr 28, 2021,10:00p,Los Angeles Clippers,null
+Fri, Apr 30, 2021,10:00p,Utah Jazz,null
+Sun, May 2, 2021,8:00p,Oklahoma City Thunder,null
+Tue, May 4, 2021,7:00p,Cleveland Cavaliers,null
+Wed, May 5, 2021,8:00p,Atlanta Hawks,null
+Fri, May 7, 2021,10:00p,New York Knicks,null
+Sun, May 9, 2021,10:00p,Los Angeles Lakers,null
+Tue, May 11, 2021,10:00p,Golden State Warriors,null
+Thu, May 13, 2021,10:00p,Portland Trail Blazers,null
+Sat, May 15, 2021,San Antonio Spurs,null
+Sun, May 16, 2021,San Antonio Spurs,null
+Tue, Dec 22, 2020,7:00p,Brooklyn Nets,L,99,125,0,1,L 1,AWAY,null,GSW,null,null
+Fri, Dec 25, 2020,2:30p,Milwaukee Bucks,L,99,138,0,2,L 2,AWAY,null,GSW,null,null
+Sun, Dec 27, 2020,8:00p,Chicago Bulls,W,129,128,1,2,W 1,AWAY,null,GSW,null,null
+Tue, Dec 29, 2020,7:00p,Detroit Pistons,W,116,106,2,2,W 2,AWAY,null,GSW,null,null
+Fri, Jan 1, 2021,10:30p,Portland Trail Blazers,L,98,123,2,3,L 1,HOME,null,GSW,202101010GSW,null
+Sun, Jan 3, 2021,8:30p,Portland Trail Blazers,W,137,122,3,3,W 1,HOME,null,GSW,202101030GSW,null
+Mon, Jan 4, 2021,10:00p,Sacramento Kings,W,137,106,4,3,W 2,HOME,null,GSW,202101040GSW,null
+Wed, Jan 6, 2021,10:00p,Los Angeles Clippers,L,101,108,4,4,L 1,HOME,null,GSW,202101060GSW,null
+Fri, Jan 8, 2021,10:00p,Los Angeles Clippers,W,115,105,5,4,W 1,HOME,null,GSW,202101080GSW,null
+Sun, Jan 10, 2021,8:30p,Toronto Raptors,W,106,105,6,4,W 2,HOME,null,GSW,202101100GSW,null
+Tue, Jan 12, 2021,10:30p,Indiana Pacers,L,95,104,6,5,L 1,HOME,null,GSW,202101120GSW,null
+Thu, Jan 14, 2021,10:00p,Denver Nuggets,L,104,114,6,6,L 2,AWAY,null,GSW,null,null
+Mon, Jan 18, 2021,10:00p,Los Angeles Lakers,W,115,113,7,6,W 1,AWAY,null,GSW,null,null
+Wed, Jan 20, 2021,10:00p,San Antonio Spurs,W,121,99,8,6,W 2,HOME,null,GSW,202101200GSW,null
+Thu, Jan 21, 2021,10:00p,New York Knicks,L,104,119,8,7,L 1,HOME,null,GSW,202101210GSW,null
+Sat, Jan 23, 2021,9:00p,Utah Jazz,L,108,127,8,8,L 2,AWAY,null,GSW,null,null
+Mon, Jan 25, 2021,10:00p,Minnesota Timberwolves,W,130,108,9,8,W 1,HOME,null,GSW,202101250GSW,null
+Wed, Jan 27, 2021,10:00p,Minnesota Timberwolves,W,123,111,10,8,W 2,HOME,null,GSW,202101270GSW,null
+Thu, Jan 28, 2021,10:00p,Phoenix Suns,L,93,114,10,9,L 1,AWAY,null,GSW,null,null
+Sat, Jan 30, 2021,10:00p,Detroit Pistons,W,118,91,11,9,W 1,HOME,null,GSW,202101300GSW,null
+Tue, Feb 2, 2021,10:00p,Boston Celtics,L,107,111,11,10,L 1,HOME,null,GSW,202102020GSW,null
+Thu, Feb 4, 2021,7:30p,Dallas Mavericks,W,147,116,12,10,W 1,AWAY,null,GSW,null,null
+Sat, Feb 6, 2021,8:30p,Dallas Mavericks,L,132,134,12,11,L 1,AWAY,null,GSW,null,null
+Mon, Feb 8, 2021,8:30p,San Antonio Spurs,L,100,105,12,12,L 2,AWAY,null,GSW,null,null
+Tue, Feb 9, 2021,8:30p,San Antonio Spurs,W,114,91,13,12,W 1,AWAY,null,GSW,null,null
+Thu, Feb 11, 2021,10:00p,Orlando Magic,W,111,105,14,12,W 2,HOME,null,GSW,202102110GSW,null
+Sat, Feb 13, 2021,8:30p,Brooklyn Nets,L,117,134,14,13,L 1,HOME,null,GSW,202102130GSW,null
+Mon, Feb 15, 2021,10:00p,Cleveland Cavaliers,W,129,98,15,13,W 1,HOME,null,GSW,202102150GSW,null
+Wed, Feb 17, 2021,10:00p,Miami Heat,W,120,112,16,13,W 2,HOME,OT,GSW,202102170GSW,null
+Fri, Feb 19, 2021,7:00p,Orlando Magic,L,120,124,16,14,L 1,AWAY,null,GSW,null,null
+Sat, Feb 20, 2021,8:00p,Charlotte Hornets,L,100,102,16,15,L 2,AWAY,null,GSW,null,null
+Tue, Feb 23, 2021,7:30p,New York Knicks,W,114,106,17,15,W 1,AWAY,null,GSW,null,null
+Wed, Feb 24, 2021,7:30p,Indiana Pacers,W,111,107,18,15,W 2,AWAY,null,GSW,null,null
+Fri, Feb 26, 2021,10:00p,Charlotte Hornets,W,130,121,19,15,W 3,HOME,null,GSW,202102260GSW,null
+Sun, Feb 28, 2021,8:00p,Los Angeles Lakers,L,91,117,19,16,L 1,AWAY,null,GSW,null,null
+Wed, Mar 3, 2021,10:00p,Portland Trail Blazers,null
+Thu, Mar 4, 2021,10:00p,Phoenix Suns,null
+Thu, Mar 11, 2021,10:00p,Los Angeles Clippers,null
+Sun, Mar 14, 2021,4:00p,Utah Jazz,null
+Mon, Mar 15, 2021,10:30p,Los Angeles Lakers,null
+Wed, Mar 17, 2021,8:00p,Houston Rockets,null
+Fri, Mar 19, 2021,8:00p,Memphis Grizzlies,null
+Sat, Mar 20, 2021,8:00p,Memphis Grizzlies,null
+Tue, Mar 23, 2021,10:00p,Philadelphia 76ers,null
+Thu, Mar 25, 2021,10:00p,Sacramento Kings,null
+Fri, Mar 26, 2021,10:00p,Atlanta Hawks,null
+Mon, Mar 29, 2021,10:00p,Chicago Bulls,null
+Thu, Apr 1, 2021,8:00p,Miami Heat,null
+Fri, Apr 2, 2021,7:00p,Toronto Raptors,null
+Sun, Apr 4, 2021,7:30p,Atlanta Hawks,null
+Tue, Apr 6, 2021,10:00p,Milwaukee Bucks,null
+Fri, Apr 9, 2021,10:00p,Washington Wizards,null
+Sat, Apr 10, 2021,10:00p,Houston Rockets,null
+Mon, Apr 12, 2021,10:00p,Denver Nuggets,null
+Wed, Apr 14, 2021,9:00p,Oklahoma City Thunder,null
+Thu, Apr 15, 2021,8:00p,Cleveland Cavaliers,null
+Sat, Apr 17, 2021,8:30p,Boston Celtics,null
+Mon, Apr 19, 2021,7:30p,Philadelphia 76ers,null
+Wed, Apr 21, 2021,7:00p,Washington Wizards,null
+Fri, Apr 23, 2021,10:00p,Denver Nuggets,null
+Sun, Apr 25, 2021,10:00p,Sacramento Kings,null
+Tue, Apr 27, 2021,9:30p,Dallas Mavericks,null
+Thu, Apr 29, 2021,8:00p,Minnesota Timberwolves,null
+Sat, May 1, 2021,7:30p,Houston Rockets,null
+Mon, May 3, 2021,7:30p,New Orleans Pelicans,null
+Tue, May 4, 2021,8:00p,New Orleans Pelicans,null
+Thu, May 6, 2021,10:00p,Oklahoma City Thunder,null
+Sat, May 8, 2021,10:00p,Oklahoma City Thunder,null
+Mon, May 10, 2021,10:00p,Utah Jazz,null
+Tue, May 11, 2021,10:00p,Phoenix Suns,null
+Fri, May 14, 2021,10:00p,New Orleans Pelicans,null
+Sun, May 16, 2021,Memphis Grizzlies,null
+Wed, Dec 23, 2020,10:30p,Phoenix Suns,L,102,106,0,1,L 1,AWAY,null,DAL,null,null
+Fri, Dec 25, 2020,8:00p,Los Angeles Lakers,L,115,138,0,2,L 2,AWAY,null,DAL,null,null
+Sun, Dec 27, 2020,3:30p,Los Angeles Clippers,W,124,73,1,2,W 1,AWAY,null,DAL,null,null
+Wed, Dec 30, 2020,8:30p,Charlotte Hornets,L,99,118,1,3,L 1,HOME,null,DAL,202012300DAL,null
+Fri, Jan 1, 2021,7:00p,Miami Heat,W,93,83,2,3,W 1,HOME,null,DAL,202101010DAL,null
+Sun, Jan 3, 2021,8:00p,Chicago Bulls,L,108,118,2,4,L 1,AWAY,null,DAL,null,null
+Mon, Jan 4, 2021,8:00p,Houston Rockets,W,113,100,3,4,W 1,AWAY,null,DAL,null,null
+Thu, Jan 7, 2021,10:00p,Denver Nuggets,W,124,117,4,4,W 2,AWAY,OT,DAL,null,null
+Sat, Jan 9, 2021,8:30p,Orlando Magic,W,112,98,5,4,W 3,HOME,null,DAL,202101090DAL,null
+Wed, Jan 13, 2021,7:00p,Charlotte Hornets,W,104,93,6,4,W 4,AWAY,null,DAL,null,null
+Fri, Jan 15, 2021,7:30p,Milwaukee Bucks,L,109,112,6,5,L 1,AWAY,null,DAL,null,null
+Sun, Jan 17, 2021,3:00p,Chicago Bulls,L,101,117,6,6,L 2,HOME,null,DAL,202101170DAL,null
+Mon, Jan 18, 2021,7:30p,Toronto Raptors,L,93,116,6,7,L 3,AWAY,null,DAL,null,null
+Wed, Jan 20, 2021,7:00p,Indiana Pacers,W,124,112,7,7,W 1,AWAY,null,DAL,null,null
+Fri, Jan 22, 2021,8:30p,San Antonio Spurs,W,122,117,8,7,W 2,AWAY,null,DAL,null,null
+Sat, Jan 23, 2021,9:00p,Houston Rockets,L,108,133,8,8,L 1,HOME,null,DAL,202101230DAL,null
+Mon, Jan 25, 2021,8:30p,Denver Nuggets,L,113,117,8,9,L 2,HOME,null,DAL,202101250DAL,null
+Wed, Jan 27, 2021,9:00p,Utah Jazz,L,104,116,8,10,L 3,AWAY,null,DAL,null,null
+Fri, Jan 29, 2021,10:00p,Utah Jazz,L,101,120,8,11,L 4,AWAY,null,DAL,null,null
+Sat, Jan 30, 2021,9:00p,Phoenix Suns,L,105,111,8,12,L 5,HOME,null,DAL,202101300DAL,null
+Mon, Feb 1, 2021,8:30p,Phoenix Suns,L,108,109,8,13,L 6,HOME,null,DAL,202102010DAL,null
+Wed, Feb 3, 2021,7:30p,Atlanta Hawks,W,122,116,9,13,W 1,AWAY,null,DAL,null,null
+Thu, Feb 4, 2021,7:30p,Golden State Warriors,L,116,147,9,14,L 1,HOME,null,DAL,202102040DAL,null
+Sat, Feb 6, 2021,8:30p,Golden State Warriors,W,134,132,10,14,W 1,HOME,null,DAL,202102060DAL,null
+Mon, Feb 8, 2021,8:30p,Minnesota Timberwolves,W,127,122,11,14,W 2,HOME,null,DAL,202102080DAL,null
+Wed, Feb 10, 2021,7:30p,Atlanta Hawks,W,118,117,12,14,W 3,HOME,null,DAL,202102100DAL,null
+Fri, Feb 12, 2021,7:30p,New Orleans Pelicans,W,143,130,13,14,W 4,HOME,null,DAL,202102120DAL,null
+Sun, Feb 14, 2021,7:30p,Portland Trail Blazers,L,118,121,13,15,L 1,HOME,null,DAL,202102140DAL,null
+Mon, Feb 22, 2021,8:30p,Memphis Grizzlies,W,102,92,14,15,W 1,HOME,null,DAL,202102220DAL,null
+Tue, Feb 23, 2021,7:30p,Boston Celtics,W,110,107,15,15,W 2,HOME,null,DAL,202102230DAL,null
+Thu, Feb 25, 2021,7:00p,Philadelphia 76ers,L,97,111,15,16,L 1,AWAY,null,DAL,null,null
+Sat, Feb 27, 2021,8:30p,Brooklyn Nets,W,115,98,16,16,W 1,AWAY,null,DAL,null,null
+Mon, Mar 1, 2021,7:00p,Orlando Magic,W,130,124,17,16,W 2,AWAY,null,DAL,null,null
+Wed, Mar 3, 2021,8:30p,Oklahoma City Thunder,null
+Wed, Mar 10, 2021,8:30p,San Antonio Spurs,null
+Thu, Mar 11, 2021,9:00p,Oklahoma City Thunder,null
+Sat, Mar 13, 2021,10:00p,Denver Nuggets,null
+Mon, Mar 15, 2021,9:00p,Los Angeles Clippers,null
+Wed, Mar 17, 2021,9:30p,Los Angeles Clippers,null
+Fri, Mar 19, 2021,10:00p,Portland Trail Blazers,null
+Sun, Mar 21, 2021,10:00p,Portland Trail Blazers,null
+Wed, Mar 24, 2021,8:00p,Minnesota Timberwolves,null
+Fri, Mar 26, 2021,8:30p,Indiana Pacers,null
+Sat, Mar 27, 2021,9:00p,New Orleans Pelicans,null
+Mon, Mar 29, 2021,8:00p,Oklahoma City Thunder,null
+Wed, Mar 31, 2021,7:30p,Boston Celtics,null
+Fri, Apr 2, 2021,7:30p,New York Knicks,null
+Sat, Apr 3, 2021,7:00p,Washington Wizards,null
+Mon, Apr 5, 2021,7:00p,Utah Jazz,null
+Wed, Apr 7, 2021,8:00p,Houston Rockets,null
+Thu, Apr 8, 2021,9:00p,Milwaukee Bucks,null
+Sun, Apr 11, 2021,8:00p,San Antonio Spurs,null
+Mon, Apr 12, 2021,8:30p,Philadelphia 76ers,null
+Wed, Apr 14, 2021,9:30p,Memphis Grizzlies,null
+Fri, Apr 16, 2021,9:30p,New York Knicks,null
+Sun, Apr 18, 2021,7:30p,Sacramento Kings,null
+Wed, Apr 21, 2021,8:30p,Detroit Pistons,null
+Thu, Apr 22, 2021,9:30p,Los Angeles Lakers,null
+Sat, Apr 24, 2021,8:30p,Los Angeles Lakers,null
+Mon, Apr 26, 2021,10:00p,Sacramento Kings,null
+Tue, Apr 27, 2021,9:30p,Golden State Warriors,null
+Thu, Apr 29, 2021,7:00p,Detroit Pistons,null
+Sat, May 1, 2021,9:00p,Washington Wizards,null
+Sun, May 2, 2021,8:00p,Sacramento Kings,null
+Tue, May 4, 2021,8:00p,Miami Heat,null
+Thu, May 6, 2021,7:30p,Brooklyn Nets,null
+Fri, May 7, 2021,8:30p,Cleveland Cavaliers,null
+Sun, May 9, 2021,7:00p,Cleveland Cavaliers,null
+Tue, May 11, 2021,8:00p,Memphis Grizzlies,null
+Wed, May 12, 2021,9:00p,New Orleans Pelicans,null
+Fri, May 14, 2021,9:00p,Toronto Raptors,null
+Sun, May 16, 2021,Minnesota Timberwolves,null
+Sat, Dec 26, 2020,10:00p,Portland Trail Blazers,L,126,128,0,1,L 1,AWAY,OT,HOU,null,null
+Mon, Dec 28, 2020,9:00p,Denver Nuggets,L,111,124,0,2,L 2,AWAY,null,HOU,null,null
+Thu, Dec 31, 2020,7:00p,Sacramento Kings,W,122,119,1,2,W 1,HOME,null,HOU,202012310HOU,null
+Sat, Jan 2, 2021,5:00p,Sacramento Kings,W,102,94,2,2,W 2,HOME,null,HOU,202101020HOU,null
+Mon, Jan 4, 2021,8:00p,Dallas Mavericks,L,100,113,2,3,L 1,HOME,null,HOU,202101040HOU,null
+Wed, Jan 6, 2021,7:00p,Indiana Pacers,L,107,114,2,4,L 2,AWAY,null,HOU,null,null
+Fri, Jan 8, 2021,8:00p,Orlando Magic,W,132,90,3,4,W 1,HOME,null,HOU,202101080HOU,null
+Sun, Jan 10, 2021,7:00p,Los Angeles Lakers,L,102,120,3,5,L 1,HOME,null,HOU,202101100HOU,null
+Tue, Jan 12, 2021,8:00p,Los Angeles Lakers,L,100,117,3,6,L 2,HOME,null,HOU,202101120HOU,null
+Thu, Jan 14, 2021,7:30p,San Antonio Spurs,W,109,105,4,6,W 1,AWAY,null,HOU,null,null
+Sat, Jan 16, 2021,5:00p,San Antonio Spurs,L,91,103,4,7,L 1,AWAY,null,HOU,null,null
+Mon, Jan 18, 2021,8:00p,Chicago Bulls,L,120,125,4,8,L 2,AWAY,null,HOU,null,null
+Wed, Jan 20, 2021,9:30p,Phoenix Suns,L,103,109,4,9,L 3,HOME,null,HOU,202101200HOU,null
+Fri, Jan 22, 2021,7:00p,Detroit Pistons,W,103,102,5,9,W 1,AWAY,null,HOU,null,null
+Sat, Jan 23, 2021,9:00p,Dallas Mavericks,W,133,108,6,9,W 2,AWAY,null,HOU,null,null
+Tue, Jan 26, 2021,8:00p,Washington Wizards,W,107,88,7,9,W 3,HOME,null,HOU,202101260HOU,null
+Thu, Jan 28, 2021,7:30p,Portland Trail Blazers,W,104,101,8,9,W 4,HOME,null,HOU,202101280HOU,null
+Sat, Jan 30, 2021,8:00p,New Orleans Pelicans,W,126,112,9,9,W 5,AWAY,null,HOU,null,null
+Mon, Feb 1, 2021,8:00p,Oklahoma City Thunder,W,136,106,10,9,W 6,AWAY,null,HOU,null,null
+Wed, Feb 3, 2021,8:00p,Oklahoma City Thunder,L,87,104,10,10,L 1,AWAY,null,HOU,null,null
+Thu, Feb 4, 2021,9:00p,Memphis Grizzlies,W,115,103,11,10,W 1,AWAY,null,HOU,null,null
+Sat, Feb 6, 2021,8:00p,San Antonio Spurs,L,106,111,11,11,L 1,HOME,null,HOU,202102060HOU,null
+Mon, Feb 8, 2021,7:00p,Charlotte Hornets,L,94,119,11,12,L 2,AWAY,null,HOU,null,null
+Tue, Feb 9, 2021,7:30p,New Orleans Pelicans,L,101,130,11,13,L 3,AWAY,null,HOU,null,null
+Thu, Feb 11, 2021,7:30p,Miami Heat,L,94,101,11,14,L 4,HOME,null,HOU,202102110HOU,null
+Sat, Feb 13, 2021,8:00p,New York Knicks,L,99,121,11,15,L 5,AWAY,null,HOU,null,null
+Mon, Feb 15, 2021,7:00p,Washington Wizards,L,119,131,11,16,L 6,AWAY,null,HOU,null,null
+Wed, Feb 17, 2021,7:30p,Philadelphia 76ers,L,113,118,11,17,L 7,AWAY,null,HOU,null,null
+Mon, Feb 22, 2021,8:00p,Chicago Bulls,L,100,120,11,18,L 8,HOME,null,HOU,202102220HOU,null
+Wed, Feb 24, 2021,7:30p,Cleveland Cavaliers,L,96,112,11,19,L 9,AWAY,null,HOU,null,null
+Fri, Feb 26, 2021,7:30p,Toronto Raptors,L,111,122,11,20,L 10,AWAY,null,HOU,null,null
+Sun, Feb 28, 2021,8:00p,Memphis Grizzlies,L,84,133,11,21,L 11,HOME,null,HOU,202102280HOU,null
+Mon, Mar 1, 2021,9:00p,Cleveland Cavaliers,L,90,101,11,22,L 12,HOME,null,HOU,202103010HOU,null
+Wed, Mar 3, 2021,7:30p,Brooklyn Nets,null
+Thu, Mar 11, 2021,10:00p,Sacramento Kings,null
+Fri, Mar 12, 2021,10:00p,Utah Jazz,null
+Sun, Mar 14, 2021,8:00p,Boston Celtics,null
+Tue, Mar 16, 2021,8:00p,Atlanta Hawks,null
+Wed, Mar 17, 2021,8:00p,Golden State Warriors,null
+Fri, Mar 19, 2021,8:00p,Detroit Pistons,null
+Sun, Mar 21, 2021,2:00p,Oklahoma City Thunder,null
+Mon, Mar 22, 2021,9:00p,Toronto Raptors,null
+Wed, Mar 24, 2021,8:00p,Charlotte Hornets,null
+Fri, Mar 26, 2021,8:00p,Minnesota Timberwolves,null
+Sat, Mar 27, 2021,8:00p,Minnesota Timberwolves,null
+Mon, Mar 29, 2021,8:00p,Memphis Grizzlies,null
+Wed, Mar 31, 2021,7:30p,Brooklyn Nets,null
+Fri, Apr 2, 2021,7:30p,Boston Celtics,null
+Sun, Apr 4, 2021,8:00p,New Orleans Pelicans,null
+Mon, Apr 5, 2021,8:00p,Phoenix Suns,null
+Wed, Apr 7, 2021,8:00p,Dallas Mavericks,null
+Fri, Apr 9, 2021,10:00p,Los Angeles Clippers,null
+Sat, Apr 10, 2021,10:00p,Golden State Warriors,null
+Mon, Apr 12, 2021,10:00p,Phoenix Suns,null
+Wed, Apr 14, 2021,9:00p,Indiana Pacers,null
+Fri, Apr 16, 2021,8:00p,Denver Nuggets,null
+Sun, Apr 18, 2021,7:00p,Orlando Magic,null
+Mon, Apr 19, 2021,8:00p,Miami Heat,null
+Wed, Apr 21, 2021,8:00p,Utah Jazz,null
+Fri, Apr 23, 2021,8:00p,Los Angeles Clippers,null
+Sat, Apr 24, 2021,10:00p,Denver Nuggets,null
+Tue, Apr 27, 2021,8:00p,Minnesota Timberwolves,null
+Thu, Apr 29, 2021,8:00p,Milwaukee Bucks,null
+Sat, May 1, 2021,7:30p,Golden State Warriors,null
+Sun, May 2, 2021,8:00p,New York Knicks,null
+Wed, May 5, 2021,8:00p,Philadelphia 76ers,null
+Fri, May 7, 2021,8:00p,Milwaukee Bucks,null
+Sat, May 8, 2021,10:00p,Utah Jazz,null
+Mon, May 10, 2021,10:00p,Portland Trail Blazers,null
+Wed, May 12, 2021,10:30p,Los Angeles Lakers,null
+Fri, May 14, 2021,9:00p,Los Angeles Clippers,null
+Sun, May 16, 2021,Atlanta Hawks,null
+Wed, Dec 23, 2020,8:00p,San Antonio Spurs,L,119,131,0,1,L 1,AWAY,null,MEM,null,null
+Sat, Dec 26, 2020,5:00p,Atlanta Hawks,L,112,122,0,2,L 2,HOME,null,MEM,202012260MEM,null
+Mon, Dec 28, 2020,7:30p,Brooklyn Nets,W,116,111,1,2,W 1,AWAY,OT,MEM,null,null
+Wed, Dec 30, 2020,7:30p,Boston Celtics,L,107,126,1,3,L 1,AWAY,null,MEM,null,null
+Fri, Jan 1, 2021,7:00p,Charlotte Hornets,W,108,93,2,3,W 1,AWAY,null,MEM,null,null
+Sun, Jan 3, 2021,6:00p,Los Angeles Lakers,L,94,108,2,4,L 1,HOME,null,MEM,202101030MEM,null
+Tue, Jan 5, 2021,8:00p,Los Angeles Lakers,L,92,94,2,5,L 2,HOME,null,MEM,202101050MEM,null
+Thu, Jan 7, 2021,8:00p,Cleveland Cavaliers,L,90,94,2,6,L 3,HOME,null,MEM,202101070MEM,null
+Fri, Jan 8, 2021,8:00p,Brooklyn Nets,W,115,110,3,6,W 1,HOME,null,MEM,202101080MEM,null
+Mon, Jan 11, 2021,7:00p,Cleveland Cavaliers,W,101,91,4,6,W 2,AWAY,null,MEM,null,null
+Wed, Jan 13, 2021,8:00p,Minnesota Timberwolves,W,118,107,5,6,W 3,AWAY,null,MEM,null,null
+Sat, Jan 16, 2021,8:00p,Philadelphia 76ers,W,106,104,6,6,W 4,HOME,null,MEM,202101160MEM,null
+Mon, Jan 18, 2021,5:00p,Phoenix Suns,W,108,104,7,6,W 5,HOME,null,MEM,202101180MEM,null
+Sat, Jan 30, 2021,8:30p,San Antonio Spurs,W,129,112,8,6,W 6,AWAY,null,MEM,null,null
+Mon, Feb 1, 2021,8:30p,San Antonio Spurs,W,133,102,9,6,W 7,AWAY,null,MEM,null,null
+Tue, Feb 2, 2021,8:00p,Indiana Pacers,L,116,134,9,7,L 1,AWAY,null,MEM,null,null
+Thu, Feb 4, 2021,9:00p,Houston Rockets,L,103,115,9,8,L 2,HOME,null,MEM,202102040MEM,null
+Sat, Feb 6, 2021,9:00p,New Orleans Pelicans,L,109,118,9,9,L 3,AWAY,null,MEM,null,null
+Mon, Feb 8, 2021,8:00p,Toronto Raptors,L,113,128,9,10,L 4,HOME,null,MEM,202102080MEM,null
+Wed, Feb 10, 2021,8:00p,Charlotte Hornets,W,130,114,10,10,W 1,HOME,null,MEM,202102100MEM,null
+Fri, Feb 12, 2021,10:00p,Los Angeles Lakers,L,105,115,10,11,L 1,AWAY,null,MEM,null,null
+Sun, Feb 14, 2021,10:00p,Sacramento Kings,W,124,110,11,11,W 1,AWAY,null,MEM,null,null
+Tue, Feb 16, 2021,8:00p,New Orleans Pelicans,L,113,144,11,12,L 1,HOME,null,MEM,202102160MEM,null
+Wed, Feb 17, 2021,9:00p,Oklahoma City Thunder,W,122,113,12,12,W 1,HOME,null,MEM,202102170MEM,null
+Fri, Feb 19, 2021,8:00p,Detroit Pistons,W,109,95,13,12,W 2,HOME,null,MEM,202102190MEM,null
+Sat, Feb 20, 2021,9:00p,Phoenix Suns,L,97,128,13,13,L 1,HOME,null,MEM,202102200MEM,null
+Mon, Feb 22, 2021,8:30p,Dallas Mavericks,L,92,102,13,14,L 2,AWAY,null,MEM,null,null
+Thu, Feb 25, 2021,8:00p,Los Angeles Clippers,W,122,94,14,14,W 1,HOME,null,MEM,202102250MEM,null
+Fri, Feb 26, 2021,8:00p,Los Angeles Clippers,L,99,119,14,15,L 1,HOME,null,MEM,202102260MEM,null
+Sun, Feb 28, 2021,8:00p,Houston Rockets,W,133,84,15,15,W 1,AWAY,null,MEM,null,null
+Tue, Mar 2, 2021,7:00p,Washington Wizards,W,125,111,16,15,W 2,AWAY,null,MEM,null,null
+Thu, Mar 4, 2021,8:00p,Milwaukee Bucks,null
+Wed, Mar 10, 2021,8:00p,Washington Wizards,null
+Fri, Mar 12, 2021,8:00p,Denver Nuggets,null
+Sun, Mar 14, 2021,2:00p,Oklahoma City Thunder,null
+Mon, Mar 15, 2021,10:00p,Phoenix Suns,null
+Wed, Mar 17, 2021,9:00p,Miami Heat,null
+Fri, Mar 19, 2021,8:00p,Golden State Warriors,null
+Sat, Mar 20, 2021,8:00p,Golden State Warriors,null
+Mon, Mar 22, 2021,9:00p,Boston Celtics,null
+Wed, Mar 24, 2021,8:00p,Oklahoma City Thunder,null
+Fri, Mar 26, 2021,9:00p,Utah Jazz,null
+Sat, Mar 27, 2021,9:00p,Utah Jazz,null
+Mon, Mar 29, 2021,8:00p,Houston Rockets,null
+Wed, Mar 31, 2021,8:00p,Utah Jazz,null
+Fri, Apr 2, 2021,8:00p,Minnesota Timberwolves,null
+Sun, Apr 4, 2021,7:00p,Philadelphia 76ers,null
+Tue, Apr 6, 2021,8:00p,Miami Heat,null
+Wed, Apr 7, 2021,8:00p,Atlanta Hawks,null
+Fri, Apr 9, 2021,7:30p,New York Knicks,null
+Sun, Apr 11, 2021,8:00p,Indiana Pacers,null
+Mon, Apr 12, 2021,9:00p,Chicago Bulls,null
+Wed, Apr 14, 2021,9:30p,Dallas Mavericks,null
+Fri, Apr 16, 2021,8:00p,Chicago Bulls,null
+Sat, Apr 17, 2021,9:00p,Milwaukee Bucks,null
+Mon, Apr 19, 2021,9:00p,Denver Nuggets,null
+Wed, Apr 21, 2021,10:00p,Los Angeles Clippers,null
+Fri, Apr 23, 2021,10:00p,Portland Trail Blazers,null
+Sun, Apr 25, 2021,4:00p,Portland Trail Blazers,null
+Mon, Apr 26, 2021,9:00p,Denver Nuggets,null
+Wed, Apr 28, 2021,9:00p,Portland Trail Blazers,null
+Fri, Apr 30, 2021,8:00p,Orlando Magic,null
+Sat, May 1, 2021,8:00p,Orlando Magic,null
+Mon, May 3, 2021,9:00p,New York Knicks,null
+Wed, May 5, 2021,8:00p,Minnesota Timberwolves,null
+Thu, May 6, 2021,8:00p,Detroit Pistons,null
+Sat, May 8, 2021,7:30p,Toronto Raptors,null
+Mon, May 10, 2021,8:00p,New Orleans Pelicans,null
+Tue, May 11, 2021,8:00p,Dallas Mavericks,null
+Thu, May 13, 2021,8:00p,Sacramento Kings,null
+Fri, May 14, 2021,9:00p,Sacramento Kings,null
+Sun, May 16, 2021,Golden State Warriors,null
+Wed, Dec 23, 2020,7:30p,Toronto Raptors,W,113,99,1,0,W 1,AWAY,null,NOP,null,null
+Fri, Dec 25, 2020,12:00p,Miami Heat,L,98,111,1,1,L 1,AWAY,null,NOP,null,null
+Sun, Dec 27, 2020,7:00p,San Antonio Spurs,W,98,95,2,1,W 1,HOME,null,NOP,202012270NOP,null
+Tue, Dec 29, 2020,10:00p,Phoenix Suns,L,86,111,2,2,L 1,AWAY,null,NOP,null,null
+Thu, Dec 31, 2020,8:00p,Oklahoma City Thunder,W,113,80,3,2,W 1,AWAY,null,NOP,null,null
+Sat, Jan 2, 2021,7:30p,Toronto Raptors,W,120,116,4,2,W 2,HOME,null,NOP,202101020NOP,null
+Mon, Jan 4, 2021,8:00p,Indiana Pacers,L,116,118,4,3,L 1,HOME,OT,NOP,202101040NOP,null
+Wed, Jan 6, 2021,8:00p,Oklahoma City Thunder,L,110,111,4,4,L 2,HOME,null,NOP,202101060NOP,null
+Fri, Jan 8, 2021,7:30p,Charlotte Hornets,L,110,118,4,5,L 3,HOME,null,NOP,202101080NOP,null
+Wed, Jan 13, 2021,10:00p,Los Angeles Clippers,L,106,111,4,6,L 4,AWAY,null,NOP,null,null
+Fri, Jan 15, 2021,10:00p,Los Angeles Lakers,L,95,112,4,7,L 5,AWAY,null,NOP,null,null
+Sun, Jan 17, 2021,9:00p,Sacramento Kings,W,128,123,5,7,W 1,AWAY,null,NOP,null,null
+Tue, Jan 19, 2021,9:00p,Utah Jazz,L,102,118,5,8,L 1,AWAY,null,NOP,null,null
+Thu, Jan 21, 2021,10:00p,Utah Jazz,L,118,129,5,9,L 2,AWAY,null,NOP,null,null
+Sat, Jan 23, 2021,8:00p,Minnesota Timberwolves,L,110,120,5,10,L 3,AWAY,null,NOP,null,null
+Wed, Jan 27, 2021,9:00p,Washington Wizards,W,124,106,6,10,W 1,HOME,null,NOP,202101270NOP,null
+Fri, Jan 29, 2021,7:30p,Milwaukee Bucks,W,131,126,7,10,W 2,HOME,null,NOP,202101290NOP,null
+Sat, Jan 30, 2021,8:00p,Houston Rockets,L,112,126,7,11,L 1,HOME,null,NOP,202101300NOP,null
+Mon, Feb 1, 2021,8:00p,Sacramento Kings,L,109,118,7,12,L 2,HOME,null,NOP,202102010NOP,null
+Wed, Feb 3, 2021,9:30p,Phoenix Suns,W,123,101,8,12,W 1,HOME,null,NOP,202102030NOP,null
+Fri, Feb 5, 2021,7:00p,Indiana Pacers,W,114,113,9,12,W 2,AWAY,null,NOP,null,null
+Sat, Feb 6, 2021,9:00p,Memphis Grizzlies,W,118,109,10,12,W 3,HOME,null,NOP,202102060NOP,null
+Tue, Feb 9, 2021,7:30p,Houston Rockets,W,130,101,11,12,W 4,HOME,null,NOP,202102090NOP,null
+Wed, Feb 10, 2021,9:00p,Chicago Bulls,L,116,129,11,13,L 1,AWAY,null,NOP,null,null
+Fri, Feb 12, 2021,7:30p,Dallas Mavericks,L,130,143,11,14,L 2,AWAY,null,NOP,null,null
+Sun, Feb 14, 2021,7:00p,Detroit Pistons,L,112,123,11,15,L 3,AWAY,null,NOP,null,null
+Tue, Feb 16, 2021,8:00p,Memphis Grizzlies,W,144,113,12,15,W 1,AWAY,null,NOP,null,null
+Wed, Feb 17, 2021,9:00p,Portland Trail Blazers,L,124,126,12,16,L 1,HOME,null,NOP,202102170NOP,null
+Fri, Feb 19, 2021,8:00p,Phoenix Suns,L,114,132,12,17,L 2,HOME,null,NOP,202102190NOP,null
+Sun, Feb 21, 2021,3:30p,Boston Celtics,W,120,115,13,17,W 1,HOME,OT,NOP,202102210NOP,null
+Wed, Feb 24, 2021,8:00p,Detroit Pistons,W,128,118,14,17,W 2,HOME,null,NOP,202102240NOP,null
+Thu, Feb 25, 2021,9:30p,Milwaukee Bucks,L,125,129,14,18,L 1,AWAY,null,NOP,null,null
+Sat, Feb 27, 2021,8:00p,San Antonio Spurs,L,114,117,14,19,L 2,AWAY,null,NOP,null,null
+Mon, Mar 1, 2021,8:00p,Utah Jazz,W,129,124,15,19,W 1,HOME,null,NOP,202103010NOP,null
+Wed, Mar 3, 2021,8:00p,Chicago Bulls,null
+Thu, Mar 4, 2021,8:30p,Miami Heat,null
+Thu, Mar 11, 2021,8:00p,Minnesota Timberwolves,null
+Fri, Mar 12, 2021,8:00p,Cleveland Cavaliers,null
+Sun, Mar 14, 2021,9:00p,Los Angeles Clippers,null
+Tue, Mar 16, 2021,10:00p,Portland Trail Blazers,null
+Thu, Mar 18, 2021,10:00p,Portland Trail Blazers,null
+Sun, Mar 21, 2021,3:00p,Denver Nuggets,null
+Tue, Mar 23, 2021,7:30p,Los Angeles Lakers,null
+Fri, Mar 26, 2021,8:00p,Denver Nuggets,null
+Sat, Mar 27, 2021,9:00p,Dallas Mavericks,null
+Mon, Mar 29, 2021,7:30p,Boston Celtics,null
+Thu, Apr 1, 2021,8:00p,Orlando Magic,null
+Fri, Apr 2, 2021,9:00p,Atlanta Hawks,null
+Sun, Apr 4, 2021,8:00p,Houston Rockets,null
+Tue, Apr 6, 2021,7:30p,Atlanta Hawks,null
+Wed, Apr 7, 2021,7:30p,Brooklyn Nets,null
+Fri, Apr 9, 2021,8:00p,Philadelphia 76ers,null
+Sun, Apr 11, 2021,7:00p,Cleveland Cavaliers,null
+Mon, Apr 12, 2021,9:00p,Sacramento Kings,null
+Wed, Apr 14, 2021,8:00p,New York Knicks,null
+Fri, Apr 16, 2021,7:00p,Washington Wizards,null
+Sun, Apr 18, 2021,1:00p,New York Knicks,null
+Tue, Apr 20, 2021,7:30p,Brooklyn Nets,null
+Thu, Apr 22, 2021,7:00p,Orlando Magic,null
+Sat, Apr 24, 2021,8:00p,San Antonio Spurs,null
+Mon, Apr 26, 2021,8:00p,Los Angeles Clippers,null
+Wed, Apr 28, 2021,9:00p,Denver Nuggets,null
+Thu, Apr 29, 2021,9:00p,Oklahoma City Thunder,null
+Sat, May 1, 2021,8:00p,Minnesota Timberwolves,null
+Mon, May 3, 2021,7:30p,Golden State Warriors,null
+Tue, May 4, 2021,8:00p,Golden State Warriors,null
+Fri, May 7, 2021,7:00p,Philadelphia 76ers,null
+Sun, May 9, 2021,7:00p,Charlotte Hornets,null
+Mon, May 10, 2021,8:00p,Memphis Grizzlies,null
+Wed, May 12, 2021,9:00p,Dallas Mavericks,null
+Fri, May 14, 2021,10:00p,Golden State Warriors,null
+Sun, May 16, 2021,Los Angeles Lakers,null
+Wed, Dec 23, 2020,8:00p,Memphis Grizzlies,W,131,119,1,0,W 1,AWAY,null,SAS,null,null
+Sat, Dec 26, 2020,8:30p,Toronto Raptors,W,119,114,2,0,W 2,HOME,null,SAS,202012260SAS,null
+Sun, Dec 27, 2020,7:00p,New Orleans Pelicans,L,95,98,2,1,L 1,AWAY,null,SAS,null,null
+Wed, Dec 30, 2020,8:30p,Los Angeles Lakers,L,107,121,2,2,L 2,HOME,null,SAS,202012300SAS,null
+Fri, Jan 1, 2021,8:00p,Los Angeles Lakers,L,103,109,2,3,L 3,HOME,null,SAS,202101010SAS,null
+Sun, Jan 3, 2021,7:00p,Utah Jazz,L,109,130,2,4,L 4,HOME,null,SAS,202101030SAS,null
+Tue, Jan 5, 2021,10:00p,Los Angeles Clippers,W,116,113,3,4,W 1,AWAY,null,SAS,null,null
+Thu, Jan 7, 2021,10:00p,Los Angeles Lakers,W,118,109,4,4,W 2,AWAY,null,SAS,null,null
+Sat, Jan 9, 2021,8:00p,Minnesota Timberwolves,W,125,122,5,4,W 3,AWAY,OT,SAS,null,null
+Sun, Jan 10, 2021,8:00p,Minnesota Timberwolves,L,88,96,5,5,L 1,AWAY,null,SAS,null,null
+Tue, Jan 12, 2021,8:00p,Oklahoma City Thunder,W,112,102,6,5,W 1,AWAY,null,SAS,null,null
+Thu, Jan 14, 2021,7:30p,Houston Rockets,L,105,109,6,6,L 1,HOME,null,SAS,202101140SAS,null
+Sat, Jan 16, 2021,5:00p,Houston Rockets,W,103,91,7,6,W 1,HOME,null,SAS,202101160SAS,null
+Mon, Jan 18, 2021,3:00p,Portland Trail Blazers,W,125,104,8,6,W 2,AWAY,null,SAS,null,null
+Wed, Jan 20, 2021,10:00p,Golden State Warriors,L,99,121,8,7,L 1,AWAY,null,SAS,null,null
+Fri, Jan 22, 2021,8:30p,Dallas Mavericks,L,117,122,8,8,L 2,HOME,null,SAS,202101220SAS,null
+Sun, Jan 24, 2021,8:00p,Washington Wizards,W,121,101,9,8,W 1,HOME,null,SAS,202101240SAS,null
+Wed, Jan 27, 2021,8:30p,Boston Celtics,W,110,106,10,8,W 2,HOME,null,SAS,202101270SAS,null
+Fri, Jan 29, 2021,8:30p,Denver Nuggets,W,119,109,11,8,W 3,HOME,null,SAS,202101290SAS,null
+Sat, Jan 30, 2021,8:30p,Memphis Grizzlies,L,112,129,11,9,L 1,HOME,null,SAS,202101300SAS,null
+Mon, Feb 1, 2021,8:30p,Memphis Grizzlies,L,102,133,11,10,L 2,HOME,null,SAS,202102010SAS,null
+Wed, Feb 3, 2021,8:30p,Minnesota Timberwolves,W,111,108,12,10,W 1,HOME,null,SAS,202102030SAS,null
+Sat, Feb 6, 2021,8:00p,Houston Rockets,W,111,106,13,10,W 2,AWAY,null,SAS,null,null
+Mon, Feb 8, 2021,8:30p,Golden State Warriors,W,105,100,14,10,W 3,HOME,null,SAS,202102080SAS,null
+Tue, Feb 9, 2021,8:30p,Golden State Warriors,L,91,114,14,11,L 1,HOME,null,SAS,202102090SAS,null
+Fri, Feb 12, 2021,7:30p,Atlanta Hawks,W,125,114,15,11,W 1,AWAY,null,SAS,null,null
+Sun, Feb 14, 2021,7:00p,Charlotte Hornets,W,122,110,16,11,W 2,AWAY,null,SAS,null,null
+Wed, Feb 24, 2021,8:00p,Oklahoma City Thunder,L,99,102,16,12,L 1,AWAY,null,SAS,null,null
+Sat, Feb 27, 2021,8:00p,New Orleans Pelicans,W,117,114,17,12,W 1,HOME,null,SAS,202102270SAS,null
+Mon, Mar 1, 2021,8:30p,Brooklyn Nets,L,113,124,17,13,L 1,HOME,OT,SAS,202103010SAS,null
+Tue, Mar 2, 2021,8:30p,New York Knicks,W,119,93,18,13,W 1,HOME,null,SAS,202103020SAS,null
+Thu, Mar 4, 2021,9:00p,Oklahoma City Thunder,null
+Wed, Mar 10, 2021,8:30p,Dallas Mavericks,null
+Fri, Mar 12, 2021,9:00p,Orlando Magic,null
+Sun, Mar 14, 2021,6:30p,Philadelphia 76ers,null
+Mon, Mar 15, 2021,8:00p,Detroit Pistons,null
+Wed, Mar 17, 2021,8:00p,Chicago Bulls,null
+Fri, Mar 19, 2021,7:30p,Cleveland Cavaliers,null
+Sat, Mar 20, 2021,9:00p,Milwaukee Bucks,null
+Mon, Mar 22, 2021,8:30p,Charlotte Hornets,null
+Wed, Mar 24, 2021,8:30p,Los Angeles Clippers,null
+Thu, Mar 25, 2021,8:30p,Los Angeles Clippers,null
+Sat, Mar 27, 2021,8:30p,Chicago Bulls,null
+Mon, Mar 29, 2021,8:30p,Sacramento Kings,null
+Wed, Mar 31, 2021,8:30p,Sacramento Kings,null
+Thu, Apr 1, 2021,8:30p,Atlanta Hawks,null
+Sat, Apr 3, 2021,9:00p,Indiana Pacers,null
+Mon, Apr 5, 2021,7:00p,Cleveland Cavaliers,null
+Wed, Apr 7, 2021,9:00p,Denver Nuggets,null
+Fri, Apr 9, 2021,9:00p,Denver Nuggets,null
+Sun, Apr 11, 2021,8:00p,Dallas Mavericks,null
+Mon, Apr 12, 2021,8:00p,Orlando Magic,null
+Wed, Apr 14, 2021,7:30p,Toronto Raptors,null
+Fri, Apr 16, 2021,8:30p,Portland Trail Blazers,null
+Sat, Apr 17, 2021,10:00p,Phoenix Suns,null
+Mon, Apr 19, 2021,8:00p,Indiana Pacers,null
+Wed, Apr 21, 2021,8:30p,Miami Heat,null
+Thu, Apr 22, 2021,8:30p,Detroit Pistons,null
+Sat, Apr 24, 2021,8:00p,New Orleans Pelicans,null
+Mon, Apr 26, 2021,7:00p,Washington Wizards,null
+Wed, Apr 28, 2021,8:00p,Miami Heat,null
+Fri, Apr 30, 2021,7:30p,Boston Celtics,null
+Sun, May 2, 2021,8:00p,Philadelphia 76ers,null
+Mon, May 3, 2021,10:00p,Utah Jazz,null
+Wed, May 5, 2021,9:00p,Utah Jazz,null
+Fri, May 7, 2021,10:00p,Sacramento Kings,null
+Sat, May 8, 2021,10:00p,Portland Trail Blazers,null
+Mon, May 10, 2021,8:30p,Milwaukee Bucks,null
+Wed, May 12, 2021,8:00p,Brooklyn Nets,null
+Thu, May 13, 2021,7:30p,New York Knicks,null
+Sat, May 15, 2021,Phoenix Suns,null
+Sun, May 16, 2021,Phoenix Suns,
