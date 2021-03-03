@@ -31,7 +31,7 @@ opponent_regex = re.compile(r"^[A-Z]+[a-z]+\s[A-Z0-9]+[a-z0-9]+\s?[A-Z]?")
 games=[]
 opponents_codes = []
 
-with open("results_Season_2019.txt", "r") as season_file:
+with open("results_Season_2020.txt", "r") as season_file:
     full_text = season_file.readlines()
     for elements in full_text:
         elems = elements.split(",")
@@ -129,11 +129,15 @@ test_data2 = zip(opponents_codes, games)
 def sql_game_writer(a_tuple):
     oppo = a_tuple[0]
     game = a_tuple[1]
+    print(oppo)
+    print(game)
     url = f"https://www.basketball-reference.com/boxscores/{game}.html"
     response = requests.get(url)
     soup = bs4.BeautifulSoup(response.text, features='lxml')
     home_team_name = game[-3:]
+    print(response.ok)
     if home_team_name not in teams:
+        print(home_team_name)
         home_team_name = key_matcher[home_team_name]
     # Select Stats Tables 
     tables = soup.select("table")
@@ -340,8 +344,7 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
     executor.map(sql_game_writer, test_data2, timeout=5)
 
 # Test For One Game
-#for o, td in test_data2:
-    #sql_game_writer((o, td))
+# sql_game_writer((opponents_codes[0], games[0]))
 
 print((time.perf_counter())-start_time)
 
