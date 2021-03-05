@@ -34,7 +34,7 @@ opponent_regex = re.compile(r"^[A-Z]+[a-z]+\s[A-Z0-9]+[a-z0-9]+\s?[A-Z]?")
 games=[]
 opponents_codes = []
 
-with open("results_Season_2021.txt", "r") as season_file:
+with open("results_Season_2018.txt", "r") as season_file:
     full_text = season_file.readlines()
     for elements in full_text:
         elems = elements.split(",")
@@ -56,6 +56,7 @@ with open("results_Season_2021.txt", "r") as season_file:
         else:
             next
     season_file.close()
+
 
 # Create the Appropiate Classes For Our 2 Seperate Statistical Tables
 Base = declarative_base()
@@ -126,7 +127,7 @@ away = "HOME"
 content =[]
 
 # Function Args
-test_data2 = zip(opponents_codes[vvs:], games[vvs:])
+test_data2 = zip(opponents_codes, games)
 
 # Scrape Function
 def sql_game_writer(a_tuple):
@@ -342,8 +343,9 @@ def sql_game_writer(a_tuple):
 with concurrent.futures.ThreadPoolExecutor() as executor:
     executor.map(sql_game_writer, test_data2, timeout=5)
 
+
 # Test For One Game
-# sql_game_writer((opponents_codes[0], games[0]))
+#sql_game_writer((games[0], opponents[0]))
 
 print((time.perf_counter())-start_time)
 
