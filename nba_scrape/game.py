@@ -34,7 +34,7 @@ opponent_regex = re.compile(r"^[A-Z]+[a-z]+\s[A-Z0-9]+[a-z0-9]+\s?[A-Z]?")
 games=[]
 opponents_codes = []
 
-with open("results_Season_2018.txt", "r") as season_file:
+with open("results_Season_2021.txt", "r") as season_file:
     full_text = season_file.readlines()
     for elements in full_text:
         elems = elements.split(",")
@@ -56,7 +56,6 @@ with open("results_Season_2018.txt", "r") as season_file:
         else:
             next
     season_file.close()
-
 
 # Create the Appropiate Classes For Our 2 Seperate Statistical Tables
 Base = declarative_base()
