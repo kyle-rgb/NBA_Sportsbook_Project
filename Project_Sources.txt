@@ -1,8 +1,15 @@
-Sources:
+Key Sources:
 
 Data Set: https://www.basketball-reference.com/
 
 Tutorial: https://towardsdatascience.com/web-scraping-nba-stats-4b4f8c525994
 
 Assistance in Web Scraping: https://towardsdatascience.com/web-scraping-basics-82f8b5acd45c
+
+Advanced Stats Explained: https://bleacherreport.com/articles/1813902-advanced-nba-stats-for-dummies-how-to-understand-the-new-hoops-math
+
+Additional Sources:
+
+https://towardsdatascience.com/basketball-analytics-predicting-win-shares-7c155651e7cc
+
 

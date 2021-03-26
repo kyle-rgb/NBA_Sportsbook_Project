@@ -40,3 +40,11 @@ Reading off excel file and python commands
 1. Web scrape data into SQL file, ml test of variables, utilize flask function
 2. 
 3.
+
+3/6/20201
+https://www.nba.com/stats/teams/
+Kyle: 4 Factors influence from Basketref influence on winning
+	- Need to agree what 3-5 metrics we'll uses in first model
+	- 2 team data points per games for team A and Basketball
+	- Every row in BR games  WE ONLY NEED TO GRAB TEAM TOTALS FROM EACH GAME
+	- Creating a model, futz around with numbers 
