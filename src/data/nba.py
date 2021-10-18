@@ -2,7 +2,7 @@ import os, requests, bs4, pprint, csv
 import time, re
 
 # Change Directory to Current Repo
-os.chdir(r"C:\Users\Kyle\Desktop\Python\Nba_Revised\Setting_Lines_and_Making_Dimes\nba_scrape")
+os.chdir(r"C:\Users\Kyle\Desktop\CodeOandE\Python\Nba_Revised\Setting_Lines_and_Making_Dimes\data\interim")
 wanted_year = input("Please Enter the Season You Would Like to Scrape (ex. 2019 = 2018-2019 season): ")
 wanted_year = str(wanted_year)
 

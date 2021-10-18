@@ -13,7 +13,7 @@ start_time = time.perf_counter()
 def mk_float(s):
     return float(s) if s else 0
 
-os.chdir(r"C:\Users\Kyle\Desktop\Python\Nba_Revised\Setting_Lines_and_Making_Dimes\nba_scrape")
+os.chdir(r"C:\Users\Kyle\Desktop\CodeOandE\Python\Nba_Revised\Setting_Lines_and_Making_Dimes\data\interim")
 # Basketball Reference's Team Codes
 teams = ["TOR", "BOS", "PHI", "BRK", "NYK",
          "DEN", "UTA", "OKC", "POR", "MIN",
@@ -34,7 +34,7 @@ opponent_regex = re.compile(r"^[A-Z]+[a-z]+\s[A-Z0-9]+[a-z0-9]+\s?[A-Z]?")
 games=[]
 opponents_codes = []
 
-with open("results_Season_2021.txt", "r") as season_file:
+with open("results_Season_2021_postallstar.txt", "r") as season_file:
     full_text = season_file.readlines()
     for elements in full_text:
         elems = elements.split(",")
@@ -346,6 +346,7 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
 # Test For One Game
 #sql_game_writer((games[0], opponents[0]))
 
+print(len(games))
 print((time.perf_counter())-start_time)
 
 
