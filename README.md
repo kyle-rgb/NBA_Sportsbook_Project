@@ -1,6 +1,6 @@
 NBA
 ==============================
-
+[![wakatime](https://wakatime.com/badge/user/975b89b6-ecdd-4b46-b8c4-6aad7c05dfb6/project/532d1bb8-b9bc-4257-8126-71a3ac6b2011.svg)](https://wakatime.com/badge/user/975b89b6-ecdd-4b46-b8c4-6aad7c05dfb6/project/532d1bb8-b9bc-4257-8126-71a3ac6b2011)
 "An Analysis of NBA game statistics and their influence on the gambling markets."
 
 Project Organization
