@@ -1,0 +1,17 @@
+[] Top Level Goals
+    [] Collect Complete Market Data for NBA Games Given The Time Period of My Data (17-18) until Present
+    [] Create a Model to Predict Game Scores based on a Large Sample of Past Data
+    [] Evaluate Effectiveness of Model Based on the Market Conditions Given by Sportsbooks
+
+[] Branch Goals
+    [] Gather Cleaned Market Data From Oddsshark and Store It Onto a Local Server
+        [] Data I Don't Have that I Must Get Programmatically
+            [] Market Data by Game for Each Given Book
+            [] Book Market Data by Time (Shows Evolving Market Conditions in Time)
+
+    [] Gather Player Data of Completed Games Since Initial Scrape of BBall Reference
+        [] Data I Don't Have that I Must Get Programmatically
+            [] Post-AllStar Break 2020-2021 Season and Playoff Data
+            [] Starting Games of the 2021-2022 Season
+            [] I will use game.py to scrape and insert played games I need
+            [] I will use NBA.py to scrape games happening currently 
