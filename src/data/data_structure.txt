@@ -105,3 +105,4 @@
 	> gameStatus
 > isExcludedRegion
 
+dict_keys(['trends', 'injuries', 'edgeFinder', 'matchup', 'preview', 'weather', 'bestOdds', 'consensus', 'scoreboard', 'last10Games', 'gameCenterData', 'leaders', 'odds', 'headToHead', 'playByPlay', 'lastPlay', 'umpires', 'statistics', 'team_statistics', 'teamRecords', 'gameState', 'isExcludedRegion'])

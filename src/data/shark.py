@@ -1,4 +1,4 @@
-import time, sys, requests, bs4, os, json
+import time, sys, requests, bs4, os, json, pandas as pd
 from selenium import webdriver
 
 # Test For Getting Game Specific Data
@@ -25,16 +25,48 @@ def grabLines(url):
     soup = bs4.BeautifulSoup(response.text, features="lxml")
     tables = soup.select("script")
     table = json.loads(tables[2].text)
-    with open("data_structure.txt", "a") as file:
-        file.write("\n")
-        for key, value in table["oddsshark_gamecenter"].items():
-            file.write("> " + key)
-            file.write("\n")
-            if type(value) == dict:
-                for k in value.keys():
-                    file.write("\t> " + str(k) + "\n")
-        file.write("\n")
-        file.close()
+    i = 0
+    odds_shark_df = pd.DataFrame(columns=["home_abbv", "away_abbv", "date", "game_id"])
+    book_df = pd.DataFrame(columns=["team_abbv", "Book", "ML", "Spread", "Odds", "Total", "Over", "Under", "game_id"])
+    table = table["oddsshark_gamecenter"]
+    # Gather Nominal Game Data
+    odds_shark_df.loc[i, "home_abbv"] = table["matchup"]["home_abbreviation"]
+    odds_shark_df.loc[i, "away_abbv"] = table["matchup"]["away_abbreviation"]
+    odds_shark_df.loc[i, "date"] = table["matchup"]["event_date"]
+    odds_shark_df.loc[i, "game_id"] = table["matchup"]["event_id"]
+    # Gather Odds Data
+    bookmaker_list = table["odds"]["data"]
+    for book in bookmaker_list:
+        spread = book["money_line_spread"]
+        # keys = ["home", "away"]
+        for k in spread.keys():
+            book_df.loc[i, "game_id"] = table["matchup"]["event_id"]
+            book_df.loc[i, "Book"] = book["book"]["book_name"]
+            book_df.loc[i, "Over"] = book["over_under"]["over"]
+            book_df.loc[i, "Under"] = book["over_under"]["under"]
+            book_df.loc[i, "Total"] = book["over_under"]["total"]
+            if k == "home":
+                book_df.loc[i, "team_abbv"] = table["matchup"]["home_abbreviation"]
+            else:
+                book_df.loc[i, "team_abbv"] = table["matchup"]["away_abbreviation"]
+            book_df.loc[i, "ML"] = spread[k]["money_line"]
+            book_df.loc[i, "Spread"] = spread[k]["spread"]
+            book_df.loc[i, "Odds"] = spread[k]["spread_price"]
+            i+=1    
+    #book_df=book_df.fillna(method="ffill")
+    print(book_df)
+
+    # with open("data_structure.txt", "a") as file:
+    #     file.write("\n")
+    #     file.write(f"{table['oddsshark_gamecenter'].keys()}")
+    #     # for key, value in table["oddsshark_gamecenter"].items():
+    #     #     file.write("> " + key)
+    #     #     file.write("\n")
+    #     #     if type(value) == dict:
+    #     #         for k in value.keys():
+    #     #             file.write("\t> " + str(k) + "\n")
+    #     file.write("\n")
+    #     file.close()
     #print(response.text)
     # Gather Book Table (for Moneyline and Spread)
         # 2 Rows per Book 
