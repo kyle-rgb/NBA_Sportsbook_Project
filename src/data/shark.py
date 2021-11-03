@@ -2,20 +2,24 @@ import time, sys, requests, re, bs4, os, json, pandas as pd
 from selenium import webdriver
 
 # Test For Getting Game Specific Data
-matchup_links = []
-#driver = webdriver.Chrome("./Python/scraping/chromedriver.exe")
 
-# driver.get("https://www.oddsshark.com/nba/scores")
-# time.sleep(5)
-# button = driver.find_element_by_css_selector('button.button--arrow-left')
-# wanted_links = driver.find_elements_by_link_text('Matchup')
-# for link in wanted_links:
-#     matchup_links.append(link.get_attribute("href"))
-# print(matchup_links)
-# time.sleep(5)
-# button.click()
-# time.sleep(5)
-# driver.quit()
+def createLinkList(days=7):
+    matchup_links = []
+    driver = webdriver.Chrome("../../../../../Python/scraping/chromedriver.exe")
+    driver.get("https://www.oddsshark.com/nba/scores")
+    time.sleep(5) # Wait for Data to Appear 
+    for _ in range(days):
+        button = driver.find_element_by_css_selector('button.button--arrow-left')
+        wanted_links = driver.find_elements_by_link_text('Matchup')
+        for link in wanted_links:
+            matchup_links.append(link.get_attribute("href"))
+        button.click()
+        time.sleep(4)
+    driver.quit()
+    with open("wanted_links.txt", "w") as f:
+        for url in matchup_links:
+            f.write(url +"\n")
+        f.close()
 
 
 # with open("data_structure.txt", "a") as file:
@@ -101,4 +105,6 @@ def grabTimedMarkets(id):
 #grabLines("https://www.oddsshark.com/nba/denver-utah-odds-october-26-2021-1459586")
 
 # Test For Grabbing Time Based Line Information 
-grabTimedMarkets(1459586)
+#grabTimedMarkets(1459586)
+
+createLinkList(60)
