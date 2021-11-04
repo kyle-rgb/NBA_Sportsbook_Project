@@ -1,9 +1,58 @@
-import time, sys, requests, re, bs4, os, json, pandas as pd
+import time, sys, requests, re, bs4, os, json, time, pandas as pd, sqlalchemy as sql
 from selenium import webdriver
+from db_info import connection_str
 
-# Test For Getting Game Specific Data
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import Session
+from sqlalchemy import Column, Integer, Float, String, DateTime
+
+start = time.time()
+id_regex = re.compile("\d{6,7}") # -12-2017-{6,7}
+game_links = []
+
+# Read in List of URL
+with open("wanted_links.txt", "r") as f:
+    game_links = f.readlines()
+
+print(len(game_links))
+# INSERT dfs into MySQL db
+
+# Create Connection
+Base = declarative_base()
+engine = sql.create_engine(connection_str)
+conn = engine.connect()
+# Create db Classes
+class Timestamp(Base):
+    __tablename__ = "Timestamp"
+    id = Column(Integer, primary_key=True)
+    timestamp = Column(DateTime)
+    spread = Column(Float) # currently in one column: Line (Home)
+    spread_odds = Column(Integer) # Line (Home)
+    over_under = Column(Float) # currently in one column: Over / Under
+    over_under_odds = Column(Integer) # Over / Under
+    book = Column(String)
+    game_id = Column(Integer)
+
+class Odds(Base):
+    __tablename__ = "Odds"
+    id = Column(Integer, primary_key=True)
+    team_abbv = Column(String)
+    book = Column(String)
+    ml = Column(Integer)
+    spread = Column(Float)
+    spread_odds = Column(Integer)
+    total = Column(Float)
+    over_odds = Column(Integer)
+    under_odds = Column(Integer)
+    game_id = Column(Integer)
+
+Base.metadata.create_all(engine)
+# Write Function for grabData Async
+    # Use session objects and commits for integrity 
+
 
 def createLinkList(days=7):
+    # Use Selenium To Game Specific URLs
     match_index = 0
     matchup_links = []
     driver = webdriver.Chrome("../../../../../Python/scraping/chromedriver.exe")
@@ -17,36 +66,12 @@ def createLinkList(days=7):
         button.click()
         time.sleep(2)
 
-        if (_ == 500) or (_ == 1000) or (_ == 1495):
-            res = input("Continue? Y/N: ")
-            if res == "Y" and match_index == 0:
-                with open("wanted_links.txt", "a") as f:
-                    for url in matchup_links:
-                        f.write(url +"\n")
-                        match_index = len(matchup_links)-1
-                    f.close()
-            elif res == "Y" and match_index != 0:
-                with open("wanted_links.txt", "a") as f:
-                    for url in matchup_links[match_index:]:
-                        f.write(url +"\n")
-                        match_index = len(matchup_links)-1
-                    f.close()
-    driver.quit()
+    with open("wanted_links.txt", "a") as f:
+        for url in matchup_links:
+            f.write(url +"\n")
+        f.close()
     
-
-
-# with open("data_structure.txt", "a") as file:
-#     file.write("\n")
-#     file.write(f"{table['oddsshark_gamecenter'].keys()}")
-#     # for key, value in table["oddsshark_gamecenter"].items():
-#     #     file.write("> " + key)
-#     #     file.write("\n")
-#     #     if type(value) == dict:
-#     #         for k in value.keys():
-#     #             file.write("\t> " + str(k) + "\n")
-#     file.write("\n")
-#     file.close()
-# print(response.text)
+    driver.quit()
 
 # These two tasks should be handled functionally.
 def grabLines(url):
@@ -56,46 +81,38 @@ def grabLines(url):
     tables = soup.select("script")
     table = json.loads(tables[2].text)
     i = 0
-    odds_shark_df = pd.DataFrame(columns=["home_abbv", "away_abbv", "date", "game_id"])
+    # odds_shark_df = pd.DataFrame(columns=["home_abbv", "away_abbv", "date", "game_id"])
     book_df = pd.DataFrame(columns=["team_abbv", "Book", "ML", "Spread", "Odds", "Total", "Over", "Under", "game_id"])
     table = table["oddsshark_gamecenter"]
-    # Gather Nominal Game Data
-    odds_shark_df.loc[i, "home_abbv"] = table["matchup"]["home_abbreviation"]
-    odds_shark_df.loc[i, "away_abbv"] = table["matchup"]["away_abbreviation"]
-    odds_shark_df.loc[i, "date"] = table["matchup"]["event_date"]
-    odds_shark_df.loc[i, "game_id"] = table["matchup"]["event_id"]
-    # Gather Odds Data
     bookmaker_list = table["odds"]["data"]
+    # Gather Nominal Data
+    home_abbv = table["matchup"]["home_abbreviation"]
+    away_abbv = table["matchup"]["away_abbreviation"]
+    date = table["matchup"]["event_date"]
+    game_id = table["matchup"]["event_id"]
+    # Gather Odds Data
     for book in bookmaker_list:
         spread = book["money_line_spread"]
         # keys = ["home", "away"]
         for k in spread.keys():
-            book_df.loc[i, "game_id"] = table["matchup"]["event_id"]
+            book_df.loc[i, "game_id"] = game_id
             book_df.loc[i, "Book"] = book["book"]["book_name"]
             book_df.loc[i, "Over"] = book["over_under"]["over"]
             book_df.loc[i, "Under"] = book["over_under"]["under"]
             book_df.loc[i, "Total"] = book["over_under"]["total"]
             if k == "home":
-                book_df.loc[i, "team_abbv"] = table["matchup"]["home_abbreviation"]
+                book_df.loc[i, "team_abbv"] = home_abbv
             else:
-                book_df.loc[i, "team_abbv"] = table["matchup"]["away_abbreviation"]
+                book_df.loc[i, "team_abbv"] = away_abbv
             book_df.loc[i, "ML"] = spread[k]["money_line"]
             book_df.loc[i, "Spread"] = spread[k]["spread"]
             book_df.loc[i, "Odds"] = spread[k]["spread_price"]
-            i+=1    
+            i+=1   
     print(book_df)
+    return book_df
 
 def grabTimedMarkets(id):
-# Test For Grabbing Time Based Line Information From Embedded Link in Game Page
-    # Table be structured as such:
-        # Table Headers
-            # Bookname
-            # Line (Home)
-            # Over / Under
-        # Table Rows
-            # Bookname: A UTC Timestamp on Lines and Odds at Specific Book at this moment in Time
-            # Line (Home): Contains Both Book's Line and Associated Odds at time point
-            # Over / Under: Total and Book's Assocaited Odds at time point (curiously these totals have a spread-like look to time with an explicit + sign. Will need to be cleaned)
+# Grab Time Based Line Information From Embedded Link in Game Page
     market_df = pd.DataFrame()
     columns_list = ["Line (Home)", "Over / Under"]
     response = requests.get(f"https://www.oddsshark.com/nba/odds/line-history/{str(id)}")
@@ -108,16 +125,21 @@ def grabTimedMarkets(id):
                 df["Book"] = col
                 df = df.rename(columns={col: "Timestamp"})
         market_df = pd.concat([market_df, df])
-    
     market_df["game_id"] = id
     market_df.reset_index(inplace=True, drop=True)
     print(market_df)
+    return market_df
 
 
-# Test For Grabbing Books Data For Sample Game
-#grabLines("https://www.oddsshark.com/nba/denver-utah-odds-october-26-2021-1459586")
+def grabData(url):
+    grabLines(url)
+    grabTimedMarkets(id_regex.search(url)[0])
+    print(time.time()-start)
+    
 
-# Test For Grabbing Time Based Line Information 
-#grabTimedMarkets(1459586)
+
 
 #createLinkList(1500)
+
+# Test For Grabbing All Data from Sample Game
+grabData("https://www.oddsshark.com/nba/denver-utah-odds-october-26-2021-1459586")
