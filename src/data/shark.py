@@ -1,4 +1,4 @@
-import time, sys, requests, re, bs4, os, json, time, pandas as pd, sqlalchemy as sql
+import time, sys, requests, re, bs4, os, json, time, pandas as pd, numpy as np, sqlalchemy as sql, datetime as dt
 from selenium import webdriver
 from db_info import connection_str
 
@@ -13,8 +13,6 @@ game_links = []
 # Read in List of URL
 with open("wanted_links.txt", "r") as f:
     game_links = f.readlines()
-
-print(len(game_links))
 # INSERT dfs into MySQL db
 
 # Create Connection
@@ -22,23 +20,24 @@ Base = declarative_base()
 engine = sql.create_engine(connection_str)
 conn = engine.connect()
 # Create db Classes
-class Timestamp(Base):
-    __tablename__ = "Timestamp"
+class Time(Base):
+    __tablename__ = "Time"
     id = Column(Integer, primary_key=True)
-    timestamp = Column(DateTime)
+    timestamp = Column(String(100))
+    book = Column(String(50))
     spread = Column(Float) # currently in one column: Line (Home)
     spread_odds = Column(Integer) # Line (Home)
-    over_under = Column(Float) # currently in one column: Over / Under
-    over_under_odds = Column(Integer) # Over / Under
-    book = Column(String)
+    total = Column(Float) # currently in one column: Over / Under
+    over_odds = Column(Integer) # Over / Under
     game_id = Column(Integer)
+    
 
 class Odds(Base):
     __tablename__ = "Odds"
     id = Column(Integer, primary_key=True)
-    team_abbv = Column(String)
-    book = Column(String)
-    ml = Column(Integer)
+    team_abbv = Column(String(3))
+    book = Column(String(50))
+    moneyline = Column(Integer)
     spread = Column(Float)
     spread_odds = Column(Integer)
     total = Column(Float)
@@ -46,9 +45,26 @@ class Odds(Base):
     under_odds = Column(Integer)
     game_id = Column(Integer)
 
+class GameCodes(Base):
+    __tablename__ = "GameCodes"
+    id = Column(Integer, primary_key=True)
+    home_abbv = Column(String(3))
+    away_abbv = Column(String(3))
+    date = Column(DateTime)
+    game_id = Column(Integer)
+
 Base.metadata.create_all(engine)
 # Write Function for grabData Async
     # Use session objects and commits for integrity 
+
+def columnHelper(market, i):
+    try:
+        return market.split(" ")[i]
+    except IndexError:
+        return -999
+
+def mknum(number):
+    return -999 if number == '' else number
 
 
 def createLinkList(days=7):
@@ -82,37 +98,36 @@ def grabLines(url):
     table = json.loads(tables[2].text)
     i = 0
     # odds_shark_df = pd.DataFrame(columns=["home_abbv", "away_abbv", "date", "game_id"])
-    book_df = pd.DataFrame(columns=["team_abbv", "Book", "ML", "Spread", "Odds", "Total", "Over", "Under", "game_id"])
+    book_df = pd.DataFrame(columns=["team_abbv", "book", "moneyline", "spread", "spread_odds", "total", "over_odds", "under_odds", "game_id"])
     table = table["oddsshark_gamecenter"]
     bookmaker_list = table["odds"]["data"]
+    session = Session(bind=engine)
     # Gather Nominal Data
-    home_abbv = table["matchup"]["home_abbreviation"]
+    home_abbv =  table["matchup"]["home_abbreviation"]
     away_abbv = table["matchup"]["away_abbreviation"]
-    date = table["matchup"]["event_date"]
     game_id = table["matchup"]["event_id"]
+    date = table["matchup"]["event_date"]
+
+    session.add(GameCodes(home_abbv=home_abbv, away_abbv=away_abbv, date=date, game_id=game_id))
     # Gather Odds Data
     for book in bookmaker_list:
         spread = book["money_line_spread"]
         # keys = ["home", "away"]
         for k in spread.keys():
-            book_df.loc[i, "game_id"] = game_id
-            book_df.loc[i, "Book"] = book["book"]["book_name"]
-            book_df.loc[i, "Over"] = book["over_under"]["over"]
-            book_df.loc[i, "Under"] = book["over_under"]["under"]
-            book_df.loc[i, "Total"] = book["over_under"]["total"]
             if k == "home":
-                book_df.loc[i, "team_abbv"] = home_abbv
+                team_abbv = home_abbv
             else:
-                book_df.loc[i, "team_abbv"] = away_abbv
-            book_df.loc[i, "ML"] = spread[k]["money_line"]
-            book_df.loc[i, "Spread"] = spread[k]["spread"]
-            book_df.loc[i, "Odds"] = spread[k]["spread_price"]
-            i+=1   
-    print(book_df)
+                team_abbv= away_abbv
+            session.add(Odds(team_abbv=team_abbv, book=book["book"]["book_name"], over_odds=mknum(book["over_under"]["over"]), under_odds=mknum(book["over_under"]["under"]),total=mknum(book["over_under"]["total"]),
+            moneyline=mknum(spread[k]["money_line"]), spread=mknum(spread[k]["spread"]), spread_odds=mknum(spread[k]["spread_price"]), game_id=game_id))
+            i+=1  
+    session.commit()
+    session.close()
     return book_df
 
 def grabTimedMarkets(id):
 # Grab Time Based Line Information From Embedded Link in Game Page
+    session = Session(bind=engine)
     market_df = pd.DataFrame()
     columns_list = ["Line (Home)", "Over / Under"]
     response = requests.get(f"https://www.oddsshark.com/nba/odds/line-history/{str(id)}")
@@ -123,18 +138,28 @@ def grabTimedMarkets(id):
         for col in df.columns:
             if col not in columns_list:
                 df["Book"] = col
-                df = df.rename(columns={col: "Timestamp"})
+                df = df.rename(columns={col: "timestamp"})
         market_df = pd.concat([market_df, df])
+
+    market_df["spread"] = market_df["Line (Home)"].apply(columnHelper, i=0).astype("float32")
+    market_df["spread_odds"] = market_df["Line (Home)"].apply(columnHelper, i=1).astype("int32")
+    market_df["total"] = market_df["Over / Under"].apply(columnHelper, i=0).astype("float32")
+    market_df["over_odds"] = market_df["Over / Under"].apply(columnHelper, i=1).astype("int32")
     market_df["game_id"] = id
+    market_df.drop(["Over / Under", "Line (Home)"], axis=1,inplace=True)
     market_df.reset_index(inplace=True, drop=True)
-    print(market_df)
+
+    market_df.to_sql("time", con=conn, if_exists="append", index=False)    
+    session.commit()
+    session.close()
     return market_df
 
 
 def grabData(url):
-    grabLines(url)
-    grabTimedMarkets(id_regex.search(url)[0])
+    df_1 = grabLines(url)
+    df_2 = grabTimedMarkets(id_regex.search(url)[0])
     print(time.time()-start)
+    
     
 
 
