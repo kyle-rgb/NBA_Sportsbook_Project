@@ -4,6 +4,7 @@ from selenium import webdriver
 # Test For Getting Game Specific Data
 
 def createLinkList(days=7):
+    match_index = 0
     matchup_links = []
     driver = webdriver.Chrome("../../../../../Python/scraping/chromedriver.exe")
     driver.get("https://www.oddsshark.com/nba/scores")
@@ -14,12 +15,24 @@ def createLinkList(days=7):
         for link in wanted_links:
             matchup_links.append(link.get_attribute("href"))
         button.click()
-        time.sleep(4)
+        time.sleep(2)
+
+        if (_ == 500) or (_ == 1000) or (_ == 1495):
+            res = input("Continue? Y/N: ")
+            if res == "Y" and match_index == 0:
+                with open("wanted_links.txt", "a") as f:
+                    for url in matchup_links:
+                        f.write(url +"\n")
+                        match_index = len(matchup_links)-1
+                    f.close()
+            elif res == "Y" and match_index != 0:
+                with open("wanted_links.txt", "a") as f:
+                    for url in matchup_links[match_index:]:
+                        f.write(url +"\n")
+                        match_index = len(matchup_links)-1
+                    f.close()
     driver.quit()
-    with open("wanted_links.txt", "w") as f:
-        for url in matchup_links:
-            f.write(url +"\n")
-        f.close()
+    
 
 
 # with open("data_structure.txt", "a") as file:
@@ -107,4 +120,4 @@ def grabTimedMarkets(id):
 # Test For Grabbing Time Based Line Information 
 #grabTimedMarkets(1459586)
 
-createLinkList(60)
+#createLinkList(1500)
