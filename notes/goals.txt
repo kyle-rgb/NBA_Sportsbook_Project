@@ -1,17 +1,30 @@
 [] Top Level Goals
-    [] Collect Complete Market Data for NBA Games Given The Time Period of My Data (17-18) until Present
+    [X] Collect Complete Market Data for NBA Games Given The Time Period of My Data (17-18) until Present
     [] Create a Model to Predict Game Scores based on a Large Sample of Past Data
     [] Evaluate Effectiveness of Model Based on the Market Conditions Given by Sportsbooks
 
 [] Branch Goals
-    [] Gather Cleaned Market Data From Oddsshark and Store It Onto a Local Server
-        [] Data I Don't Have that I Must Get Programmatically
-            [] Market Data by Game for Each Given Book
-            [] Book Market Data by Time (Shows Evolving Market Conditions in Time)
+    [X] Gather Cleaned Market Data From Oddsshark and Store It Onto a Local Server
+        [X] Data I Don't Have that I Must Get Programmatically
+            [X] Market Data by Game for Each Given Book
+            [X] Book Market Data by Time (Shows Evolving Market Conditions in Time)
 
-    [] Gather Player Data of Completed Games Since Initial Scrape of BBall Reference
-        [] Data I Don't Have that I Must Get Programmatically
-            [] Post-AllStar Break 2020-2021 Season and Playoff Data
-            [] Starting Games of the 2021-2022 Season
-            [] I will use game.py to scrape and insert played games I need
-            [] I will use NBA.py to scrape games happening currently 
+    [X] Gather Player Data of Completed Games Since Initial Scrape of BBall Reference
+        [X] Data I Don't Have that I Must Get Programmatically
+            [X] Post-AllStar Break 2020-2021 Season and Playoff Data
+            [X] I will use game.py to scrape and insert played games I need
+
+    [] Clean Newly Acquired Market Data so that It May Be Joined On Player by Player Data From Basketball Reference
+        [] Change game_id to game_code  (Oddsshark --> BBall Reference)
+    
+    [] Join Data
+
+    [] Write Functions to...
+        [] Transform a Model Point Estimate Into a Spreadline, a Moneyline and a Total Projection
+        [] Transform a Market Projection based on A Model Point Estimate Into a Decision Matrix to Evaluate a Model's Predictive Success
+        [] Compare Decision Matrix of (Projected Markets vs. Market) and (Market vs. Game Reality) to Get a Second Matrix Evaluating Model Picks to Reality Given a Market.
+
+    [] Create Model To Predict Points
+
+    [] Create Function To Routinely Scrape a Current Data
+        * Use NBA.py, shark.py and game.py as frameworks.

@@ -13,7 +13,7 @@ start_time = time.perf_counter()
 def mk_float(s):
     return float(s) if s else 0
 
-os.chdir(r"C:\Users\Kyle\Desktop\CodeOandE\Python\Nba_Revised\Setting_Lines_and_Making_Dimes\data\interim")
+#os.chdir(r"C:\Users\Kyle\Desktop\CodeOandE\Python\Nba_Revised\Setting_Lines_and_Making_Dimes\data\interim")
 # Basketball Reference's Team Codes
 teams = ["TOR", "BOS", "PHI", "BRK", "NYK",
          "DEN", "UTA", "OKC", "POR", "MIN",
@@ -33,6 +33,7 @@ opponent_regex = re.compile(r"^[A-Z]+[a-z]+\s[A-Z0-9]+[a-z0-9]+\s?[A-Z]?")
 # Empty List for iterations
 games=[]
 opponents_codes = []
+os.chdir("../../data/interim")
 
 with open("results_Season_2021_postallstar.txt", "r") as season_file:
     full_text = season_file.readlines()
@@ -126,7 +127,7 @@ away = "HOME"
 content =[]
 
 # Function Args
-test_data2 = zip(opponents_codes, games)
+test_data2 = zip(opponents_codes[nn:], games[nn:])
 
 # Scrape Function
 def sql_game_writer(a_tuple):
@@ -342,11 +343,9 @@ def sql_game_writer(a_tuple):
 with concurrent.futures.ThreadPoolExecutor() as executor:
     executor.map(sql_game_writer, test_data2, timeout=5)
 
-
 # Test For One Game
 #sql_game_writer((games[0], opponents[0]))
 
-print(len(games))
 print((time.perf_counter())-start_time)
 
 

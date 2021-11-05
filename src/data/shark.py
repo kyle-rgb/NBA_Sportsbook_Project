@@ -65,7 +65,7 @@ def columnHelper(market, i):
         return -999
 
 def mknum(number):
-    return -999 if number == '' else number
+    return -999 if number.lower() in  ['', "pk", "ev"] else number
 
 def mkstr(string):
     return "X" if string == "" or string == " " else string
@@ -161,7 +161,7 @@ def grabTimedMarkets(id):
 
 
 def grabData(url):
-    #grabLines(url)
+    grabLines(url)
     grabTimedMarkets(id_regex.search(url)[0])
 
 #createLinkList(1500)
@@ -169,5 +169,6 @@ def grabData(url):
 # grabData("https://www.oddsshark.com/nba/denver-utah-odds-october-26-2021-1459586")
 
 with ThreadPoolExecutor() as executor:
-    executor.map(grabData, game_links[:5])
-    print(time.time()-start)
+    executor.map(grabData, game_links) 
+
+print(f"completed in: {time.time()-start} seconds.")
