@@ -135,7 +135,7 @@ away = "HOME"
 content =[]
 
 # Function Args
-test_data2 = zip(opponents_codes, games)
+# test_data2 = zip(opponents_codes, games)
 
 # Scrape Function
 def sql_game_writer(a_tuple):
@@ -298,17 +298,17 @@ def sql_game_writer(a_tuple):
                 player[1] = mk_float(player[1])
                 dnp_a = True
                 if player[1] < 1/75: # Check for badly Generated BPM(+/-) for Players incorrectly entered in as having played a second in a game. In Reality: DNP 
-                    player[16] = 0.0
-                    dnp_a = False
-                db_entry = Advanced_Stats(name=player[0], minutes_played=player[1], ts_pct=mk_float(player[2]), efg_pct=mk_float(player[3]), fg3a_per_fga_pct=mk_float(player[4]),
+                     player[16] = 0.0
+                     dnp_a = False
+                db_entry = Advanced_Stats(name=player[0], minutes_played=mk_float(player[1]), ts_pct=mk_float(player[2]), efg_pct=mk_float(player[3]), fg3a_per_fga_pct=mk_float(player[4]),
                                           fta_per_fga_pct=mk_float(player[5]), orb_pct=mk_float(player[6]), drb_pct=mk_float(player[7]), trb_pct=mk_float(player[8]), ast_pct=mk_float(player[9]), stl_pct=mk_float(player[10]),
-                                          blk_pct=mk_float(player[11]), tov_pct=mk_float(player[12]), usg_pct=mk_float(player[13]), off_rtg=mk_float(player[14]), def_rtg=mk_float(player[15]), bpm=mk_float(player[16]), dnp=dnp_a, timetype=player[17],
-                                          team=player[18], game_code=player[19])
+                                          blk_pct=mk_float(player[11]), tov_pct=mk_float(player[12]), usg_pct=mk_float(player[13]), off_rtg=mk_float(player[14]), def_rtg=mk_float(player[15]), bpm=0.0, dnp=dnp_a, timetype=player[16],
+                                          team=player[17], game_code=player[18])
                 
             else:                                    
                 try:
                     # Insert Basic Stats
-                    db_entry = Basic_Stats(name=player[0], minutes_played=player[1], fg=player[2], fga=player[3],
+                    db_entry = Basic_Stats(name=player[0], minutes_played=mk_float(player[1]), fg=player[2], fga=player[3],
                     fg_pct=mk_float(player[4]), fg3=player[5], fg3a=player[6], fg3_pct=mk_float(player[7]),
                     ft=player[8], fta=player[9], ft_pct=mk_float(player[10]), orb=player[11],
                     drb=player[12], trb=player[13], ast=player[14], stl=player[15], blk=player[16],
@@ -319,7 +319,7 @@ def sql_game_writer(a_tuple):
                     fg_pct = 0
                     fg3_pct = 0
                     ft_pct = 0
-                    db_entry = Basic_Stats(name=player[0], minutes_played=player[1], fg=player[2], fga=fg_pct,
+                    db_entry = Basic_Stats(name=player[0], minutes_played=mk_float(player[1]), fg=player[2], fga=fg_pct,
                     fg_pct=player[4], fg3=player[5], fg3a=player[6], fg3_pct=fg3_pct,
                     ft=player[8], fta=player[9], ft_pct=ft_pct, orb=player[11],
                     drb=player[12], trb=player[13], ast=player[14], stl=player[15], blk=player[16],
@@ -349,10 +349,10 @@ def sql_game_writer(a_tuple):
         #time.sleep(0.5)'''
 
 with concurrent.futures.ThreadPoolExecutor() as executor:
-     executor.map(sql_game_writer, test_data2, timeout=5)
+      executor.map(sql_game_writer, test_data2, timeout=5)
 
 # Test For One Game
-#sql_game_writer((games[0], opponents[0]))
+# sql_game_writer((opponents_codes[0], games[0]))
 
 print((time.perf_counter())-start_time)
 
