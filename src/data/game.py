@@ -35,28 +35,36 @@ games=[]
 opponents_codes = []
 os.chdir("../../data/interim")
 
-with open("results_Season_2021_postallstar.txt", "r") as season_file:
-    full_text = season_file.readlines()
-    for elements in full_text:
-        elems = elements.split(",")
-        if game_regex.search(elems[-2]) != None:
-            # Game Found
-            game_naught = game_regex.search(elems[-2])
-            game_naught = game_naught.group(0)
-            # Append Game Code to List
-            games.append(game_naught)
-            opponent = opponent_regex.search(elems[4])
-            opponent = opponent.group(0)
-            if opponent.upper()[:3] not in teams:
-                # Append Corresponding non-obvious opponent code to List matching the appropiate game code
-                opponent = key_matcher[opponent]
-                opponents_codes.append(opponent)
-            else:
-                opponents_codes.append(opponent.upper()[:3])
+# with open("results_Season_2021_postallstar.txt", "r") as season_file:
+#     full_text = season_file.readlines()
+#     for elements in full_text:
+#         elems = elements.split(",")
+#         if game_regex.search(elems[-2]) != None:
+#             # Game Found
+#             game_naught = game_regex.search(elems[-2])
+#             game_naught = game_naught.group(0)
+#             # Append Game Code to List
+#             games.append(game_naught)
+#             opponent = opponent_regex.search(elems[4])
+#             opponent = opponent.group(0)
+#             if opponent.upper()[:3] not in teams:
+#                 # Append Corresponding non-obvious opponent code to List matching the appropiate game code
+#                 opponent = key_matcher[opponent]
+#                 opponents_codes.append(opponent)
+#             else:
+#                 opponents_codes.append(opponent.upper()[:3])
                 
-        else:
-            next
-    season_file.close()
+#         else:
+#             next
+#     season_file.close()
+print()
+with open("bball_ref_additional.txt", "r") as file:
+    lines = file.read().splitlines()
+    for line in lines:
+        data_x = line.split(",")
+        opponents_codes.append(data_x[0])
+        games.append(data_x[1])
+
 
 # Create the Appropiate Classes For Our 2 Seperate Statistical Tables
 Base = declarative_base()
@@ -127,7 +135,7 @@ away = "HOME"
 content =[]
 
 # Function Args
-test_data2 = zip(opponents_codes[nn:], games[nn:])
+test_data2 = zip(opponents_codes, games)
 
 # Scrape Function
 def sql_game_writer(a_tuple):
@@ -341,7 +349,7 @@ def sql_game_writer(a_tuple):
         #time.sleep(0.5)'''
 
 with concurrent.futures.ThreadPoolExecutor() as executor:
-    executor.map(sql_game_writer, test_data2, timeout=5)
+     executor.map(sql_game_writer, test_data2, timeout=5)
 
 # Test For One Game
 #sql_game_writer((games[0], opponents[0]))

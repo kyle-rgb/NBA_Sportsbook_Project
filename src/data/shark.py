@@ -169,6 +169,6 @@ def grabData(url):
 # grabData("https://www.oddsshark.com/nba/denver-utah-odds-october-26-2021-1459586")
 
 with ThreadPoolExecutor() as executor:
-    executor.map(grabData, game_links) 
+     executor.map(grabData, game_links) 
 
 print(f"completed in: {time.time()-start} seconds.")
