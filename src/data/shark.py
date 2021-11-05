@@ -13,7 +13,7 @@ id_regex = re.compile("\d{6,7}") # -12-2017-{6,7}
 game_links = []
 
 # Read in List of URL
-with open("wanted_links.txt", "r") as f:
+with open("../../data/interim/shark_extras.txt", "r") as f:
     game_links = f.read().splitlines()
 # INSERT dfs into MySQL db
 
@@ -33,7 +33,7 @@ class Time(Base):
     
 
 class Odds(Base):
-    __tablename__ = "Odds"
+    __tablename__ = "odds"
     id = Column(Integer, primary_key=True)
     team_abbv = Column(String(3))
     book = Column(String(50))
@@ -46,7 +46,7 @@ class Odds(Base):
     game_id = Column(Integer)
 
 class GameCodes(Base):
-    __tablename__ = "GameCodes"
+    __tablename__ = "gamecodes"
     id = Column(Integer, primary_key=True)
     home_abbv = Column(String(3))
     away_abbv = Column(String(3))
