@@ -14,10 +14,11 @@
             [X] Post-AllStar Break 2020-2021 Season and Playoff Data
             [X] I will use game.py to scrape and insert played games I need
 
-    [] Clean Newly Acquired Market Data so that It May Be Joined On Player by Player Data From Basketball Reference
-        [] Change game_id to game_code  (Oddsshark --> BBall Reference)
+    [X] Clean Newly Acquired Market Data so that It May Be Joined On Player by Player Data From Basketball Reference
+        [X] Change game_id to game_code  (Oddsshark --> BBall Reference)
     
-    [] Join Data
+    [X] Join Data
+        [X] Join Two Data Sources by bball reference's game_code and Scrape Any Missing Games For Both Databases
 
     [] Write Functions to...
         [] Transform a Model Point Estimate Into a Spreadline, a Moneyline and a Total Projection
@@ -28,3 +29,36 @@
 
     [] Create Function To Routinely Scrape a Current Data
         * Use NBA.py, shark.py and game.py as frameworks.
+
+
+    [] Create Website's Framework
+        [] Top-Level Structure
+            [] Model's Performance Across All Games (with a Season Filter)
+                [] Model Performance (SEASON BASED SUMMATION)
+                    [] Table of Summary Metrics and Aggregate Records 
+                    [] Line Chart of Winnings Given a Random Walk of Games
+                [] Power Rankings (TEAM BASED SUMMATION)
+                    [] Summary Market Metrics: Average Spread, % Games Favored, Winnings/Losses Incurred by Team Given Model
+                    [] Reality Team Advanced Metrics: Four Factors and Performance
+                    [] Pointer to Game Log With Filter on Team Name and Season
+                [] Game Log (GAME BASED SUMMATION)
+                    [] For Specific Season
+                    [] Allow For Filter on Team
+                    [] Will Show Every Game of Season With Each Team's Actual Four Factors, Pace  and score for the Game, My Score Predictions, Avg. Spread, Total and Moneyline
+                       and the grades for my model based on these average markets and groudtruth factors
+                    [] Each Game Page With Show A More Detailed Analysis of All Markets and Specific Teams
+                        [] The Teams Four Factors, Pace and Scoring Up to This Game
+                        [] The Team's Opponents Four Factors, Pace and Scoring Up to This Game
+                        [] The Actual Performance of the Teams in This Game (Actual Four Factors and Pace)
+                        [] The Markets for the Spread, Total and Moneyline Broken Down By Book
+                        [] The Evolution of the Spread, Total and Moneyline Markets Over Time with a Filter on Sportsbook
+            [] Data Analysis
+                [] Summary Charts of Markets, Model and Teams Through The Analyzed Time Period
+                [] Detailed Textual Analysis To Accompany The Charts
+                [] What Have I Learned, Where Did My Model Perform The Best, How Does Decision Time Affect Winning Performance, How Could I Improve the Model 
+            [] Future Functions
+                [] Adding Player Projections
+                    [] Increased Specificity
+                    [] Can Adjust to Injuries
+                [] Scraping Integration
+                    [] Gather Data of Current Games to Contiunally Feed the Model and Get Projection for Future Games
