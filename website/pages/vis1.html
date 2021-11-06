@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Maximum Temperature</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+<body>
+   <!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" id="sitetitle" href="../index.html"><h4>Weather Project</h4></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false"><b>Plots</b></a>
+          <span class="sr-only">(current)</span>
+          <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="vis1.html">Maximum Temperature</a>
+            <a class="dropdown-item" href="vis2.html">Humidity</a>
+            <a class="dropdown-item" href="vis3.html">Cloudiness</a>
+            <a class="dropdown-item" href="vis4.html">Wind Speed</a>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" id="woosh" href="Comparisons.html">Comparisons</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="Predictions.html">Game Predictions</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" id="woosh" href="Data.html">Data</a>
+      </li>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--/.Navbar -->
+
+<div class="container">
+  <div class="row">
+        <div class="col-lg-8">
+          <div class="box red">
+            <h1>Maximum Temperature</h1>
+            <br>
+            <img src="Resources/assets/images/Fig1.png" class="img-fluid artimage" alt="Responsive image" align="center"><img>
+            <p>There's an exponential relationship between Latitude and Temperature. As you move from the poles towards the equator (latitude = 0), the temperature begins to rise and converges towards a maximum of 100 degrees Farenheit. Cities in the Northern Hemisphere and near the equator (latitude > 0 and < 25) experienced higher temperatures than their Southern Hemisphere counterparts (latitudes < 0 and > -25) since they are currently in the summer season and absorb more of the sun's energy which explains the clustering of the day's highest temperatures grouped around 20 degrees latitude.
+            </p>
+          </div>
+        </div>
+      <div class="col-lg-4" align="center">
+          <div class="box purp">
+            <h1>Visualizations</h1>
+            <a href="vis1.html"><img src="Resources/assets/images/Fig1.png" class="img-fluid active" alt="Responsive image" id="samplesone" align="center"><img></a>
+            <a href="vis2.html"><img src="Resources/assets/images/Fig2.png" class="img-fluid" alt="Responsive image" id="samples" align="center"><img></a>
+            <a href="vis3.html"><img src="Resources/assets/images/Fig3.png" class="img-fluid" alt="Responsive image" id="samples" align="center"><img></a>
+            <a href="vis4.html"><img src="Resources/assets/images/Fig4.png" class="img-fluid" alt="Responsive image" id="samples" align="center"><img></a>
+          </div>
+      </div>
+</div>
+
+
+</div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wind Speed</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+<body>
+  <!--Navbar -->
+  <nav class="mb-1 navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" id="sitetitle" href="../index.html"><h4>Weather Project</h4></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+      aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"><b>Plots</b></a>
+            <span class="sr-only">(current)</span>
+            <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+              <a class="dropdown-item" href="vis1.html">Maximum Temperature</a>
+              <a class="dropdown-item" href="vis2.html">Humidity</a>
+              <a class="dropdown-item" href="vis3.html">Cloudiness</a>
+              <a class="dropdown-item" href="vis4.html">Wind Speed</a>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" id="woosh" href="Comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Predictions.html">Game Predictions</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" id="woosh" href="Data.html">Data</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<!--/.Navbar -->
+
+<!-- YEAR / Week / Game Selectios-->
+
+<!-- /.YEAR / Week / Game Selectios-->
+
+<!--/SCORES AND PREDITS-->
+<div class="container">
+  <div class="row">
+        <div class="col-lg-8">
+          <div class="box red">
+            <h1>Wind Speed</h1>
+            <br>
+            <img src="Resources/assets/images/Fig4.png" class="img-fluid artimage" alt="Responsive image" align="center"><img>
+            <p>There appears to be no relationship between wind speed and latitude. The majority of our data points appear to be clustering around the range of 0 - 10 MPH, but then outliers begin to fan out toward the upper limit of 30 MPH. There is no clear pattern in the outliers.
+            </p>
+          </div>
+        </div>
+      <div class="col-lg-4" align="center">
+          <div class="box purp">
+            <h1>Visualizations</h1>
+            <a href="vis1.html"><img src="Resources/assets/images/Fig1.png" class="img-fluid active" alt="Responsive image" id="samples" align="center"><img></a>
+            <a href="vis2.html"><img src="Resources/assets/images/Fig2.png" class="img-fluid" alt="Responsive image" id="samples" align="center"><img></a>
+            <a href="vis3.html"><img src="Resources/assets/images/Fig3.png" class="img-fluid" alt="Responsive image" id="samples" align="center"><img></a>
+            <a href="vis4.html"><img src="Resources/assets/images/Fig4.png" class="img-fluid" alt="Responsive image" id="samplesone" align="center"><img></a>
+          </div>
+      </div>
+</div>
+
+
+</div>
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+</html>
