@@ -6,14 +6,18 @@
   <title>Model Predictions</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="data.js"></script>
 </head>
 
 <body>
   <!--Navbar -->
+  <!--Navbar -->
   <nav class="mb-1 navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" id="sitetitle" href="../index.html"><h4>NFL Project</h4></a>
+    <a class="navbar-brand" id="sitetitle" href="index.html"><h4>NBA Project</h4></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
       aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -21,25 +25,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false"><b>Models</b></a>
-            <span class="sr-only">(current)</span>
-            <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-              <a class="dropdown-item" href="vis1ee.html">Ovr. FPI</a>
-              <a class="dropdown-item" href="vis2e.html">Deluxe FPI</a>
-              <a class="dropdown-item" href="vis3e.html">Yards & Turnovers</a>
-              <a class="dropdown-item" href="vis4e.html">EPA and Success Rate</a>
-            </div>
-          </a>
+          <a class="nav-link" id="woosh" href="../index.html"><b>Home</b></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" id="woosh" href="Comparisonsee.html">Comparisons</a>
+          <a class="nav-link" id="woosh" href="Dashboard.html"><b>Dashboard</b></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="Comparisonsee.html">Game Predictions</a>
+          <a class="nav-link" id="woosh" href="Predictions.html"><b>Model Predictions</b></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" id="woosh" href="Dataee.html">Data</a>
+          <a class="nav-link" id="woosh" href="Data.html"><b>Game Log</b></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" id="woosh" href="Debrief.html"><b>Debrief</b></a>
         </li>
         </li>
       </ul>
@@ -98,7 +96,7 @@
   </form>
 </div>
 </div>
-<!-- /.YEAR / Week / Game Selectios-->
+<!-- Game Log Will Show FF + Pace, Score Predictions, Market Open, High, Low and Error-->
 
 <!--/SCORES AND PREDITS-->
 <div class="container" id="ScoresTable" style="background-color: rgba(102,51,153,0.62);">
@@ -110,11 +108,6 @@
 
 </div>
   
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-    </script>
-  </body>
+</body>
 
 </html>
