@@ -115,8 +115,17 @@ h2{
 
 table {
   background-color: gainsboro;
+  font-size: 12px;
+  padding: 50px;
 }
 
+thead{
+  font-size: 14px;
+}
+
+tbody{
+  text-align: center;
+}
 
 .a{
   color: #fff;
