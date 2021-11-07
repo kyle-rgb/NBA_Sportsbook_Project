@@ -5,7 +5,7 @@ Promise.all([
   d3.csv("../../data/interim/power_rankings_sample.csv")
 ]).then(files => {
 
-  let team_regex = /[A-Z]{3}/g
+  let team_regex = /[A-Z]{3}?/
 
   t = "CLE"
   console.log(t.match(team_regex) !== null)
