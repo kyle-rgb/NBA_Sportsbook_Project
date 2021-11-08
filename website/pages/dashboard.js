@@ -76,7 +76,8 @@ Promise.all([
     // container :: string of container name
     // options :: array of arrays of options to place into selection
     // starting_value :: string for default
-    let size = 12 / options.length 
+    let size = (12 / options.length) - 1
+    let button_size = 2
     let i = 0
     for (let filters of options){
       if (i == 0){
@@ -89,9 +90,9 @@ Promise.all([
       }
       i++
     }
-    console.log("DONE")
-    
-  
+    let form = d3.select(".row")
+    form.append("div").attr("class", `col-sm-${button_size}`).attr("align", "center").append("button").attr("class", "btn btn-warning").attr("type","button").style("max-height", "40px").style("max-width", "80px").style("margin-right", "10px")
+    .style("margin-top", "20px").text("Submit").attr("id", "submitButton")
   }
   
   function createTable(data_array){
@@ -115,7 +116,6 @@ Promise.all([
       
     }
   }
-  console.log("DONE TABLE")
   }
 
   function compareObj(a, b){
