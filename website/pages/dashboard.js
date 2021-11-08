@@ -4,24 +4,47 @@ Promise.all([
   d3.csv("../../data/interim/book_summary_sample.csv"),
   d3.csv("../../data/interim/power_rankings_sample.csv")
 ]).then(files => {
+  let year_set = new Set()
+  let book_set = new Set()
+  let book_array = files[1].columns
+  for (d of files[2]){
+    year_set.add(d.Season)
+  }
+  for (d of files[1]){
+    book_set.add(d.Book)
+  }
+
+  var first_container = d3.select("body").append("div").classed("container", true).style("background-color", "rgba(102, 51, 153, 0.55)")
+
+  createDataFilters(first_container, [Array.from(book_set), Array.from(year_set)], "Complete")
+
 
   let team_regex = /[A-Z]{3}?/
+  // Create Dashboard
+  //dashboard = d3.select("#dashboard")
 
-  t = "CLE"
-  console.log(t.match(team_regex) !== null)
-  // Grab Box
-  dashboard = d3.select("#dashboard")
+  var dashboard = d3.select("body").append("div").classed("container", true).style("background-color", "rgba(102, 51, 153, 0.68)")
+  .append("div").attr("class", "row").append("div").attr("class", "col-lg-12").append("div").attr("id", "dashboard")
+  
+  dashboard.append("h1").text("Dashboard").style("color", "white")
+  
   parseDate = d3.utcParse("%Y-%m-%d")
   dashboard.attr("align", "center")
-
-  dashboard = d3.select("#dashboard")
   parseDate = d3.utcParse("%Y-%m-%d")
+
+  // Add Page Specific Filters
+  let container = d3.select(".container")
+  
+  
+  
+
   for (d of files[0]){
     d.date = parseDate(d.date)
     d.cumsum = Math.round(+d.cumsum, 2)
     d.winnings = Math.round(+d.winnings, 2)
   }
 
+  
   var plot = Plot.dot(files[0], { x: "date", y: "cumsum", fill: "gray" }).plot({
     marks: [
       Plot.line(files[0], Plot.windowY({ x: "date", y: "cumsum", k: 5, stroke: "orange",  shift: "centered", curve: "step"})), // centered is by default,
@@ -44,11 +67,33 @@ Promise.all([
       color: "black",
     }
   })
-
+  
   dashboard.append(() => {return plot})
 
   d3.select("svg").style("margin-bottom", "20px")
 
+  function createDataFilters(container, options, starting_value){
+    // container :: string of container name
+    // options :: array of arrays of options to place into selection
+    // starting_value :: string for default
+    let size = 12 / options.length 
+    let i = 0
+    for (let filters of options){
+      if (i == 0){
+        var row = container.append("form").append("div").attr("class", "row")
+      }
+      let selection = row.append("div").attr("class", `col-sm-${size}`).append("select").style("margin-top", "25px").style("margin-bottom", "25px").attr("class", "form-control form-control-sm")
+      .attr("type", "text").attr("placeholder", starting_value)
+      for (let option of filters){
+        selection.append("option").text(option)
+      }
+      i++
+    }
+    console.log("DONE")
+    
+  
+  }
+  
   function createTable(data_array){
     headers = Object.keys(data_array[0])
     table = dashboard.append("table").attr("class", "table table-bordered")
@@ -70,7 +115,7 @@ Promise.all([
       
     }
   }
-
+  console.log("DONE TABLE")
   }
 
   function compareObj(a, b){
@@ -83,8 +128,10 @@ Promise.all([
     }
   }
   
-  createTable(files[1])
   
+  createTable(files[1])
   power_rankings = files[2].sort(compareObj)
   createTable(power_rankings)
+  
+
 })

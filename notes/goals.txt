@@ -36,22 +36,25 @@
             [] Model's Performance Across All Games (with a Season Filter)
                 [] Model Performance (SEASON BASED SUMMATION)
                     [] Table of Summary Metrics and Aggregate Records 
-                    [] Line Chart of Winnings Given a Random Walk of Games
+                    [] MODEL PREDICTION -> WINNINGS: Line Chart of Winnings Given a Random Walk Winnings Per Day
+                    [] Add a Top Level Filter for Seasons and Book
                 [] Power Rankings (TEAM BASED SUMMATION)
                     [] Summary Market Metrics: Average Spread, % Games Favored, Winnings/Losses Incurred by Team Given Model
                     [] Reality Team Advanced Metrics: Four Factors and Performance
-                    [] Pointer to Game Log With Filter on Team Name and Season
+                    [] Pointer (link) to Game Log With Filter on Team Name and Season
                 [] Game Log (GAME BASED SUMMATION)
-                    [] For Specific Season
-                    [] Allow For Filter on Team
-                    [] Will Show Every Game of Season With Each Team's Actual Four Factors, Pace  and score for the Game, My Score Predictions, Avg. Spread, Total and Moneyline
-                       and the grades for my model based on these average markets and groudtruth factors
-                    [] Each Game Page With Show A More Detailed Analysis of All Markets and Specific Teams
-                        [] The Teams Four Factors, Pace and Scoring Up to This Game
-                        [] The Team's Opponents Four Factors, Pace and Scoring Up to This Game
-                        [] The Actual Performance of the Teams in This Game (Actual Four Factors and Pace)
-                        [] The Markets for the Spread, Total and Moneyline Broken Down By Book
-                        [] The Evolution of the Spread, Total and Moneyline Markets Over Time with a Filter on Sportsbook
+                    [] For Specific Season and Specific Team
+                    [] Will Show Every Game of Season With :
+                        [] RESULTS: Each Team's Actual Four Factors, Pace and Score for the Game
+                        [] MODEL PREDICTION: My Score Predictions
+                        [] MARKET PREDICTIONS: Avg. Spread, Total and Moneyline. (default Average, conform to Book Filter)
+                        [] MODEL EVALUATION: Grades Based on Average Markets (default) and Groudtruth Factors. Grades will Conform to Top Level Book Filter.  
+                [] Each Game Page With Show A More Detailed Analysis of All Markets and Specific Teams (GAME SPECIFIC DETAILS) {MOST ATOMIC ELEMENT OF APPLICATION}
+                    [] The Teams Four Factors, Pace and Scoring Up to This Game
+                    [] The Team's Opponents Four Factors, Pace and Scoring Up to This Game
+                    [] The Actual Performance of the Teams in This Game (Actual Four Factors and Pace)
+                    [] The Markets for the Spread, Total and Moneyline Broken Down By Book
+                    [] The Evolution of the Spread, Total and Moneyline Markets Over Time with a Filter on Sportsbook
             [] Data Analysis
                 [] Summary Charts of Markets, Model and Teams Through The Analyzed Time Period
                 [] Detailed Textual Analysis To Accompany The Charts
