@@ -1,7 +1,7 @@
 Promise.all([
-    d3.csv("../../data/interim/games/odds.csv"),
-    d3.csv("../../data/interim/games/results.csv"),
-    d3.csv("../../data/interim/games/timeseries.csv")
+    d3.csv("../../data/interim/games/odds.csv"), // Book Summary Lines
+    d3.csv("../../data/interim/games/results.csv"), // Team Overall Stats
+    d3.csv("../../data/interim/games/timeseries.csv") // Time Series of Spread and Total by Book
   ]).then(files => {
 
     name_cleaner =  {'CHR': 'CHO', 'SAN': 'SAS', 'GS': 'GSW', 'BKN': 'BRK', 'NY': 'NYK'}
@@ -15,13 +15,6 @@ Promise.all([
 
     filter_container.append("h1").text("Overall Model").style("color", "white")
     filter_container.append("p").text("Choose a Book to Analyze the Model's Performance").style("color", "white").attr("align", "center")
-
-
-
-
-    // console.log(files[0]) // Book Summary Lines
-    // console.log(files[1]) Team Overall Stats
-    // console.log(files[2]) // Time Series of Spread and Total By Book
     
     data_container = d3.select("body").append("div").style("background-color", "rgba(102,51,153,0.62)").attr("class", "container").attr("id", "DataHouse")
     data_container.append("h1").style("color", "white").text("Game #500")
@@ -72,11 +65,12 @@ Promise.all([
 
         let row = d3.select("#DataHouse").append("div").style("align", "center").attr("class", "row").attr("id", "secondrow")
 
+        
         column = row.append("div").style("width", "100%")
                     .style("text-align", "center").style("align", "center").attr("class", "col-m-6")
-        
+        column.append("h1").style("color", "white").text("Market Analysis")
         book_table = column.append("table").style("align", "center").style("margin-left", "400px").style("margin-bottom", "20px").style("max-width", "500px").attr("class", "table-sm")
-
+        
         var headers = Object.keys(data[0])
 
         var table_header = book_table.append("thead").append("tr")
@@ -157,9 +151,21 @@ Promise.all([
       }
 
 
+    function buildCandleStick(data){
+        let x = []
+        let 
+
+
+
+
+    }
+    
+
+
+
+    // Build Containers and Attach Data
     createDataFilters(filter_container, [Array.from(book_set)], "A")
     createResults(files[1])
     createTime(files[2])
     createBooks(files[0])
-
   })
