@@ -1,8 +1,15 @@
 Promise.all([
     d3.csv("../../data/interim/games/odds.csv"), // Book Summary Lines
     d3.csv("../../data/interim/games/results.csv"), // Team Overall Stats
-    d3.csv("../../data/interim/games/timeseries.csv") // Time Series of Spread and Total by Book
+    d3.csv("../../data/interim/games/timeseries.csv"), // Time Series of Spread and Total by Book
+    d3.csv("../../data/interim/website/game/markets_game.csv"), // Book and Aggregate Book Lines
+    d3.csv("../../data/interim/website/game/project_and_errors.csv"), // Project and Errors 
+    d3.csv("../../data/interim/website/game/timeseries_game.csv") // Timeseries of Markets
   ]).then(files => {
+
+    console.log(files[3]) // book and book aggregates
+    console.log(files[4]) // mark predictions and results 
+    console.log(files[5]) // timeseries of all markets for game
 
     name_cleaner =  {'CHR': 'CHO', 'SAN': 'SAS', 'GS': 'GSW', 'BKN': 'BRK', 'NY': 'NYK'}
     shark_names = Object.keys(name_cleaner)

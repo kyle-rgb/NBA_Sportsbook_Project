@@ -1,9 +1,21 @@
 // Line Chart Reference : https://observablehq.com/@enjalot/power-usage-workbook
 Promise.all([
-  d3.csv("../../data/interim/line_chart_sample.csv"),
-  d3.csv("../../data/interim/book_summary_sample.csv"),
-  d3.csv("../../data/interim/power_rankings_sample.csv")
+  d3.csv("../../data/interim/line_chart_sample.csv"), // winnings chart files[0]
+  d3.csv("../../data/interim/book_summary_sample.csv"), // book summary files[1]
+  d3.csv("../../data/interim/power_rankings_sample.csv"), // team summary files[2]
+  d3.csv("../../data/interim/website/dash/full_res.csv"), // for team rankings
+  d3.csv("../../data/interim/website/dash/team_picks.csv"),
+  d3.csv("../../data/interim/website/dash/variables.csv"),
+  d3.csv("../../data/interim/website/dash/winnings_dash.csv")
+
+
 ]).then(files => {
+  
+  console.log(files[3]) // team rankings (market, model, and margin of victory)
+  console.log(files[4]) // pick = model pick given associated line(agg or book); pk = associated grade with pick
+  console.log(files[5]) // team ff and possessions with seasons
+  console.log(files[6]) // spread, moneyline, total and combined winnings with game_id, season and book filter
+
   let year_set = new Set()
   let book_set = new Set()
   let book_array = files[1].columns
