@@ -7,14 +7,28 @@ Promise.all([
     d3.csv("../../data/interim/website/game/timeseries_game.csv") // Timeseries of Markets
   ]).then(files => {
 
-    console.log(files[3]) // book and book aggregates
-    console.log(files[4]) // mark predictions and results 
-    console.log(files[5]) // timeseries of all markets for game
+    let sample_id = "888680"
+    let results_and_preds = []
+    let home_cols = ['home_abbv', 'pts_home', 'market_score_home', 'm3_proj_home', 'm3_home_error', 'efg_pct_home', 'orb_pct_home', 'tov_pct_home', 'fta_per_fga_pct_home', 'game_possessions']
+    let away_cols = ['away_abbv', 'pts_away', 'market_score_away', 'm3_proj_away', 'm3_away_error', 'efg_pct_away', 'orb_pct_away', 'tov_pct_away', 'fta_per_fga_pct_away', 'game_possessions']
+    book_summary_arr = files[3].filter((d) => d.game_id === sample_id)
+    mark_predictions_arr = files[4].filter((d) => d.game_id === sample_id)
+    time_summary_arr = files[5].filter((d) => d.game_id === sample_id)
+
+    for (mkt of mark_predictions_arr){
+        if (mkt.book == "average"){
+            results_and_preds.push(mkt)
+            results_and_preds.push(mkt)
+        }
+    }
+    //console.log(book_summary_arr) // book and book aggregates
+    console.log(results_and_preds) // mark predictions and results 
+    //console.log(time_summary_arr) // timeseries of all markets for game
 
     name_cleaner =  {'CHR': 'CHO', 'SAN': 'SAS', 'GS': 'GSW', 'BKN': 'BRK', 'NY': 'NYK'}
     shark_names = Object.keys(name_cleaner)
     book_set = new Set()
-    for (book of files[0]){
+    for (book of files[3]){
         book_set.add(book.book)
     }
 
@@ -28,14 +42,14 @@ Promise.all([
     row = data_container.append("div").attr("class", "row").attr("id", "predRow")
 
     function createResults(data){
+        var k = 1
         for (d of data){
-            let loc = "away"
-            if (d.home_team_bin == "1"){
-                let loc = "home"
-            }
-
-            if (d.team in shark_names){
-                d.team = name_cleaner[d.team]
+            let loc = "home"
+            let starting_stats = home_cols
+            if (k !== 1){
+                console.log(k)
+                loc = "away"
+                starting_stats = away_cols
             }
 
             d.game_possessions = parseFloat(d.game_possessions).toFixed(2)
@@ -46,11 +60,12 @@ Promise.all([
             column.append("img").style("margin-bottom", "25px")
                     .style("height", "200px")
                     .style("width", "200px").attr("class", "img-fluid").attr("alt", "img-fluid")
-                    .attr("align", "center").attr("src", `Resources/assets/images/NBA/${d.team}.png`)
+                    .attr("align", "center").attr("src", `Resources/assets/images/NBA/${d[`${loc+"_abbv"}`]}.png`)
             
             results_table = column.append("table").style("align", "center").style("margin-left", "40px").style("margin-bottom", "20px").attr("class", "table-sm")
             
-            starting_stats = ["pts", "game_possessions", "orb_pct", "efg_pct", "fta_per_fga_pct", "tov_pct"]
+
+            
             thead = results_table.append("thead")
             header_row = thead.append("tr")
             for (stat of starting_stats){
@@ -62,8 +77,7 @@ Promise.all([
             for (stat of starting_stats){
                 data_row.append("td").text(d[stat])
             }
-
-            
+            k = k + 1
         }
         row.append("br")
     }
@@ -114,11 +128,11 @@ Promise.all([
         column = row.append("div").style("width", "100%")
                     .style("text-align", "center").style("align", "center").attr("class", "col-m-6")
 
-        table = column.append("table").style("text-align", "center").style("margin-left", "200px").style("margin-bottom", "50px")
+        table = column.append("table").style("text-align", "center").style("margin-left", "40px").style("margin-bottom", "50px")
     
         head_row = table.append("thead").append("tr")
 
-        for (h of data.columns){
+        for (h of files[3].columns){
             head_row.append("th").text(h)
         }
 
@@ -126,8 +140,8 @@ Promise.all([
 
         for (d of data){
             row = body.append("tr")
-            for (col of data.columns){
-                row.append("td").text(d[col])
+            for (col of Object.keys(d)){
+                row.append("td").text(d[col])                
             }
             
         }
@@ -172,7 +186,7 @@ Promise.all([
 
     // Build Containers and Attach Data
     createDataFilters(filter_container, [Array.from(book_set)], "A")
-    createResults(files[1])
-    createTime(files[2])
-    createBooks(files[0])
+    createResults(results_and_preds)
+    createTime(time_summary_arr)
+    createBooks(book_summary_arr)
   })
