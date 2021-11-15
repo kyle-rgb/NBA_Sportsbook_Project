@@ -22,8 +22,8 @@ Promise.all([
             results_and_preds.push(mkt)
         }
     }
-    //console.log(book_summary_arr) // book and book aggregates
-    // console.log(results_and_preds) // mark predictions and results 
+    console.log(book_summary_arr) // book and book aggregates
+    console.log(results_and_preds) // mark predictions and results 
     console.log(time_summary_arr) // timeseries of all markets for game
 
     name_cleaner =  {'CHR': 'CHO', 'SAN': 'SAS', 'GS': 'GSW', 'BKN': 'BRK', 'NY': 'NYK'}
@@ -48,14 +48,14 @@ Promise.all([
             let loc = "home"
             let starting_stats = home_cols
             if (k !== 1){
-                console.log(k)
                 loc = "away"
                 starting_stats = away_cols
+                row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-4")
             }
 
             d.game_possessions = parseFloat(d.game_possessions).toFixed(2)
             column = row.append("div").style("width", "100%")
-                    .style("text-align", "center").attr("class", "col-md-6").attr("id", loc)
+                    .style("text-align", "center").attr("class", "col-md-4").attr("id", loc)
                     
 
             column.append("img").style("margin-bottom", "25px")
@@ -70,22 +70,6 @@ Promise.all([
                 i++
             }
             
-            
-                    // results_table = column.append("table").style("align", "center").style("margin-left", "40px").style("margin-bottom", "20px").attr("class", "table-sm")
-            
-
-            
-            // thead = results_table.append("thead")
-            // header_row = thead.append("tr")
-            // for (stat of starting_stats){
-            //     header_row.append("th").text(stat)
-            // }
-            
-            // data_row = results_table.append("tr")
-
-            // for (stat of starting_stats){
-            //     data_row.append("td").text(d[stat])
-            // }
             k = k + 1
         }
         row.append("br")
@@ -94,9 +78,8 @@ Promise.all([
     function createTime(data){
 
         let row = d3.select("#DataHouse").append("div").style("align", "center").attr("class", "row").attr("id", "secondrow")
-        
-        column = row.append("div").style("text-align", "center").style("align", "center").attr("class", "col-m-6")
-        column.append("h1").style("color", "white").text("Market Analysis")
+        // column = row.append("div").style("text-align", "center").style("align", "center").attr("class", "col-m-12")
+        // column.append("h1").style("color", "white").text("Market Analysis")
         // book_table = column.append("table").style("align", "center").style("margin-left", "400px").style("margin-bottom", "20px").style("max-width", "500px").attr("class", "table-sm")
         
         var plot_data = {}
@@ -108,15 +91,18 @@ Promise.all([
             plot_data[book] = {}
             x = []
             y = []
+            y_1 = []
             book_data.forEach(item => {
                 let date = new Date(item.timestamp)
                 x.push(date)
                 y.push(parseFloat(item.spread_line))
+                y_1.push(parseFloat(item.spread_odds))
 
             })
 
             plot_data[book].x = x
             plot_data[book].y = y
+            plot_data[book].y_1 = y_1
         }
 
         for (key of Object.keys(plot_data)){
@@ -128,69 +114,81 @@ Promise.all([
                 name: key
 
             }
+            var trace_1 = {
+                x: plot_data[key].x, // date 
+                y: plot_data[key].y_1, // spread odds
+                mode: "line+markets",
+                line: {shape: "spline"},
+                name: `${key} Odds`,
+                yaxis: "y2"
+
+            }
+
             trace_arr.push(trace)
+            trace_arr.push(trace_1)
         }
 
         var layout = {
             title: 'Spread Market Movement',
             showlegend: true,
             height: 500,
-            yaxis: {side: 'right'},
+            yaxis: {
+                title: "line",
+                side: 'right'
+            },
+            yaxis2: {
+                title: 'Odds',
+                overlaying: 'y',
+                side: 'left'
+              }
           };
 
-        console.log(trace_arr)
-        Plotly.newPlot("secondrow", trace_arr, layout);
-        // var table_header = book_table.append("thead").append("tr")
-
-        // for (h of headers){
-        //     table_header.append("th").text(h)
-        // }
-        
-        // table_body = book_table.append("tbody")
-
-        // for (d of data){
-            
-        //     if (d.book == "BetOnline"){
-        //         data_row = table_body.append("tr")
-        //         for (col of headers){
-        //             data_row.append("td").text(d[col])
-        //         }
-        //     }
-            
-        // }
-
-        
-
-
-
-
-
-
-
-    }
+        Plotly.newPlot("secondrow", trace_arr, layout);     
+}
     function createBooks(data){
-        let row = d3.select("#secondrow")
-
-        column = row.append("div").style("width", "100%")
-                    .style("text-align", "center").style("align", "center").attr("class", "col-m-6")
-
-        table = column.append("table").style("text-align", "center").style("margin-left", "40px").style("margin-bottom", "50px")
-    
-        head_row = table.append("thead").append("tr")
-
-        for (h of files[3].columns){
-            head_row.append("th").text(h)
-        }
-
-        body = table.append("tbody")
-
+        let row = d3.select("#DataHouse").append("div").style("align", "left").attr("class", "row").attr("id", "bookrow")
+        let circle_pairings = [["ml_pk", "moneyline_home"], ["spread_pk", "spread_home", "spread_odds_home"], ["total_pk", "total", "under_odds"],
+        ["ml_pk", "ml_winnings", "moneyline_home"], ["spread_pk", "spread_winnings", "spread_odds_home"], ["total_pk", "total_winnings", "under_odds"], ["ovr_pk", "agg_winnings"]]
+        let books_number = data.length
+        let columns = Object.keys(data[0])
+        let j = 0;
+        //console.log(data)
         for (d of data){
-            row = body.append("tr")
-            for (col of Object.keys(d)){
-                row.append("td").text(d[col])                
+
+            column = row.append("div").style("width", "50%")
+                    .style("text-align", "left").style("align", "left").attr("class", "col-md-12")
+
+            column.append("img").style("margin-bottom", "25px")
+                    .style("height", "100px")
+                    .style("width", "200px")
+                    .attr("align", "left").attr("src", `Resources/assets/images/NBA/${d.book}.png`)
+            // objects of via books
+            // For every book I have the book associate's lines, the model evaluation with respect to pick and book and the associated winnings of the picks via the book's odds 
+            // Display Book's Markets and Winnings in svgs
+            // Use the pick grade to color the svg
+            for (circle_cols of circle_pairings){
+                var color = "green";
+                svg = column.append("svg").style("height", "100px").style("width", "100px")
+                if (d[circle_cols[0]]=== "L"){
+                    color = "red"
+                } else if (d[circle_cols[0]] === "P"){
+                    color = "orange"
+                }
+                circle = svg.append("circle").text(d.spread_home).attr("cx", 50).attr("cy", 50).attr("r", 40).attr("style-width", 3).attr("fill", color)
+                text = svg.append("text").attr("x", 25).attr("y", 50).attr("fill", "white").text(d[circle_cols[1]])
+                for (t of circle_cols.slice(2)){
+                    text.append("tspan").style("font-size", 12).attr("x", 30).attr("y", 65).text(d[t])
+                }
             }
-            
+               
+            j++
+        
+        
+
+
+
         }
+
     }
 
     function createDataFilters(container, options, starting_value){
