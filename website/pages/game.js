@@ -7,10 +7,11 @@ Promise.all([
     d3.csv("../../data/interim/website/game/timeseries_game.csv") // Timeseries of Markets
   ]).then(files => {
 
-    let sample_id = "888680"
+    let sample_id = "888635"
     let results_and_preds = []
     let home_cols = ['home_abbv', 'pts_home', 'market_score_home', 'm3_proj_home', 'm3_home_error', 'efg_pct_home', 'orb_pct_home', 'tov_pct_home', 'fta_per_fga_pct_home', 'game_possessions']
     let away_cols = ['away_abbv', 'pts_away', 'market_score_away', 'm3_proj_away', 'm3_away_error', 'efg_pct_away', 'orb_pct_away', 'tov_pct_away', 'fta_per_fga_pct_away', 'game_possessions']
+    let tag_names = ["Team", "Score", "Market Projection", "Model Projection", "Model Error", "eFG%", "ORB%", "TOV%", "FTA/FGA%", "Pace"]
     book_summary_arr = files[3].filter((d) => d.game_id === sample_id)
     mark_predictions_arr = files[4].filter((d) => d.game_id === sample_id)
     time_summary_arr = files[5].filter((d) => d.game_id === sample_id)
@@ -22,8 +23,8 @@ Promise.all([
         }
     }
     //console.log(book_summary_arr) // book and book aggregates
-    console.log(results_and_preds) // mark predictions and results 
-    //console.log(time_summary_arr) // timeseries of all markets for game
+    // console.log(results_and_preds) // mark predictions and results 
+    console.log(time_summary_arr) // timeseries of all markets for game
 
     name_cleaner =  {'CHR': 'CHO', 'SAN': 'SAS', 'GS': 'GSW', 'BKN': 'BRK', 'NY': 'NYK'}
     shark_names = Object.keys(name_cleaner)
@@ -62,21 +63,29 @@ Promise.all([
                     .style("width", "200px").attr("class", "img-fluid").attr("alt", "img-fluid")
                     .attr("align", "center").attr("src", `Resources/assets/images/NBA/${d[`${loc+"_abbv"}`]}.png`)
             
-            results_table = column.append("table").style("align", "center").style("margin-left", "40px").style("margin-bottom", "20px").attr("class", "table-sm")
+            let i = 0
+            for (stat of starting_stats){
+                column.append("h2").style("font-size", "20px").style("color", "white").text(`${tag_names[i]}:`)
+                column.append("h3").style("font-size", "20px").style("color", "white").text(d[stat])
+                i++
+            }
+            
+            
+                    // results_table = column.append("table").style("align", "center").style("margin-left", "40px").style("margin-bottom", "20px").attr("class", "table-sm")
             
 
             
-            thead = results_table.append("thead")
-            header_row = thead.append("tr")
-            for (stat of starting_stats){
-                header_row.append("th").text(stat)
-            }
+            // thead = results_table.append("thead")
+            // header_row = thead.append("tr")
+            // for (stat of starting_stats){
+            //     header_row.append("th").text(stat)
+            // }
             
-            data_row = results_table.append("tr")
+            // data_row = results_table.append("tr")
 
-            for (stat of starting_stats){
-                data_row.append("td").text(d[stat])
-            }
+            // for (stat of starting_stats){
+            //     data_row.append("td").text(d[stat])
+            // }
             k = k + 1
         }
         row.append("br")
@@ -85,33 +94,70 @@ Promise.all([
     function createTime(data){
 
         let row = d3.select("#DataHouse").append("div").style("align", "center").attr("class", "row").attr("id", "secondrow")
-
         
-        column = row.append("div").style("width", "100%")
-                    .style("text-align", "center").style("align", "center").attr("class", "col-m-6")
+        column = row.append("div").style("text-align", "center").style("align", "center").attr("class", "col-m-6")
         column.append("h1").style("color", "white").text("Market Analysis")
-        book_table = column.append("table").style("align", "center").style("margin-left", "400px").style("margin-bottom", "20px").style("max-width", "500px").attr("class", "table-sm")
+        // book_table = column.append("table").style("align", "center").style("margin-left", "400px").style("margin-bottom", "20px").style("max-width", "500px").attr("class", "table-sm")
         
-        var headers = Object.keys(data[0])
+        var plot_data = {}
+        var columns = Object.keys(data[0])
+        plot_data =  {}
+        var trace_arr = [];
+        for (book of book_set){
+            book_data = data.filter((obj) => obj.book === book)
+            plot_data[book] = {}
+            x = []
+            y = []
+            book_data.forEach(item => {
+                let date = new Date(item.timestamp)
+                x.push(date)
+                y.push(parseFloat(item.spread_line))
 
-        var table_header = book_table.append("thead").append("tr")
+            })
 
-        for (h of headers){
-            table_header.append("th").text(h)
+            plot_data[book].x = x
+            plot_data[book].y = y
         }
-        
-        table_body = book_table.append("tbody")
 
-        for (d of data){
-            
-            if (d.book == "BetOnline"){
-                data_row = table_body.append("tr")
-                for (col of headers){
-                    data_row.append("td").text(d[col])
-                }
+        for (key of Object.keys(plot_data)){
+            var trace = {
+                x: plot_data[key].x, // date 
+                y: plot_data[key].y, // spread line
+                mode: "line+markets",
+                line: {shape: "spline"},
+                name: key
+
             }
-            
+            trace_arr.push(trace)
         }
+
+        var layout = {
+            title: 'Spread Market Movement',
+            showlegend: true,
+            height: 500,
+            yaxis: {side: 'right'},
+          };
+
+        console.log(trace_arr)
+        Plotly.newPlot("secondrow", trace_arr, layout);
+        // var table_header = book_table.append("thead").append("tr")
+
+        // for (h of headers){
+        //     table_header.append("th").text(h)
+        // }
+        
+        // table_body = book_table.append("tbody")
+
+        // for (d of data){
+            
+        //     if (d.book == "BetOnline"){
+        //         data_row = table_body.append("tr")
+        //         for (col of headers){
+        //             data_row.append("td").text(d[col])
+        //         }
+        //     }
+            
+        // }
 
         
 
