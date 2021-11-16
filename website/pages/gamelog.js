@@ -10,6 +10,7 @@ Promise.all([
   
   // create container
     console.log(csvData)
+    console.log(files[1])
     let filter_container = d3.select("body").append("div").attr("class", "container").style("background-color", "rgba(102,51,153,0.55)").attr("id", "filters")
 
     let container = d3.select("body").append("div").attr("class", "container-fluid").style("background-color", "rgba(102,51,153,0.62)").attr("id", "scoresTable") 
@@ -21,6 +22,7 @@ Promise.all([
     team_set = new Set()
     day_set = new Set()
     date_regex = /\d+-\d+-\d+/
+    name_regex = /[A-Z]{3}/
 
     for (let result of csvData){
         book_set.add(result.Best_Book)
@@ -31,7 +33,7 @@ Promise.all([
     }
 
     var head_row = container.append("div").attr("class", "row").attr("id", "predRow")
-    console.log(day_set)
+    // console.log(day_set)
     //head_row = d3.select("#predRow")
     // Create a Table
     data = csvData
@@ -39,26 +41,66 @@ Promise.all([
     // Your Columns
     headers = Object.keys(data[0])
     headers = headers.filter((row_h) => ((row_h !== "date") & (row_h !== "season") & (row_h !== "game_id")))
+    header_cleaner = {
+      "home_abbv":"Home",
+      "away_abbv": "Away",
+      "pts_home": "Home Points",
+      "pts_away": "Away Points",
+      "m3_proj_home": "Home Model Projection",
+      "m3_proj_away": "Away Model Projection",
+      "moneyline_home_number": "Avg. Moneyline",
+      "spread_home_number": "Avg. Spread",
+      "total_number": "Avg. Total",
+      "ml_pk": "Model ML Pick",
+      "spread_pk": "Model Spread Pick",
+      "total_pk": "Model Total Pick",
+      "Best_Book": "Highest Odds",
+      "ml_winnings": "Moneyline Winnings",
+      "spread_winnings": "Spread Winnings",
+      "total_winnings": "Total Winnings",
+      "agg_winnings": "Aggregate Winnings"
+    }
     // Insert Each Row Into Table
-    table = head_row.append("table").attr("class", "table table-bordered")
-    
-    function addHeaders(array){
+    var headers_2 = [];
+    headers.forEach((o) => {headers_2.push(header_cleaner[o])})
+    teams_arr = Array.from(team_set)
+    season_arr =  Array.from(season_set)
+    day_set = Array.from(day_set)
+    teams_arr.push("team")
+    season_arr.push("season")
+    day_set.push("day")
+    createDataFilters(filter_container, [teams_arr, season_arr])
+    writeTable(headers, data, "CLE", "17-18", true)
+
+    function writeTable(headers, data, wanted_team, wanted_season, first_time=false){
+
+      let data_objs = data.filter((d) => (((d.home_abbv === wanted_team) & (d.season === wanted_season)) | ((d.away_abbv === wanted_team) & (d.season === wanted_season)))) 
+
+      if (first_time){
+        table = head_row.append("table").attr("class", "table table-bordered")
         head = table.append("thead").attr("class", "thead-dark")
         row = head.append("tr")
-        for (header of array){
-            row.append("th").text(header)
+        for (header of headers_2){
+          row.append("th").text(header)
         }
-    }
-    createDataFilters(filter_container, [Array.from(book_set), Array.from(team_set),
-        Array.from(day_set), Array.from(season_set)])
-    addHeaders(headers)
-    body = table.append("tbody")
-    for (d of data){
+        body = table.append("tbody").attr("id", "tbody")
+       } else {
+        document.getElementById("tbody").innerHTML = ""
+      }
+      console.log(data_objs)
+      
+      for (d of data_objs){
         row = body.append("tr")
         for (metric of headers){
+          if (metric.endsWith("_abbv")){
+            row.append("td").append("img").attr("src", `Resources/assets/images/NBA/${d[metric]}.png`).attr("width", 35).attr("height", 35)
+          } else {
             row.append("td").text(d[metric])
-        }
+          }
+      }
+
     }
+  }
 
     function createDataFilters(container, options, starting_value){
         // container :: string of container name
@@ -71,8 +113,9 @@ Promise.all([
           if (i == 0){
             var row = container.append("form").append("div").attr("class", "row")
           }
+          let id = filters.slice(-1)
           let selection = row.append("div").attr("class", `col-sm-${size}`).append("select").style("margin-top", "25px").style("margin-bottom", "25px").attr("class", "form-control form-control-sm")
-          .attr("type", "text").attr("placeholder", starting_value)
+          .attr("type", "text").attr("placeholder", starting_value).attr("id", id)
           for (let option of filters){
             selection.append("option").text(option)
           }
@@ -81,9 +124,16 @@ Promise.all([
         let form = d3.select(".row")
         form.append("div").attr("class", `col-sm-${button_size}`).attr("align", "center").append("button").attr("class", "btn btn-warning").attr("type","button").style("max-height", "40px").style("max-width", "80px").style("margin-right", "10px")
         .style("margin-top", "20px").text("Submit").attr("id", "submitButton")
+
       }
 
-      
+  d3.select("#submitButton").on("click", function(event) {
+    var wanted_team = d3.select("#team")._groups[0][0].value
+    var wanted_season = d3.select("#season")._groups[0][0].value
+    //d3.select("tbody").innerHTML = ""
+    writeTable(headers, data, wanted_team, wanted_season, false)
+
+    })
 
       
 
