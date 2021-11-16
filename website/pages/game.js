@@ -6,27 +6,27 @@ Promise.all([
     d3.csv("../../data/interim/website/game/project_and_errors.csv"), // Project and Errors [4]
     d3.csv("../../data/interim/website/game/timeseries_game.csv"), // Timeseries of Markets[5]
     d3.csv("../../data/interim/website/game_log/time_agg.csv"), // Market factors
-    d3.csv("../../data/interim/website/dash/team_picks.csv")
+    d3.csv("../../data/interim/website/dash/team_picks.csv") // [7]
   ]).then(files => {
 
-    let sample_id = "1262140"
+    let sample_id = "969423"
     let results_and_preds = []
     let home_cols = ['pts_home', 'market_score_home', 'm3_proj_home', 'm3_home_error', 'efg_pct_home', 'orb_pct_home', 'tov_pct_home', 'fta_per_fga_pct_home', 'game_possessions']
     let away_cols = ['pts_away', 'market_score_away', 'm3_proj_away', 'm3_away_error', 'efg_pct_away', 'orb_pct_away', 'tov_pct_away', 'fta_per_fga_pct_away', 'game_possessions']
     let market_makers = ['m3_proj_home', 'm3_proj_away', 'market_score_home', 'market_score_away',
     'm3_whole_deviation', 'market_whole_error', "m3_whole_error"] // book and date
     let tag_names = ["Score", "Market Projection", "Model Projection", "Model Error", "eFG%", "ORB%", "TOV%", "FTA/FGA%", "Pace"]
-    let tag_markets =[ "Market Spread", "Model Spread", "Market Total", "Model Total", "Difference", "Spread", "Total","Market Error", "Model Error"] // "Book", "Tip-Off",
+    let tag_markets =[ "Market Spread", "Model Spread", "Market Total", "Model Total", "Difference", "True Spread", "True Total","Total Market Error", "Total Model Error"] // "Book", "Tip-Off",
     book_summary_arr = files[3].filter((d) => d.game_id === sample_id)
     mark_predictions_arr = files[4].filter((d) => d.game_id === sample_id)
     time_summary_arr = files[5].filter((d) => d.game_id === sample_id)
     times_books_arr = files[6].filter((d) => d.game_id === sample_id)
     picks_arr = files[7].filter((d) => d.game_id === sample_id)
 
-    // onsole.log(book_summary_arr) // book and book aggregates
-    //onsole.log(results_and_preds) // mark predictions and results 
-    //onsole.log(time_summary_arr) // timeseries of all markets for game
-    // onsole.log(times_books_arr) // Summary Agg Information on Books
+    console.log(book_summary_arr) // book and book aggregates
+    console.log(results_and_preds) // mark predictions and results 
+    console.log(time_summary_arr) // timeseries of all markets for game
+    console.log(times_books_arr) // Summary Agg Information on Books
     
 
     name_cleaner =  {'CHR': 'CHO', 'SAN': 'SAS', 'GS': 'GSW', 'BKN': 'BRK', 'NY': 'NYK'}
@@ -98,7 +98,7 @@ Promise.all([
                 tags_names = tag_markets
                 loc = "market"
                 market_obj["Market Score Projection"] = `${(+d.market_score_away - +d.market_score_home).toFixed(2)}`
-                spread_market =  `${(+d.market_score_away - +d.market_score_home).toFixed(2)}`
+                spread_market =  `${(+d.market_score_home - +d.market_score_away).toFixed(2)}`
                 market_obj["Model Score Projection"] = `${(+d.m3_proj_away-+d.m3_proj_home).toFixed(2)}`
                 market_obj["Market Total"] = `${(+d.market_score_home+(+d.market_score_away)).toFixed(1)}`
                 total_market = `${(+d.market_score_home+(+d.market_score_away)).toFixed(1)}`
@@ -133,7 +133,7 @@ Promise.all([
         }
         row.append("br")
         let pk_to_num = {
-            "W": +spread_market, "L": -spread_market,
+            "W": +spread_market > 0? `+${spread_market}`: `${spread_market}`, "L": +spread_market> 0? `+${spread_market}`: `${spread_market}`,
             "O": "Over", "U": "Under"
         }
         row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-12").attr("id", "pickString")
