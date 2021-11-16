@@ -90,7 +90,11 @@ Promise.all([
       console.log(data_objs)
       
       for (d of data_objs){
-        row = body.append("tr")
+        let winner = "table-success";
+        if (parseFloat(d.agg_winnings) < 0){
+          winner = "table-danger"
+        }
+        row = body.append("tr").attr("class", winner)
         for (metric of headers){
           if (metric.endsWith("_abbv")){
             row.append("td").append("img").attr("src", `Resources/assets/images/NBA/${d[metric]}.png`).attr("width", 35).attr("height", 35)
