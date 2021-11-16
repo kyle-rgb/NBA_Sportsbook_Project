@@ -268,8 +268,12 @@ Promise.all([
   d3.select("#submitButton").on("click", function(event) {
     var wanted_book = d3.select("#book")._groups[0][0].value
     var wanted_season = d3.select("#season")._groups[0][0].value
-    document.getElementById("winChart").innerHTML = ""
+    document.getElementById("dashboard").innerHTML = ""
+    var dashboard = d3.select("#dashboard").append("h1").style("color", "white").attr("align", "center").text("Dashboard")
+    
     createMoneyPlot(wanted_book, wanted_season, plot_data)
+    createBookTable(wanted_book, wanted_season, files[4], headers_1)
+    createTeamTable(wanted_book, wanted_season,[files[3], files[4], files[6]], headers_2)
     })
 
 

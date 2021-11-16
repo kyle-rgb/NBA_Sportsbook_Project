@@ -99,7 +99,12 @@ Promise.all([
           if (metric.endsWith("_abbv")){
             row.append("td").append("img").attr("src", `Resources/assets/images/NBA/${d[metric]}.png`).attr("width", 35).attr("height", 35)
           } else {
-            row.append("td").text(d[metric])
+            if (metric.endsWith("_winnings")){
+              row.append("td").text(`$${d[metric]}`)
+            } else {
+              row.append("td").text(d[metric])
+            }
+            
           }
       }
 
