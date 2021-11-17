@@ -15,7 +15,7 @@ Promise.all([
   //console.log(files[3]) // team rankings (market, model, and margin of victory)
   //console.log(files[4]) // pick = model pick given associated line(agg or book); pk = associated grade with pick
   //console.log(files[5]) // team ff and possessions with seasons
-  console.log(files[6]) // spread, moneyline, total and combined winnings with game_id, season and book filter
+  console.log(files[3]) // spread, moneyline, total and combined winnings with game_id, season and book filter
 
   let year_set = new Set()
   let book_set = new Set()
