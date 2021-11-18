@@ -24,7 +24,7 @@ Promise.all([
     picks_arr = files[7].filter((d) => d.game_id === sample_id)
 
     console.log(book_summary_arr) // book and book aggregates
-    console.log(results_and_preds) // mark predictions and results 
+    console.log(mark_predictions_arr) // mark predictions and results 
     console.log(time_summary_arr) // timeseries of all markets for game
     console.log(times_books_arr) // Summary Agg Information on Books
     
