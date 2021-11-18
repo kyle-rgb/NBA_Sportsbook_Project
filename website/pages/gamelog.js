@@ -97,7 +97,7 @@ Promise.all([
         row = body.append("tr").attr("class", winner)
         for (metric of headers){
           if (metric.endsWith("_abbv")){
-            row.append("td").append("img").attr("src", `Resources/assets/images/NBA/${d[metric]}.png`).attr("width", 35).attr("height", 35)
+            row.append("td").append("a").attr("href", `game/${d.game_id}`).append("img").attr("src", `Resources/assets/images/NBA/${d[metric]}.png`).attr("width", 35).attr("height", 35)
           } else {
             if (metric.endsWith("_winnings")){
               row.append("td").text(`$${d[metric]}`)

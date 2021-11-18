@@ -6,10 +6,11 @@ Promise.all([
     d3.csv("../../data/interim/website/game/project_and_errors.csv"), // Project and Errors [4]
     d3.csv("../../data/interim/website/game/timeseries_game.csv"), // Timeseries of Markets[5]
     d3.csv("../../data/interim/website/game_log/time_agg.csv"), // Market factors
-    d3.csv("../../data/interim/website/dash/team_picks.csv") // [7]
+    d3.csv("../../data/interim/website/dash/team_picks.csv"), // [7]
+    d3.csv("../../data/interim/website/game_log/summary_table_results.csv"), //[8]
   ]).then(files => {
 
-    let sample_id = "969423"
+    let sample_id = "888630"
     let results_and_preds = []
     let home_cols = ['pts_home', 'market_score_home', 'm3_proj_home', 'm3_home_error', 'efg_pct_home', 'orb_pct_home', 'tov_pct_home', 'fta_per_fga_pct_home', 'game_possessions']
     let away_cols = ['pts_away', 'market_score_away', 'm3_proj_away', 'm3_away_error', 'efg_pct_away', 'orb_pct_away', 'tov_pct_away', 'fta_per_fga_pct_away', 'game_possessions']
@@ -22,10 +23,11 @@ Promise.all([
     time_summary_arr = files[5].filter((d) => d.game_id === sample_id)
     times_books_arr = files[6].filter((d) => d.game_id === sample_id)
     picks_arr = files[7].filter((d) => d.game_id === sample_id)
-
-    console.log(book_summary_arr) // book and book aggregates
-    console.log(mark_predictions_arr) // mark predictions and results 
-    console.log(time_summary_arr) // timeseries of all markets for game
+    book_range = files[8].filter((d) => d.game_id === sample_id)
+    // onsole.log(book_range)
+    // onsole.log(book_summary_arr) // book and book aggregates
+    //console.log(mark_predictions_arr) // mark predictions and results 
+    //console.log(time_summary_arr) // timeseries of all markets for game
     console.log(times_books_arr) // Summary Agg Information on Books
     
 
@@ -55,9 +57,9 @@ Promise.all([
         data = data.filter((o) => o.book === wanted_book)
         data.push(data[0])
         data.push(data[0])
-        console.log(odds)
+        //console.log(odds)
         added_obj = {}
-        
+    
         const e_cols = ["ml_pick", "ml_pk", "ml_team", "spread_pick", "spread_pk", "spread_team", "total_pick", "total_pk"]
         let home_switch = 0
         const o_cols = ["over_odds", "moneyline_home", "spread_odds_home"]
@@ -99,6 +101,7 @@ Promise.all([
                 loc = "market"
                 market_obj["Market Score Projection"] = `${(+d.market_score_away - +d.market_score_home).toFixed(2)}`
                 spread_market =  `${(+d.market_score_home - +d.market_score_away).toFixed(2)}`
+                spread_side = spread_market * -1 
                 market_obj["Model Score Projection"] = `${(+d.m3_proj_away-+d.m3_proj_home).toFixed(2)}`
                 market_obj["Market Total"] = `${(+d.market_score_home+(+d.market_score_away)).toFixed(1)}`
                 total_market = `${(+d.market_score_home+(+d.market_score_away)).toFixed(1)}`
@@ -133,10 +136,10 @@ Promise.all([
         }
         row.append("br")
         let pk_to_num = {
-            "W": +spread_market > 0? `+${spread_market}`: `${spread_market}`, "L": +spread_market> 0? `+${spread_market}`: `${spread_market}`,
+            "W": spread_side > 0 ?`+${spread_side}`: `${spread_side}`, "L": spread_market > 0 ? `+${spread_market}`: `${spread_market}`,
             "O": "Over", "U": "Under"
         }
-        row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-12").attr("id", "pickString")
+        row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-4").attr("id", "pickString")
             .append("h1").style("font-size", "55px").style("color", "white").text("Picks:")
         let p = d3.select("#pickString")
         let a_1 = p.append("a")
@@ -151,6 +154,33 @@ Promise.all([
         a_3.append("img").style("margin-bottom", "10px").style("height", "100px").style("width", "100px").attr("class", "img-fluid").attr("alt", "img-fluid")
         .attr("align", "center").attr("src", `Resources/assets/images/NBA/${added_obj.total_pick}.png`)
         a_3.append("p").style("font-size", "25px").style("color", "white").text(`${pk_to_num[added_obj.total_pick]} ${total_market} @ ${added_obj.total_odds}`)
+        
+        best_books = []
+        added_obj.spread_pick === "W"? best_books.push("spread_home_book") : best_books.push("spread_away_book")
+        added_obj.ml_pick === "W"? best_books.push("moneyline_home_book") : best_books.push("moneyline_away_book")
+        best_books.push("total_book")
+
+        row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-4").attr("id", "bestBooks")
+            .append("h1").style("font-size", "55px").style("color", "white").text("Best Lines:")
+        let p2 = d3.select("#bestBooks")
+        let final_obj = {"spread_away_book": "spread_odds_away", "spread_home_book": "spread_odds_home", "O": "over_odds", "U": "under_odds", "moneyline_home_book": "moneyline_home", "moneyline_away_book": "moneyline_away"}        
+
+        for (let i=0; i<3; i++){
+            m_obj = book_summary_arr.filter((o) => o.book === book_range[0][best_books[i]])[0]
+            let a_4 = p2.append("a")
+            a_4.append("img").style("margin-bottom", "5px").style("height", "100px").style("width", "100px").attr("class", "img-fluid").attr("alt", "img-fluid")
+            .attr("align", "center").attr("src", `Resources/assets/images/NBA/${m_obj.book}.png`)
+            total_line = m_obj[best_books[i].replace('_book', '')]
+            if (i == 2 & added_obj.total_pick === "O"){
+                best_books[2] = "O"
+                total_line = m_obj["total"]                
+            } else if (i === 2){
+                best_books[2] = "U"
+                total_line = m_obj["total"]
+            }
+            a_4.append("p").style("font-size", "25px").style("color", "white").text(`${total_line} @ ${m_obj[final_obj[best_books[i]]]}`)
+        }
+
     }
 
     function createTime(data){
@@ -335,7 +365,7 @@ Promise.all([
 
     d3.select("#submitButton").on("click", function(event) {
         var wanted_book = d3.select("#bookSelection")._groups[0][0].value
-        console.log(wanted_book)
+        //console.log(wanted_book)
         document.getElementById("predRow").innerHTML = ""
         createResults(mark_predictions_arr, book_summary_arr, picks_arr, wanted_book)
         
