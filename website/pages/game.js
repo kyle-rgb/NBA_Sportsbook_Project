@@ -56,7 +56,7 @@ Promise.all([
 
     function createResults(data, odds, eval, wanted_book){
         var k = 1
-        console.log(data)
+        // console.log(data)
         odds = odds.filter((o) => o.book === wanted_book)
         eval = eval.filter((o) => o.book === wanted_book)
         data = data.filter((o) => o.book === wanted_book)
@@ -281,16 +281,28 @@ Promise.all([
         d3.select("#DataHouse").append("div").style("align", "center").attr("class", "row").attr("id", "thirdrow")
         Plotly.newPlot("thirdrow", trace_arr_2, layout_2);      
 }
-    function createBooks(data){
-        let row = d3.select("#DataHouse").append("div").style("align", "left").attr("class", "row").attr("id", "bookrow")
+    function createBooks(data, wanted_book, first){
+        var row;
+        if (first){
+            row = d3.select("#DataHouse").append("div").style("align", "left").attr("class", "row").attr("id", "bookrow")
+        } else {
+            row = d3.select("#bookrow")
+        }
+
+        obj_agg= {}
+        book_dims = times_books_arr.map((o) => obj_agg[o["market"]+ "_" + o["calc"]] = o[wanted_book])
+        console.log(obj_agg)        
         let circle_pairings = [["ml_pk", "moneyline_home"], ["spread_pk", "spread_home", "spread_odds_home"], ["total_pk", "total", "under_odds"],
         ["ml_pk", "ml_winnings", "moneyline_home"], ["spread_pk", "spread_winnings", "spread_odds_home"], ["total_pk", "total_winnings", "under_odds"], ["ovr_pk", "agg_winnings"]]
         let books_number = data.length
         let columns = Object.keys(data[0])
         let j = 0;
-        for (d of data){
+        let cols_circle = ["ML Odds:", "Spread Line:", "Total Line:", "ML $" ,"Spread $", "Total $", "Game $"]
+        g_data = data.filter((o) => o.book === wanted_book)
 
-            column = row.append("div").style("width", "50%")
+        for (d of g_data){
+
+            column = row.append("div").style("width", "100%")
                     .style("text-align", "left").style("align", "left").attr("class", "col-md-12")
 
             column.append("img").style("margin-bottom", "25px")
@@ -301,22 +313,25 @@ Promise.all([
             // For every book I have the book associate's lines, the model evaluation with respect to pick and book and the associated winnings of the picks via the book's odds 
             // Display Book's Markets and Winnings in svgs
             // Use the pick grade to color the svg
+
             for (circle_cols of circle_pairings){
                 var color = "green";
-                svg = column.append("svg").style("height", "100px").style("width", "100px").style("text-align", "center")
+                svg = column.append("svg").style("height", "120px").style("width", "120px").style("text-align", "center")//.style("margin-top", "25px")
                 if (d[circle_cols[0]]=== "L"){
                     color = "red"
                 } else if (d[circle_cols[0]] === "P"){
                     color = "orange"
                 }
-                circle = svg.append("circle").text(d.spread_home).attr("cx", 50).attr("cy", 50).attr("r", 40).attr("style-width", 3).attr("fill", color)
-                text = svg.append("text").attr("x", 25).attr("y", 50).attr("fill", "white").text(d[circle_cols[1]])
-                for (t of circle_cols.slice(2)){
-                    text.append("tspan").style("font-size", 12).attr("x", 30).attr("y", 65).text(d[t])
-                }
+                circle = svg.append("circle").text(d.spread_home).attr("cx", 60).attr("cy", 60).attr("r", 50).attr("style-width", 3).attr("fill", color)
+                text = svg.append("text").attr("x", 25).attr("y", 50).attr("fill", "white").style("font-size", 11).text(cols_circle[j])
+                text.append("tspan").attr("x", 35).attr("y", 70).attr("fill", "white").text(d[circle_cols[1]])
+                text.append("tspan").style("font-size", 8).attr("x", 25).attr("y", 90).text(d[t])
+                    
+                
+                j++
             }
                
-            j++
+            
         
         
 
@@ -349,18 +364,7 @@ Promise.all([
         form.append("div").attr("class", `col-sm-${button_size}`).attr("align", "center").append("button").attr("class", "btn btn-warning").attr("type","button").style("max-height", "40px").style("max-width", "80px").style("margin-right", "10px")
         .style("margin-top", "5px").text("Submit").attr("id", "submitButton")
       }
-
-
-    function buildCandleStick(data){
-        let x = []
-        let 
-
-
-
-
-    }
     
-
 
 
     // Build Containers and Attach Data
@@ -368,13 +372,15 @@ Promise.all([
     results_and_preds.push(results_and_preds[1])
     createResults(mark_predictions_arr, book_summary_arr, picks_arr, "average")
     createTime(time_summary_arr)
-    createBooks(book_summary_arr)
+    createBooks(book_summary_arr, "average", true)
 
     d3.select("#submitButton").on("click", function(event) {
         var wanted_book = d3.select("#bookSelection")._groups[0][0].value
         //console.log(wanted_book)
         document.getElementById("predRow").innerHTML = ""
         createResults(mark_predictions_arr, book_summary_arr, picks_arr, wanted_book)
+        document.getElementById("bookrow").innerHTML = ""
+        createBooks(book_summary_arr, wanted_book, false)
         
     
     })
