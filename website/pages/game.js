@@ -1,7 +1,4 @@
 Promise.all([
-    d3.csv("../../data/interim/games/odds.csv"), // Book Summary Lines
-    d3.csv("../../data/interim/games/results.csv"), // Team Overall Stats
-    d3.csv("../../data/interim/games/timeseries.csv"), // Time Series of Spread and Total by Book
     d3.csv("../../data/interim/website/game/markets_game.csv"), // Book and Aggregate Book Lines[3]
     d3.csv("../../data/interim/website/game/project_and_errors.csv"), // Project and Errors [4]
     d3.csv("../../data/interim/website/game/timeseries_game.csv"), // Timeseries of Markets[5]
@@ -18,18 +15,25 @@ Promise.all([
     'm3_whole_deviation', 'market_whole_error', "m3_whole_error"] // book and date
     let tag_names = ["Score", "Market Projection", "Model Projection", "Model Error", "eFG%", "ORB%", "TOV%", "FTA/FGA%", "Pace"]
     let tag_markets =[ "Market Spread", "Model Spread", "Market Total", "Model Total", "Difference", "True Spread", "True Total","Total Market Error", "Total Model Error"] // "Book", "Tip-Off",
-    book_summary_arr = files[3].filter((d) => d.game_id === sample_id)
-    mark_predictions_arr = files[4].filter((d) => d.game_id === sample_id)
-    time_summary_arr = files[5].filter((d) => d.game_id === sample_id)
-    times_books_arr = files[6].filter((d) => d.game_id === sample_id)
-    picks_arr = files[7].filter((d) => d.game_id === sample_id)
-    book_range = files[8].filter((d) => d.game_id === sample_id)
+    book_summary_arr = files[0].filter((d) => d.game_id === sample_id)
+    mark_predictions_arr = files[1].filter((d) => d.game_id === sample_id)
+    time_summary_arr = files[2].filter((d) => d.game_id === sample_id)
+    times_books_arr = files[3].filter((d) => d.game_id === sample_id)
+    picks_arr = files[4].filter((d) => d.game_id === sample_id)
+    book_range = files[5].filter((d) => d.game_id === sample_id)
+
+    open_ = book_summary_arr.filter((c) => c.book === "Opening")[0]
+    initial_spread = open_.market_score_away - open_.market_score_home; 
+    initial_total =  open_.market_score_away + open_.market_score_home;
+    var closing_market; 
+
     // onsole.log(book_range)
     // onsole.log(book_summary_arr) // book and book aggregates
-    //console.log(mark_predictions_arr) // mark predictions and results 
-    //console.log(time_summary_arr) // timeseries of all markets for game
-    console.log(times_books_arr) // Summary Agg Information on Books
+    // onsole.log(mark_predictions_arr) // mark predictions and results 
+    // onsole.log(time_summary_arr) // timeseries of all markets for game
+    // console.log(times_books_arr) // Summary Agg Information on Books
     
+
 
     name_cleaner =  {'CHR': 'CHO', 'SAN': 'SAS', 'GS': 'GSW', 'BKN': 'BRK', 'NY': 'NYK'}
     shark_names = Object.keys(name_cleaner)
@@ -52,12 +56,13 @@ Promise.all([
 
     function createResults(data, odds, eval, wanted_book){
         var k = 1
+        console.log(data)
         odds = odds.filter((o) => o.book === wanted_book)
         eval = eval.filter((o) => o.book === wanted_book)
         data = data.filter((o) => o.book === wanted_book)
         data.push(data[0])
         data.push(data[0])
-        //console.log(odds)
+        
         added_obj = {}
     
         const e_cols = ["ml_pick", "ml_pk", "ml_team", "spread_pick", "spread_pk", "spread_team", "total_pick", "total_pk"]
@@ -139,7 +144,7 @@ Promise.all([
             "W": spread_side > 0 ?`+${spread_side}`: `${spread_side}`, "L": spread_market > 0 ? `+${spread_market}`: `${spread_market}`,
             "O": "Over", "U": "Under"
         }
-        row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-4").attr("id", "pickString")
+        row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-6").attr("id", "pickString")
             .append("h1").style("font-size", "55px").style("color", "white").text("Picks:")
         let p = d3.select("#pickString")
         let a_1 = p.append("a")
@@ -160,11 +165,10 @@ Promise.all([
         added_obj.ml_pick === "W"? best_books.push("moneyline_home_book") : best_books.push("moneyline_away_book")
         best_books.push("total_book")
 
-        row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-4").attr("id", "bestBooks")
+        row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-6").attr("id", "bestBooks")
             .append("h1").style("font-size", "55px").style("color", "white").text("Best Lines:")
         let p2 = d3.select("#bestBooks")
         let final_obj = {"spread_away_book": "spread_odds_away", "spread_home_book": "spread_odds_home", "O": "over_odds", "U": "under_odds", "moneyline_home_book": "moneyline_home", "moneyline_away_book": "moneyline_away"}        
-
         for (let i=0; i<3; i++){
             m_obj = book_summary_arr.filter((o) => o.book === book_range[0][best_books[i]])[0]
             let a_4 = p2.append("a")
@@ -179,7 +183,10 @@ Promise.all([
                 total_line = m_obj["total"]
             }
             a_4.append("p").style("font-size", "25px").style("color", "white").text(`${total_line} @ ${m_obj[final_obj[best_books[i]]]}`)
+            
         }
+
+
 
     }
 

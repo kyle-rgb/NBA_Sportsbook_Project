@@ -1,39 +1,32 @@
 // Line Chart Reference : https://observablehq.com/@enjalot/power-usage-workbook
 Promise.all([
-  d3.csv("../../data/interim/line_chart_sample.csv"), // winnings chart files[0]
-  d3.csv("../../data/interim/book_summary_sample.csv"), // book summary files[1]
-  d3.csv("../../data/interim/power_rankings_sample.csv"), // team summary files[2]
-  d3.csv("../../data/interim/website/dash/full_res.csv"), // for team rankings 3
-  d3.csv("../../data/interim/website/dash/team_picks.csv"), // [4]
-  d3.csv("../../data/interim/website/dash/variables.csv"), // [5]
-  d3.csv("../../data/interim/website/dash/winnings_dash_a.csv") // [6]
-
-
+  d3.csv("../../data/interim/website/dash/full_res.csv"), // for team rankings [0]
+  d3.csv("../../data/interim/website/dash/team_picks.csv"), // [1] // [2]
+  d3.csv("../../data/interim/website/dash/winnings_dash_a.csv") // [4]
 
 ]).then(files => {
   
-  //console.log(files[3]) // team rankings (market, model, and margin of victory)
-  //console.log(files[4]) // pick = model pick given associated line(agg or book); pk = associated grade with pick
-  //console.log(files[5]) // team ff and possessions with seasons
-  console.log(files[3]) // spread, moneyline, total and combined winnings with game_id, season and book filter
+  console.log(files[0]) // team rankings (market, model, and margin of victory)
+  console.log(files[1]) // pick = model pick given associated line(agg or book); pk = associated grade with pick
+  console.log(files[2]) //  spread, moneyline, total and combined winnings with game_id, season and book filter
+  
 
   let year_set = new Set()
   let book_set = new Set()
-  let book_array = files[1].columns
-  for (d of files[6]){
+  
+  for (d of files[2]){
     year_set.add(d.season)
   }
-  for (d of files[6]){
+  for (d of files[2]){
     book_set.add(d.book)
   }
-
+  
   year_set.add("All")
 
   var first_container = d3.select("body").append("div").classed("container", true).style("background-color", "rgba(102, 51, 153, 0.55)")
 
   arr_books = Array.from(book_set).sort((a, b) => a<b ? -1 : 1)
   arr_year = Array.from(year_set).sort((a, b) => a<b ? -1 : 1)
-  
   createDataFilters(first_container, [arr_books,arr_year], "Complete")
 
   let team_regex = /[A-Z]{3}?/
@@ -51,8 +44,8 @@ Promise.all([
 
   // Add Page Specific Filters
   let container = d3.select(".container")
-  var plot_data = files[6]
-  var book_data = files[4]
+  var plot_data = files[2]
+  var book_data = files[1]
   for (d of plot_data){
     d.day = parseDate(d.day)
     d.agg_winnings = +((+d.agg_winnings).toFixed(2))
@@ -272,17 +265,17 @@ Promise.all([
     var dashboard = d3.select("#dashboard").append("h1").style("color", "white").attr("align", "center").text("Dashboard")
     
     createMoneyPlot(wanted_book, wanted_season, plot_data)
-    createBookTable(wanted_book, wanted_season, files[4], headers_1)
-    createTeamTable(wanted_book, wanted_season,[files[3], files[4], files[6]], headers_2)
+    createBookTable(wanted_book, wanted_season, files[1], headers_1)
+    createTeamTable(wanted_book, wanted_season,[files[0], files[1], files[2]], headers_2)
     })
 
 
   createMoneyPlot("average", "17-18", plot_data)
   let headers_1 = ["Book", "Metric", "Wins", "Losses", "Pushes", "Win %"]
-  createBookTable("average", "17-18", files[4], headers_1)
+  createBookTable("average", "17-18", files[1], headers_1)
   // power_rankings = files[2].sort(compareObj)
   let headers_2 = ["Team", "Market Rank", "My Rank", "True Rank", "W", "L", "P", "Win %", "Spread Winnings", "ML Winnings", "Totals Earnings", "Complete Earnings"]
-  createTeamTable("average", "17-18",[files[3], files[4], files[6]], headers_2)
+  createTeamTable("average", "17-18",[files[0], files[1], files[2]], headers_2)
   
 
 })

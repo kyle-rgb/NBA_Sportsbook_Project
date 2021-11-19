@@ -1,16 +1,15 @@
 Promise.all([
-  d3.csv("../../data/interim/game_by_game_stats.csv"), // summary game information
   d3.csv("../../data/interim/website/game_log/summary_table_results.csv"), // best number and associated book
   d3.csv("../../data/interim/website/game_log/table_results.csv") // results with projections
 ]).then(files => {
-    var csvData = files[2]
+    var csvData = files[1]
   
     // console.log(files[1]) // best number and associated book
     // console.log(files[2]) // results with projections
   
   // create container
     console.log(csvData)
-    console.log(files[1])
+    console.log(files[0])
     let filter_container = d3.select("body").append("div").attr("class", "container").style("background-color", "rgba(102,51,153,0.55)").attr("id", "filters")
 
     let container = d3.select("body").append("div").attr("class", "container-fluid").style("background-color", "rgba(102,51,153,0.62)").attr("id", "scoresTable") 
