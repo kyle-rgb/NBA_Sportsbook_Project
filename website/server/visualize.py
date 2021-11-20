@@ -22,23 +22,34 @@ def draw_index():
 @app.route("/game_log")
 @cross_origin()
 def draw_games():
-    return flask.render_template("Data.html")
+    js = "gamelog.js"
+    return flask.render_template("DataHouse.html", js=js)
 
 @app.route("/overview")
 @cross_origin()
 def draw_dash():
-    return flask.render_template("Dashboard.html")
+    js = "dashboard.js"
+    return flask.render_template("DataHouse.html", js=js)
 
 
 @app.route("/game")
 @cross_origin()
 def draw_game():
-    return flask.render_template("Game.html")
+    js = "game.js"
+    return flask.render_template("DataHouse.html", js=js)
 
 @app.route("/debrief")
 @cross_origin()
 def draw_debrief():
     return flask.render_template("Debrief.html")
+
+
+@app.route("/datahouse")
+@cross_origin()
+def draw_house():
+    js = "gamelog.js"
+    return flask.render_template("DataHouse.html", js=js)
+
 
 
 

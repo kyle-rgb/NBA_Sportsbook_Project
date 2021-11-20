@@ -1,4 +1,3 @@
-console.log("333")
 Promise.all([
   d3.csv("static/data/game_log/summary_table_results.csv"), // best number and associated book
   d3.csv("static/data/game_log/table_results.csv") // results with projections
