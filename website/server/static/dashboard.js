@@ -7,8 +7,8 @@ Promise.all([
 ]).then(files => {
   
   console.log(files[0]) // team rankings (market, model, and margin of victory)
-  console.log(files[1]) // pick = model pick given associated line(agg or book); pk = associated grade with pick
-  console.log(files[2]) //  spread, moneyline, total and combined winnings with game_id, season and book filter
+  //console.log(files[1]) // pick = model pick given associated line(agg or book); pk = associated grade with pick
+  //console.log(files[2]) //  spread, moneyline, total and combined winnings with game_id, season and book filter
   
 
   let year_set = new Set()

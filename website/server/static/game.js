@@ -7,7 +7,8 @@ Promise.all([
     d3.csv("static/data/game_log/summary_table_results.csv"), //[5]
   ]).then(files => {
 
-    let sample_id = "888630"
+    let sample_id = String(id);
+    console.log(sample_id)
     let results_and_preds = []
     let home_cols = ['pts_home', 'market_score_home', 'm3_proj_home', 'm3_home_error', 'efg_pct_home', 'orb_pct_home', 'tov_pct_home', 'fta_per_fga_pct_home', 'game_possessions']
     let away_cols = ['pts_away', 'market_score_away', 'm3_proj_away', 'm3_away_error', 'efg_pct_away', 'orb_pct_away', 'tov_pct_away', 'fta_per_fga_pct_away', 'game_possessions']
@@ -48,7 +49,7 @@ Promise.all([
     filter_container.append("p").text("Choose a Book to Analyze the Model's Performance").style("color", "white").attr("align", "center")
     
     data_container = d3.select("body").append("div").style("background-color", "rgba(102,51,153,0.62)").attr("class", "container").attr("id", "DataHouse")
-    data_container.append("h1").style("color", "white").text("Game #500")
+    data_container.append("h1").style("color", "white").text(`Game ##${id}`)
     row = data_container.append("div").attr("class", "row").attr("id", "predRow")
     var spread_market;
     var total_market;
