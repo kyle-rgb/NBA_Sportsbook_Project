@@ -1,0 +1,223 @@
+.box {
+  min-height: 800px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 400;
+  color: #fff;
+  align-content: center;
+}
+
+.boxxx {
+  min-height: 800px;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 400;
+  color: #fff;
+  align-content: center;
+}
+
+.row{
+  margin-bottom: 30px;
+}
+
+.navbar{
+  background: rgba(102,51,153,0.99);
+}
+
+.skyblue {
+  background: deepskyblue;
+  min-width: 300px;
+  min-height: 300px;
+  align-content: center;
+}
+
+.purp {
+  background:  rgba(102,51,153,0.37);
+  min-width: 300px;
+  min-height: 300px;
+  align-content: center;
+}
+
+p{
+  margin-top: 0px;
+}
+
+.skyblueyoo {
+  background: deepskyblue;
+  min-width: 1200px;
+  min-height: 900px;
+  align-content: center;
+}
+
+.skyblueyood {
+  background: deepskyblue;
+  min-width: 1200px;
+  min-height: 900px;
+  align-content: center;
+  margin-top: 20px;
+}
+
+#sitetitle{
+  color:white;
+  background-color: rebeccapurple;
+  height: 60px;
+  width:200px;
+  border-radius: 60%;
+  text-indent: 2px;
+  text-align-last: center;
+}
+
+h4{
+  margin-top: 10px ;
+  margin-left: 0px;
+}
+
+img{
+  max-block-size: 400px;
+  padding: 2px;
+
+}
+
+.active{
+  border-block: 5px;
+  border-block-color: salmon;
+}
+
+.wrap{
+  float: right;
+  margin: 5px;
+  padding-left: 5px;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+#samples{
+  max-block-size: 200px;
+  align-self: center;
+}
+
+#samplesone{
+  max-block-size: 200px;
+  padding: 0px;
+  align-self: center;
+  border: 5px solid  rgba(102,51,153,0.67);
+}
+
+.artimage{
+  margin-left: 55px;
+}
+
+table {
+  background-color: gainsboro;
+  font-size: 11px;
+  padding: 50px;
+  margin: 5px;
+}
+
+thead{
+  font-size: 11px;
+  text-align: center;
+}
+
+tbody{
+  text-align: center;
+}
+
+th{
+  width: 10%;
+}
+
+.a{
+  color: #fff;
+}
+
+.purple {
+  background: rebeccapurple;
+  opacity: 25%;
+}
+
+.red {
+  background:  rgba(102,51,153,0.67);
+}
+
+#main {
+  border: 4px solid black;
+  align-items: flex-end;
+}
+
+.country{
+  background-color: salmon;
+  color: black;
+  padding: 10px;
+  justify-items: start;
+}
+
+.right{
+  text-align: right;
+}
+
+.left{
+  text-align: left;
+}
+
+#hammy{
+  visibility: hidden;
+  align-self: flex-end;
+}
+
+@media (max-width: 767px){
+  #hammy{
+    visibility: unset;
+    align-self: flex-end;
+    margin: 14px;
+  }
+  .skyblueyoo {
+    background: deepskyblue;
+    min-width: 300px;
+    min-height: 900px;
+    align-content: center;
+    margin-left: 2px;
+  }
+
+}
+
+@media(max-width: 992px){
+  .navbar{
+    background: rebeccapurple;
+  }
+
+b{
+  color: white;
+}
+
+  #woosh{
+    color: white;
+  }
+
+  #sitetitle{
+    text-align-last: left;
+    margin: 0px;
+  }
+
+}
+
+@media(max-width: 1200px){
+  .artimage{
+    margin-left: 0px;
+  }
+
+}
+
+@media (max-width: 767px){
+  #hammy{
+    visibility: unset;
+    align-self: flex-end;
+    margin: 14px;
+  }
+}
