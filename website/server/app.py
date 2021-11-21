@@ -1,5 +1,5 @@
 import flask
-import pandas as pd, numpy as np, os, sqlalchemy as sql
+import pandas as pd, numpy as np, os, sqlalchemy as sql, re
 from flask_cors import CORS, cross_origin
 
 app = flask.Flask(__name__)
@@ -51,10 +51,24 @@ def draw_dash():
 @app.route("/game")
 @cross_origin()
 def draw_game():
+    conn = engine.connect()
     js = "game.js"
     id = flask.request.args["id"]
-    print(id)
-    return flask.render_template("DataHouse.html", js=js, id=id)
+    reg = re.compile(r"[^0-9]*;*")
+    if reg.match(id) != None:
+        raise AttributeError
+    markets_game = pd.read_sql(f"SELECT * FROM picks JOIN markets USING (game_id, book) JOIN results USING(game_id, home_abbv, away_abbv) WHERE picks.game_id = '{id}'", con=conn).drop(["index"], axis=1)\
+        .to_json(orient="records", double_precision=3)
+    markets_error = pd.read_sql(f"SELECT * FROM results JOIN (SELECT (ABS(market_home_error) + ABS(market_away_error)) market_whole_error, (ABS(m3_home_error) + ABS(m3_away_error)) m3_whole_error, (ABS(m3_mkt_dev_home) + ABS(m3_mkt_dev_away)) m3_whole_deviation, * FROM (SELECT markets.book, markets.market_score_home, markets.market_score_away, markets.game_id, (markets.market_score_home - results.pts_home) market_home_error, (markets.market_score_away - results.pts_away) market_away_error, (results.m3_proj_home - results.pts_home) m3_home_error, (results.m3_proj_away - results.pts_away) m3_away_error, (results.m3_proj_home - markets.market_score_home) m3_mkt_dev_home, (results.m3_proj_away - markets.market_score_away)  m3_mkt_dev_away  FROM results JOIN markets USING (game_id)) WHERE game_id = '{id}') USING (game_id)", con=conn)\
+        .drop("game_id", axis=1).to_json(orient="records", double_precision=3)
+    timeseries_game = pd.read_sql(f"SELECT * FROM time WHERE game_id = '{id}'", con=conn).to_json(orient="records")
+    team_picks = pd.read_sql(f"SELECT * FROM picks JOIN (SELECT home_abbv, away_abbv, game_id FROM results) USING (game_id) WHERE game_id = '{id}'", con=conn)\
+        .to_json(orient="records", double_precision=3)
+    summary_table = pd.read_sql(f"SELECT * FROM book_sums WHERE game_id = '{id}'", con=conn).to_json(orient="records", double_precision=3)
+    obj_dict = {"markets_game": markets_game, "markets_error": markets_error, "timeseries_game": timeseries_game,\
+        "team_picks": team_picks, "summary_table": summary_table, "id": id}
+    conn.close()
+    return flask.render_template("DataHouse.html", js=js, obj_dict=obj_dict)
 
 @app.route("/debrief")
 @cross_origin()
