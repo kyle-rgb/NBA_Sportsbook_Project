@@ -37,8 +37,15 @@ def draw_games():
 @app.route("/overview")
 @cross_origin()
 def draw_dash():
+    conn = engine.connect()
     js = "dashboard.js"
-    return flask.render_template("DataHouse.html", js=js, id=0)
+    money_chart_data = pd.read_sql("SELECT book, picks.game_id, ml_winnings, spread_winnings, total_winnings, SUM(agg_winnings) as agg_winnings, date(date) as day, season FROM picks JOIN results USING (game_id) GROUP BY book, day", con=conn)\
+        .to_json(orient="records", double_precision=3)
+    team_picks = pd.read_sql("SELECT * FROM picks JOIN (SELECT home_abbv, away_abbv, game_id, season FROM results) USING (game_id)", con=conn)\
+        .to_json(orient="records", double_precision=3)
+    conn.close()
+    obj_dict = {"team_picks": team_picks, "money_chart_data": money_chart_data}
+    return flask.render_template("DataHouse.html", js=js,id=0, obj_dict=obj_dict)
 
 
 @app.route("/game")
