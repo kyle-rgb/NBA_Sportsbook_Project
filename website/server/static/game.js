@@ -28,11 +28,16 @@ Promise.all([
     initial_total =  open_.market_score_away + open_.market_score_home;
     var closing_market; 
 
-    // onsole.log(book_range)
-    // onsole.log(book_summary_arr) // book and book aggregates
-    // onsole.log(mark_predictions_arr) // mark predictions and results 
-    // onsole.log(time_summary_arr) // timeseries of all markets for game
+    console.log(files[3])
+    console.log(files[4])
+    console.log(files[5])
+
+    // console.log(book_range)
+    // console.log(book_summary_arr) // book and book aggregates
+    // console.log(mark_predictions_arr) // mark predictions and results 
+    // console.log(time_summary_arr) // timeseries of all markets for game
     // console.log(times_books_arr) // Summary Agg Information on Books
+    // console.log(picks_arr)
     
 
 

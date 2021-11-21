@@ -13,8 +13,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.2"></script>
-  <script>var id ={{id}}; </script>
-  <script src="static/{{ js }}"></script>
+  <script>
+    {% for k, v in obj_dict.items() %}
+      var {{k}} = {{v|safe}};
+    {% endfor %}
+  </script>
+  
+  
   
   
 </head>
@@ -50,5 +55,5 @@
 </nav>
 
 </body>
-
+<script src="static/{{ js }}"></script>
 </html>

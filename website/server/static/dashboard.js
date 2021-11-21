@@ -6,9 +6,9 @@ Promise.all([
 
 ]).then(files => {
   
-  console.log(files[0]) // team rankings (market, model, and margin of victory)
-  //console.log(files[1]) // pick = model pick given associated line(agg or book); pk = associated grade with pick
-  //console.log(files[2]) //  spread, moneyline, total and combined winnings with game_id, season and book filter
+  //console.log(files[0]) // team rankings (market, model, and margin of victory)
+  console.log(files[1]) // pick = model pick given associated line(agg or book); pk = associated grade with pick
+  console.log(files[2]) //  spread, moneyline, total and combined winnings with game_id, season and book filter
   
 
   let year_set = new Set()
@@ -163,19 +163,19 @@ Promise.all([
   function createTeamTable(wanted_book, wanted_season, data_whole, headers){
     let team_set = new Set();
     var bulk_obj = {}
-    data_whole[0].forEach((d) => {team_set.add(d.team)})
-    team_set.forEach((t) => bulk_obj[t] = {"rankings": {"market":0, "my_rank": 0, "real":0}, "record": {"spread":{"W": 0, "L": 0, "P":0, "winnings": 0},
+    data_whole[1].forEach((d) => {team_set.add(d.home_abbv)})
+    team_set.forEach((t) => bulk_obj[t] = {"record": {"spread":{"W": 0, "L": 0, "P":0, "winnings": 0},
     "total": {"W": 0, "L": 0, "P": 0, "winnings": 0},
     "moneyline": {"W": 0, "L": 0, "winnings": 0}}, "overall": {"W": 0, "L": 0, "P": 0, "winnings": 0}})
-    data_whole[0].forEach((d) => {
-      if (d.type === "my_rank"){
-        bulk_obj[d.team].rankings.my_rank = +((+d[wanted_season]).toFixed(2))
-      } else if (d.type === "real"){
-        bulk_obj[d.team].rankings.real = +((+d[wanted_season]).toFixed(2))
-      } else {
-        bulk_obj[d.team].rankings.market = +((+d[wanted_season]).toFixed(2))
-      }
-    })
+    // data_whole[0].forEach((d) => {
+    //   if (d.type === "my_rank"){
+    //     bulk_obj[d.team].rankings.my_rank = +((+d[wanted_season]).toFixed(2))
+    //   } else if (d.type === "real"){
+    //     bulk_obj[d.team].rankings.real = +((+d[wanted_season]).toFixed(2))
+    //   } else {
+    //     bulk_obj[d.team].rankings.market = +((+d[wanted_season]).toFixed(2))
+    //   }
+    // })
     let teams_and_picks = data_whole[1].filter((o) => ((o.book === wanted_book) & (o.season === wanted_season)))
     let winnings = data_whole[2].filter((o) => ((o.book === wanted_book) & (o.season === wanted_season)));
 
@@ -238,9 +238,9 @@ Promise.all([
     for (team of Object.keys(bulk_obj)){
       let row = body.append("tr")
       row.append("td").append("img").attr("src", `static/assets/images/NBA/${team}.png`).attr("width", 50).attr("height", 50)
-      row.append("td").text(bulk_obj[team].rankings.market)
-      row.append("td").text(bulk_obj[team].rankings.my_rank)
-      row.append("td").text(bulk_obj[team].rankings.real)
+      // row.append("td").text(bulk_obj[team].rankings.market)
+      // row.append("td").text(bulk_obj[team].rankings.my_rank)
+      // row.append("td").text(bulk_obj[team].rankings.real)
       row.append("td").text(bulk_obj[team].overall.W)
       row.append("td").text(bulk_obj[team].overall.L)
       row.append("td").text(bulk_obj[team].overall.P)
@@ -272,7 +272,7 @@ Promise.all([
   let headers_1 = ["Book", "Metric", "Wins", "Losses", "Pushes", "Win %"]
   createBookTable("average", "17-18", files[1], headers_1)
   // power_rankings = files[2].sort(compareObj)
-  let headers_2 = ["Team", "Market Rank", "My Rank", "True Rank", "W", "L", "P", "Win %", "Spread Winnings", "ML Winnings", "Totals Earnings", "Complete Earnings"]
+  let headers_2 = ["Team", "W", "L", "P", "Win %", "Spread Winnings", "ML Winnings", "Totals Earnings", "Complete Earnings"]
   createTeamTable("average", "17-18",[files[0], files[1], files[2]], headers_2)
   
 
