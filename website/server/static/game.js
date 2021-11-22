@@ -55,7 +55,7 @@ filter_container.append("h1").text("Overall Model").style("color", "white")
 filter_container.append("p").text("Choose a Book to Analyze the Model's Performance").style("color", "white").attr("align", "center")
 
 data_container = d3.select("body").append("div").style("background-color", "rgba(102,51,153,0.62)").attr("class", "container").attr("id", "DataHouse")
-data_container.append("h1").style("color", "white").text(`Game ##${id}`)
+data_container.append("h1").style("color", "white").text(`Game #${id}`)
 row = data_container.append("div").attr("class", "row").attr("id", "predRow")
 var spread_market;
 var total_market;

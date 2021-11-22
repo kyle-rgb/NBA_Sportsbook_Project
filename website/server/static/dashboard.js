@@ -2,7 +2,6 @@
 
 files = [[], team_picks, money_chart_data]
 
-//console.log(files[0]) // team rankings (market, model, and margin of victory)
 //console.log(files[1]) // pick = model pick given associated line(agg or book); pk = associated grade with pick
 //console.log(files[2]) //  spread, moneyline, total and combined winnings with game_id, season and book filter
 
@@ -145,7 +144,7 @@ function createBookTable(wanted_book, wanted_season, data_array, headers){
   for (let k of Object.keys(book_records)){
     if (k !== "games"){
       row = body.append("tr")
-      row.append("td").append("img").attr("src", `static/assets/images/NBA/${wanted_book}.png`).attr("width", 35).attr("height", 35)
+      row.append("td").append("a").attr("href", `/breakdown?book=${wanted_book}`).append("img").attr("src", `static/assets/images/NBA/${wanted_book}.png`).attr("width", 35).attr("height", 35)
       row.append("td").text(book_records[k].metric)
       row.append("td").text(book_records[k].W)
       row.append("td").text(book_records[k].L)
@@ -164,15 +163,6 @@ function createTeamTable(wanted_book, wanted_season, data_whole, headers){
   team_set.forEach((t) => bulk_obj[t] = {"record": {"spread":{"W": 0, "L": 0, "P":0, "winnings": 0},
   "total": {"W": 0, "L": 0, "P": 0, "winnings": 0},
   "moneyline": {"W": 0, "L": 0, "winnings": 0}}, "overall": {"W": 0, "L": 0, "P": 0, "winnings": 0}})
-  // data_whole[0].forEach((d) => {
-  //   if (d.type === "my_rank"){
-  //     bulk_obj[d.team].rankings.my_rank = +((+d[wanted_season]).toFixed(2))
-  //   } else if (d.type === "real"){
-  //     bulk_obj[d.team].rankings.real = +((+d[wanted_season]).toFixed(2))
-  //   } else {
-  //     bulk_obj[d.team].rankings.market = +((+d[wanted_season]).toFixed(2))
-  //   }
-  // })
   let teams_and_picks = data_whole[1].filter((o) => ((o.book === wanted_book) & (o.season === wanted_season)))
   let winnings = data_whole[2].filter((o) => ((o.book === wanted_book) & (o.season === wanted_season)));
 
@@ -220,10 +210,8 @@ function createTeamTable(wanted_book, wanted_season, data_whole, headers){
     bulk_obj[g.home_abbv].overall.winnings += +g.total_winnings
   })
   
-  //console.log(teams_and_picks)
   console.log(bulk_obj)
-  //console.log(teams_and_picks)
-  //console.log(winnings)
+
   table = dashboard.append("table").attr("class", "table table-bordered")
   head = table.append("thead").style("text-align", "center").attr("class", "thead-dark")
   row = head.append("tr")
@@ -234,7 +222,7 @@ function createTeamTable(wanted_book, wanted_season, data_whole, headers){
 
   for (team of Object.keys(bulk_obj)){
     let row = body.append("tr")
-    row.append("td").append("img").attr("src", `static/assets/images/NBA/${team}.png`).attr("width", 50).attr("height", 50)
+    row.append("td").append("a").attr("href", `/breakdown?team=${team}`).append("img").attr("src", `static/assets/images/NBA/${team}.png`).attr("width", 50).attr("height", 50)
     // row.append("td").text(bulk_obj[team].rankings.market)
     // row.append("td").text(bulk_obj[team].rankings.my_rank)
     // row.append("td").text(bulk_obj[team].rankings.real)

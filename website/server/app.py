@@ -54,9 +54,9 @@ def draw_game():
     conn = engine.connect()
     js = "game.js"
     id = flask.request.args["id"]
-    reg = re.compile(r"[^0-9]*;*")
-    if reg.match(id) != None:
-        raise AttributeError
+    # reg = re.compile(r"[^0-9]*;*")
+    # if reg.match(id) != None:
+    #     raise AttributeError
     markets_game = pd.read_sql(f"SELECT * FROM picks JOIN markets USING (game_id, book) JOIN results USING(game_id, home_abbv, away_abbv) WHERE picks.game_id = '{id}'", con=conn).drop(["index"], axis=1)\
         .to_json(orient="records", double_precision=3)
     markets_error = pd.read_sql(f"SELECT * FROM results JOIN (SELECT (ABS(market_home_error) + ABS(market_away_error)) market_whole_error, (ABS(m3_home_error) + ABS(m3_away_error)) m3_whole_error, (ABS(m3_mkt_dev_home) + ABS(m3_mkt_dev_away)) m3_whole_deviation, * FROM (SELECT markets.book, markets.market_score_home, markets.market_score_away, markets.game_id, (markets.market_score_home - results.pts_home) market_home_error, (markets.market_score_away - results.pts_away) market_away_error, (results.m3_proj_home - results.pts_home) m3_home_error, (results.m3_proj_away - results.pts_away) m3_away_error, (results.m3_proj_home - markets.market_score_home) m3_mkt_dev_home, (results.m3_proj_away - markets.market_score_away)  m3_mkt_dev_away  FROM results JOIN markets USING (game_id)) WHERE game_id = '{id}') USING (game_id)", con=conn)\
@@ -70,11 +70,23 @@ def draw_game():
     conn.close()
     return flask.render_template("DataHouse.html", js=js, obj_dict=obj_dict)
 
+@app.route("/breakdown")
+@cross_origin()
+def draw_team():
+    conn = engine.connect()
+    js = "team.js"
+    team = flask.request.args["team"]
+    results = pd.read_sql(f"SELECT * FROM results JOIN markets USING (home_abbv, away_abbv, game_id) WHERE results.home_abbv = '{team}' OR results.away_abbv = '{team}' ORDER BY date", con=conn).drop("index", axis=1)\
+        .to_json(orient="records", double_precision=3)
+    
+    obj_dict = { "team": f"'{team}'", "results": results}
+    conn.close()
+    return flask.render_template("DataHouse.html", js=js, obj_dict=obj_dict)
+
 @app.route("/debrief")
 @cross_origin()
 def draw_debrief():
     return flask.render_template("Debrief.html")
-
 
 
 if __name__ == "__main__":
