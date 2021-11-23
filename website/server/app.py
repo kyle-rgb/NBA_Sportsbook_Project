@@ -78,8 +78,9 @@ def draw_team():
     team = flask.request.args["team"]
     results = pd.read_sql(f"SELECT * FROM results JOIN markets USING (home_abbv, away_abbv, game_id) WHERE results.home_abbv = '{team}' OR results.away_abbv = '{team}' ORDER BY date", con=conn).drop("index", axis=1)\
         .to_json(orient="records", double_precision=3)
-    
-    obj_dict = { "team": f"'{team}'", "results": results}
+    moneys = pd.read_sql(f"SELECT * FROM picks JOIN (SELECT season, game_id from results) USING (game_id) WHERE team_arr LIKE '%{team}' OR team_arr LIKE '{team}%'", con=conn).drop("index", axis=1).to_json(orient="records")
+
+    obj_dict = { "team": f"'{team}'", "results": results, "moneys": moneys}
     conn.close()
     return flask.render_template("DataHouse.html", js=js, obj_dict=obj_dict)
 
