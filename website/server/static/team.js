@@ -42,6 +42,25 @@ function unpack(rows, column){
     })
 }
 
+function cumsum(array){
+    let sum = 0;
+    array.forEach(a => {sum += a})
+    return sum;
+}
+
+function cumsumArr(array){
+    let sum = 0
+    return_arr = []
+    for (let i = 0; i<=array.length; i++){
+        sum += array[i]
+        return_arr.push(sum)
+    }
+    return return_arr.slice(0, -1)
+}
+
+
+
+
 
 
 function createDataFilters(container, options, starting_value){
@@ -77,9 +96,9 @@ function createTable(data, wanted_season, wanted_book){
     data = data.filter((d) => d.book === wanted_book & d.season === wanted_season)
     thead.append("tr").selectAll("th").data(header, function(d) {return Object.keys(d)}).enter().append("th").text((h) => h)
     
-    // 
+
     // table.append("thead").data(Object.keys(data[0])).selectAll("th").data((h) => h)
-    console.log(data)
+    //console.log(data)
     tbody.selectAll("tr").data(data).enter().append("tr").selectAll("td").data((row) => {return header.map(function (col){ return {column: col, value:row[col]}})})
     .enter().append("td").text((d) => d.value)
 
@@ -157,27 +176,85 @@ function createFactorHistograms(data, factors, wanted_season, wanted_book){
 function createEarningsCharts(data, wanted_season, wanted_book){
     var data_b = data.filter((d) => d.book === wanted_book & d.season == wanted_season)
     var games = data_b.length
-    var data_div = d3.select("#infoRow").append("div").classed("col-lg-6", true)
-    var data_summary = {"spread": 0, "moneyline": 0, "over": 0, "spread_wins": 0, "total_wins": 0, "ml_wins": 0}
+    var data_div = d3.select("#infoRow").append("div").classed("col-lg-6", true).attr("id", "records")
+    var data_summary = {"spread_choice": 0, "moneyline_choice": 0, "over_choice": 0, "under_choice": 0,
+    "spread_wins": 0, "total_wins": 0, "ml_wins": 0,
+    "spread_losses": 0, "total_losses": 0, "ml_losses": 0,
+    "spread_push": 0, "total_push": 0}
 
     data_b.forEach((d) => {
         d.date = parseDate(d.date)
-        d.spread_team === team? data_summary["spread"]++: data_summary["spread"];
-        d.ml_team === team? data_summary["moneyline"]++ : data_summary["moneyline"];
-        d.total_pick === "O"? data_summary["over"]++ : data_summary["over"];
-        d.spread_pk === "W"? data_summary["spread_wins"]++ :  data_summary["over"];
-        d.total_pk === "W"? data_summary["total_wins"]++ :  data_summary["over"];
-        d.ml_pk === "W"? data_summary["ml_wins"]++ :  data_summary["over"];
-
+        d.spread_team === team? data_summary["spread_choice"]++: data_summary["spread_choice"];
+        d.ml_team === team? data_summary["moneyline_choice"]++ : data_summary["moneyline_choice"];
+        d.total_pick === "O"? data_summary["over_choice"]++ : data_summary["under_choice"]++;
+        d.spread_pk === "W"? data_summary["spread_wins"]++ : d.spread_pk === "P"? data_summary["spread_push"]++ : data_summary["spread_losses"]++ ;
+        d.total_pk === "W"? data_summary["total_wins"]++ :  d.total_pk === "P"? data_summary["total_push"]++ : data_summary["total_losses"]++ ;
+        d.ml_pk === "W"? data_summary["ml_wins"]++ :  data_summary["ml_losses"]++;
     })
-    console.log(data_b)
+    console.log(data_summary)
+    data_table_array = [
+        {
+            metric: "moneyline",
+            pick_record: `${data_summary.ml_wins}-${data_summary.ml_losses}`,
+            actual_record: 0,
+            high: Math.max.apply(Math, cumsumArr(unpack(data_b, "ml_winnings"))).toFixed(2),
+            low: Math.min.apply(Math, cumsumArr(unpack(data_b, "ml_winnings"))).toFixed(2),
+            close: cumsum(unpack(data_b, "ml_winnings")).toFixed(2),
+            model_error: 0.3,
+            market_error: .12,
+        },
+        {
+            metric: "spread",
+            pick_record: `${data_summary.spread_wins}-${data_summary.spread_losses}-${data_summary.spread_push}`,
+            actual_record: 0,
+            high: Math.max.apply(Math, cumsumArr(unpack(data_b, "spread_winnings"))).toFixed(2),
+            low: Math.min.apply(Math, cumsumArr(unpack(data_b, "spread_winnings"))).toFixed(2),
+            close: cumsum(unpack(data_b, "spread_winnings")).toFixed(2),
+            model_error: 0.3,
+            market_error: .12,
+        },
+        {
+            metric: "total",
+            pick_record: `${data_summary.total_wins}-${data_summary.total_losses}-${data_summary.total_push}`,
+            actual_record: 0,
+            high: Math.max.apply(Math, cumsumArr(unpack(data_b, "total_winnings"))).toFixed(2),
+            low: Math.min.apply(Math, cumsumArr(unpack(data_b, "total_winnings"))).toFixed(2),
+            close: cumsum(unpack(data_b, "total_winnings")).toFixed(2),
+            model_error: 0.3,
+            market_error: .12,
+        },
+        {
+            metric: "overall",
+            pick_record: `${data_summary.total_wins+data_summary.spread_wins+data_summary.ml_wins}-${data_summary.total_losses+data_summary.spread_losses+data_summary.ml_losses}-${data_summary.total_push +data_summary.spread_push}`,
+            actual_record: 0,
+            high: Math.max.apply(Math, cumsumArr(unpack(data_b, "agg_winnings"))).toFixed(2),
+            low: Math.min.apply(Math, cumsumArr(unpack(data_b, "agg_winnings"))).toFixed(2),
+            close: cumsum(unpack(data_b, "agg_winnings")).toFixed(2),
+            model_error: 0.3,
+            market_error: .12,
+        },
+    ]
+
+
+
+
+    let headers = ["Pick Type", "Pick Record", "Actual Record", "High $s", "Low $s", "Close $s", "Model Error", "Market Error"]
+    let keys = Object.keys(data_table_array[0])
+    var table = data_div.append("table").classed("table table-bordered", true)//.style("margin-top", "75px");
+    var thead = table.append("thead").classed("thead-dark", true).style("text-align", "center")
+    var tbody = table.append("tbody")
+    thead.append("tr").selectAll("th").data(headers, function(d) {return Object.keys(d)}).enter().append("th").text((h) => h) 
+    tbody.selectAll("tr").data(data_table_array).enter().append("tr").selectAll("td").data((row) => {return keys.map(function (col){return {col: col, value:row[col]} })})
+    .enter().append("td").text((d) => {return d.value})
+
+
     // data_div.append("h5").text(`I selected ${team} to Win ${data_summary.moneyline} Times,
     // to Cover ${data_summary.spread} Times and for their Games to Go Over ${data_summary.over} Times.
     // My Spread Picks Went ${data_summary.spread_wins}-${games-data_summary.spread_wins}, My Total Picks Went ${data_summary.total_wins}-${games-data_summary.total_wins} and
     // My Moneyline Picks Went ${data_summary.ml_wins}-${games-data_summary.ml_wins}.`
     // )
 
-    let winnings_columns = ["agg_winnings", "total_winnings", "spread_winnings", "ml_winnings"]
+    let winnings_columns = ["agg_winnings", "spread_winnings", "total_winnings", "ml_winnings"]
     let colors = ["#F06A6A", "#CD00FF", "#FFB600", "#5C0F9C"]
     let initial_visibility = [true, false, false, false]
     var traces = []
@@ -222,23 +299,30 @@ function createEarningsCharts(data, wanted_season, wanted_book){
             },
             {
                 args: [
+                    {'visible': [false, false, false, true]},
+                    {"title": 'Moneyline Winnings'}],
+                label: "Moneyline",
+                method: 'update'
+            },
+            {
+                args: [
                     {'visible': [true, true, true, true]},
                     {"title": 'Complete Winnings'}],
                 label: "All",
                 method: 'update'
             }],
         direction: 'left',
-        pad: {'r': 10, 't': 5},
+        pad: {'r': 10, 't': 15},
         showactive: true,
         type: 'buttons',
-        x: .05,
+        x: .02,
         y: 1.2,
         xanchor: 'left',
         yanchor: 'top'
     }]
 
     var layout = {
-        title: 'Model Winnings Based on Team',
+        title: `${team}'s Aggregate Model Winnings`,
         updatemenus: updatemenus,
         showlegend: false
     }
