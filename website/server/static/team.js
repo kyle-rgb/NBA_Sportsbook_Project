@@ -19,6 +19,7 @@ info.append("img").attr("src", `static/assets/images/NBA/${team}.png`).attr("wid
 // var img = document.querySelector("img")
 const colorThief = new ColorThief();
 var img = d3.select("img")._groups[0][0]
+const parseDate = d3.utcParse("%Y-%m-%d")
 
 var c;
 if (img.complete){
@@ -32,8 +33,15 @@ if (img.complete){
     })
 }
 
-var dashboard = d3.select("#container2").append("div").attr("class", "row").attr("id", "dashboard")
-    
+var hist_div = d3.select("#container2").append("div").attr("class", "row").attr("id", "hist")
+var scatter_div = d3.select("#container2").append("div").attr("class", "row").attr("id", "scatter")    
+
+function unpack(rows, column){
+    return rows.map(function (row) {
+        return row[column]
+    })
+}
+
 
 
 function createDataFilters(container, options, starting_value){
@@ -142,7 +150,7 @@ function createFactorHistograms(data, factors, wanted_season, wanted_book){
     
     var layout = {barmode: "overlay", grid: {rows: 2, columns: 2, pattern: "independent"}}
 
-    Plotly.newPlot("dashboard", traces, layout)
+    Plotly.newPlot("hist", traces, layout)
     
 }
 
@@ -151,8 +159,9 @@ function createEarningsCharts(data, wanted_season, wanted_book){
     var games = data_b.length
     var data_div = d3.select("#infoRow").append("div").classed("col-lg-6", true)
     var data_summary = {"spread": 0, "moneyline": 0, "over": 0, "spread_wins": 0, "total_wins": 0, "ml_wins": 0}
-    console.log(data_b)
+
     data_b.forEach((d) => {
+        d.date = parseDate(d.date)
         d.spread_team === team? data_summary["spread"]++: data_summary["spread"];
         d.ml_team === team? data_summary["moneyline"]++ : data_summary["moneyline"];
         d.total_pick === "O"? data_summary["over"]++ : data_summary["over"];
@@ -161,11 +170,81 @@ function createEarningsCharts(data, wanted_season, wanted_book){
         d.ml_pk === "W"? data_summary["ml_wins"]++ :  data_summary["over"];
 
     })
-    data_div.append("h5").text(`I selected ${team} to Win ${data_summary.moneyline} Times,
-    to Cover ${data_summary.spread} Times and for their Games to Go Over ${data_summary.over} Times.
-    My Spread Picks Went ${data_summary.spread_wins}-${games-data_summary.spread_wins}, My Total Picks Went ${data_summary.total_wins}-${games-data_summary.total_wins} and
-    My Moneyline Picks Went ${data_summary.ml_wins}-${games-data_summary.ml_wins}.`
-    )
+    console.log(data_b)
+    // data_div.append("h5").text(`I selected ${team} to Win ${data_summary.moneyline} Times,
+    // to Cover ${data_summary.spread} Times and for their Games to Go Over ${data_summary.over} Times.
+    // My Spread Picks Went ${data_summary.spread_wins}-${games-data_summary.spread_wins}, My Total Picks Went ${data_summary.total_wins}-${games-data_summary.total_wins} and
+    // My Moneyline Picks Went ${data_summary.ml_wins}-${games-data_summary.ml_wins}.`
+    // )
+
+    let winnings_columns = ["agg_winnings", "total_winnings", "spread_winnings", "ml_winnings"]
+    let colors = ["#F06A6A", "#CD00FF", "#FFB600", "#5C0F9C"]
+    let initial_visibility = [true, false, false, false]
+    var traces = []
+    let j = 0
+    for (w of winnings_columns){
+        traces.push({
+            x: unpack(data_b, "date"),
+            y: unpack(data_b, w),
+            mode: "lines+markers",
+            type: "scatter",
+            name: w,
+            marker: {color: colors[j]},
+            line: {color: colors[j]},
+            visible: initial_visibility[j]
+            
+        })
+        j++ 
+    }
+
+    var updatemenus = [{
+        buttons:[
+            {
+                args: [
+                    {'visible': [true, false, false, false]},
+                    {"title": 'Aggregate Winnings'}],
+                label: "Aggregate",
+                method: 'update'
+            },
+            {
+                args: [
+                    {'visible': [false, true, false, false]},
+                    {"title": 'Spread Winnings'}],
+                label: "Spread",
+                method: 'update'
+            },
+            {
+                args: [
+                    {'visible': [false, false, true, false]},
+                    {"title": 'Totals Winnings'}],
+                label: "Totals",
+                method: 'update'
+            },
+            {
+                args: [
+                    {'visible': [true, true, true, true]},
+                    {"title": 'Complete Winnings'}],
+                label: "All",
+                method: 'update'
+            }],
+        direction: 'left',
+        pad: {'r': 10, 't': 5},
+        showactive: true,
+        type: 'buttons',
+        x: .05,
+        y: 1.2,
+        xanchor: 'left',
+        yanchor: 'top'
+    }]
+
+    var layout = {
+        title: 'Model Winnings Based on Team',
+        updatemenus: updatemenus,
+        showlegend: false
+    }
+    
+    
+    Plotly.newPlot("scatter", traces, layout)
 
 }
 

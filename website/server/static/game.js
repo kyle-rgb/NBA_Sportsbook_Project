@@ -133,7 +133,7 @@ function createResults(data, odds, eval, wanted_book){
                 .style("text-align", "center").attr("class", "col-md-4").attr("id", loc)
                 
 
-        column.append("img").style("margin-bottom", "25px")
+        column.append("a").attr("href", `/breakdown?team=${img_name}`).append("img").style("margin-bottom", "25px")
                 .style("height", "200px")
                 .style("width", "200px").attr("class", "img-fluid").attr("alt", "img-fluid")
                 .attr("align", "center").attr("src", `static/assets/images/NBA/${img_name}.png`)
