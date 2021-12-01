@@ -87,10 +87,10 @@ def draw_team():
     conn.close()
     return flask.render_template("DataHouse.html", js=js, obj_dict=obj_dict)
 
-@app.route("/debrief")
+@app.route("/analysis")
 @cross_origin()
 def draw_debrief():
-    return flask.render_template("Debrief.html")
+    return flask.render_template("analysis.html")
 
 
 if __name__ == "__main__":
