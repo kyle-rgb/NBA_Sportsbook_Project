@@ -167,27 +167,41 @@ function createTeamTable(wanted_book, wanted_season, data_whole, headers){
   let winnings = data_whole[2].filter((o) => ((o.book === wanted_book) & (o.season === wanted_season)));
 
   teams_and_picks.forEach((g) => {
+    let teams_array_1 = g.team_arr.split(",") 
     if (g.spread_pk === "W"){
-      bulk_obj[g.spread_team].record.spread.W++
-      bulk_obj[g.spread_team].overall.W++
+      bulk_obj[teams_array_1[0]].record.spread.W++
+      bulk_obj[teams_array_1[1]].record.spread.W++
+      bulk_obj[teams_array_1[0]].overall.W++
+      bulk_obj[teams_array_1[1]].overall.W++
+
     } else if (g.spread_pk === "L"){
-      bulk_obj[g.spread_team].record.spread.L++
-      bulk_obj[g.spread_team].overall.L++
+      bulk_obj[teams_array_1[0]].record.spread.L++
+      bulk_obj[teams_array_1[1]].record.spread.L++
+      bulk_obj[teams_array_1[0]].overall.L++
+      bulk_obj[teams_array_1[1]].overall.L++
+
     } else {
-      bulk_obj[g.spread_team].record.spread.P++
-      bulk_obj[g.spread_team].overall.P++
+      bulk_obj[teams_array_1[0]].record.spread.P++
+      bulk_obj[teams_array_1[1]].record.spread.P++
+      bulk_obj[teams_array_1[0]].overall.P++
+      bulk_obj[teams_array_1[1]].overall.P++
     }
     bulk_obj[g.spread_team].record.spread.winnings += +g.spread_winnings
     bulk_obj[g.spread_team].overall.winnings += +g.spread_winnings
     if (g.ml_pk === "W"){
-      bulk_obj[g.ml_team].record.moneyline.W++
-      bulk_obj[g.ml_team].overall.W++
+      bulk_obj[teams_array_1[0]].record.moneyline.W++
+      bulk_obj[teams_array_1[1]].record.moneyline.W++
+      bulk_obj[teams_array_1[0]].overall.W++
+      bulk_obj[teams_array_1[1]].overall.W++
     } else {
-      bulk_obj[g.ml_team].record.moneyline.L++
-      bulk_obj[g.ml_team].overall.L++
+      bulk_obj[teams_array_1[0]].record.moneyline.L++
+      bulk_obj[teams_array_1[1]].record.moneyline.L++
+      bulk_obj[teams_array_1[0]].overall.L++
+      bulk_obj[teams_array_1[1]].overall.L++
     }
     bulk_obj[g.ml_team].record.moneyline.winnings += +g.ml_winnings
     bulk_obj[g.ml_team].overall.winnings += +g.ml_winnings
+    
     if (g.total_pk === "W"){
       bulk_obj[g.away_abbv].record.total.W++
       bulk_obj[g.away_abbv].overall.W++
