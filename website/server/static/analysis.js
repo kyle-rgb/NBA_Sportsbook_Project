@@ -7,7 +7,7 @@ analysis_div.append("h1").text("Data Analysis").style("font-size", "105px")
 
 outline_columns = {
     "Data Collection": ["Web Scraping", "Data Cleaning"],
-    "Model Creation": ["Variable Selection", "Model 1", "Model 2", "Final Model"],
+    "Model Creation": ["Variable Selection", "Model 1", "Model 2", "Model Comparison", "Final Model"],
     "Model Evaluation": ["Sportsbook Markets Intro", "Marrying Markets and Predictions", "Best Performance"],
     "Web Application": ["Using Data to Drive Decisions", "Future Plans"]
 }
@@ -43,10 +43,33 @@ Free throw attempts per field goal attempts indicates the ratio of free throw at
 Every other in-game shot attempt is caught up and bound in time. Free throws exists out of it. Lastly, effective field goal % is the weighted average of traditional field goal percentage that accounts for the fact 3 pointers are worth 50% more than 2 pointers.
 Each of these variables tells one specific part of the entire game story. Offensive rebounds tells of extended possessions, turnovers tell of wasted possessions, free throw attempts tell of free scoring oppertunities and effective field goal percentage ties it altogether by telling
 how well a team's possessions led to points. They form the basis of my initial model.`],
-"Model 1": [{pic: "model_1_vars.png", text: "aaa", width: "1000px", height:"450px"},
-{pic: "model_1_heatmap.png", text: "ggg", width: "800px", height:"600px"},
-{pic: "model_1_errors_box.png", text: "blah blah bah", width: "1000px", height:"500px"},
-{pic: "model_1_comparison.png", text: "whoo ah whoo ah *al pacino voice*", width: "1000px", height:"500px"}],
+"Model 1": [{pic: "model_1_vars.png", text: `Even though expressed above our starting model comes from a trusted, knowledgable source
+it is always important to check the structure of the variables to ensure validity, reproducability and extrapolation of the model results.
+In order to have a successful regression model, the variables must be identically distributed and independent. The above chart shows the distribution of each of the four factors distributions for the four season time period, 2017-2018 to 2020-2021.
+Each variable follows a normal distribution. Thanks to being percentages, these variables stay in routine, concrete bounds and are not affected by outlier scoring performances as basic counting stats would be.    
+The identically distributed condition is met.`, width: "1000px", height:"450px"},
+{pic: "model_1_heatmap.png", text: `From the variables selection analysis above, we know that each factor tracks one piece of the basketball story.
+Performance in one single factor should have no more influence on the others.
+A team's proficiency in rebounding should not determine their success in effective field goal percentage, a team's turnover percentage should not determine their ability to get to the free throw line, etc.
+This claim is validated by the heatmap above. Each one of the factors shows no correlation with its variable counterparts. The heatmap also confirms our intuition about our data, that teams with higher effective field goal percentages score more points and
+teams with higher turnover percentages score less points. The name of the game is to put the bucket in the hoop. And with the indepence condition validated, I am lining up to take my first shot at creating a model.`, width: "800px", height:"600px"},
+{pic: "model_1_comparison.png", text: `The above boxplots show the real distribution of teams' scores and the distribution of my predictions based on the four factors. Additionally, the two key factors of R-squared and the mean squared error are shown.
+The R-squared statistic indicates that 72.16% of the variability in scoring is attributable to the four factors. This reconfirms the validity of Oliver's analysis and shows we are on the right path. The mean squared error indicates the average amount our score predictions were off
+the true score, squared to prevent over and under calcualtions from canceling each other out. 
+There is a key difference that deserves exploration. The model box plot has significantly more outliers than the actual scores. This can be understood by an examination of the model boxplot. The boxplot is more compressed than its score counterpart because of the model's lower standard deviation and variance.
+A lower variance compresses the box and shortens its whiskers to bounds incommensurate with the true scoring distribution. This compression causes the model predictions to clump towards the mean and not properly reflect the true scoring bound of the games.
+What is happening here?`, width: "1000px", height:"500px"},
+{pic: "residuals_model_1.png", text: `The residual plot makes the issue clear. As teams score more, the model's reliability decreases precipitously, creating a fanning pattern in the residuals. The likeness of our variable types, all being percentages,
+presents the issue before us. There is missing data informing team scoring, but not present in our model. The model's failings with extreme values point directly to this variable: time. High scoring affairs, typical of a game that goes to overtime, never transmit to the
+four factors variables. The possession level data that four factors informs on does not have its counterpart to ground them back in time. This missing piece leads to large errrors and a less informative model.`, width: "800px", height:"500px"},
+],
+"Model 2": [{pic: "model_2_vars.png", text: "aaa", width: "1000px", height:"900px"},
+{pic: "model_2_heatmap.png", text: "ggg", width: "800px", height:"600px"},
+{pic: "model_2_comparison.png", text: "blah blah bah", width: "1000px", height:"500px"},
+{pic: "residuals_model_2.png", text: "whoo ah whoo ah *al pacino voice*", width: "800px", height:"500px"}],
+"Model Comparison": [{pic: "models_dist_comparison.png", text: "aaa", width: "1000px", height:"450px"},
+{pic: "models_dist_comparison2.png", text: "ggg", width: "800px", height:"600px"},
+{pic: "models_residuals_comparison.png", text: "blah blah bah", width: "1000px", height:"500px"}],
 
 
 }
