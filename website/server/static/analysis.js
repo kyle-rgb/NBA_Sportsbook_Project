@@ -7,7 +7,7 @@ analysis_div.append("h1").text("Data Analysis").style("font-size", "105px")
 
 outline_columns = {
     "Data Collection": ["Web Scraping", "Data Cleaning"],
-    "Model Creation": ["Variable Selection", "Model 1", "Model 2", "Final Model"],
+    "Model Creation": ["Variable Selection", "Model 1", "Model 2", "Model Extension"],
     "Model Evaluation": ["Sportsbook Markets Intro", "Marrying Markets and Predictions", "Best Performance"],
     "Web Application": ["Using Data to Drive Decisions", "Future Plans"]
 }
@@ -76,12 +76,24 @@ The mean squared error of the model's predictions reduced by 60% to 2.07 and the
 {pic: "residuals_model_2.png", text: `The effect of the possession variable on the new predictions can be understood further by the model's residual plot. The scatter of the residuals of the new model are now homoscedastic, no visible trend in the residuals. The model is no longer worse at predicting high scores than it is at predicting low or average scores.
 The fanning pattern that revealed itself in the first model dissappears with the admittance of the new pace variable. This is as close to perfect as a linear regression model can get without overfitting the data. The model has a high R squared, a low average squared error and a select number of noncorrelated variables.
 Equipped with this model, I can now confidently build out predictions for future scores knowing that I have a tested, working model.`, width: "800px", height:"500px"}],
-"Final Model": [`The model creation portion of this project is only a sliver of the predictive modeling process. It is the end of the beginning. It is crucial to have a working model to locate the variables that have the most influence on the number the model predicts. However, the model works with perfect information, a luxury that no human or sports gambler will ever have.
+"Model Extension": [`The model creation portion of this project is only a sliver of the predictive modeling process. It is the end of the beginning. It is crucial to have a working model to locate the variables that have the most influence on the number the model predicts. However, the model works with perfect information, a luxury that no human or sports gambler will ever have.
 This does not soil the model's usefulness, but it does mean our data has to be transformed to register this knowledge gap. To do so, I chose three specific factors to adjust my data to make the model useful for future predictions. The seperate factors are windowing functions, aggregations and windowing periods. I want my predictions to incoropate all available past data in order to predict an individual team's next game score. The windowing functions I use are rolling, expanding and exponentially weighted window. The windowing periods I define are 10, 15 and 20 days. The aggregations I use are mean and median.`,
 `Windowing functions form the basis of my projections. They allow me to incorporate a select number of a team's past four factors and pace statistics, determined by the windowing period, that have already been generated
 and use these to predict future scores. Each of the selected windowing functions provides a different selection of past games to inform a team's next game's variables. The rolling window selects and aggregates on only the last windowing period's amount of games. It takes into account only recent past performance to inform its predictions.
-The expanding window starts at the widowing period's amount of games and expands outward to integrate each new game's set of results. Here, the windowing period is crucial in determining the rest of its season predictions. Exponentially weighted mean takes the amount of games from the windowing period and applies an exponentially higher weight to more recent results.
-Of the three functions, it is the one that reacts the fastest to the recent results and exhibits them immediately into its next prediction. `],
+The expanding window starts at the widowing period's amount of games and expands outward to integrate each new game's set of results. Here, the starting window period is crucial in determining the rest of its season predictions. Exponentially weighted mean takes the amount of games from the windowing period and applies an exponentially higher weight to more recent results.
+Of the three functions, it is the one that places the most emphasis on the most recent result and factors it immediately into the next prediction. Each of these windowing functions allow me to approach the available data and evaluate teams from various different angles. The rolling window gives a snapshot on how well a team in performing in the last window period's set of games.
+The expanding window tells how well a team performs throughout the season. The exponentially weighted window places the greatest emphasis on the last game played and extends priority to the most recent games played in the window period. It tells the story of how a team is playing right now and places less on games that happended farther in the past.
+The windowing periods of 10, 15 and 20 games were selected to represent a meaningful set of sample games during the 82 game season. The aggregations of mean and median are used to give me different representation of the variable values during the window period. Mean supplies the average and is influenced by tail values and median supplies the 50 percentile outcome and is less influenced by extreme values.`,
+`Altogether, each one of these separate factors come together and provide the projected four factors and pace of a team given its past results. These variable projections are then input into my model which returns a score projection for each team for every game. In order to have projections for the start of the season, I use a team's averages of their four factors and pace from the previous season. This informs the team's projections for the starting window period until enough games are played in a season while still joining in current results.
+The total set of models predicting a team's four factors and pace involves the combination of each window period, function and aggregation, which total to 18 models. Due to the aggregation inherit to the exponentially weighted window (i.e. the application of weights), the window can only be aggregated with mean. I chose to apply different smoothing values to the functions weight in an effort to explore the different capabilities of this particular windowing function.
+Since each windowing function is working on the same data, I built a function, makeModel, to programmatically create each model permutation, feed these projected variables into the scoring model and return the scoring projections.
+To evaluate and compare each model's effectiveness, I must now bring in the second part of this project, the sportsbook market data.   
+`],
+"Sportsbook Markets Intro": [``],
+"Marrying Markets and Predictions": [``],
+"Best Performance": [``],
+"Using Data to Drive Decisions": [``],
+"Future Plans": [``],
 
 }
 
@@ -108,6 +120,7 @@ for (k of Object.keys(outline_columns)){
                     analysis_div.append("br")//.text(obj.text)
                 } else {
                     analysis_div.append("p").text(paragraphs[j][i])
+                    
                 }
 
                
