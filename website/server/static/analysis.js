@@ -7,7 +7,7 @@ analysis_div.append("h1").text("Data Analysis").style("font-size", "105px")
 
 outline_columns = {
     "Data Collection": ["Web Scraping", "Data Cleaning"],
-    "Model Creation": ["Variable Selection", "Model 1", "Model 2", "Model Comparison", "Final Model"],
+    "Model Creation": ["Variable Selection", "Model 1", "Model 2", "Final Model"],
     "Model Evaluation": ["Sportsbook Markets Intro", "Marrying Markets and Predictions", "Best Performance"],
     "Web Application": ["Using Data to Drive Decisions", "Future Plans"]
 }
@@ -61,16 +61,27 @@ A lower variance compresses the box and shortens its whiskers to bounds incommen
 What is happening here?`, width: "1000px", height:"500px"},
 {pic: "residuals_model_1.png", text: `The residual plot makes the issue clear. As teams score more, the model's reliability decreases precipitously, creating a fanning pattern in the residuals. The likeness of our variable types, all being percentages,
 presents the issue before us. There is missing data informing team scoring, but not present in our model. The model's failings with extreme values point directly to this variable: time. High scoring affairs, typical of a game that goes to overtime, never transmit to the
-four factors variables. The possession level data that four factors informs on does not have its counterpart to ground them back in time. This missing piece leads to large errrors and a less informative model.`, width: "800px", height:"500px"},
+four factors variables. The possession level data that four factors informs on does not have its counterpart to ground them back in time. This missing data leads to larger errrors and a less informative model.`, width: "800px", height:"500px"},
 ],
-"Model 2": [{pic: "model_2_vars.png", text: "aaa", width: "1000px", height:"900px"},
-{pic: "model_2_heatmap.png", text: "ggg", width: "800px", height:"600px"},
-{pic: "model_2_comparison.png", text: "blah blah bah", width: "1000px", height:"500px"},
-{pic: "residuals_model_2.png", text: "whoo ah whoo ah *al pacino voice*", width: "800px", height:"500px"}],
-"Model Comparison": [{pic: "models_dist_comparison.png", text: "aaa", width: "1000px", height:"450px"},
-{pic: "models_dist_comparison2.png", text: "ggg", width: "800px", height:"600px"},
-{pic: "models_residuals_comparison.png", text: "blah blah bah", width: "1000px", height:"500px"}],
-
+"Model 2": [{pic: "model_2_vars.png", text: `There is no universally agreed upon possession parameter. In theory, all possessions should lead to a scoring attempt, a continuation of the possession (a 'reset' via an offensive rebound) or a change in possession via a turnover, defensive rebound or made basket. However, the NBA's box score keeping methods create some noise that does not allow for a simple sum of a team's counting stats.
+A rebound is recorded after every shot even after the first free throw and an offensive rebound is credited to a team if the ball deflects off a defender and goes out of bounds. Additionally, there are egde case possessions that happen regularly due to the time restraints on quarters. Should we value possession that end with dribbling out the clock or a last ditch half-court heave as much as most possessions that have the luxury of a full shot clock?
+Thankfully, basketball-reference provides an estimate of possesssions per 48 minutes with their pace statistic in order to account for these small, but meaningful edge cases. It does not eliminate the larger error present in games with extended time but it provides a corrective to the previous model's clumping and fanning residuals by grounding our predictions back in time and adjusting to faster and slower played games. The added green histogram shows the distribution of the pace statistic and, like the variables before it,
+confirms the identically distrubted condition. The previous model had isssues with predicting the tails of the points distribution, the purple histogram, incorporating possessions into the model should help us widen our predicted bounds for points by knowing how fast or slow a game is played.   
+`, width: "1000px", height:"900px"},
+{pic: "model_2_heatmap.png", text: `Thankfully, the newly added game possession variable does not provide any complications to our previous model's variables. In looking at the correlation of possessions with our model's dependent variable, points, we see that possessions show a medium correlation with points. Games with a faster pace have more possessions have more shots and therefore have more points.
+The independence condition and our model can be created.`, width: "800px", height:"600px"},
+{pic: "model_2_comparison.png", text: `Thanks to adding this new variable, there is a dramtic visual difference in the new model's boxplot and its evaluative measures.
+The boxplot's bounds, median and whiskers now more closely resemble the true scoring distribution of points scored. The spread of the outliers also reaches the ceiling and floor of those scores actually observed in the data. The possession variable has brought our model's variance in line the real scoring distrbution's variance, allowing our predictions to be more agile in accounting for faster and slower styles.
+The mean squared error of the model's predictions reduced by 60% to 2.07 and the model's R squared increased by a total of 23%. Now 95.76% of the variability in the scoring is accounted for by the variables in our model, four factors and pace.`, width: "1000px", height:"500px"},
+{pic: "residuals_model_2.png", text: `The effect of the possession variable on the new predictions can be understood further by the model's residual plot. The scatter of the residuals of the new model are now homoscedastic, no visible trend in the residuals. The model is no longer worse at predicting high scores than it is at predicting low or average scores.
+The fanning pattern that revealed itself in the first model dissappears with the admittance of the new pace variable. This is as close to perfect as a linear regression model can get without overfitting the data. The model has a high R squared, a low average squared error and a select number of noncorrelated variables.
+Equipped with this model, I can now confidently build out predictions for future scores knowing that I have a tested, working model.`, width: "800px", height:"500px"}],
+"Final Model": [`The model creation portion of this project is only a sliver of the predictive modeling process. It is the end of the beginning. It is crucial to have a working model to locate the variables that have the most influence on the number the model predicts. However, the model works with perfect information, a luxury that no human or sports gambler will ever have.
+This does not soil the model's usefulness, but it does mean our data has to be transformed to register this knowledge gap. To do so, I chose three specific factors to adjust my data to make the model useful for future predictions. The seperate factors are windowing functions, aggregations and windowing periods. I want my predictions to incoropate all available past data in order to predict an individual team's next game score. The windowing functions I use are rolling, expanding and exponentially weighted window. The windowing periods I define are 10, 15 and 20 days. The aggregations I use are mean and median.`,
+`Windowing functions form the basis of my projections. They allow me to incorporate a select number of a team's past four factors and pace statistics, determined by the windowing period, that have already been generated
+and use these to predict future scores. Each of the selected windowing functions provides a different selection of past games to inform a team's next game's variables. The rolling window selects and aggregates on only the last windowing period's amount of games. It takes into account only recent past performance to inform its predictions.
+The expanding window starts at the widowing period's amount of games and expands outward to integrate each new game's set of results. Here, the windowing period is crucial in determining the rest of its season predictions. Exponentially weighted mean takes the amount of games from the windowing period and applies an exponentially higher weight to more recent results.
+Of the three functions, it is the one that reacts the fastest to the recent results and exhibits them immediately into its next prediction. `],
 
 }
 

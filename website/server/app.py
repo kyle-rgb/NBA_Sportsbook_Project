@@ -32,7 +32,7 @@ def draw_games():
         .to_json(orient="records", double_precision=3)
     obj_dict = {"table_data": table_data}
     conn.close()
-    return flask.render_template("DataHouse.html", js=js, id=0, obj_dict=obj_dict)
+    return flask.render_template("DataHouse.html", js=js, id=0, obj_dict=obj_dict, page_name="Game Log")
 
 @app.route("/overview")
 @cross_origin()
@@ -45,7 +45,7 @@ def draw_dash():
         .to_json(orient="records", double_precision=3)
     conn.close()
     obj_dict = {"team_picks": team_picks, "money_chart_data": money_chart_data}
-    return flask.render_template("DataHouse.html", js=js,id=0, obj_dict=obj_dict)
+    return flask.render_template("DataHouse.html", js=js,id=0, obj_dict=obj_dict, page_name="Season Dashboard")
 
 
 @app.route("/game")
@@ -68,7 +68,7 @@ def draw_game():
     obj_dict = {"markets_game": markets_game, "markets_error": markets_error, "timeseries_game": timeseries_game,\
         "team_picks": team_picks, "summary_table": summary_table, "id": id}
     conn.close()
-    return flask.render_template("DataHouse.html", js=js, obj_dict=obj_dict)
+    return flask.render_template("DataHouse.html", js=js, obj_dict=obj_dict, page_name=f"Game #{id}")
 
 @app.route("/breakdown")
 @cross_origin()
@@ -85,7 +85,7 @@ def draw_team():
 
     obj_dict = { "team": f"'{team}'", "results": results, "moneys": moneys, "markets_error": markets_error}
     conn.close()
-    return flask.render_template("DataHouse.html", js=js, obj_dict=obj_dict)
+    return flask.render_template("DataHouse.html", js=js, obj_dict=obj_dict, page_name=f"{team}'s Breakdown")
 
 @app.route("/analysis")
 @cross_origin()
