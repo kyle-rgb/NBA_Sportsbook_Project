@@ -86,14 +86,33 @@ The expanding window tells how well a team performs throughout the season. The e
 The windowing periods of 10, 15 and 20 games were selected to represent a meaningful set of sample games during the 82 game season. The aggregations of mean and median are used to give me different representation of the variable values during the window period. Mean supplies the average and is influenced by tail values and median supplies the 50 percentile outcome and is less influenced by extreme values.`,
 `Altogether, each one of these separate factors come together and provide the projected four factors and pace of a team given its past results. These variable projections are then input into my model which returns a score projection for each team for every game. In order to have projections for the start of the season, I use a team's averages of their four factors and pace from the previous season. This informs the team's projections for the starting window period until enough games are played in a season while still joining in current results.
 The total set of models predicting a team's four factors and pace involves the combination of each window period, function and aggregation, which total to 18 models. Due to the aggregation inherit to the exponentially weighted window (i.e. the application of weights), the window can only be aggregated with mean. I chose to apply different smoothing values to the functions weight in an effort to explore the different capabilities of this particular windowing function.
-Since each windowing function is working on the same data, I built a function, makeModel, to programmatically create each model permutation, feed these projected variables into the scoring model and return the scoring projections.
+Since each windowing function is working on the same data, I built a function, makeModel, to programmatically create each model permutation, fed these projected variables into the scoring model and return the scoring projections.
 To evaluate and compare each model's effectiveness, I must now bring in the second part of this project, the sportsbook market data.   
 `],
-"Sportsbook Markets Intro": [``],
-"Marrying Markets and Predictions": [``],
-"Best Performance": [``],
-"Using Data to Drive Decisions": [``],
-"Future Plans": [``],
+"Sportsbook Markets Intro": [`Since my model creates score projections for a team for each game adjusted by their past four factors and possession results, I chose to focus on the three major sportsbook markets that are derivatives of team scoring and are created for each game. The three markets focused in on this project are the total, the combined scores of both teams for a game, the spread, the addivitive inverse of a team's score and their opponents, and the moneyline, the odds associated with a team's score being higher than that of their opponents (i.e. that the team wins).
+I selected these three markets because they allow my score projection to provide insights on different facets of the game and my data source of past markets, Odds Shark, only tracks these traditional markets.`, `Each of the separate markets, how it is structured and how my predictions inform on them desevere further analysis.
+Two numbers comprise the spread and totals market. The spread number indicates how many points must be added or subtracted to a team's projected score in the market in order for the two projected scores to match. The favorite will always have a negative spread and the underdog's associated spread will always be the (positive) additive inverse of this number.
+For the totals market, one number exists for each game which creates a binary market. The total is the sum of the projected scores for each team and the market presents the decision of whether the real total score of the game will be over or under this market sum. Attached to these market numbers is the previously referenced second number, the odds. The odds constitute the price one must pay for in order to place a bet on the market.
+The third and final market, the moneyline, is solely comprised of its odds. They represent the wager a bettor must place if they believe the team will win the game.
+For American bettors, the sportsbook's odds represent the payment outcome for a winning wager centered on $100 bets.
+If the odds are negative, a bettor must wager this number to win $100. When positive, the odds represent the payout based on a $100 wager. The sportsbook market sets an initial number based on own past data of the sport and other sportsbook's market for the same game in an effort to select a number that will generate equal betting action on both sides.
+The sportsbook will adjust these numbers as bets begin to take place with the goal to find an equilibrium in the market.`, `Having these specific market data for each game allows me to evaluate the effectiveness of my single score prediction for each team against the real market conditions present at the time of the game.
+The sportsbook acts as an aggregate model that combines all the individual bettors that trust their own predictions enough to place a wager on it and sets a single number that corresponds to all these individual wagers.
+All the information from sports media drivel to complicated mathematical models collectivizes in the market and provides for me a wealth of information to evaluate the performance of my model to the real world conditions of the market.
+All in five simple numbers. The goal of my project is to use this historical market data with my prediction model to make selections for each game's markets, grade these based on the true results and find the model that optimizes winning over the large sample of four seasons. 
+`],
+
+
+
+"Marrying Markets and Predictions": [`The name of the game is to get a number based on a team's past data and use it to be on the right side of the line > 50% of the time. Since this is a binary decision, good and bad models have the ability to tell inform a useful prediction. Here the center of the data, 50%, is our dreaded enemy. Being able to select the correct side more than 50% of the time is our goal. The model's number remains static for the duration of the market,
+while the market does not. Here enlies our edge. The key factors for our model are its decision number compared to one of the selected markets and the market analysis through time to pick the best number in the evolving market.`],
+
+
+"Best Performance": [`A Book-based Analysis will be performed. A Team-based Analysis will be performed (records through time in a season; largest adjustments). Model Comparison and Performance.`],
+
+"Using Data to Drive Decisions": [`Which model performed the best and why do I think that is the case? Allowing for users to see all the permutations of the data (season, team and game level). Getting a grasp between how markets value a team and how I value a team and using this numeric gap b/w numbers to drive future bets.`],
+
+"Future Plans": [`Adding player based modeling for more granularity (injuries, trades and free agency). Creating more filters on Games based on the descrepancies between my predictions and the markets (where I was most off, where the market was most off, etc.). Bringing a Bayesian Approach. Integrating my current webscrapping scripts into the current website. Collecting data on derivative markets and live data. Improving this site into a streaming system.`],
 
 }
 
