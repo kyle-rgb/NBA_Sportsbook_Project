@@ -109,21 +109,22 @@ function createTable(data, wanted_season, wanted_book, first=true){
    
     var thead = table.append("thead").classed("thead-dark", true).style("text-align", "center")
     var tbody = table.append("tbody")
-    var header = ["home_abbv", "m3_proj_home", "market_score_home", "pts_home", "away_abbv", "m3_proj_away", "market_score_away", "pts_away", ]
+    var header = ["home_abbv", "m3_proj_home", "market_score_home", "pts_home", "away_abbv", "m3_proj_away", "market_score_away", "pts_away", "agg_winnings"]
     data = data.filter((d) => d.book === wanted_book & d.season === wanted_season)
+    //console.log(data)
     thead.append("tr").selectAll("th").data(header, function(d) {return Object.keys(d)}).enter().append("th").text((h) => h)
     
 
     // table.append("thead").data(Object.keys(data[0])).selectAll("th").data((h) => h)
     // console.log(data)
-    tbody.selectAll("tr").data(data).enter().append("tr").selectAll("td").data((row) => {return header.map(function (col){ return {column: col, value:row[col], id: row.game_id}})})
+    tbody.selectAll("tr").data(data).enter().append("tr").attr("class", (d) => { if (d.agg_winnings < 0){ return "table-danger"} else{return "table-success"}}).selectAll("td").data((row) => {return header.map(function (col){ return {column: col, value:row[col], id: row.game_id}})})
     .enter().append("td").text((d) => {d.column.endsWith("_abbv")? (d.logo = d.value) & (d.value = "") : d.logo = undefined; return d.value})
     
     d3.selectAll("td").each(function(d){
         
         if (d.logo !== undefined){
             d3.select(this).append("a").attr("href", `game?id=${d.id}`).append("img").attr("src", `static/assets/images/NBA/${d.logo}.png`).attr("height", 40).attr("width", 40)
-        } 
+        }
     })
 
 }

@@ -233,6 +233,8 @@ function createTeamTable(wanted_book, wanted_season, data_whole, headers){
     row.append("th").text(header)
   }
   body = table.append("tbody")
+  
+  //bulk_obj = bulk_obj.filter((a, b) => (a.winnings > b.winnings? a : b))
 
   for (team of Object.keys(bulk_obj)){
     let row = body.append("tr")

@@ -16,7 +16,7 @@ let away_cols = ['pts_away', 'market_score_away', 'm3_proj_away', 'm3_away_error
 let market_makers = ['m3_proj_home', 'm3_proj_away', 'market_score_home', 'market_score_away',
 'm3_whole_deviation', 'market_whole_error', "m3_whole_error"] // book and date
 let tag_names = ["Score", "Market Projection", "Model Projection", "Model Error", "eFG%", "ORB%", "TOV%", "FTA/FGA%", "Pace"]
-let tag_markets =[ "Market Spread", "Model Spread", "Market Total", "Model Total", "Difference", "True Spread", "True Total","Total Market Error", "Total Model Error"] // "Book", "Tip-Off",
+let tag_markets =[ "Market Spread", "Model Spread", "Market Total", "Model Total", "Spread Difference", "True Spread", "True Total","Total Market Error", "Total Model Error"] // "Book", "Tip-Off",
 book_summary_arr = files[0]//.filter((d) => d.game_id === sample_id)
 mark_predictions_arr = files[1]//.filter((d) => d.game_id === sample_id)
 time_summary_arr = files[2]//.filter((d) => d.game_id === sample_id)
