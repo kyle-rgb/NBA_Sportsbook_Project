@@ -89,8 +89,14 @@ def draw_team():
 
 @app.route("/analysis")
 @cross_origin()
-def draw_debrief():
+def draw_analysis():
     return flask.render_template("analysis.html")
+
+
+@app.route("/debrief")
+@cross_origin()
+def draw_debrief():
+    return flask.render_template("debrief.html")
 
 
 if __name__ == "__main__":
