@@ -1,8 +1,5 @@
 analysis_div = d3.select("#analysis_div")
 
-
-console.log(analysis_div)
-
 analysis_div.append("h1").text("Data Analysis").style("font-size", "105px") 
 
 outline_columns = {
@@ -118,9 +115,57 @@ Moreover, these graded decisions are then passed to a new matrix that contains t
 amount of dollars won. The final model selection process can now begin.`],
 
 
-"Best Performance": [`Which model performed the best and why do I think that is the case? A Book-based Analysis will be performed. A Team-based Analysis will be performed (records through time in a season; largest adjustments). Model Comparison and Performance.`],
+"Best Performance": [{type: "img", pic: "table.png", text:`As referenced in the Sports Market Intro, the three subcategories' for the projection model, window-size, widow-type and aggregation type, variable combinations break down to 18 different models that predict a team's scoring model variables based on transformations unique to each model and its variable values. The benchmark for the spread and totals markets is 50% and 57% for the moneyline market.
+Unlike its peer markets, the moneyline market consists only of odds and uses a wider range of odds to get equal action on both sides.
+Since the model decision and grades are connected to the home team, the percentage of games won by the home team from 2017 to 2021 was 57%.
+The goal is to find the best performer of the 18 models that exceeds the resepective benchmarks of the market and balances winning predictions across each market.
+The process flow for each model is using the window-type, window-size and aggregations to generate a team's next game four factors and pace based off its past data, passing these predicted variables to the scoring model to generate a score prediction, calculating the projected markets based off these projections, comparing the projected markets to a common market to genereate a decision and using the game results
+to grade these decisions. The baseline market I used to compare models was the opening market.
+The opening market represents the first numbers and odds offered by one of the analyzed sportsbooks directly after a team's last game.
+Since my models can generate their predictions immediately upon the conclusion of a team's last game, the opening market summarizes the best conditions my model can hope for before sportsbooks move their lines to conform to incoming wagers.
+<br>
 
-"Using Data to Drive Decisions": [`Walkthrough of the web app. Allowing for users to see all the permutations of the data (season, team and game level).`, `The structure of the web application follows the structure of the NBA season. The starting dashboard gives an overview of the selected season. The scatter chart plots the winnings of every bet my final model selected per day throughout the season. Along with these points, the five day moving average of the winnings is plotted to show the performance trend of my model as the season progressed.
+The results of each individual model are contained in the table above. For all the models, the moneyline market represented the highest positive deviation from the benchmark, 57%. 13 of the 18 models exceeded the benchmark and provide discernible value in choosing the winner of individual games backtested across 4 seasons worth of data.
+The models that failed to exceed the moneyline benchmark were the 20-day expanding median, 10-day rolling median and the exponentially-weighted mean with an alpha of 0.5.
+The shortcomings of the median models predictions are exemplified by these particular poor performances.
+Since the expanding window grounds its predictions in a team's begining season results, the median projections for the four factors and pace tend to stay the same and will not unless a team over or underperforms for more than half the season. The result of this is a score projection that mostly stays the same over the entirety of the season, thus an expanding median model will never pick a team it values as less than its opponent to win.
+Due to the variability of single game's results, expanding median models provide moneyline predictions worse than the baseline.
+The 10 day rolling median suffers from a small sample size. 10 games represents only an eigth of the NBA regular season. Team performance can vary wildly during this small of window due to injuries, luck or strength of schedule, factors that appear in the data for models with larger sample sizes.
+The final model to underperform the moneyline benchmark was the exponentially-weighted mean with alpha equal 0.5. Alpha is the numerical factor handling how past results should be weighted for future predictions. The high alpha value places more importance on a team's preceding four factors and pace and less on the other games in the window size than the other exponential model with a smaller alpha.
+The extreme emphasis on the preceding game led to the worst performance of any model compared to the market's benchmark.
+The best performing model was the 10-day expanding mean. Unlike the expanding median models, the expanding mean model changes with every new data point and generates unique predictions for each game.
+The small window size creates a fluid prior which more easily shifts its evaluation of a team to current results. Since I use a team's previous four factors and pace averages from the last season to inform the starting window for each season, the smaller window allows for the scoring model to more quickly reevaluate those teams who have acquired or lost talent during the offseason.
+Unlike the rolling model, the decreased window size helps the expanding models generate more winning decisions.   
+
+<br>
+17 out of the 18 models exceeded the spread market benchmark of 50%.
+Of all the markets and models analyzed, the 10-day expanding median was the only model that produced more losses than wins.
+The causes of this underperformance are similar to those of 20-day expanding median and the moneyline market.
+The combination of an expanding window and a median aggregation lead to flat score projections that require a large amount of data to change.
+This resistance to change is shown in the model's relative poor benchmark performance across markets.
+Even its overperformance in the totals markets do not make up for the lack elsewhere.
+Of all the model types, only the exponentially-weighted mean models with a high alpha performed worse in total wins.
+The best performing spread models were the 15-day and 10-day rolling median that produced 144 and 128 more wins, respectively. Using only the 50th percentile factor outcomes during these smaller window period proved to be the best approach to beat the notoriously tough market.      
+
+<br>
+All of the 18 models exceeded the totals market benchmark of 50%.
+The 20-day and 15-day expanding median as well as both exponentially-weighted mean models generated consistently winning bets.
+Though they faltered in their spread and moneyline predictions, the consistent score predictions landed the total prediction on the right side most often.
+Interestingly, the exponentially-weighted models, which placed the most weight on a team's preceding game factors, also generated the best totals bets.
+The best performance in the totals market came from those models either steadfast in thier evaluations of a team or wildly oscillating from one game to the next.
+Neither approaches proved successfully in selecting the winner or spread winner for a game, but they did provide the best strategies for approaching the total markets.       
+<br>
+Now understanding how the models grade out, I can select the best overall model.
+The best model for overall betting performance is the 10-day expanding mean.
+The model's moneyline winning percentage has the greatest positive deviation from the market baseline of all the models and generates winning wagers for the spread and totals market.
+The preference for the best moneyline model is because correct decisions on the market provide for asymmetrical winnings.
+The higher odds present in this market make correct predictions here more valuable than wins in other peer markets.
+The model best balances winning across the seperate markets and provides inherent upside in its accuracy in moneyline predictions.
+
+`,
+width: "1050px", height:"335px"}],
+
+"Using Data to Drive Decisions": [`The structure of the web application follows the structure of the NBA season. The starting dashboard gives an overview of the selected season. The scatter chart plots the winnings of every bet my final model selected per day throughout the season. Along with these points, the five day moving average of the winnings is plotted to show the performance trend of my model as the season progressed.
 The dashboard's filters also contain the analyzed sportsbook along with season. The records for the three markets analyzed by the selected sportsbook are presented in the first table. These aggregate records represent the grades for my picks based off the closing lines offered for this sportsbook, which the secondary table breaks down by team. The dashboard performs as a hub to indicate how the model performed through time and against which baseline (sportsbook). From here, there are two paths to further analyze the data. The team table links to each team's breakdown page that expands and visualizes an individual team's variables and model performance.`,
 `Here the aggregate records are broken down for each of the individual markets detailing the times the model chose the side of this particular team, the graded records of the model's picks involving this team, and the team's actual record when comparing the market to the results of the game. Next to these records are the major bounds of the cumulative returns for bets placed on this team. The bounds represent the maximum, minimum and final returns that picks made involving this team generated during the given season.
 Moving to the charts, the collected histograms show the distribution of the team's and its opponent's four factors, the key variables in the scoring model. These visual instruments provide a look into backend of the model that ultimately influenced the crucial decision point.
@@ -150,11 +195,6 @@ This would entail collecting a large amount of streaming data from each website'
 
 }
 
-
-
-
-
-
 model_images = {"Model 1": ["model_1_vars", "model_1_heatmap" ,"model_1_errors_box", "model_1_comparison"]}
 section_colors = ["cyan", "blue", "yellow", "red"]
 i = 0 
@@ -169,8 +209,17 @@ for (k of Object.keys(outline_columns)){
                 if (typeof(paragraphs[j][0]) === "object" & paragraphs[j][0].type === "img"){
                     var obj = paragraphs[j][i];
                     analysis_div.append(obj.type).attr("src", `static/assets/images/Graphs/${obj.pic}`).attr("width", obj.width).attr("height", obj.height)
-                    analysis_div.append("p").text(obj.text)
+                    analysis_div.append("p").text(obj.text.split("<br>")[0])
                     analysis_div.append("br")//.text(obj.text)
+                    if (obj.text.includes("<br>")){
+                        let remeaning_text = obj.text.split("<br>").slice(1)
+                        for (r of remeaning_text){
+                            analysis_div.append("p").text(r)
+                            analysis_div.append("br")
+                        }
+                    }
+
+
                 } else if (paragraphs[j][0].type === "li"){
                     var obj = paragraphs[j][i];
                     var ul; 
