@@ -1,12 +1,3 @@
-// Promise.all([
-//     d3.csv("static/data/game/markets_game.csv"), // Book and Aggregate Book Lines[0]
-//     d3.csv("static/data/game/project_and_errors.csv"), // Project and Errors [1]
-//     d3.csv("static/data/game/timeseries_game.csv"), // Timeseries of Markets[2]
-//     d3.csv("static/data/game_log/time_agg.csv"), // Market factors[3]
-//     d3.csv("static/data/dash/team_picks.csv"), // [4]
-//     d3.csv("static/data/game_log/summary_table_results.csv"), //[5]
-//   ]).then(files => {
-
 files = [markets_game, markets_error, timeseries_game, [], team_picks, summary_table]
 
 
@@ -28,17 +19,6 @@ open_ = book_summary_arr.filter((c) => c.book === "Opening")[0]
 initial_spread = open_.market_score_away - open_.market_score_home; 
 initial_total =  open_.market_score_away + open_.market_score_home;
 var closing_market; 
-
-// console.log(files[3])
-// console.log(files[4])
-// console.log(files[5])
-
-// console.log(book_range)
-// console.log(book_summary_arr) // book and book aggregates
-// console.log(mark_predictions_arr) // mark predictions and results 
-// console.log(time_summary_arr) // timeseries of all markets for game
-// console.log(times_books_arr) // Summary Agg Information on Books
-// console.log(picks_arr)
 
 
 
@@ -102,6 +82,7 @@ function createResults(data, odds, eval, wanted_book){
         let starting_stats = home_cols
         var img_name = `${d[loc+"_abbv"]}`
         var tags_names = tag_names
+        column = row.append("div").style("width", "100%").style("text-align", "center").attr("class", "col-md-4").attr("id", loc)
         
         if (k === 3){
             loc = "away"
@@ -126,17 +107,23 @@ function createResults(data, odds, eval, wanted_book){
             market_obj["Model Error"] = `${d.m3_whole_error}`
             starting_stats = Object.keys(market_obj)
             d = market_obj
+
         }
 
         d.game_possessions = parseFloat(d.game_possessions).toFixed(2)
-        column = row.append("div").style("width", "100%")
-                .style("text-align", "center").attr("class", "col-md-4").attr("id", loc)
-                
-
-        column.append("a").attr("href", `/breakdown?team=${img_name}`).append("img").style("margin-bottom", "25px")
+        
+        if (img_name.length > 3){
+            column.append("img").style("margin-bottom", "25px")
                 .style("height", "200px")
                 .style("width", "200px").attr("class", "img-fluid").attr("alt", "img-fluid")
                 .attr("align", "center").attr("src", `static/assets/images/NBA/${img_name}.png`)
+        } else{
+            column.append("a").attr("href", `/breakdown?team=${img_name}`).append("img").style("margin-bottom", "25px")
+                .style("height", "200px")
+                .style("width", "200px").attr("class", "img-fluid").attr("alt", "img-fluid")
+                .attr("align", "center").attr("src", `static/assets/images/NBA/${img_name}.png`)
+        }               
+
         
         let i = 0
         for (stat of starting_stats){

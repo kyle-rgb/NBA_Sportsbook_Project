@@ -13,12 +13,12 @@ createDataFilters(filter_container, [book_filter, season_filter], "all")
 var info = d3.select("body").append("div").classed("container", true).attr("align", "center").attr("id", "container2")
     .append("div").attr("class", "row").attr("id", "infoRow").append("div").attr("class", "col-lg-6")
 
-//var results_container = d3.select("#container2").append("div").attr("class", "row").append("div").attr("class", "col-lg-12").attr("id", "results_div")
+
 
 info.append("h1").style("color", "white").text(team)
 info.append("img").attr("src", `static/assets/images/NBA/${team}.png`).attr("width", 300).attr("height", 300).style("margin-bottom", "30px")
 var data_div = d3.select("#infoRow").append("div").classed("col-lg-6", true).style("margin-top", "100px").attr("id", "records_row")
-// var img = document.querySelector("img")
+
 const colorThief = new ColorThief();
 var img = d3.select("img")._groups[0][0]
 const parseDate = d3.utcParse("%Y-%m-%d")
@@ -29,6 +29,9 @@ results.forEach((m) => {m.date_a = parseDate(m.date_a)})
 var c;
 if (img.complete){
     c = colorThief.getColor(img)
+    d3.select("#container2").style("background-color", `rgba(${c[0]}, ${c[1]}, ${c[2]}, 0.60)`)
+    d3.select("#filters").style("background-color", `rgba(${c[0]}, ${c[1]}, ${c[2]}, 0.85)`)
+    
 } else {
     d3.select("img").on("load", () => {
         c = colorThief.getColor(img)
