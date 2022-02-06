@@ -14,21 +14,21 @@ d guide through the entire lifecycle of the project from data collection to mode
 ## Getting Started 
 [Application](https://nba-proj.herokuapp.com/overview)
 
-<a align='center'><img src='website/server/static/assets/images/Graphs/dash_page.png'></img></a>
+<img align='center'src='website/server/static/assets/images/Graphs/dash_page.png'></img>
 
 > The starting dashboard breaks down the final model’s results based on the selected season and the selected sportsbook’s closing lines.
 
-<a align='center'><img src='website/server/static/assets/images/Graphs/team_page.png'></img></a>
+<img align='center' src='website/server/static/assets/images/Graphs/team_page.png'></img>
 
 > The team dashboard displays the betting winnings and record for the team broken down by each market, the distribution of the model variables for the team and its opponents and the individual game projections, market projections and game results over the course of the selected season for the selected book.
 
-<a align='center'><img src='website/server/static/assets/images/Graphs/game_page1.png'></img></a>
+<img align='center' src='website/server/static/assets/images/Graphs/game_page1.png'></img>
 
-<a align='center'><img src='website/server/static/assets/images/Graphs/game_page2.png'></img></a>
+<img align='center' src='website/server/static/assets/images/Graphs/game_page2.png'></img>
 
 > The game dashboard provides an enhanced look at an individual game with a wealth of data. It shows the score projections of the model and the selected market, the wagers placed given the market conditions, the best available markets, the game’s true model variables and scoring values and the associated errors of each prediction. It also provides the evolution of the total and spread markets by each available sportsbook over time.  The ending graphic displays the wager odds and total winnings based on the game’s projections.
 
-<a align='center'><img src='website/server/static/assets/images/Graphs/analysis_page.png'></img></a>
+<img align='center' src='website/server/static/assets/images/Graphs/analysis_page.png'></img>
 
 > The analysis page provides a 10,000+ word guide through the entire lifecycle of the project from data collection to model selection and the debrief page entails a summary of all the lessons learned from this project.
 
