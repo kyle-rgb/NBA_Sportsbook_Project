@@ -8,9 +8,6 @@
 
 > The data sources include all basic and advanced player statistics from the past four NBA seasons, 17-18 to 20-21, the closing numbers and associated odds for each game (total, moneyline and point spread markets) along with the timeseries data that inscribes changes to the odds or market number based on bettor activity.
 
-d guide through the entire lifecycle of the project from data collection to model selection and the debrief page entails a summary of all the lessons learned from this project.
-
-
 ## Getting Started 
 [Application](https://nba-proj.herokuapp.com/overview)
 
